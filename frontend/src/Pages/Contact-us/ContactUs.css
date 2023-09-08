@@ -1,0 +1,64 @@
+.bodyContainerContactUs {
+  margin-left: 3.1rem;
+}
+
+.BannerContainerContactUs {
+  /* background-color: #0c447f; */
+  background-image: url("https://cdn.pixabay.com/photo/2016/08/03/09/04/universe-1566161_1280.jpg");
+  height: 80vh;
+}
+
+.ContactHeading {
+  margin-left: 3rem;
+  text-align: left;
+  margin-top: 1rem;
+}
+.SubContent {
+  width: 90%;
+  border: 1px solid green;
+  margin: auto;
+  margin-top: 2rem;
+}
+.ContactAddress {
+  display: flex;
+  border: 1px solid rebeccapurple;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+  margin-top: 2rem;
+}
+.Contact {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.Contact div {
+  /* margin-top: 1rem; */
+  border: 1px solid blue;
+}
+.Contact div p {
+  margin-top: 1rem;
+}
+
+.ContactImg {
+  width: 40%;
+  /* border: 2px solid goldenrod; */
+  margin-left: 10px;
+}
+.ContactImg img {
+    border-radius:50px 0px 0px 50px
+}
+.Location{
+  margin-top: 2rem;
+  height: 50vh;
+  border: 1px solid greenyellow;
+}
+@media only screen and (max-width: 767px) {
+  .ContactAddress{
+    flex-direction: column;
+  }
+  .Contact{
+    flex-direction: column;
+  }
+}

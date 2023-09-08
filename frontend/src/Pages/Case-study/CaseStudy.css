@@ -1,0 +1,303 @@
+.bodyContainerCS {
+  margin-left: 3.1rem;
+  border: 2px solid red;
+}
+
+.BannerContainerCS {
+  background-color: #0c447f;
+  border: 1px solid black;
+}
+.CaseStudyIntro {
+  border: 1px solid green;
+  margin-top: 2rem;
+}
+.CaseStudyHeading {
+  margin-left: 3rem;
+  text-align: left;
+  /* font-size: 35px; */
+}
+.CaseStudy-SubHeading {
+  margin-top: 1rem;
+  margin-left: 7.5rem;
+  text-align: left;
+  font-size: 25px;
+  /* font-weight: 600; */
+  font-weight: bold;
+}
+.CaseStudyConatiner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.CaseStudyMain-Right {
+  margin-top: 4rem;
+  padding: 0 30px 0 30px;
+  /* border: 1px solid greenyellow; */
+}
+.CaseStudyMain-Left {
+  width: 80%;
+  border: 1px solid black;
+}
+.CaseStudy-SubHeading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+.CaseStudy-text {
+  text-align: justify;
+  margin-top: 20px;
+}
+.AdvantangeAndChallenges {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border: 1px solid blueviolet;
+}
+.Adavantage {
+  position: relative;
+  border: 1px solid blue;
+  margin-left: 2rem;
+}
+.Challenges {
+  position: relative;
+  border: 1px solid red;
+  margin-right: 2rem;
+}
+.middel-border {
+  height: 25vh;
+  border: 2px solid #0f062a;
+  border-radius: 10px;
+  margin: auto;
+}
+.title-box1 {
+  width: 250px;
+  height: 60vh;
+  background-color: #7069a9;
+  border-radius: 20px;
+}
+.title-box2 {
+  width: 250px;
+  height: 60vh;
+  background-color: #7069a9;
+  border-radius: 20px;
+}
+.title-text-container {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+.Content-box {
+  position: absolute;
+  width: 500px;
+  height: 50vh;
+  background-color: #0f062a;
+  border: 2px solid white;
+  border-radius: 20px;
+  top: 3rem;
+  left: 5px;
+}
+.Content-box2 {
+  position: absolute;
+  width: 500px;
+  height: 50vh;
+  background-color: #0f062a;
+  border: 2px solid white;
+  border-radius: 20px;
+  top: 3rem;
+  /* left: 5px; */
+  right: 5px;
+}
+.Content-box ul {
+  margin-top: 1rem;
+  margin-left: 40px;
+}
+.Content-box ul li {
+  /* font-size: 12px; */
+  text-align: left;
+  line-height: 40px;
+  color: white;
+  /* list-style-position: inside; */
+  list-style-type: circle;
+}
+.Content-box2 ul {
+  margin-top: 1rem;
+  margin-left: 20px;
+}
+.Content-box2 ul li {
+  /* font-size: 12px; */
+  text-align: left;
+  line-height: 40px;
+  color: white;
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+.ProcessContainer {
+  margin-top: 4rem;
+  /* border: 1px solid greenyellow; */
+  margin-bottom: 6rem;
+}
+.ProcessHeading {
+  margin-left: 3rem;
+  text-align: left;
+}
+.ProcessParent {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  margin-top: 1rem;
+  align-items: center;
+  /* gap: 10px; */
+  /* border: 1px solid red; */
+}
+/* .ProcessParent > div {
+  border: 1px solid green;
+} */
+.ProcessParent > div p {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px;
+  /* border: 1px solid blue; */
+}
+.ProcessParent > div {
+  width: 600px;
+  /* border: 1px solid green; */
+}
+.ProcessParent > div img {
+  width: 500px;
+  /* border: 1px solid yellowgreen; */
+}
+.ProcessParent > div > img:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* circular */
+.CircularImg {
+  border: 1px solid red;
+  /* width: 40%; */
+  margin-top: 3rem;
+}
+.carousel {
+  display: flex;
+  /* width: 50%; */
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-left: 20px; */
+  border: 1px solid red;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.info-box-wrapper {
+  width: 50%;
+  background-color: rgb(209, 137, 149);
+  /* margin: auto; */
+  margin-top: 1rem;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+.info-title {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: large;
+  font-weight: bold;
+}
+.info-content {
+  font-size: 14px;
+  margin: 10px;
+}
+.info-box-wrapper button {
+  border: 1px solid;
+  display: block;
+  margin: auto;
+  padding: 0 10px 0 10px;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .bodyContainerCS {
+    margin-left: 0;
+    /* width: 100%; */
+  }
+  .CaseStudyConatinerCS {
+    flex-direction: column;
+  }
+  .carousel {
+    flex-direction: column;
+    gap: 4rem;
+    /* margin-left: 50px; */
+    /* width: 100%; */
+  }
+  .wheel {
+    padding: 20px;
+    border: 1px solid #0f062a;
+  }
+
+  .info-box-wrapper {
+    height: 40vh;
+    width: 80%;
+  }
+  .CaseStudyConatiner {
+    flex-direction: column;
+  }
+  .CaseStudy-SubHeading {
+    margin-left: 10px;
+    /* text-align: center; */
+  }
+  .AdvantangeAndChallenges {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .Adavantage {
+    margin-left: 1rem;
+  }
+  .Challenges{
+    /* margin-right: 1rem; */
+    margin-left: 1rem;
+  }
+  .title-box1 {
+    /* height: 0vh; */
+    height: fit-content;
+    border-radius: 0%;
+  }
+  .title-box2 {
+    height: fit-content;
+    margin-left: 0;
+    border-radius: 0%;
+  }
+  .middel-border {
+    height: 3px;
+    width: 80%;
+    /* border: 2px solid #0f062a;
+    border-radius: 10px;
+    margin: auto; */
+  }
+  .Content-box {
+    width: 100%;
+    height: fit-content;
+    position: static;
+    border-radius: 0px 30px;
+  
+  }
+  .Content-box2 {
+    width: 100%;
+    height: fit-content;
+    position: static;
+    border-radius: 0px 30px;
+    /* right: 0; */
+    /* left: 5px; */
+  }
+  /* .Content-box {
+    width: fit-content;
+    height: 60vh;
+    
+  } */
+  /* .Content-box2 {
+    width: fit-content;
+    height: 50vh;
+    top: 3rem;
+    left: 5px;
+  } */
+}

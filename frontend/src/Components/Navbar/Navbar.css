@@ -1,0 +1,122 @@
+.nav-parent {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  align-items: center;
+  /* border: 1px solid darkorange; */
+  /* height: 7vh; */
+}
+
+.logoContainer {
+  margin-left: 20px;
+  /* margin-top: 10px; */
+}
+.logoContainer img {
+  width: 35%;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  align-items: center;
+  /* border: 1px solid purple; */
+}
+.nav-input {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.MenubarIcon {
+  display: none;
+}
+.nav-demo-container {
+  margin-right: 10px;
+}
+.nav-ref-container {
+  margin-right: 10px;
+}
+
+.smallDrawerNa {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-parent {
+    /* width: 100%; */
+    /* overflow: hidden; */
+    position: fixed;
+    /* height: 12vh; */
+    padding-top: 20px;
+    padding-bottom: 10px;
+    top: 0;
+    background-color: rgb(42, 123, 215);
+    /* padding: 10px; */
+    z-index: 20;
+    border: 1px solid white;
+  }
+  .logoContainer img {
+    width: 35%;
+  }
+  .logoContainer {
+    margin-left: 2px;
+    /* margin-top: 10px; */
+  }
+  .nav-input,
+  .nav-ref-container {
+    display: none;
+  }
+
+  .nav-demo-container {
+    margin-right: 30px;
+  }
+  .MenubarIcon {
+    display: block;
+    /* margin-left: 5px; */
+    margin-top: -5px;
+    /* margin-top: -5px; */
+  }
+  .smallDrawer {
+    position: fixed;
+    /* left: -100%; */
+    top: 73px;
+    width: 100%;
+    /* flex-direction: column; */
+    /* text-align: start; */
+    display: block;
+    /* height: 70vh; */
+    /* border: 2px solid red; */
+    background-color: #131049;
+    z-index: 20;
+    transition: 0.3s;
+    padding-bottom: 30px;
+  }
+
+  .leftLinks > a {
+    /* border: 1px solid greenyellow; */
+    font-size: 20px;
+  }
+  .logoContainer img {
+    width: 50%;
+  }
+
+  .linksContainer {
+    margin-top: 20px;
+    margin-left: 20px;
+    /* border: 1px solid chocolate; */
+    /* padding-bottom: 20px; */
+  }
+  .mainLinks {
+    font-size: 18px;
+  }
+
+  .dropdown > div {
+    color: white;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .dropdown > div:hover {
+    color: #e0a72f;
+  }
+}

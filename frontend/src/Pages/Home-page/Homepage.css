@@ -1,0 +1,275 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.bodyContainer {
+  margin-left: 3.1rem;
+}
+
+.slider {
+  /* height: 350px; */
+  width: 95%;
+  /* padding-top: 10px; */
+  margin: auto;
+  border: 1px solid green;
+}
+
+.CS {
+  display: flex;
+  text-align: center;
+  margin: auto;
+}
+
+.header {
+  margin: 50px auto;
+  text-align: center;
+  font-size: 80px;
+}
+.BannerContainer {
+  background-color: #0c447f;
+}
+.Services > div img:hover {
+  transform: scale(1.1);
+  z-index: 100;
+  transition: all 400ms ease-in-out;
+}
+.Services > div > p:hover {
+  color: #e0a72f;
+}
+
+.SolutionsLeft {
+  width: 100%;
+  /* padding:0 12rem 0 12rem; */
+  list-style-position: inside;
+  line-height: 40px;
+  /* border: 1px solid yellow; */
+}
+
+.SolutionsLeft > ul {
+  width: 10rem;
+  margin: auto;
+}
+/* .SolutionsLeft > ul > li {
+  border: 1px solid goldenrod;
+} */
+
+.SolutionsLeft > ul li:hover {
+  /* color: #282393; */
+  color: #e0a72f;
+  /* font-size: larger */
+}
+
+.Solution-btns {
+  margin-top: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.Solution-btns > button {
+  margin-right: 1rem;
+}
+
+.careers {
+  margin-top: 2rem;
+  /* position: relative;
+  display: inline-block;
+  text-align: center;
+  color: #131049; */
+
+  position: relative;
+  /* width: 100%; */
+  max-width: 1200px;
+  height: 100%;
+  min-height: 320px;
+  /* border: 1px solid red; */
+}
+
+.careersImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../Images/Careers.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.careers-heading {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+}
+
+.beInTouch {
+  margin-top: 2rem;
+  position: relative;
+  max-width: 1200px;
+  height: 100%;
+  min-height: 320px;
+  /* border: 1px solid red; */
+}
+
+.beInTouchImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../Images/Contact.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  margin-right: 0;
+}
+
+.beInTouchInput-Btn {
+  display: flex;
+  width: 30%;
+  /* border: 1px solid; */
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 0.6rem;
+}
+.beInTouch-subText {
+  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
+  /* border: 1px solid; */
+  width: 74%;
+  /* font-size: 1px; */
+  /* font-weight: 500; */
+}
+
+.beInTouchInput-Btn {
+  width: 30%;
+}
+.beInTouchInput-Btn > input {
+  width: 70%;
+  margin-right: 10px;
+}
+
+.OurClients {
+  width: 50%;
+  margin: auto;
+  /* border: 1px solid slateblue; */
+}
+.BannerIntroContent {
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  width: 45%;
+  /* border: 1px solid white; */
+}
+
+.slick-prev {
+  /* background-color: #007bff; */
+  /* color: #fff;  */
+  border-radius: 50%; 
+  padding: 10px; 
+  font-size: 50px; 
+}
+
+/* Style the next arrow */
+.slick-next {
+  /* background-color: #007bff; */
+  /* color: #fff; */
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* Add hover effect */
+.slick-prev:hover,
+.slick-next:hover {
+  /* background-color: #0056b3; */
+  cursor: pointer; 
+}
+
+/* xs=576px, sm=768px, md=992px, lg=1200px and xl=>1200px */
+/* 
+                size={"xs"}
+                    borderRadius={"15px"}
+                    p={"0px 20px 0px 20px"}
+                    colorScheme="#131049"
+                    bg="#131049" */
+
+/* // xs --- Extra small devices (portrait phones, less than 576px)
+                    // No media query since this is the default in Bootstrap
+                    
+                    // sm --- Small devices (landscape phones, 576px and up)
+                    @media (min-width: 576px) { ... }
+                    
+                    // md --- Medium devices (tablets, 768px and up)
+                    @media (min-width: 768px) { ... }
+                    
+                    // lg --- Large devices (desktops, 992px and up)
+                    @media (min-width: 992px) { ... }
+                    
+                    // xl --- Extra large devices (large desktops, 1200px and up)
+                    @media (min-width: 1200px) { ... }                     */
+@media only screen and (max-width: 767px) {
+  .bodyContainer {
+    margin-left: 0;
+    width: 100%;
+  }
+  .SolutionsLeft {
+    width: 100%;
+  }
+  .SolutionsLeft > ul {
+    width: fit-content;
+    margin: auto;
+  }
+  .Solution-btns {
+    width: 220px;
+    display: flex;
+    margin: auto;
+    margin-top: 1rem;
+    /* border: 1px solid green; */
+  }
+  .careers-heading {
+    font-size: 10px;
+    top: 5%;
+    left: 35%;
+  }
+  .beInTouch-heading {
+    font-size: 10px;
+  }
+  .beInTouch-subText {
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+    /* border: 1px solid; */
+    background-color: white;
+    width: 60%;
+    font-size: 10px;
+    /* font-weight: 500; */
+  }
+  .beInTouchInput-Btn {
+    width: 30%;
+    /* border: 1px solid red; */
+  }
+  .beInTouchInput-Btn > input {
+    margin-right: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .OurClients {
+    width: 85%;
+  }
+  .BannerIntroContent {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .beInTouchInput-Btn {
+    width: 50%;
+    flex-direction: column;
+    /* border: 1px solid red; */
+  }
+  .BannerIntroContent {
+    width: 85%;
+  }
+  .beInTouchInput-Btn > input {
+    margin-right: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
