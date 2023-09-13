@@ -1,4 +1,4 @@
-import { Box, Button, Input, InputGroup, Text } from "@chakra-ui/react";
+import { Box, Button, Input, Text } from "@chakra-ui/react";
 import RSVSolution from "../../Images/RSV Solution.png";
 import Service1 from "../../Images/Service-1.png";
 import Service2 from "../../Images/Service-2.png";
@@ -10,8 +10,6 @@ import Client4 from "../../Images/Clients-4.png";
 import Client5 from "../../Images/Clients-5.png";
 import Client6 from "../../Images/Clients-6.png";
 import Client7 from "../../Images/Clients-7.png";
-import Careers from "../../Images/Careers.png";
-import Contact from "../../Images/Contact.png";
 import SliderComp from "../../Components/ClientsSlider/SliderComp";
 import Footer from "../../Components/Footer/Footer";
 import Menu from "../../Components/Menu/Menu";
@@ -22,6 +20,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Homepage.css";
+import CustomPrevArrow from "../../Components/CustomArrows/CustomPrevArrow";
+import CustomNextArrow from "../../Components/CustomArrows/CustomNextArrow";
 
 const Homepage = () => {
   const firstField = useRef();
@@ -45,8 +45,10 @@ const Homepage = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
     autoplaySpeed: 2000,
-    arrowa:'center',
+    arrow: "center",
     responsive: [
       {
         breakpoint: 1024,
@@ -203,10 +205,7 @@ const Homepage = () => {
                   </Button>
                 </Box>
               </Box>
-              <Box
-                w={"60%"}
-                border={"1px solid green"}
-              >
+              <Box w={"60%"}>
                 <a href="#">
                   <img src={RSVSolution} alt="" />
                 </a>
@@ -293,7 +292,7 @@ const Homepage = () => {
                 {/* Slider */}
                 <Slider {...settings}>
                   {ClientsImages.map((el, ind) => (
-                    <SliderComp  {...el} key={ind} />
+                    <SliderComp {...el} key={ind} />
                   ))}
                 </Slider>
               </Box>

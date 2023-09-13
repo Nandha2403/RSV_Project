@@ -1,0 +1,28 @@
+.custom-prev-arrow {
+  color: rgb(28, 118, 208);
+  position: absolute;
+  top: 130px;
+  z-index: 100;
+  left: 0;
+  cursor: pointer;
+}
+
+.custom-next-arrow {
+  color: rgb(28, 118, 208);
+  position: absolute;
+  top: 130px;
+  z-index: 100;
+  right: 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .custom-prev-arrow {
+    top: 90px;
+    color: rgb(28, 118, 208);
+  }
+  .custom-next-arrow {
+    top: 90px;
+    color: rgb(28, 118, 208);
+  }
+}

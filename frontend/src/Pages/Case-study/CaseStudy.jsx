@@ -3,6 +3,12 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Menu from "../../Components/Menu/Menu";
 import CaseStudyIntroImg from "../../Images/CaseStudy-IntroImg.png";
+import CaseImg1 from "../../Images/CaseStudyImg-1.jpeg";
+import CaseImg2 from "../../Images/CaseStudyImg-2.jpeg";
+import CaseImg3 from "../../Images/CaseStudyImg-3.jpeg";
+import CaseImg4 from "../../Images/CaseStudyImg-4.jpeg";
+import CaseImg5 from "../../Images/CaseStudyImg-5.jpeg";
+import CaseImg6 from "../../Images/CaseStudyImg-6.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./CaseStudy.css";
@@ -14,15 +20,8 @@ const CaseStudy = () => {
   const screenWidth = window.screen.width;
   // console.log(`Screen Width: ${screenWidth}px`);
 
-  const images = [
-    "https://images.unsplash.com/photo-1693249646175-8b21fe05acc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMjZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-    "https://images.unsplash.com/photo-1693432666286-23dd461d0a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyODF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-    "https://images.unsplash.com/photo-1693438672953-409b661134fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNTh8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-    "https://images.unsplash.com/photo-1693464081656-c5b1368960d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNzh8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-    "https://plus.unsplash.com/premium_photo-1671718110228-a1d3f64163fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80",
-    "https://images.unsplash.com/photo-1653953893860-b8f756596132?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNjN8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-  ];
-  const info = ["Delhi", "Mumbai", "Bengaluru", "Kolkata", "Chennai", "Goa"];
+  const images = [CaseImg1, CaseImg2, CaseImg3, CaseImg4, CaseImg5, CaseImg6];
+  const info = ["AI In Dermatology", "AI In Dermatology", "AI In Dermatology", "AI In Dermatology", "AI In Dermatology", "AI In Dermatology"];
   const content = [
     " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis voluptates facere sunt dolorum aperiam, beatae exercitationem animi nostrum? Eaque.",
     " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis voluptates facere.",
@@ -137,7 +136,7 @@ const CaseStudy = () => {
                 carouselRadius={screenWidth <= 767 ? 110 : 150}
                 peripheralImageRadius={screenWidth <= 767 ? 30 : 40}
                 centralImageRadius={screenWidth <= 767 ? 40 : 60}
-                focusElementStyling={{ border: "1px solid #ba4949" }}
+                focusElementStyling={{ border: "1px solid black" }}
                 autoRotateTime={3}
                 borderWidth={4}
                 borderHexColor={"1c364f"}

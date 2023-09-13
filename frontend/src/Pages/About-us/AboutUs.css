@@ -1,0 +1,134 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.bodyContainerAboutUs {
+  margin-left: 3.1rem;
+}
+.BannerContainerAboutUs {
+  background-color: #0c447f;
+}
+
+.slick-track {
+  padding: 1rem 0;
+  /* border: 1px solid green; */
+}
+.center .slick-center .project {
+  transform: scale(1.3);
+  z-index: 10000;
+  transition: all 400ms ease-in-out;
+  font-size: 14px;
+  padding: 20px 5px 5px 20px;
+  height: 300px;
+}
+.AboutUsSectionI {
+  margin-top: 1rem;
+  /* border: 1px solid red; */
+}
+.AboutUsSectionI-Cont {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  text-align: justify;
+}
+.AboutUsSectionText {
+  /* border: 1px solid black; */
+  text-align: justify;
+}
+.AboutUsSectionBtnCont {
+  margin-top: 1rem;
+}
+.AboutUsSectionBtnCont :nth-child(2) {
+  margin-left: 2rem;
+}
+
+/* .AboutUsSectionI-Cont > div img {
+  border: 1px solid black;
+} */
+
+.AboutUsSectionII {
+  margin-top: 1rem;
+  /* border: 1px solid navy; */
+}
+.AboutUsSectionII-Heading {
+  text-align: right;
+  margin-right: 7.5rem;
+}
+.AboutUsSectionII-Cont {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+.AboutUsSectionII-Cont > div img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  /* border: 1px solid black; */
+}
+.AI-in-ClinicalTrailHeading {
+  margin-left: 3.5rem;
+}
+.AI-in-ClinicalTrail-Slider {
+  margin-top: 2rem;
+}
+
+.AI-in-ClinicalTrailCont {
+  margin-top: 1rem;
+  /* border: 1px solid black; */
+}
+.OurTeamContainer {
+  display: flex;
+  width: 98%;
+  margin: auto;
+  margin-top: 5rem;
+  /* border: 1px solid skyblue; */
+  align-items: center;
+  text-align: justify;
+}
+.TeamMembers {
+  width: 50%;
+  /* border: 1px solid navy; */
+}
+.TeamMembers img {
+  border-radius: 10px;
+  /* margin-left: .5rem; */
+}
+.OurTeamText {
+  width: 50%;
+  /* border: 1px solid greenyellow; */
+}
+.OurTeamHeading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.OurTeamContent {
+  padding: 0 20px 60px 20px;
+}
+.EmailAndName {
+  /* border: 1px solid black; */
+  margin-top: 1rem;
+}
+.EmailAndNameInptCont {
+  display: flex;
+  margin-left: 3.5rem;
+}
+.EmailAndNameInptCont input {
+  border: 2px solid var(--blue);
+  width: 30%;
+  padding: 5px 0 5px 20px;
+  border-radius: 20px;
+}
+.EmailAndNameInptCont :last-child {
+  margin-left: 2rem;
+}
+.EmailAndNameBtnCont {
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 767px) {
+  .bodyContainerAboutUs {
+    margin-left: 0;
+    width: 100%;
+  }
+}

@@ -5,10 +5,21 @@
   margin-left: 3.1rem;
 }
 
+.slick-track {
+  padding: 1rem 0;
+  /* border: 1px solid green; */
+}
+.center .slick-center .project {
+  transform: scale(1.3);
+  z-index: 10000;
+  transition: all 400ms ease-in-out;
+  font-size: 14px;
+  padding: 20px 5px 5px 20px;
+  height: 350px;
+}
+
 .slider {
-  /* height: 350px; */
-  width: 95%;
-  /* padding-top: 10px; */
+  padding-top: 10px;
   margin: auto;
   border: 1px solid green;
 }
@@ -159,52 +170,8 @@
   /* border: 1px solid white; */
 }
 
-.slick-prev {
-  /* background-color: #007bff; */
-  /* color: #fff;  */
-  border-radius: 50%; 
-  padding: 10px; 
-  font-size: 50px; 
-}
-
-/* Style the next arrow */
-.slick-next {
-  /* background-color: #007bff; */
-  /* color: #fff; */
-  border-radius: 50%;
-  padding: 10px;
-  font-size: 20px;
-}
-
-/* Add hover effect */
-.slick-prev:hover,
-.slick-next:hover {
-  /* background-color: #0056b3; */
-  cursor: pointer; 
-}
-
 /* xs=576px, sm=768px, md=992px, lg=1200px and xl=>1200px */
-/* 
-                size={"xs"}
-                    borderRadius={"15px"}
-                    p={"0px 20px 0px 20px"}
-                    colorScheme="#131049"
-                    bg="#131049" */
 
-/* // xs --- Extra small devices (portrait phones, less than 576px)
-                    // No media query since this is the default in Bootstrap
-                    
-                    // sm --- Small devices (landscape phones, 576px and up)
-                    @media (min-width: 576px) { ... }
-                    
-                    // md --- Medium devices (tablets, 768px and up)
-                    @media (min-width: 768px) { ... }
-                    
-                    // lg --- Large devices (desktops, 992px and up)
-                    @media (min-width: 992px) { ... }
-                    
-                    // xl --- Extra large devices (large desktops, 1200px and up)
-                    @media (min-width: 1200px) { ... }                     */
 @media only screen and (max-width: 767px) {
   .bodyContainer {
     margin-left: 0;
@@ -256,6 +223,11 @@
   }
   .BannerIntroContent {
     width: 75%;
+  }
+
+  .center .slick-center .project {
+    height: 300px;
+    /* margin-bottom: 5px; */
   }
 }
 @media screen and (max-width: 600px) {

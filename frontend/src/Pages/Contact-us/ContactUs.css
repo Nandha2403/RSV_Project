@@ -20,11 +20,11 @@
   margin-top: 2rem;
 }
 .ContactAddress {
+  width: 100%;
   display: flex;
   border: 1px solid rebeccapurple;
   justify-content: space-between;
-  margin: auto;
-  width: 80%;
+  /* margin: auto; */
   margin-top: 2rem;
 }
 .Contact {
@@ -42,23 +42,126 @@
 }
 
 .ContactImg {
-  width: 40%;
+  width: 100%;
   /* border: 2px solid goldenrod; */
   margin-left: 10px;
 }
-.ContactImg img {
-    border-radius:50px 0px 0px 50px
-}
-.Location{
+
+.Location {
   margin-top: 2rem;
-  height: 50vh;
   border: 1px solid greenyellow;
 }
+.arrow-pointer {
+  width: 250px;
+  height: 50px;
+  background: #32557f;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: -25px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 25px solid #32557f;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+  }
+}
+/* .MapImgContainer {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  border: 1px solid black;
+  align-items: center;
+  background-color: #131049;
+} */
+.MapImgContainer img {
+  width: 40%;
+}
+
+/* ContactUsForm */
+.ContactUsForm {
+  /* border: 1px solid green; */
+  margin-top: 1rem;
+}
+.form {
+  width: 90%;
+  border: 2px solid gray;
+  margin: auto;
+  border-radius: 30px;
+}
+
+.formHeading {
+  text-align: center;
+  color: white;
+  background: var(--blue);
+  border-radius: 30px 30px 0px 0px;
+  padding: 10px;
+  /* margin-top: 10px; */
+}
+
+.ImgCont {
+  width: 70%;
+  margin: auto;
+}
+.ImgCont img{
+  margin-left: 30px;
+  background-color: var(--blue);
+  border: 1px solid green;
+}
+
+.TopInputCont {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+}
+.TopInputCont input {
+  width: 100%;
+  padding: 8px 0 8px 20px;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.leftInput {
+  border-radius: 20px 0 0 20px;
+}
+.rightInput {
+  border-radius: 0px 20px 20px 0px;
+}
+.FullInput {
+  border-radius: 20px;
+}
+.TopInputCont textarea {
+  width: 100%;
+  padding: 8px 0 8px 20px;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.TopInputCont .FullInputBottom {
+  border-radius: 0px 0px 30px 30px;
+  padding-bottom: 50px;
+}
+.SubmitBtn button {
+  display: block;
+  background-color: var(--blue);
+  color: white;
+  margin: auto;
+  padding: 5px 150px 5px 150px;
+  border-radius: 0 0px 30px 30px;
+}
+
 @media only screen and (max-width: 767px) {
-  .ContactAddress{
+  .bodyContainerContactUs {
+    margin-left: 0;
+  }
+  .ContactAddress {
     flex-direction: column;
   }
-  .Contact{
+  .Contact {
+    gap: 20px;
     flex-direction: column;
   }
 }

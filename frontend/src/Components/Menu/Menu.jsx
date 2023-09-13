@@ -14,6 +14,7 @@ import Logo from "../../Images/RSV-Logo.png";
 import React from "react";
 import { useRef } from "react";
 import "./Menu.css";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -104,7 +105,7 @@ const Menu = () => {
                     </Box>
                   </Box>
                   <Box className="leftLinks">
-                    <a href="">About us</a>
+                    <Link to={'/AboutUs'}>About us</Link>
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
                         <Box>
@@ -136,7 +137,9 @@ const Menu = () => {
                           </ul>
                         </Box>
                         <Box>
-                          <p>Contact Us</p>
+                          <Link to={"/ContactUs"} target="_top">
+                            <p>Contact Us</p>
+                          </Link>
                         </Box>
                       </Box>
                     </Box>

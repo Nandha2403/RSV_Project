@@ -158,7 +158,9 @@ const Navbar = () => {
                   <p>Team</p>
                 </Box>
                 <Box>
+                  <Link to={'/ContactUs'}>
                   <p>Contact Us</p>
+                  </Link>
                 </Box>
               </AccordionPanel>
             </AccordionItem>
