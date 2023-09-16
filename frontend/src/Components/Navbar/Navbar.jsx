@@ -75,12 +75,11 @@ const Navbar = () => {
           </Box>
           <Box className="nav-demo-container">
             <Button
-              size={{base:"xs",sm:'sm',}}
+              size={{ base: "xs", sm: "sm" }}
               p={"0px 15px 0px 15px"}
               borderRadius={"15px"}
               colorScheme="#131049"
               bg="#131049"
-
             >
               DEMO
             </Button>
@@ -142,7 +141,7 @@ const Navbar = () => {
             <AccordionItem border={"none"}>
               <AccordionButton>
                 <Box color={"white"} className={"mainLinks"}>
-                  About us
+                  <Link to={'/AboutUs'}>About us</Link>
                 </Box>
                 {/* <a href=""></a> */}
                 <AccordionIcon color={"white"} fontSize={25} ml={"20px"} />
@@ -158,8 +157,8 @@ const Navbar = () => {
                   <p>Team</p>
                 </Box>
                 <Box>
-                  <Link to={'/ContactUs'}>
-                  <p>Contact Us</p>
+                  <Link to={"/ContactUs"}>
+                    <p>Contact Us</p>
                   </Link>
                 </Box>
               </AccordionPanel>
@@ -168,7 +167,7 @@ const Navbar = () => {
             <AccordionItem border={"none"}>
               <AccordionButton>
                 <Box color={"white"} className={"mainLinks"}>
-                  Career
+                  <Link to={'/Career'}>Career</Link>
                 </Box>
                 {/* <a href=""></a> */}
                 {/* <AccordionIcon color={"white"} /> */}

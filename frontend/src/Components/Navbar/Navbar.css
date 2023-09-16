@@ -43,17 +43,13 @@
 
 @media only screen and (max-width: 767px) {
   .nav-parent {
-    /* width: 100%; */
-    /* overflow: hidden; */
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
     position: fixed;
-    /* height: 12vh; */
-    padding-top: 20px;
-    padding-bottom: 10px;
     top: 0;
     background-color: rgb(42, 123, 215);
-    /* padding: 10px; */
     z-index: 20;
-    /* border: 1px solid white; */
   }
   .logoContainer img {
     width: 35%;
@@ -79,7 +75,7 @@
   .smallDrawer {
     position: fixed;
     /* left: -100%; */
-    top: 73px;
+    top: 90px;
     width: 100%;
     /* flex-direction: column; */
     /* text-align: start; */
@@ -87,7 +83,7 @@
     /* height: 70vh; */
     /* border: 2px solid red; */
     background-color: #131049;
-    z-index: 20;
+    z-index: 200;
     transition: 0.3s;
     padding-bottom: 30px;
   }

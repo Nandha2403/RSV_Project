@@ -21,7 +21,14 @@ const CaseStudy = () => {
   // console.log(`Screen Width: ${screenWidth}px`);
 
   const images = [CaseImg1, CaseImg2, CaseImg3, CaseImg4, CaseImg5, CaseImg6];
-  const info = ["AI In Dermatology", "AI In Dermatology", "AI In Dermatology", "AI In Dermatology", "AI In Dermatology", "AI In Dermatology"];
+  const info = [
+    "AI In Dermatology",
+    "AI In Clincal Trial",
+    "Oncology Workflow",
+    "Query Management",
+    "Electronic Data Capture",
+    "Hand Scintigraphy",
+  ];
   const content = [
     " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis voluptates facere sunt dolorum aperiam, beatae exercitationem animi nostrum? Eaque.",
     " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis voluptates facere.",
@@ -213,90 +220,7 @@ const CaseStudy = () => {
           </Box>
         </Box>
         {/* Process */}
-        {/* <Box className="ProcessContainer">
-          <Box className="ProcessHeading">
-            <Text className="headings">Process</Text>
-          </Box>
-          <Box className="ProcessParent">
-            <Box>
-              <img src={Process1} alt="Process1" />
-              <Box>
-                <Text mt={"-50px"}>
-                  <Text as={"span"} color={"#D6522E"}>
-                    0.1
-                  </Text>{" "}
-                  Data Standardization
-                </Text>
-              </Box>
-            </Box>
-            <Box id="elem2">
-              <Box>
-                <Text mb={"-45px"}>
-                  <Text as={"span"} color={"#F4B03A"}>
-                    0.2
-                  </Text>{" "}
-                  Blinded Reads
-                </Text>
-              </Box>
-              <img src={Process2} alt="Process2" />
-            </Box>
-            <Box>
-              <img src={Process3} alt="Process3" />
-              <Box>
-                <Text mt={"-50px"}>
-                  <Text as={"span"} color={"#76A90A"}>
-                    0.3
-                  </Text>{" "}
-                  Image Retriveal using Meta Data
-                </Text>
-              </Box>
-            </Box>
-            <Box>
-              <Box>
-                <Text mb={"-45px"}>
-                  <Text as={"span"} color={"#55B29A"}>
-                    0.4
-                  </Text>{" "}
-                  Image Retriveal using Meta Data
-                </Text>
-              </Box>
-              <img src={Process4} alt="Process4" />
-            </Box>
-            <Box>
-              <img src={Process5} alt="Process5" />
-              <Box>
-                <Text mt={"-50px"}>
-                  <Text as={"span"} color={"#367A7C"}>
-                    0.5
-                  </Text>{" "}
-                  External Collaboration
-                </Text>
-              </Box>
-            </Box>
-            <Box>
-              <Box>
-                <Text mb={"-45px"}>
-                  <Text as={"span"} color={"#3080B2"}>
-                    0.6
-                  </Text>{" "}
-                  Data Access
-                </Text>
-              </Box>
-              <img src={Process6} alt="Process6" />
-            </Box>
-            <Box>
-              <img src={Process7} alt="Process7" />
-              <Box>
-                <Text mt={"-50px"}>
-                  <Text as={"span"} color={"#17165D"}>
-                    0.7
-                  </Text>{" "}
-                  Data Storage and Migration
-                </Text>
-              </Box>
-            </Box>
-          </Box>
-        </Box> */}
+       
         <Footer />
       </Box>
     </div>

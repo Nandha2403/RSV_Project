@@ -68,13 +68,34 @@ const Menu = () => {
                           </ul>
                         </Box>
                         <Box>
-                          <p>Case Studies</p>
+                          <p>
+                            <Link to={"/CaseStudy"}>Case Studies</Link>
+                          </p>
+
                           <ul>
                             <li>
-                              <a href="">DW Mining</a>
+                              {/* <a href="">DW Mining</a> */}
+                              <Link to={"/CaseStudy/AI-In-ClinicalTrial"}>
+                                AI In Clincal Trial
+                              </Link>
                             </li>
                             <li>
-                              <a href="">Site vs Central</a>
+                              <Link to={"/CaseStudy/AI-In-Dermatology"}>
+                                AI In Dermatology
+                              </Link>
+                              {/* <a href="">Site vs Central</a> */}
+                            </li>
+                            <li>
+                              <a href="#">Oncology Workflow</a>
+                            </li>
+                            <li>
+                              <a href="#">Query Management</a>
+                            </li>
+                            <li>
+                              <a href="#">Electronic Data Capture</a>
+                            </li>
+                            <li>
+                              <a href="#">Hand Scintigraphy</a>
                             </li>
                           </ul>
                         </Box>
@@ -105,7 +126,7 @@ const Menu = () => {
                     </Box>
                   </Box>
                   <Box className="leftLinks">
-                    <Link to={'/AboutUs'}>About us</Link>
+                    <Link to={"/AboutUs"}>About us</Link>
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
                         <Box>
@@ -137,15 +158,17 @@ const Menu = () => {
                           </ul>
                         </Box>
                         <Box>
-                          <Link to={"/ContactUs"} target="_top">
-                            <p>Contact Us</p>
-                          </Link>
+                          <p>
+                            <Link to={"/ContactUs"} target="_top">
+                              Contact Us
+                            </Link>
+                          </p>
                         </Box>
                       </Box>
                     </Box>
                   </Box>
                   <Box className="leftLinks">
-                    <a href="">Career</a>
+                    <Link to={"/Career"}>Career</Link>
                   </Box>
                   <Box className="leftLinks">
                     <a href="">Products</a>
@@ -172,15 +195,7 @@ const Menu = () => {
                     </Box>
                   </Box>
                 </Stack>
-                {/* Dropdown */}
               </DrawerBody>
-
-              <DrawerFooter>
-                {/* <Button variant="outline" mr={3} onClick={onClose}>
-                    Cancel
-                  </Button>
-                  <Button colorScheme="blue">Submit</Button> */}
-              </DrawerFooter>
             </DrawerContent>
           </Drawer>
         </Box>

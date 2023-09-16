@@ -5,7 +5,7 @@
 .BannerContainerContactUs {
   /* background-color: #0c447f; */
   background-image: url("https://cdn.pixabay.com/photo/2016/08/03/09/04/universe-1566161_1280.jpg");
-  height: 80vh;
+  height: 70vh;
 }
 
 .ContactHeading {
@@ -15,28 +15,27 @@
 }
 .SubContent {
   width: 90%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin: auto;
   margin-top: 2rem;
 }
 .ContactAddress {
   width: 100%;
   display: flex;
-  border: 1px solid rebeccapurple;
+  /* border: 1px solid rebeccapurple; */
   justify-content: space-between;
   /* margin: auto; */
   margin-top: 2rem;
 }
 .Contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   align-items: center;
 }
-.Contact div {
-  /* margin-top: 1rem; */
+/* .Contact div {
   border: 1px solid blue;
-}
+} */
 .Contact div p {
   margin-top: 1rem;
 }
@@ -48,43 +47,56 @@
 }
 
 .Location {
-  margin-top: 2rem;
-  border: 1px solid greenyellow;
-}
-.arrow-pointer {
-  width: 250px;
-  height: 50px;
-  background: #32557f;
+  /* margin-top: 1rem; */
+  display: inline-block;
   position: relative;
+  /* border: 1px solid greenyellow; */
+}
 
-  &:before {
-    content: "";
-    position: absolute;
-    right: -25px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 25px solid #32557f;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-  }
+.MapImgContainer::before {
+  /* border: solid black; */
+  border-width: 30px 30px 0px 30px;
+  display: inline-block;
+  /* padding: 3px; */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  z-index: -1; /* Puts the shape behind the image */
+  /* width: 50%; */
+  /* height: 90%; */
+  margin-top: 20px;
+  padding: 200px 200px;
+  /* transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); */
+  /* background-color: var(--blue); Set your desired background color */
+  
 }
-/* .MapImgContainer {
-  display: flex;
-  width: 60%;
+
+.ImgCont {
   margin: auto;
-  border: 1px solid black;
-  align-items: center;
-  background-color: #131049;
-} */
-.MapImgContainer img {
-  width: 40%;
 }
+.ImgCont img {
+  /* width: 30%;
+  position: absolute;
+  top: 0;
+  border: 1px solid green; */
+  display: block;
+  max-width: 40%;
+
+}
+/* .ImgArrowLocation {
+  width: 80%;
+  background-color: var(--blue);
+  border: 1px solid green;
+  border-radius: 0 50px 50px 0;
+  
+} */
 
 /* ContactUsForm */
 .ContactUsForm {
   /* border: 1px solid green; */
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 .form {
   width: 90%;
@@ -100,16 +112,6 @@
   border-radius: 30px 30px 0px 0px;
   padding: 10px;
   /* margin-top: 10px; */
-}
-
-.ImgCont {
-  width: 70%;
-  margin: auto;
-}
-.ImgCont img{
-  margin-left: 30px;
-  background-color: var(--blue);
-  border: 1px solid green;
 }
 
 .TopInputCont {

@@ -5,7 +5,10 @@
   margin-left: 3.1rem;
 }
 .BannerContainerAboutUs {
-  background-color: #0c447f;
+  /* background-color: #0c447f; */
+  background-size: cover;
+  background-image: url("../../Images/AboutUs_BannerImg.jpeg");
+  /* height: 70vh; */
 }
 
 .slick-track {
@@ -18,21 +21,24 @@
   transition: all 400ms ease-in-out;
   font-size: 14px;
   padding: 20px 5px 5px 20px;
-  height: 300px;
+  height: 390px;
 }
 .AboutUsSectionI {
-  margin-top: 1rem;
+  margin-top: 4rem;
   /* border: 1px solid red; */
 }
 .AboutUsSectionI-Cont {
-  width: 90%;
+  /* width: 95%; */
   display: flex;
   align-items: center;
+  gap: 20px;
   margin: auto;
-  text-align: justify;
+  /* border: 1px solid black; */
 }
 .AboutUsSectionText {
+  width: 60%;
   /* border: 1px solid black; */
+  margin-left: 2rem;
   text-align: justify;
 }
 .AboutUsSectionBtnCont {
@@ -42,12 +48,13 @@
   margin-left: 2rem;
 }
 
-/* .AboutUsSectionI-Cont > div img {
-  border: 1px solid black;
-} */
+.AboutUsSectionImgCont {
+  width: 40%;
+  /* border: 1px solid black; */
+}
 
 .AboutUsSectionII {
-  margin-top: 1rem;
+  margin-top: 4rem;
   /* border: 1px solid navy; */
 }
 .AboutUsSectionII-Heading {
@@ -55,15 +62,19 @@
   margin-right: 7.5rem;
 }
 .AboutUsSectionII-Cont {
-  width: 90%;
   margin: auto;
   display: flex;
+  gap: 20px;
   align-items: center;
+}
+.AboutUsSectionIIText {
+  width: 60%;
+  margin-right: 3rem;
+  /* border: 1px solid black; */
   text-align: justify;
 }
-.AboutUsSectionII-Cont > div img {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+.AboutUsSectionIImgCont {
+  width: 40%;
   /* border: 1px solid black; */
 }
 .AI-in-ClinicalTrailHeading {
@@ -79,15 +90,13 @@
 }
 .OurTeamContainer {
   display: flex;
-  width: 98%;
-  margin: auto;
   margin-top: 5rem;
   /* border: 1px solid skyblue; */
   align-items: center;
-  text-align: justify;
+  padding: 10px;
 }
 .TeamMembers {
-  width: 50%;
+  width: 40%;
   /* border: 1px solid navy; */
 }
 .TeamMembers img {
@@ -95,15 +104,19 @@
   /* margin-left: .5rem; */
 }
 .OurTeamText {
-  width: 50%;
+  width: 60%;
+  text-align: justify;
   /* border: 1px solid greenyellow; */
+  padding: 0 20px 10px 20px;
+}
+.OurTeamText button {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
 }
 .OurTeamHeading {
   text-align: center;
   margin-bottom: 2rem;
-}
-.OurTeamContent {
-  padding: 0 20px 60px 20px;
 }
 .EmailAndName {
   /* border: 1px solid black; */
@@ -126,9 +139,57 @@
   margin-left: 3.5rem;
   margin-top: 1rem;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .center .slick-center .project {
+    height: 310px;
+    /* margin-bottom: 5px; */
+  }
+}
 @media only screen and (max-width: 767px) {
   .bodyContainerAboutUs {
     margin-left: 0;
     width: 100%;
+  }
+  .AboutUsSectionI-Cont {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .AboutUsSectionII-Cont {
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+  }
+  .OurTeamContainer {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 20px;
+    margin-bottom: 2rem;
+  }
+  .OurTeamContent {
+    padding: 0px;
+  }
+  .TeamMembers {
+    width: 90%;
+    /* border: 1px solid navy; */
+  }
+  .OurTeamText {
+    width: 90%;
+    /* border: 1px solid greenyellow; */
+  }
+  .OurTeamText {
+    margin-top: 1rem;
+  }
+  .EmailAndNameInptCont {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .EmailAndNameInptCont input {
+    width: 80%;
+  }
+  .EmailAndNameInptCont :last-child {
+    margin-left: 0;
+  }
+  .center .slick-center .project {
+    height: 300px;
+    /* margin-bottom: 5px; */
   }
 }

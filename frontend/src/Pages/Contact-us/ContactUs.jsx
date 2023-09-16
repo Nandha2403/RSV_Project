@@ -46,14 +46,15 @@ const ContactUs = () => {
         {/* Location */}
         <Box className="Location">
           <Box className="MapImgContainer">
+            <div className="ImgCont">
             {/* <a
               href="https://www.google.com/maps/place/464+Common+St+%23133,+Belmont,+MA+02478,+USA/@42.381092,-71.1752208,19z/data=!3m1!4b1!4m5!3m4!1s0x89e377f1f60b2781:0xbfda4dae7f7f0b3d!8m2!3d42.381091!4d-71.1745771?entry=ttu"
               target="_blanck"
             > */}
-            <div className="ImgCont">
               <img src={RSVLocation} alt="Location" />
-            </div>
             {/* </a> */}
+            </div>
+            <div className="ImgArrowLocation"></div>
           </Box>
         </Box>
         {/* Contact us from */}

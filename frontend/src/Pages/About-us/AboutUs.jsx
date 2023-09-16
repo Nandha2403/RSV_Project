@@ -3,7 +3,9 @@ import "./AboutUs.css";
 import { Box, Button, Text } from "@chakra-ui/react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Menu from "../../Components/Menu/Menu";
-import IntroImg from "../../Images/ContactUsIntro.png";
+import AboutUs1 from "../../Images/AboutUs-1.png";
+import AboutUs2 from "../../Images/AboutUs-2.png";
+import AboutUs3 from "../../Images/AboutUs-3.png";
 import Client1 from "../../Images/Clients-1.png";
 import Client2 from "../../Images/Clients-2.png";
 import Client3 from "../../Images/Clients-3.png";
@@ -14,9 +16,8 @@ import Client7 from "../../Images/Clients-7.png";
 import Slider from "react-slick";
 import CustomPrevArrow from "../../Components/CustomArrows/CustomPrevArrow";
 import CustomNextArrow from "../../Components/CustomArrows/CustomNextArrow";
-import SliderCompForAI from "../../Components/AI-In-ClinicalTrail/SliderCompForAI";
+import SliderCompForAI from "../../Components/AI-In-ClinicalTrail-Slider/SliderCompForAI";
 import Footer from "../../Components/Footer/Footer";
-
 
 // Need to work on responsiveness
 
@@ -81,8 +82,8 @@ const AboutUs = () => {
           <Box className="BannerContainerAboutUs">
             <Navbar />
             {/* Banner area */}
-            <Box pt={"6rem"}>
-              <Box ml={"1.5rem"} mt={"18rem"} pb={"4rem"}>
+            <Box mt={"4rem"} pt={"16rem"} pb={"2rem"}>
+              <Box ml={"1.5rem"}>
                 <Button
                   size={"xs"}
                   borderRadius={"15px"}
@@ -145,21 +146,19 @@ const AboutUs = () => {
                   </Button>
                 </Box>
               </Box>
-              <Box>
-                <img src={IntroImg} alt="IntroImg" />
+              <Box className="AboutUsSectionImgCont">
+                <img src={AboutUs1} alt="AboutUs1" />
               </Box>
             </Box>
           </Box>
           {/* Section-II */}
           <Box className="AboutUsSectionII">
-            <Text className="headings AboutUsSectionII-Heading">
-              Our Story
-            </Text>
+            <Text className="headings AboutUsSectionII-Heading">Our Story</Text>
             <Box className="AboutUsSectionII-Cont">
-              <Box>
-                <img src={IntroImg} alt="IntroImg" />
+              <Box className="AboutUsSectionIImgCont">
+                <img src={AboutUs2} alt="AboutUs2" />
               </Box>
-              <Box>
+              <Box className="AboutUsSectionIIText">
                 <p>
                   At Radiant sage, We're driven by the belief in Returning
                   Control to Sponsors in Managing Clinical imaging trials. We're
@@ -193,8 +192,8 @@ const AboutUs = () => {
                   and begin Collecting.
                 </p>
               </Box>
-              <Box>
-                <img src={IntroImg} alt="IntroImg" />
+              <Box className="AboutUsSectionImgCont">
+                <img src={AboutUs3} alt="AboutUs3" />
               </Box>
             </Box>
           </Box>
@@ -241,6 +240,15 @@ const AboutUs = () => {
                 Quas recusandae amet, nam dolor architecto libero corrupti ex
                 facilis praesentium officia delectus odit deleniti eum saepe.
               </Text>
+              <Button
+                size={"sm"}
+                borderRadius={"15px"}
+                p={"0px 20px 0px 20px"}
+                colorScheme="#131049"
+                bg="#131049"
+              >
+                Contact Us
+              </Button>
             </Box>
           </Box>
           {/* EmailAndName */}
@@ -262,7 +270,7 @@ const AboutUs = () => {
             </Box>
           </Box>
           {/* Footer */}
-          <Box mt={'3rem'}>
+          <Box mt={"3rem"}>
             <Footer />
           </Box>
         </Box>
