@@ -15,19 +15,22 @@ import "./CaseStudy.css";
 import Footer from "../../Components/Footer/Footer";
 import "react-fancy-circular-carousel/FancyCarousel.css";
 import FancyCarousel from "react-fancy-circular-carousel";
+import { Link } from "react-router-dom";
 
 const CaseStudy = () => {
   const screenWidth = window.screen.width;
   // console.log(`Screen Width: ${screenWidth}px`);
 
-  const images = [CaseImg1, CaseImg2, CaseImg3, CaseImg4, CaseImg5, CaseImg6];
+  const images = [CaseImg1, CaseImg2, CaseImg3, CaseImg4, CaseImg5, CaseImg6,CaseImg4,CaseImg5];
   const info = [
-    "AI In Dermatology",
     "AI In Clincal Trial",
+    "AI In Dermatology",
+    "Business Intelligence",
     "Oncology Workflow",
     "Query Management",
     "Electronic Data Capture",
     "Hand Scintigraphy",
+    "Paired Reads",
   ];
   const content = [
     " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis voluptates facere sunt dolorum aperiam, beatae exercitationem animi nostrum? Eaque.",
@@ -36,7 +39,42 @@ const CaseStudy = () => {
     " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis.",
     " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis.",
     " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis.",
+    " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis.",
+    " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis.",
   ];
+
+  // <Route path="CaseStudy/AI-In-ClinicalTrial" element={<ClincalTrial />} />
+  // <Route path="CaseStudy/AI-In-Dermatology" element={<Dermatology />} />
+  // <Route
+  //   path="CaseStudy/Business-Intelligence"
+  //   element={<BusinessIntelligence />}
+  // />
+  // <Route
+  //   path="CaseStudy/Oncology-Workflow"
+  //   element={<OncologyWorkflow />}
+  // />
+  // <Route path="CaseStudy/Query-Management" element={<QueryManagement />} />
+  // <Route
+  //   path="CaseStudy/Electronic-Data-Capture"
+  //   element={<ElectronicDataCapture />}
+  // />
+  // <Route
+  //   path="CaseStudy/Hand-Scintigraphy"
+  //   element={<HandScintigraphy />}
+  // />
+  // <Route path="CaseStudy/Paired-Reads" element={<PairedReads />} />
+
+  const linkBtn = [
+    "/CaseStudy/AI-In-ClinicalTrial",
+    "/CaseStudy/AI-In-Dermatology",
+    "/CaseStudy/Business-Intelligence",
+    "/CaseStudy/Oncology-Workflow",
+    "/CaseStudy/Query-Management",
+    "/CaseStudy/Electronic-Data-Capture",
+    "/CaseStudy/Hand-Scintigraphy",
+    "/CaseStudy/Paired-Reads",
+  ];
+
   const [focusElement, setFocusElement] = useState(0);
   //
   useEffect(() => {
@@ -154,7 +192,9 @@ const CaseStudy = () => {
             <div className="info-box-wrapper">
               <p className="info-title"> {info[focusElement]} </p>
               <p className="info-content"> {content[focusElement]} </p>
-              <button>Learn More</button>
+              <button>
+                <Link to={linkBtn[focusElement]} target="_top">Learn More</Link>
+              </button>
             </div>
           </div>
         </div>
@@ -220,7 +260,7 @@ const CaseStudy = () => {
           </Box>
         </Box>
         {/* Process */}
-       
+
         <Footer />
       </Box>
     </div>

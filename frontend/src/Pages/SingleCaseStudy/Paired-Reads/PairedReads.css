@@ -1,0 +1,133 @@
+.bodyContainerPR {
+  margin-left: 3.1rem;
+}
+
+.BannerContainerPR {
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-image: url("../../../Images/Banner-AI-in-CT.jpeg");
+  /* height: 90vh; */
+}
+.PRInCTICont {
+  margin-top: 4rem;
+  /* border: 1px solid green; */
+}
+.PRInCTIHeading {
+  margin-left: 3rem;
+}
+.PRInCTISubTxt {
+  width: 90%;
+  /* margin: auto; */
+  margin-left: 3rem;
+  margin-top: 2rem;
+  /* border: 1px solid red; */
+  text-align: left;
+  line-height: 25px;
+}
+.PRInCTISubTxt > p:nth-child(2) {
+  margin-top: 2rem;
+}
+.PRInCTISubTxt > p:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.smallBannerPR {
+  margin-top: 4rem;
+  width: 100%;
+  height: 50vh;
+  /* background-color: #0c447f; */
+  background-image: url("../../../Images/SecondBanner-AI-In-CT.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* border: 1px solid teal; */
+}
+
+.smallBannerPRBottom {
+  margin-top: 4rem;
+  height: 45vh;
+  /* border: 1px solid teal; */
+  background-image: url("../../../Images/CSfooterRedirect.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smallBannerPRBtmContent {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin: 0px 40px;
+  /* border: 1px solid white; */
+}
+
+.SmallBannerPRCenterLine {
+  height: 10vh;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.BenefitsofPR {
+  margin-top: 4rem;
+}
+
+.BenefitsofPRTextCont {
+  margin-top: 3rem;
+  /* border: 1px solid greenyellow; */
+  width: 90%;
+  margin: auto;
+}
+.BenefitsofPRTextTitle1 > p:nth-child(1) {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.BenefitsofPRTextTitle1 > p:nth-child(2) {
+  margin-top: 10px;
+  margin-left: 1rem;
+}
+
+.overallBtmContPR {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .smallBannerPR {
+    height: 30vh;
+    /* background-size: contain; */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bodyContainerPR {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .smallBannerPR {
+    height: 20vh;
+
+    /* background-size: contain; */
+  }
+  .smallBannerPRBottom{
+  height: 35vh;
+
+    flex-direction: column;
+    background-size: 100% 100%;
+  }
+  .SmallBannerPRCenterLine{
+    width: 50%;
+    height: 2px;
+  }
+  /* .smallBannerPRBtmContent{
+    flex-direction: column;
+  } */
+  
+}

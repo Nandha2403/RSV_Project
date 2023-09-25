@@ -58,6 +58,7 @@
     margin-left: 2px;
     /* margin-top: 10px; */
   }
+
   .nav-input,
   .nav-ref-container {
     display: none;
@@ -66,11 +67,15 @@
   .nav-demo-container {
     margin-right: 30px;
   }
+
   .MenubarIcon {
     display: block;
     /* margin-left: 5px; */
     margin-top: -5px;
     /* margin-top: -5px; */
+  }
+  .MenubarIcon .hamburger-react {
+    background-color: transparent;
   }
   .smallDrawer {
     position: fixed;

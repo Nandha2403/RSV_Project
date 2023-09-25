@@ -1,0 +1,129 @@
+.bodyContainerCT {
+  margin-left: 3.1rem;
+}
+
+.BannerContainerCT {
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-image: url("../../../Images/Banner-AI-in-CT.jpeg");
+  /* height: 90vh; */
+}
+.NextGenCont {
+  margin-top: 4rem;
+  /* border: 1px solid green; */
+}
+.NextGenHeading {
+  margin-left: 3rem;
+}
+.NextGenSubTxt {
+  width: 90%;
+  /* margin: auto; */
+  margin-left: 3rem;
+  margin-top: 2rem;
+  /* border: 1px solid red; */
+  text-align: left;
+  line-height: 25px;
+}
+.NextGenSubTxt > p:nth-child(2) {
+  margin-top: 2rem;
+}
+.NextGenSubTxt > p:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.smallBanner {
+  margin-top: 4rem;
+  width: 100%;
+  height: 50vh;
+  /* background-color: #0c447f; */
+  background-image: url("../../../Images/SecondBanner-AI-In-CT.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* border: 1px solid teal; */
+}
+
+.smallBannerCTBottom {
+  margin-top: 4rem;
+  height: 45vh;
+  /* border: 1px solid teal; */
+  background-image: url("../../../Images/CSfooterRedirect.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smallBannerCTBtmContent {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin: 0px 40px;
+  /* border: 1px solid white; */
+}
+
+.SmallBannerCTCenterLine {
+  height: 10vh;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 25px;
+}
+.UnderBannerTxt {
+  width: 90%;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  /* border: 1px solid red; */
+  text-align: left;
+  line-height: 25px;
+}
+
+.UnderBannerTxt > p:nth-child(2) {
+  margin-top: 2rem;
+}
+.UnderBannerTxt > p:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.AIforQuality {
+  margin-top: 4rem;
+}
+
+.AIforQltyTextCont {
+  margin-top: 3rem;
+  /* border: 1px solid greenyellow; */
+  width: 90%;
+  margin: auto;
+}
+.AIforQltyTextTitle1 > p:nth-child(1) {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.AIforQltyTextTitle1 > p:nth-child(2) {
+  margin-top: 10px;
+  margin-left: 1rem;
+}
+
+
+@media only screen and (max-width:900px){
+  .smallBanner {
+    height: 30vh;
+      /* background-size: contain; */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+  .bodyContainerCT {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .smallBanner {
+  height: 20vh;
+
+    /* background-size: contain; */
+  }
+}

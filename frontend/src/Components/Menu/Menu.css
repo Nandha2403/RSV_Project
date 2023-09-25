@@ -143,6 +143,9 @@
   /* border: 1px solid rebeccapurple; */
   margin-top: 10px;
 }
+.productsLinks{
+  width: 250px;
+}
 .LinksRightContainer > div ul li:hover {
   color: #e0a72f;
 }

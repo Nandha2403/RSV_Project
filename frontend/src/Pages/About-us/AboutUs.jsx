@@ -13,10 +13,11 @@ import Client4 from "../../Images/Clients-4.png";
 import Client5 from "../../Images/Clients-5.png";
 import Client6 from "../../Images/Clients-6.png";
 import Client7 from "../../Images/Clients-7.png";
-import Slider from "react-slick";
+import OurTeam from "../../Images/OurTeamImg.jpeg";
+import CoreImg from "../../Images/CoreImg.png";
+import FocusImg from "../../Images/FocusImg.png"
 import CustomPrevArrow from "../../Components/CustomArrows/CustomPrevArrow";
 import CustomNextArrow from "../../Components/CustomArrows/CustomNextArrow";
-import SliderCompForAI from "../../Components/AI-In-ClinicalTrail-Slider/SliderCompForAI";
 import Footer from "../../Components/Footer/Footer";
 
 // Need to work on responsiveness
@@ -82,8 +83,26 @@ const AboutUs = () => {
           <Box className="BannerContainerAboutUs">
             <Navbar />
             {/* Banner area */}
-            <Box mt={"4rem"} pt={"16rem"} pb={"2rem"}>
-              <Box ml={"1.5rem"}>
+            {/* The solutions available today for sponsors to manage their imaging clinical trials are expensive, error prone, inefficient, and non transparent. */}
+            <Box textAlign={"left"} color={"white"}>
+              <Box pt={"6rem"}>
+                <Text
+                  fontSize={"4xl"}
+                  ml={"1.5rem"}
+                  fontWeight={"bold"}
+                  fontFamily={"poppins"}
+                >
+                  Where Clinical Trials Find <br /> a New Dimension.
+                </Text>
+              </Box>
+              <Box className="BannerIntroContent">
+                <Text as={"p"} fontSize={"sm"}>
+                  The solutions available today for sponsors to manage their
+                  imaging clinical trials are expensive, error prone,
+                  inefficient, and non transparent.
+                </Text>
+              </Box>
+              <Box ml={"1.5rem"} mt={"2rem"} pb={"4rem"}>
                 <Button
                   size={"xs"}
                   borderRadius={"15px"}
@@ -114,15 +133,14 @@ const AboutUs = () => {
             <Box className="AboutUsSectionI-Cont">
               <Box className="AboutUsSectionText">
                 <p>
-                  Revolutionizing Clinical Trial Management for Sponsors, Our
-                  Solutions Address the Shortcomings of Traditional Methods.
-                  Designeed Specifically for Imaging Trials, We Eliminate High
-                  Costs, Errors, and Inefficiences. Unlike PAC's and RIS,
-                  Tailored to Medical Settings, Our Technology Ensures
-                  Transparency and Control. We replace Manpower-Dependent
-                  Approaches with Advanced tools, Preventing budget Overruns,
-                  Delays, and Trial Risks. Embrace streamlined,
-                  Technology-Driven Success with.
+                  Radiant Sage Ventures (RSV) is a pioneer in cloud-based,
+                  clinical trial imaging software and management (CTIM) offering
+                  end-to-end clinical trial imaging support. We are dedicated
+                  and aim to bring automation and convenience to the CTIM
+                  landscape. RSV solutions and processes are designed with this
+                  in mind, in line with the six EIFCCT fundamentals: Efficiency,
+                  Innovation, Flexibility, Control, Comprehensivity,
+                  Transparency.
                 </p>
                 <Box className="AboutUsSectionBtnCont">
                   <Button
@@ -197,48 +215,76 @@ const AboutUs = () => {
               </Box>
             </Box>
           </Box>
-          {/* AI in Clinical Trial */}
-          <Box className="AI-in-ClinicalTrailCont">
-            <Box>
-              <Text className="headings AI-in-ClinicalTrailHeading">
-                AI In Clinical Trial
-              </Text>
+          {/* Our Core Belief */}
+          <Box className="AboutUsSectionII">
+            <Text className="headings AboutUsSectionII-Heading">
+              Our Core Belief
+            </Text>
+            <Box className="AboutUsSectionII-Cont">
+              <Box className="AboutUsSectionIImgCont">
+                <img src={CoreImg} alt="AboutUs2" />
+              </Box>
+              <Box className="AboutUsSectionIIText">
+                <Text>
+                  At RSV, we are committed to empowering sponsors by giving them
+                  control over clinical trial imaging while still allowing them
+                  to outsource certain components. We understand how important
+                  it is for clinical trial stakeholders to have access to
+                  accurate, reliable data on time.
+                </Text>
+                <Text mt={"1rem"}>
+                  We strive to provide transparency and flexibility throughout
+                  the process and believe that the more involved sponsors are,
+                  the more impact they will have on the design,execution, and
+                  outcome of the trial.
+                </Text>
+              </Box>
             </Box>
-            <Box className="AI-in-ClinicalTrail-Slider">
-              {/* Slider */}
-              <Slider {...settings}>
-                {ClientsImages.map((el, ind) => (
-                  <SliderCompForAI {...el} key={ind} />
-                ))}
-              </Slider>
+          </Box>
+          {/* Our Focus */}
+          <Box className="AboutUsSectionI">
+            <Text className="headings" ml={"1.5rem"}>
+              Our Focus
+            </Text>
+            <Box className="AboutUsSectionI-Cont">
+              <Box className="AboutUsSectionText">
+                <Text>
+                  Radiant Sage offers clinical image management solutions to
+                  pharmaceutical, medical devices, biotech, and research
+                  organizations involved in drug discovery and development.
+                </Text>
+                <Text mt={"1rem"}>
+                  Our solutions are the only ones on the market that are
+                  purpose-built. They have a Web 2.0 foundation and a SaaS
+                  delivery approach and offer all the features of a core lab.
+                  The solutions have been specifically designed to enable
+                  sponsors to retain trial control without resorting to the
+                  expensive, time-consuming, error-prone, and inefficient
+                  options available today.
+                </Text>
+              </Box>
+              <Box className="AboutUsSectionImgCont">
+                <img src={FocusImg} alt="AboutUs3" />
+              </Box>
             </Box>
           </Box>
           {/* Our Team */}
           <Box className="OurTeamContainer">
             <Box className="TeamMembers">
-              <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                alt="TeamMembers"
-              />
+              <img src={OurTeam} alt="OurTeam" />
             </Box>
             <Box className="OurTeamText">
               <Text className="headings OurTeamHeading">Our Team</Text>
               <Text className="OurTeamContent">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
-                maiores sapiente harum numquam dolore aliquam accusamus,
-                inventore iste error velit corporis placeat ullam illo ipsum.
-                Est quo rerum voluptates temporibus? Nobis facere placeat
-                exercitationem quisquam doloribus porro at aliquid praesentium
-                ducimus. Veritatis consectetur dolores vel? Eveniet eum
-                veritatis molestias, magni perspiciatis ipsam optio neque ullam
-                inventore ducimus dolorem, doloribus laudantium. Minus, odit.
-                Accusantium quo modi possimus aliquam debitis minima laboriosam
-                quia deleniti sapiente mollitia porro numquam cumque adipisci
-                dolorem, alias necessitatibus error accusamus ipsum nostrum,
-                excepturi dolor eligendi nihil facilis! Hic blanditiis
-                doloremque dolor cum velit quos id aliquid repudiandae odio.
-                Quas recusandae amet, nam dolor architecto libero corrupti ex
-                facilis praesentium officia delectus odit deleniti eum saepe.
+                At Radiant Sage, our team embodies a culture of innovation,
+                excellence, and collaboration. We're customer-centric,
+                adaptable, and empowered to make an impact. Diversity and
+                inclusivity enrich our problem-solving abilities, while
+                continuous learning keeps us at the forefront of industry
+                developments. Led by our visionary CEO, Mr. Ven Thangaraj, we're
+                united by a shared commitment to revolutionize clinical trials.
+                Join us on this transformative journey as we shape the future of
+                healthcare through precision, efficiency, and technology.
               </Text>
               <Button
                 size={"sm"}
@@ -247,7 +293,7 @@ const AboutUs = () => {
                 colorScheme="#131049"
                 bg="#131049"
               >
-                Contact Us
+                Join Us
               </Button>
             </Box>
           </Box>
@@ -265,7 +311,7 @@ const AboutUs = () => {
                 colorScheme="#131049"
                 bg="#131049"
               >
-                Contact Us
+                Sign up
               </Button>
             </Box>
           </Box>

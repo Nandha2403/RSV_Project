@@ -39,6 +39,11 @@
 }
 .BannerContainer {
   background-color: #0c447f;
+  /* background-image: url("../../Images/venBannerHomePage.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  /* background-position: 0px 30px; */
+  /* height: 90vh; */
 }
 .Services > div img:hover {
   transform: scale(1.1);

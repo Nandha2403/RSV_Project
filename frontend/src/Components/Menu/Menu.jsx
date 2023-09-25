@@ -4,7 +4,6 @@ import {
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   Stack,
@@ -41,9 +40,9 @@ const Menu = () => {
               <DrawerCloseButton fontSize={"20px"} color={"white"} />
               <DrawerHeader>
                 <Box className="MenuBarLogo">
-                  <a href="">
+                  <Link to={"/"} target="_top">
                     <img src={Logo} alt="Logo" />
-                  </a>
+                  </Link>
                 </Box>
               </DrawerHeader>
 
@@ -69,33 +68,77 @@ const Menu = () => {
                         </Box>
                         <Box>
                           <p>
-                            <Link to={"/CaseStudy"}>Case Studies</Link>
+                            <Link to={"/CaseStudy"} target="_top">
+                              Case Studies
+                            </Link>
                           </p>
 
                           <ul>
                             <li>
                               {/* <a href="">DW Mining</a> */}
-                              <Link to={"/CaseStudy/AI-In-ClinicalTrial"}>
-                                AI In Clincal Trial
+                              <Link
+                                to={"/CaseStudy/AI-In-ClinicalTrial"}
+                                target="_top"
+                              >
+                                AI In Clinical Trial
                               </Link>
                             </li>
                             <li>
-                              <Link to={"/CaseStudy/AI-In-Dermatology"}>
+                              <Link
+                                to={"/CaseStudy/AI-In-Dermatology"}
+                                target="_top"
+                              >
                                 AI In Dermatology
                               </Link>
-                              {/* <a href="">Site vs Central</a> */}
                             </li>
                             <li>
-                              <a href="#">Oncology Workflow</a>
+                              <Link
+                                to={"/CaseStudy/Business-Intelligence"}
+                                target="_top"
+                              >
+                                Business Intelligence
+                              </Link>
                             </li>
                             <li>
-                              <a href="#">Query Management</a>
+                              <Link
+                                to={"/CaseStudy/Oncology-Workflow"}
+                                target="_top"
+                              >
+                                Oncology Workflow
+                              </Link>
                             </li>
                             <li>
-                              <a href="#">Electronic Data Capture</a>
+                              <Link
+                                to={"/CaseStudy/Query-Management"}
+                                target="_top"
+                              >
+                                Query Management
+                              </Link>
+                            </li>
+
+                            <li>
+                              <Link
+                                to={"/CaseStudy/Electronic-Data-Capture"}
+                                target="_top"
+                              >
+                                Electronic Data Capture
+                              </Link>
                             </li>
                             <li>
-                              <a href="#">Hand Scintigraphy</a>
+                              <Link
+                                to={"/CaseStudy/Hand-Scintigraphy"}
+                                target="_top"
+                              >
+                                Hand Scintigraphy
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                to={"/CaseStudy/Paired-Reads"}
+                                target="_top"
+                              >
+                                Paired Reads
+                              </Link>
                             </li>
                           </ul>
                         </Box>
@@ -107,7 +150,7 @@ const Menu = () => {
                   </Box>
                   {/*  */}
                   <Box className="leftLinks">
-                    <a href="">Resources</a>
+                    <a href="#">Resources</a>
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
                         <Box>
@@ -126,7 +169,9 @@ const Menu = () => {
                     </Box>
                   </Box>
                   <Box className="leftLinks">
-                    <Link to={"/AboutUs"}>About us</Link>
+                    <Link to={"/AboutUs"} target="_top">
+                      About us
+                    </Link>
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
                         <Box>
@@ -168,17 +213,28 @@ const Menu = () => {
                     </Box>
                   </Box>
                   <Box className="leftLinks">
-                    <Link to={"/Career"}>Career</Link>
+                    <Link to={"/Career"} target="_top">
+                      Career
+                    </Link>
                   </Box>
                   <Box className="leftLinks">
-                    <a href="">Products</a>
+                    <Link to={"/Products"} target="_top">
+                      Products
+                    </Link>
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
                         <Box>
                           <p>Products</p>
-                          <ul>
+                          <ul className="productsLinks">
                             <li>
-                              <a href="">RadClinicaTM</a>
+                              <a href="">
+                                Corelab-in-a-Box<sup>TM</sup>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                RadClinica<sup>TM</sup>
+                              </a>
                             </li>
                             <li>
                               <a href="">RadVista Viewer</a>

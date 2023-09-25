@@ -1,0 +1,111 @@
+.bodyContainerDerma {
+  margin-left: 3.1rem;
+}
+
+.BannerContainerDerma {
+  /* background-color: #0c447f; */
+  background-image: url('../../../Images/Banner-AI-in-Derma.jpeg');
+  background-size: cover;
+}
+.NextGenContDerma {
+  margin-top: 4rem;
+  /* border: 1px solid green; */
+}
+.NextGenHeadingDerma {
+  margin-left: 3rem;
+}
+.NextGenSubTxtDerma {
+  width: 90%;
+  /* margin: auto; */
+  margin-left: 3rem;
+  margin-top: 2rem;
+  /* border: 1px solid red; */
+  text-align: left;
+  line-height: 25px;
+}
+.NextGenSubTxtDerma > p:nth-child(2) {
+  margin-top: 2rem;
+}
+.NextGenSubTxtDerma > p:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.smallBannerDerma {
+    margin-top: 4rem;
+    height: 45vh;
+    /* background-color: #0c447f; */
+    background-image: url('../../../Images/SecondBanner-AI-In-Derma.png');
+    background-size: cover;
+    /* border: 1px solid teal; */
+}
+
+.smallBannerDermaBottom {
+  margin-top: 4rem;
+  height: 45vh;
+  /* border: 1px solid teal; */
+  background-image: url('../../../Images/CSfooterRedirect.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smallBannerDermaBtmContent{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin: 0px 40px;
+    /* border: 1px solid white; */
+}
+.SmallBannerDermaCenterLine{
+    height: 10vh;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.UnderBannerTxtDerma {
+  width: 90%;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  /* border: 1px solid red; */
+  text-align: left;
+  line-height: 25px;
+}
+
+.UnderBannerTxtDerma > p:nth-child(2) {
+  margin-top: 2rem;
+}
+.UnderBannerTxtDerma > p:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.AIAdvanceDerma {
+  margin-top: 4rem;
+}
+
+.AIAdvanceDermaTextCont {
+  margin-top: 3rem;
+  /* border: 1px solid greenyellow; */
+  width: 90%;
+  margin: auto;
+}
+.AIAdvanceDermaTextTitle1 > p:nth-child(1) {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.AIAdvanceDermaTextTitle1 > p:nth-child(2) {
+  margin-top: 10px;
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .bodyContainerDerma {
+    margin-left: 0;
+  }
+}

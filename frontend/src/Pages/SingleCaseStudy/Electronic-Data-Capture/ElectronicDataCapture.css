@@ -1,0 +1,118 @@
+.bodyContainerEDC {
+  margin-left: 3.1rem;
+}
+
+.BannerContainerEDC {
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-image: url("../../../Images/Banner-AI-in-CT.jpeg");
+  /* height: 90vh; */
+}
+.RevolutionizingEDCCont {
+  margin-top: 4rem;
+  /* border: 1px solid green; */
+}
+.RevolutionizingEDCHeading {
+  margin-left: 3rem;
+}
+.RevolutionizingEDCSubTxt {
+  width: 90%;
+  /* margin: auto; */
+  margin-left: 3rem;
+  margin-top: 2rem;
+  /* border: 1px solid red; */
+  text-align: left;
+  line-height: 25px;
+}
+.RevolutionizingEDCSubTxt > p:nth-child(2) {
+  margin-top: 2rem;
+}
+.RevolutionizingEDCSubTxt > p:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.smallBannerEDC {
+  margin-top: 4rem;
+  width: 100%;
+  height: 50vh;
+  /* background-color: #0c447f; */
+  background-image: url("../../../Images/SecondBanner-AI-In-CT.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 1px solid teal;
+}
+
+.smallBannerEDCBottom {
+  margin-top: 4rem;
+  height: 45vh;
+  border: 1px solid teal;
+  background-image: url("../../../Images/CSfooterRedirect.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smallBannerEDCBtmContent {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin: 0px 40px;
+  /* border: 1px solid white; */
+}
+
+.SmallBannerEDCCenterLine {
+  height: 10vh;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.BenefitsEDC {
+  margin-top: 4rem;
+}
+
+.BenefitsEDCTextCont {
+  margin-top: 3rem;
+  /* border: 1px solid greenyellow; */
+  width: 90%;
+  margin: auto;
+}
+.BenefitsEDCTextTitle1 > p:nth-child(1) {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.BenefitsEDCTextTitle1 > p:nth-child(2) {
+  margin-top: 10px;
+  margin-left: 1rem;
+}
+.overallBtmContEDC {
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+@media only screen and (max-width: 900px) {
+  .smallBannerEDC {
+    height: 30vh;
+    /* background-size: contain; */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bodyContainerEDC {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .smallBannerEDC {
+    height: 20vh;
+
+    /* background-size: contain; */
+  }
+}

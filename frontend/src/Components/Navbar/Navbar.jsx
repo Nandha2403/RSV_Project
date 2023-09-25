@@ -36,7 +36,7 @@ const Navbar = () => {
             size={24}
             rounded
             toggled={isOpenHam}
-            toggle={setOpenHam}
+            toggle={setOpenHam}            
           />
         </Box>
         {/* Logo */}

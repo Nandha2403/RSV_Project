@@ -1,0 +1,134 @@
+.bodyContainerOnco {
+  margin-left: 3.1rem;
+}
+
+.BannerContainerOnco {
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-image: url("../../../Images/Banner-AI-in-CT.jpeg");
+  /* height: 90vh; */
+}
+.InnovationsOncoImgCont {
+  margin-top: 4rem;
+  /* border: 1px solid green; */
+}
+.InnovationsOncoImgHeading {
+  margin-left: 3rem;
+}
+.InnovationsOncoImgSubTxt {
+  width: 90%;
+  /* margin: auto; */
+  margin-left: 3rem;
+  margin-top: 2rem;
+  /* border: 1px solid red; */
+  text-align: left;
+  line-height: 25px;
+}
+.InnovationsOncoImgSubTxt > p:nth-child(2) {
+  margin-top: 2rem;
+}
+.InnovationsOncoImgSubTxt > p:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.smallBannerOnco {
+  margin-top: 4rem;
+  width: 100%;
+  height: 50vh;
+  /* background-color: #0c447f; */
+  background-image: url("../../../Images/SecondBanner-AI-In-CT.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 1px solid teal;
+}
+
+.smallBannerOncoBottom {
+  margin-top: 4rem;
+  height: 45vh;
+  border: 1px solid teal;
+  background-image: url("../../../Images/CSfooterRedirect.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smallBannerOncoBtmContent {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin: 0px 40px;
+  /* border: 1px solid white; */
+}
+
+.SmallBannerOncoCenterLine {
+  height: 10vh;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 25px;
+}
+.UnderBannerTxtOnco {
+  width: 90%;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  /* border: 1px solid red; */
+  text-align: left;
+  line-height: 25px;
+}
+
+.UnderBannerTxtOnco > p:nth-child(2) {
+  margin-top: 2rem;
+}
+.UnderBannerTxtOnco > p:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.BenifitsOfOnco {
+  margin-top: 4rem;
+}
+
+.OncoWorkTypTextCont {
+  margin-top: 3rem;
+  /* border: 1px solid greenyellow; */
+  width: 90%;
+  margin: auto;
+}
+.OncoWorkTypTextTitle1 > p:nth-child(1) {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.OncoWorkTypTextTitle1 > p:nth-child(2) {
+  margin-top: 10px;
+  margin-left: 1rem;
+}
+
+.overallBtmContOnco {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .smallBannerOnco {
+    height: 30vh;
+    /* background-size: contain; */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bodyContainerOnco {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .smallBannerOnco {
+    height: 20vh;
+
+    /* background-size: contain; */
+  }
+}
