@@ -1,5 +1,5 @@
 .bodyContainerPR {
-  margin-left: 3.1rem;
+  margin-left: 4rem;
 }
 
 .BannerContainerPR {
@@ -116,18 +116,17 @@
 
     /* background-size: contain; */
   }
-  .smallBannerPRBottom{
-  height: 35vh;
+  .smallBannerPRBottom {
+    height: 35vh;
 
     flex-direction: column;
     background-size: 100% 100%;
   }
-  .SmallBannerPRCenterLine{
+  .SmallBannerPRCenterLine {
     width: 50%;
     height: 2px;
   }
   /* .smallBannerPRBtmContent{
     flex-direction: column;
   } */
-  
 }

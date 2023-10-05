@@ -1,11 +1,11 @@
 .bodyContainerDerma {
-  margin-left: 3.1rem;
+  margin-left: 4rem;
 }
 
 .BannerContainerDerma {
   /* background-color: #0c447f; */
-  background-image: url('../../../Images/Banner-AI-in-Derma.jpeg');
-  background-size: cover;
+  background-image: url("../../../Images/Banner-AI-in-Derma.jpeg");
+  /* background-size: cover; */
 }
 .NextGenContDerma {
   margin-top: 4rem;
@@ -31,19 +31,20 @@
 }
 
 .smallBannerDerma {
-    margin-top: 4rem;
-    height: 45vh;
-    /* background-color: #0c447f; */
-    background-image: url('../../../Images/SecondBanner-AI-In-Derma.png');
-    background-size: cover;
-    /* border: 1px solid teal; */
+  margin-top: 4rem;
+  height: 45vh;
+  /* background-color: #0c447f; */
+  background-image: url("../../../Images/SecondBanner-AI-In-Derma.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* border: 1px solid teal; */
 }
 
 .smallBannerDermaBottom {
   margin-top: 4rem;
   height: 45vh;
   /* border: 1px solid teal; */
-  background-image: url('../../../Images/CSfooterRedirect.png');
+  background-image: url("../../../Images/CSfooterRedirect.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -52,19 +53,18 @@
   justify-content: space-between;
 }
 
-.smallBannerDermaBtmContent{
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    margin: 0px 40px;
-    /* border: 1px solid white; */
+.smallBannerDermaBtmContent {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin: 0px 40px;
+  /* border: 1px solid white; */
 }
-.SmallBannerDermaCenterLine{
-    height: 10vh;
-    border: 1px solid white;
-    border-radius: 10px;
-    text-align: center;
-
+.SmallBannerDermaCenterLine {
+  height: 10vh;
+  /* border: 1px solid white; */
+  border-radius: 10px;
+  text-align: center;
 }
 
 .UnderBannerTxtDerma {
@@ -72,7 +72,6 @@
   margin-left: 3rem;
   margin-top: 2rem;
   /* border: 1px solid red; */
-  text-align: left;
   line-height: 25px;
 }
 
@@ -85,6 +84,10 @@
 
 .AIAdvanceDerma {
   margin-top: 4rem;
+}
+
+.AIAdvanceHeadingCont{
+  margin-left: 3rem;
 }
 
 .AIAdvanceDermaTextCont {
@@ -104,8 +107,43 @@
   margin-left: 1rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .smallBannerDerma {
+    height: 30vh;
+    /* background-size: contain; */
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .bodyContainerDerma {
     margin-left: 0;
+    width: 100%;
+  }
+  .smallBannerDerma {
+    height: 20vh;
+  }
+  .smallBannerDermaBottom {
+    display: none;
+  }
+  .NextGenHeadingDerma {
+    margin-left: 0;
+  }
+  .NextGenSubTxtDerma {
+    margin-left: 0;
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .UnderBannerTxtDerma {
+    margin-left: 0;
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .AIAdvanceHeadingCont{
+    margin-left: 0;
+  }
+  .AIAdvanceDermaTextCont{
+    width: 98%;
   }
 }

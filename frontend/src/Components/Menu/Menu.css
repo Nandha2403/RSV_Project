@@ -1,5 +1,5 @@
 .MenuContainer {
-  width: 50px;
+  width: 65px;
   height: 100vh;
   position: fixed;
   border-right: 1px solid silver;
@@ -8,7 +8,7 @@
   
 }
 .MenuContainer:hover {
-  width: 60px;
+  width: 70px;
   transition-duration: 0.3s;
   transition: all 500ms ease-out;
 }
@@ -33,22 +33,23 @@
 .menu-button-icon span {
   background-color: rgba(32, 32, 32, 0.846);
   display: block;
-  width: 30px;
-  height: 2px;
+  width: 35px;
+  height: 3px;
   transition: all 0.3s ease-in-out;
+  border-radius: 4px;
   /* margin: auto; */
   margin-top: 6px;
 }
 .menu-button-icon span:first-child {
-  width: 20px;
+  width: 30px;
   margin-left: 10px;
 }
 .menu-button-icon span:last-child {
-  width: 20px;
+  width: 30px;
 }
 .Menubox:hover {
   .menu-button-icon span {
-    width: 30px;
+    width: 45px;
   }
   .menu-button-icon span:first-child {
     margin-left: 0;

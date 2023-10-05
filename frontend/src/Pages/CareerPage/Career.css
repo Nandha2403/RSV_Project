@@ -1,5 +1,6 @@
 .bodyContainerCarrer {
-  margin-left: 3.1rem;
+  margin-left: 4rem;
+
 }
 
 .BannerContainerCarrer {
@@ -8,7 +9,7 @@
   height: 70vh;
 }
 .OurMoto {
-  margin-top: 1rem;
+  margin-top: 3rem;
   /* border: 1px solid black; */
 }
 
@@ -16,18 +17,19 @@
   width: 95%;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin: auto;
   /* border: 1px solid black; */
   margin-top: 2rem;
 }
 .OurMotoIntroImg {
   width: 40%;
+  border: 1px solid gray;
 }
 .OurMotoText {
-  text-align: justify;
+  text-align: left;
   /* padding: 10px; */
-  width: 60%;
+  width: 70%;
   /* border: 1px solid black; */
 }
 .OurMotoBtnCont {
@@ -67,4 +69,28 @@
   margin-top: 2rem;
   padding: 0 25px 20px 25px;
   /* text-align: justify; */
+}
+
+@media screen and (max-width: 768px){
+  .bodyContainerCarrer{
+    margin-left: 0;
+    width: 100%;
+  }
+  .OurMoto-Cont{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .OurMotoText {
+    width: 95%;
+  }
+  .OurMotoIntroImg{
+    width: 100%;
+  }
+  .CardsParent{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .TopInputCont{
+    display: flex;
+    flex-direction: column;
+  }
 }

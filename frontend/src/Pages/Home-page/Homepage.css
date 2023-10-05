@@ -2,7 +2,7 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 .bodyContainer {
-  margin-left: 3.1rem;
+  margin-left: 4rem;
 }
 
 .slick-track {
@@ -105,12 +105,22 @@
   background: url("../../Images/Careers.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  /* border: 1px solid green; */
 }
 
 .careers-heading {
   position: absolute;
   top: 20%;
   left: 45%;
+  /* border: 1px solid red; */
+}
+/* .CareerBtnCont {
+  border: 1px solid black;
+} */
+.CareerBtnCont button {
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 .beInTouch {
@@ -171,7 +181,7 @@
 .BannerIntroContent {
   margin-left: 1.5rem;
   margin-top: 2rem;
-  width: 45%;
+  width: 50%;
   /* border: 1px solid white; */
 }
 
@@ -188,6 +198,7 @@
   margin: auto;
   margin-top: 2rem;
 }
+
 /* xs=576px, sm=768px, md=992px, lg=1200px and xl=>1200px */
 
 @media only screen and (max-width: 767px) {

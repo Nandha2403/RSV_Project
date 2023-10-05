@@ -1,4 +1,4 @@
-.footerContainer {
+.footer-Container {
   background-image: url("../../Images/FooterBgImg.png");
   background-size: cover;
   padding-top: 100px;
@@ -31,7 +31,7 @@
 .footer-links ul li {
   margin-top: 10px;
   color: white;
-  font-size: 12px;
+  font-size: 15px;
   text-decoration: none;
 }
 .footer-links ul li:hover {
@@ -58,7 +58,7 @@
   border: 1px solid greenyellow;
 } */
 .footer-logo > a img {
-  width: 140px;
+  width: 180px;
   /* border: 1px solid yellow; */
   margin-left: 45px;
 }
@@ -76,7 +76,7 @@
 } */
 .icons-container {
   /* width: 60%;  */
-  width: 90px;
+  width: 110px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -101,7 +101,7 @@
 
 .emailAndPhoneNum div {
   /* margin: 2px 0 0 0px; */
-  font-size: 12px;
+  font-size: 15px;
   /* border: 1px solid; */
   color: antiquewhite;
   height: 100%;

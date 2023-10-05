@@ -1,5 +1,5 @@
 .bodyContainerCS {
-  margin-left: 3.1rem;
+  margin-left: 4rem;
   /* border: 2px solid red; */
 }
 
@@ -73,13 +73,13 @@
   margin: auto;
 }
 .title-box1 {
-  width: 250px;
+  width: 300px;
   height: 60vh;
   background-color: #7069a9;
   border-radius: 20px;
 }
 .title-box2 {
-  width: 250px;
+  width: 300px;
   height: 60vh;
   background-color: #7069a9;
   border-radius: 20px;
@@ -91,7 +91,7 @@
 }
 .Content-box {
   position: absolute;
-  width: 500px;
+  width: 550px;
   height: 50vh;
   background-color: #0f062a;
   border: 2px solid white;
@@ -101,7 +101,7 @@
 }
 .Content-box2 {
   position: absolute;
-  width: 500px;
+  width: 550px;
   height: 50vh;
   background-color: #0f062a;
   border: 2px solid white;
@@ -192,9 +192,10 @@
 }
 .info-box-wrapper {
   width: 50%;
-  background-color: rgb(209, 137, 149);
+  background-color: #0c447f;
   /* margin: auto; */
   margin-top: 1rem;
+  color: white;
   padding-bottom: 10px;
   border-radius: 20px;
 }
@@ -252,7 +253,7 @@
     width: 100%;
     height: fit-content;
     position: static;
-    border-radius: 0 20px;
+    border-radius: 0 20px 20px 20px;
     border: 1px solid black;
     /* margin: auto; */
     /* height: 60vh; */
@@ -261,7 +262,7 @@
     width: 100%;
     height: fit-content;
     position: static;
-    border-radius: 0 20px;
+    border-radius: 0 20px 20px 20px;
     border: 1px solid black;
     /* margin: auto; */
     /* height: 60vh; */

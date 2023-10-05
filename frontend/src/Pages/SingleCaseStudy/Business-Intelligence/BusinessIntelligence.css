@@ -1,130 +1,148 @@
 .bodyContainerBI {
-    margin-left: 3.1rem;
-  }
-  
-  .BannerContainerBI {
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    background-image: url("../../../Images/Banner-AI-in-CT.jpeg");
-    /* height: 90vh; */
-  }
-  .PowerBICont {
-    margin-top: 4rem;
-    /* border: 1px solid green; */
-  }
-  .PowerBIHeading {
-    margin-left: 3rem;
-  }
-  .PowerBISubTxt {
-    width: 90%;
-    /* margin: auto; */
-    margin-left: 3rem;
-    margin-top: 2rem;
-    /* border: 1px solid red; */
-    text-align: left;
-    line-height: 25px;
-  }
-  .PowerBISubTxt > p:nth-child(2) {
-    margin-top: 2rem;
-  }
-  .PowerBISubTxt > p:nth-child(3) {
-    margin-top: 2rem;
-  }
-  
+  margin-left: 4rem;
+}
+
+.BannerContainerBI {
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-image: url("../../../Images/Banner-AI-in-CT.jpeg");
+  /* height: 90vh; */
+}
+.PowerBICont {
+  margin-top: 4rem;
+  /* border: 1px solid green; */
+}
+.PowerBIHeading {
+  margin-left: 3rem;
+}
+.PowerBISubTxt {
+  width: 90%;
+  /* margin: auto; */
+  margin-left: 3rem;
+  margin-top: 2rem;
+  /* border: 1px solid red; */
+  text-align: left;
+  line-height: 25px;
+}
+.PowerBISubTxt > p:nth-child(2) {
+  margin-top: 2rem;
+}
+.PowerBISubTxt > p:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.smallBannerBI {
+  margin-top: 4rem;
+  width: 100%;
+  height: 50vh;
+  /* background-color: #0c447f; */
+  background-image: url("../../../Images/SecondBanner-AI-In-CT.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* border: 1px solid teal; */
+}
+
+.smallBannerBIBottom {
+  margin-top: 4rem;
+  height: 45vh;
+  /* border: 1px solid teal; */
+  background-image: url("../../../Images/CSfooterRedirect.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smallBannerBIBtmContent {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin: 0px 40px;
+  /* border: 1px solid white; */
+}
+
+.SmallBannerBICenterLine {
+  height: 10vh;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 25px;
+}
+.UnderBannerBITxt {
+  width: 90%;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  /* border: 1px solid red; */
+  line-height: 25px;
+}
+
+.UnderBannerBITxt > p:nth-child(2) {
+  margin-top: 2rem;
+}
+.UnderBannerBITxt > p:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.VisualizedImage {
+  margin-top: 4rem;
+}
+
+.VisualizedImageHeadingCont{
+  margin-left: 3rem;
+}
+.VisualizedImageTextCont {
+  margin-top: 3rem;
+  /* border: 1px solid greenyellow; */
+  width: 90%;
+  margin: auto;
+}
+.VisualizedImageTextTitle1 > p:nth-child(1) {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.VisualizedImageTextTitle1 > p:nth-child(2) {
+  margin-top: 10px;
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
   .smallBannerBI {
-    margin-top: 4rem;
+    height: 30vh;
+    /* background-size: contain; */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bodyContainerBI {
+    margin-left: 0;
     width: 100%;
-    height: 50vh;
-    /* background-color: #0c447f; */
-    background-image: url("../../../Images/SecondBanner-AI-In-CT.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border: 1px solid teal;
   }
-  
-  .smallBannerBIBottom {
-    margin-top: 4rem;
-    height: 45vh;
-    border: 1px solid teal;
-    background-image: url("../../../Images/CSfooterRedirect.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .smallBannerBIBtmContent {
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    margin: 0px 40px;
-    /* border: 1px solid white; */
-  }
-  
-  .SmallBannerBICenterLine {
-    height: 10vh;
-    border: 1px solid white;
-    border-radius: 10px;
-    text-align: center;
-    line-height: 25px;
-  }
-  .UnderBannerBITxt {
-    width: 90%;
-    margin-left: 3rem;
-    margin-top: 2rem;
-    /* border: 1px solid red; */
-    text-align: left;
-    line-height: 25px;
-  }
-  
-  .UnderBannerBITxt > p:nth-child(2) {
-    margin-top: 2rem;
-  }
-  .UnderBannerBITxt > p:nth-child(3) {
-    margin-top: 2rem;
-  }
-  
-  .VisualizedImage {
-    margin-top: 4rem;
-  }
-  
-  .VisualizedImageTextCont {
-    margin-top: 3rem;
-    /* border: 1px solid greenyellow; */
-    width: 90%;
-    margin: auto;
-  }
-  .VisualizedImageTextTitle1 > p:nth-child(1) {
-    color: var(--blue);
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 2rem;
-  }
-  .VisualizedImageTextTitle1 > p:nth-child(2) {
-    margin-top: 10px;
-    margin-left: 1rem;
-  }
-  
-  
-  @media only screen and (max-width:900px){
-    .smallBannerBI {
-      height: 30vh;
-        /* background-size: contain; */
-      }
-  }
-  
-  @media only screen and (max-width: 767px) {
-    .bodyContainerBI {
-      margin-left: 0;
-      width: 100%;
-    }
-  
-    .smallBannerBI {
+
+  .smallBannerBI {
     height: 20vh;
-  
-      /* background-size: contain; */
-    }
+
+    /* background-size: contain; */
   }
-  
+  .PowerBIHeading{
+    margin-left: .4rem;
+  }
+  .PowerBISubTxt{
+    /* width: 90%; */
+    margin-left: 0;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .VisualizedImageHeadingCont{
+    margin-left: .4rem;
+  }
+  .VisualizedImageTextCont{
+    width: 95%;
+  }
+  .smallBannerBIBottom{
+    display: none;
+  }
+}

@@ -1,5 +1,5 @@
 .bodyContainerCT {
-  margin-left: 3.1rem;
+  margin-left: 4rem;
 }
 
 .BannerContainerCT {
@@ -7,6 +7,7 @@
   /* background-repeat: no-repeat; */
   background-image: url("../../../Images/Banner-AI-in-CT.jpeg");
   /* height: 90vh; */
+  /* border: 1px solid red; */
 }
 .NextGenCont {
   margin-top: 4rem;
@@ -17,11 +18,9 @@
 }
 .NextGenSubTxt {
   width: 90%;
-  /* margin: auto; */
   margin-left: 3rem;
   margin-top: 2rem;
   /* border: 1px solid red; */
-  text-align: left;
   line-height: 25px;
 }
 .NextGenSubTxt > p:nth-child(2) {
@@ -65,7 +64,7 @@
 
 .SmallBannerCTCenterLine {
   height: 10vh;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 10px;
   text-align: center;
   line-height: 25px;
@@ -88,6 +87,9 @@
 
 .AIforQuality {
   margin-top: 4rem;
+}
+.AIforQualityHeadingCont{
+  margin-left: 3rem;
 }
 
 .AIforQltyTextCont {
@@ -123,7 +125,38 @@
 
   .smallBanner {
   height: 20vh;
+  /* width: 98%; */
 
     /* background-size: contain; */
+  }
+  .smallBannerCTBottom{
+    display: none;
+    /* background-size: contain; */
+  }
+  /* .NextGenCont{
+    width: 98%;
+  } */
+  .NextGenHeading{
+    margin-left: 0;
+  }
+  .NextGenSubTxt{
+    width: 95%;
+    margin-left: 0;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .UnderBannerTxt{
+    width: 95%;
+    margin-left: 0;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .AIforQualityHeadingCont{
+    /* width: 95%; */
+    margin-left: 0;
+    /* padding-left: .2rem; */
+  }
+  .AIforQltyTextCont{
+    width: 95%;
   }
 }

@@ -33,7 +33,7 @@ const Menu = () => {
             placement="left"
             initialFocusRef={firstField}
             onClose={onClose}
-            size={"xl"}
+            size={{ sm: "sm", md: "md", lg: "lg", xl: "xl", "2xl": "full" }}
           >
             <DrawerOverlay />
             <DrawerContent bg={"#131049"}>

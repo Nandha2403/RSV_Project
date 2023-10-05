@@ -16,7 +16,10 @@ const BusinessIntelligence = () => {
         <Box className="BannerContainerBI">
           <Navbar />
           <Box ml={"2rem"} pt={"14rem"} color={"white"}>
-            <Text fontSize={"5xl"} fontWeight={1000}>
+            <Text
+              fontSize={{ base: "4xl", sm: "5xl", md: "4xl" }}
+              fontWeight={1000}
+            >
               BUSINESS INTELLIGENCE (BI)
             </Text>
             <Text fontWeight={"bold"}>Unlocking Insights, Enhancing Lives</Text>
@@ -90,7 +93,7 @@ const BusinessIntelligence = () => {
         {/* Sub cont Txt */}
         {/* AI for Quality */}
         <Box className="VisualizedImage">
-          <Box ml={"3rem"}>
+          <Box className="VisualizedImageHeadingCont">
             <Text className="headings">
               Visualized Image Management for Enhanced Clinical Efficiency :
             </Text>
@@ -143,7 +146,9 @@ const BusinessIntelligence = () => {
           </Box>
           <Box className="SmallBannerBICenterLine"></Box>
           <Box className="smallBannerBIBtmContent">
-            <Link to={"/CaseStudy/Oncology-Workflow"} target="_top">Oncology Workflow</Link>
+            <Link to={"/CaseStudy/Oncology-Workflow"} target="_top">
+              Oncology Workflow
+            </Link>
             <Box>
               <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
             </Box>

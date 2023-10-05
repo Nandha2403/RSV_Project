@@ -42,7 +42,7 @@ const Navbar = () => {
         {/* Logo */}
         <Box className="logoContainer">
           <Link to={"/"}>
-            <img src={Logo} alt="" />
+            <img src={Logo} alt="Radiant Sage" />
           </Link>
         </Box>
         <Box className="nav-content">
@@ -70,7 +70,7 @@ const Navbar = () => {
               colorScheme="#131049"
               bg="#131049"
             >
-              REF
+              RFP
             </Button>
           </Box>
           <Box className="nav-demo-container">

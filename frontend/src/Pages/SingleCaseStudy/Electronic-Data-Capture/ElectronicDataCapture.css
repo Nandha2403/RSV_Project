@@ -1,5 +1,5 @@
 .bodyContainerEDC {
-  margin-left: 3.1rem;
+  margin-left: 4rem;
 }
 
 .BannerContainerEDC {
@@ -10,7 +10,7 @@
 }
 .RevolutionizingEDCCont {
   margin-top: 4rem;
-  /* border: 1px solid green; */
+  border: 1px solid green;
 }
 .RevolutionizingEDCHeading {
   margin-left: 3rem;
@@ -20,7 +20,7 @@
   /* margin: auto; */
   margin-left: 3rem;
   margin-top: 2rem;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   text-align: left;
   line-height: 25px;
 }
@@ -60,7 +60,7 @@
   align-items: center;
   font-size: 25px;
   margin: 0px 40px;
-  /* border: 1px solid white; */
+  border: 1px solid white;
 }
 
 .SmallBannerEDCCenterLine {
@@ -77,7 +77,7 @@
 
 .BenefitsEDCTextCont {
   margin-top: 3rem;
-  /* border: 1px solid greenyellow; */
+  border: 1px solid greenyellow;
   width: 90%;
   margin: auto;
 }
@@ -92,10 +92,10 @@
   margin-left: 1rem;
 }
 .overallBtmContEDC {
-    width: 90%;
-    margin: auto;
-    margin-top: 2rem;
-  }
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
 
 @media only screen and (max-width: 900px) {
   .smallBannerEDC {

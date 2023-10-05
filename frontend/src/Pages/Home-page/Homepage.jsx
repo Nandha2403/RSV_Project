@@ -22,14 +22,7 @@ import "aos/dist/aos.css";
 import "./Homepage.css";
 import CustomPrevArrow from "../../Components/CustomArrows/CustomPrevArrow";
 import CustomNextArrow from "../../Components/CustomArrows/CustomNextArrow";
-import Process1 from "../../Images/Process-1.png";
-import Process2 from "../../Images/Process-2.png";
-import Process3 from "../../Images/Process-3.png";
-import Process4 from "../../Images/Process-4.png";
-import Process5 from "../../Images/Process-5.png";
-import Process6 from "../../Images/Process-6.png";
-import Process7 from "../../Images/Process-7.png";
-import ProcessFlow from "../../Images/NewProcess.jpg"
+import ProcessFlow from "../../Images/ProcessNewDesign.jpeg";
 
 const Homepage = () => {
   const firstField = useRef();
@@ -104,7 +97,7 @@ const Homepage = () => {
                 fontWeight={"bold"}
                 fontFamily={"poppins"}
               >
-                CLINICAL TRIAL <br />
+                CLINICAL TRIALS <br />
                 IMAGING
               </Text>
             </Box>
@@ -112,10 +105,10 @@ const Homepage = () => {
               className="BannerIntroContent"
               // border={"1px solid green"}
             >
-              <Text as={"p"} fontSize={"sm"}>
-                Radient Sages's Solutions Exemplify, how it can be Leveraged in
-                Clinical Imaging Trails to enable the smooth Acquistion,
-                Processing, and Delivery of information on a Timely basis
+              <Text as={"p"}>
+                Radiant Sages's solutions exemplify, how it can be leveraged in
+                Clinical Imaging Trails to enable the smooth acquistion,
+                processing, and delivery of information on a timely basis
               </Text>
             </Box>
             <Box ml={"1.5rem"} mt={"2rem"} pb={"4rem"}>
@@ -210,7 +203,7 @@ const Homepage = () => {
                 </Button>
               </Box>
             </Box>
-            <Box w={"60%"}>
+            <Box w={{base:'40%',sm:"60%"}}>
               <a href="#">
                 <img src={RSVSolution} alt="" />
               </a>
@@ -240,7 +233,7 @@ const Homepage = () => {
                 <a href="">
                   <img width={"250px"} src={Service1} alt="CORELAB SERVICES" />
                 </a>
-                <Text fontSize={"sm"} fontWeight={500} mt={"1rem"}>
+                <Text fontSize={"md"} fontWeight={500} mt={"1rem"}>
                   <a href="#">CORELAB SERVICES</a>
                 </Text>
               </Box>
@@ -252,7 +245,7 @@ const Homepage = () => {
                     alt="TECHNICAL SERVICES"
                   />
                 </a>
-                <Text fontSize={"sm"} fontWeight={500} mt={"1rem"}>
+                <Text fontSize={"md"} fontWeight={500} mt={"1rem"}>
                   <a href="#">TECHNICAL SERVICES</a>
                 </Text>
               </Box>
@@ -264,7 +257,7 @@ const Homepage = () => {
                     alt="DEPLOYMENT SERVICES"
                   />
                 </a>
-                <Text fontSize={"sm"} fontWeight={500} mt={"1rem"}>
+                <Text fontSize={"md"} fontWeight={500} mt={"1rem"}>
                   <a href="#">DEPLOYMENT SERVICES</a>
                 </Text>
               </Box>
@@ -316,7 +309,7 @@ const Homepage = () => {
                 fun along the way
               </Text>
             </Box>
-            <Box mt={"2rem"}>
+            <Box mt={"2rem"} className="CareerBtnCont">
               <Button
                 size={"xs"}
                 borderRadius={"15px"}

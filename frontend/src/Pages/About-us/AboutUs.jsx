@@ -96,7 +96,7 @@ const AboutUs = () => {
                 </Text>
               </Box>
               <Box className="BannerIntroContent">
-                <Text as={"p"} fontSize={"sm"}>
+                <Text as={"p"} fontSize={"lg"}>
                   The solutions available today for sponsors to manage their
                   imaging clinical trials are expensive, error prone,
                   inefficient, and non transparent.

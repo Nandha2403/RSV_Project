@@ -110,7 +110,7 @@ const ClincalTrial = () => {
         </Box>
         {/* AI for Quality */}
         <Box className="AIforQuality">
-          <Box ml={"3rem"}>
+          <Box className="AIforQualityHeadingCont">
             <Text className="headings">
               AI for Quality Control and Data Management in Trails :
             </Text>

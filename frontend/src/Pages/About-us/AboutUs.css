@@ -2,7 +2,7 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 .bodyContainerAboutUs {
-  margin-left: 3.1rem;
+  margin-left: 4rem;
 }
 .BannerContainerAboutUs {
   /* background-color: #0c447f; */
@@ -37,11 +37,11 @@
   /* border: 1px solid black; */
 }
 .AboutUsSectionText {
-  width: 50%;
+  width: 60%;
   /* border: 1px solid black; */
   margin-left: 2rem;
-  text-align: left;
-  line-height: 25px;
+  /* text-align: left; */
+  line-height: 30px;
 }
 .AboutUsSectionBtnCont {
   margin-top: 1rem;
@@ -52,6 +52,7 @@
 
 .AboutUsSectionImgCont {
   width: 40%;
+  /* max-width: 100%; */
   /* border: 1px solid black; */
 }
 
@@ -71,11 +72,11 @@
   justify-content: space-between;
 }
 .AboutUsSectionIIText {
-  width: 50%;
+  width: 60%;
   margin-right: 3rem;
   /* border: 1px solid black; */
-  text-align: justify;
-  line-height: 25px;
+  /* text-align: justify; */
+  line-height: 30px;
 }
 .AboutUsSectionIImgCont {
   width: 40%;
@@ -112,7 +113,7 @@
   text-align: left;
   /* border: 1px solid greenyellow; */
   padding: 0 30px 30px 30px;
-  line-height: 25px;
+  line-height: 30px;
 }
 .OurTeamText button {
   display: block;
@@ -158,10 +159,29 @@
   .AboutUsSectionI-Cont {
     margin-top: 2rem;
     flex-direction: column;
+    gap: 2rem;
   }
   .AboutUsSectionII-Cont {
     margin-top: 2rem;
     flex-direction: column-reverse;
+  }
+
+  .AboutUsSectionText{
+    width: 90%;
+    margin-left: 0;
+    margin: auto;
+  }
+  .AboutUsSectionImgCont{
+    width: 90%;
+  }
+  .AboutUsSectionIIText{
+    width: 90%;
+    margin-right: 0;
+    
+  }
+  .AboutUsSectionIImgCont {
+    width: 90%;
+    /* border: 1px solid black; */
   }
   .OurTeamContainer {
     width: 100%;
@@ -170,12 +190,13 @@
     margin-bottom: 2rem;
   }
   .TeamMembers {
-    width: 90%;
+    width: 100%;
     /* border: 1px solid navy; */
   }
   .OurTeamText {
-    width: 90%;
-    /* border: 1px solid greenyellow; */
+    width: 100%;
+    padding: 0;
+    border: 1px solid greenyellow;
   }
   .OurTeamText {
     margin-top: 1rem;

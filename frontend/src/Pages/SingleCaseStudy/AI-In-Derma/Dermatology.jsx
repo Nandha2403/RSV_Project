@@ -16,10 +16,10 @@ const Dermatology = () => {
         <Box className="BannerContainerDerma">
           <Navbar />
           <Box ml={"2rem"} pt={"14rem"} color={"white"}>
-            <Text fontSize={"5xl"} fontWeight={1000}>
+            <Text fontSize={{base:"4xl",sm:'5xl',md:'4xl'}} fontWeight={1000}>
               AI IN DERMATOLOGY
             </Text>
-            <Text fontWeight={"bold"}>
+            <Text fontWeight={"bold"} fontSize={{base:'15px'}}>
               High-speed, high-precision diagnosis along with professional
             </Text>
           </Box>
@@ -100,9 +100,9 @@ const Dermatology = () => {
         </Box>
         {/* AI for Quality */}
         <Box className="AIAdvanceDerma">
-          <Box ml={"3rem"}>
+          <Box className="AIAdvanceHeadingCont">
             <Text className="headings">
-              How Radiant Sage is Leveraging AI to <br /> Advance Dermatology
+              How Radiant Sage is Leveraging AI to Advance Dermatology
               Research and Practise :
             </Text>
           </Box>

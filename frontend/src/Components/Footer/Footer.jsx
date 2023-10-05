@@ -12,7 +12,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer
-      className="footerContainer"
+      className="footer-Container"
       // data-aos="fade-up"
       // data-aos-duration="1000"
     >
