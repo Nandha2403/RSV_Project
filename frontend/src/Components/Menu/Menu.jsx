@@ -142,13 +142,62 @@ const Menu = () => {
                             </li>
                           </ul>
                         </Box>
-                        <Box>
+                        {/* <Box>
                           <p>Use Cases</p>
+                        </Box> */}
+                      </Box>
+                    </Box>
+                  </Box>
+                  {/* Products */}
+                  <Box className="leftLinks">
+                    <Link to={"/Products"} target="_top">
+                      Products
+                    </Link>
+                    <Box className="SubCategory">
+                      <Box className="LinksRightContainer">
+                        <Box>
+                          <p>Corelab-in-a-Box</p>
+                          <ul className="productsLinksCorelabInBox">
+                            <li>
+                              <a href="">RadGate</a>
+                            </li>
+                            <li>
+                              <a href="">RadVault</a>
+                            </li>
+                            <li>
+                              <a href="">RadVista</a>
+                            </li>
+                            <li>
+                              <a href="">RadFlow</a>
+                            </li>
+                            <li>
+                              <a href="">RadClinica</a>
+                            </li>
+                            <li>
+                              <a href="">RadInSight</a>
+                            </li>
+                            <li>
+                              <a href="">RadEvent</a>
+                            </li>
+                            <li>
+                              <a href="">RadInAI & Toolkit</a>
+                            </li>
+                            <li>
+                              <a href="">RadDCT</a>
+                            </li>
+                            <li>
+                              <a href="">RadApp</a>
+                            </li>
+                            <li>
+                              <a href="">RadChain</a>
+                            </li>
+                            
+                          </ul>
                         </Box>
                       </Box>
                     </Box>
                   </Box>
-                  {/*  */}
+                  {/* Resources */}
                   <Box className="leftLinks">
                     <a href="#">Resources</a>
                     <Box className="SubCategory">
@@ -168,6 +217,7 @@ const Menu = () => {
                       </Box>
                     </Box>
                   </Box>
+                  {/* About us */}
                   <Box className="leftLinks">
                     <Link to={"/AboutUs"} target="_top">
                       About us
@@ -212,43 +262,11 @@ const Menu = () => {
                       </Box>
                     </Box>
                   </Box>
+                  {/* Career */}
                   <Box className="leftLinks">
                     <Link to={"/Career"} target="_top">
                       Career
                     </Link>
-                  </Box>
-                  <Box className="leftLinks">
-                    <Link to={"/Products"} target="_top">
-                      Products
-                    </Link>
-                    <Box className="SubCategory">
-                      <Box className="LinksRightContainer">
-                        <Box>
-                          <p>Products</p>
-                          <ul className="productsLinks">
-                            <li>
-                              <a href="">
-                                Corelab-in-a-Box<sup>TM</sup>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="">
-                                RadClinica<sup>TM</sup>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="">RadVista Viewer</a>
-                            </li>
-                            <li>
-                              <a href="">Product Development Goals</a>
-                            </li>
-                            <li>
-                              <a href="">Technology & Process Innovation</a>
-                            </li>
-                          </ul>
-                        </Box>
-                      </Box>
-                    </Box>
                   </Box>
                 </Stack>
               </DrawerBody>

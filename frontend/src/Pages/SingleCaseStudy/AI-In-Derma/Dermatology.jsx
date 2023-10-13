@@ -16,10 +16,13 @@ const Dermatology = () => {
         <Box className="BannerContainerDerma">
           <Navbar />
           <Box ml={"2rem"} pt={"14rem"} color={"white"}>
-            <Text fontSize={{base:"4xl",sm:'5xl',md:'4xl'}} fontWeight={1000}>
+            <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
               AI IN DERMATOLOGY
             </Text>
-            <Text fontWeight={"bold"} fontSize={{base:'15px'}}>
+            <Text
+              fontSize={{ base: "sm", sm: "sm", md: "lg" }}
+              fontWeight={"bold"}
+            >
               High-speed, high-precision diagnosis along with professional
             </Text>
           </Box>
@@ -102,8 +105,8 @@ const Dermatology = () => {
         <Box className="AIAdvanceDerma">
           <Box className="AIAdvanceHeadingCont">
             <Text className="headings">
-              How Radiant Sage is Leveraging AI to Advance Dermatology
-              Research and Practise :
+              How Radiant Sage is Leveraging AI to Advance Dermatology Research
+              and Practise :
             </Text>
           </Box>
           <Box className="AIAdvanceDermaTextCont">
@@ -142,21 +145,21 @@ const Dermatology = () => {
         </Box>
         <Box className="smallBannerDermaBottom">
           <Box className="smallBannerDermaBtmContent">
-            <Box>
-              <MdArrowBackIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
             <Link to={"/CaseStudy/AI-In-ClinicalTrial"} target="_top">
-              AI IN CLINICAL TRIAL (CT)
+              <MdArrowBackIos fontSize={"40px"} cursor={"pointer"} />
+            </Link>
+            <Link to={"/CaseStudy/AI-In-ClinicalTrial"} target="_top">
+              AI In Clinical Trials
             </Link>
           </Box>
           <Box className="SmallBannerDermaCenterLine"></Box>
           <Box className="smallBannerDermaBtmContent">
             <Link to={"/CaseStudy/Business-Intelligence"} target="_top">
-              BUSINESS INTELLIGENCE IN (CT)
+              BI In Clinical Trials
             </Link>
-            <Box>
-              <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
+            <Link to={"/CaseStudy/Business-Intelligence"} target="_top">
+              <MdArrowForwardIos fontSize={"40px"} cursor={"pointer"} />
+            </Link>
           </Box>
         </Box>
         {/* Footer */}

@@ -13,6 +13,7 @@ import QueryManagement from "../Pages/SingleCaseStudy/Query-Management/QueryMana
 import BusinessIntelligence from "../Pages/SingleCaseStudy/Business-Intelligence/BusinessIntelligence";
 import HandScintigraphy from "../Pages/SingleCaseStudy/Hand-Scintigraphy/HandScintigraphy";
 import ElectronicDataCapture from "../Pages/SingleCaseStudy/Electronic-Data-Capture/ElectronicDataCapture";
+import Products from "../Pages/Products-page/Products";
 
 const AllRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const AllRoutes = () => {
       <Route path="ContactUs" element={<ContactUs />} />
       <Route path="AboutUs" element={<AboutUs />} />
       <Route path="Career" element={<Career />} />
+      <Route path="/Products" element={<Products />} />
       <Route path="CaseStudy/AI-In-ClinicalTrial" element={<ClincalTrial />} />
       <Route path="CaseStudy/AI-In-Dermatology" element={<Dermatology />} />
       <Route

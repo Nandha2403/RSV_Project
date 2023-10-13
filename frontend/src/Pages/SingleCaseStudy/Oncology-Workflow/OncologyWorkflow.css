@@ -18,10 +18,11 @@
 .InnovationsOncoImgSubTxt {
   width: 90%;
   /* margin: auto; */
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
+  margin: auto;
+
   margin-top: 2rem;
   /* border: 1px solid red; */
-  text-align: left;
   line-height: 25px;
 }
 .InnovationsOncoImgSubTxt > p:nth-child(2) {
@@ -39,13 +40,13 @@
   background-image: url("../../../Images/SecondBanner-AI-In-CT.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
 }
 
 .smallBannerOncoBottom {
   margin-top: 4rem;
   height: 45vh;
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
   background-image: url("../../../Images/CSfooterRedirect.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,7 +76,6 @@
   margin-left: 3rem;
   margin-top: 2rem;
   /* border: 1px solid red; */
-  text-align: left;
   line-height: 25px;
 }
 
@@ -88,6 +88,7 @@
 
 .BenifitsOfOnco {
   margin-top: 4rem;
+  /* border: 1px solid gray; */
 }
 
 .OncoWorkTypTextCont {
@@ -111,6 +112,11 @@
   width: 90%;
   margin: auto;
   margin-top: 2rem;
+  /* border: 1px solid black; */
+}
+.BenifitsOfOncoHeadingCont{
+  margin-left: 3rem;
+  /* border: 1px solid red; */
 }
 
 @media only screen and (max-width: 900px) {
@@ -130,5 +136,39 @@
     height: 20vh;
 
     /* background-size: contain; */
+  }
+  .smallBannerOncoBottom {
+    height: 30vh;
+    flex-direction: column;
+    background-size: 100% 100%;
+  }
+  .smallBannerOncoBtmContent{
+    /* margin-top: 1rem; */
+    margin: auto;
+  }
+  .SmallBannerOncoCenterLine {
+    width: 50%;
+    height: 2px;
+  }
+  .InnovationsOncoImgHeading{
+    margin-left: .4rem;
+  }
+  .InnovationsOncoImgSubTxt{
+    width: 95%;
+  }
+  .UnderBannerTxtOnco{
+    width: 100%;
+    margin-left: .2rem;
+  }
+  .BenifitsOfOncoHeadingCont{
+    margin-left: .4rem;
+    
+  }
+  .OncoWorkTypTextCont{
+    width: 95%;
+
+  }
+  .overallBtmContOnco{
+    width: 95%;
   }
 }

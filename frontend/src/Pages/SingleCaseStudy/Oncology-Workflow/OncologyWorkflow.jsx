@@ -16,10 +16,15 @@ const OncologyWorkflow = () => {
         <Box className="BannerContainerOnco">
           <Navbar />
           <Box ml={"2rem"} pt={"14rem"} color={"white"}>
-            <Text fontSize={"5xl"} fontWeight={1000}>
+            <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
               ONCOLOGY WORKFLOW
             </Text>
-            <Text fontWeight={"bold"}>Cancer Imaging Workflow Overview</Text>
+            <Text
+              fontSize={{ base: "sm", sm: "sm", md: "lg" }}
+              fontWeight={"bold"}
+            >
+              Cancer Imaging Workflow Overview
+            </Text>
           </Box>
           <Box ml={"1.5rem"} mt={"4rem"} pb={"3rem"}>
             <Button
@@ -83,7 +88,7 @@ const OncologyWorkflow = () => {
         <Box className="smallBannerOnco">{/* <img src="" alt="" /> */}</Box>
         {/* Sub cont Txt */}
         <Box className="UnderBannerTxtOnco">
-          <Text className="headings">
+          <Text className="headings" lineHeight={"30px"}>
             The oncology workflow typically includes the following steps :
           </Text>
           <Box className="OncoWorkTypTextCont">
@@ -126,9 +131,9 @@ const OncologyWorkflow = () => {
             </Box>
           </Box>
         </Box>
-        {/* AI for Quality */}
+        {/* BenifitsOfOnco */}
         <Box className="BenifitsOfOnco">
-          <Box ml={"3rem"}>
+          <Box className="BenifitsOfOncoHeadingCont">
             <Text className="headings">
               Benefits of using oncology workflow :
             </Text>
@@ -178,21 +183,21 @@ const OncologyWorkflow = () => {
         </Box>
         <Box className="smallBannerOncoBottom">
           <Box className="smallBannerOncoBtmContent">
-            <Box>
-              <MdArrowBackIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
             <Link to={"/CaseStudy/Business-Intelligence"} target="_top">
-              BUSINESS INTELLIGENCE IN (CT)
+              <MdArrowBackIos fontSize={"40px"} cursor={"pointer"} />
+            </Link>
+            <Link to={"/CaseStudy/Business-Intelligence"} target="_top">
+              BI In Clinical Trials
             </Link>
           </Box>
-          <Box className="SmallBannerCTCenterLine"></Box>
-          <Box className="smallBannerCTBtmContent">
+          <Box className="SmallBannerOncoCenterLine"></Box>
+          <Box className="smallBannerOncoBtmContent">
             <Link to={"/CaseStudy/Query-Management"} target="_top">
               Query Management
             </Link>
-            <Box>
-              <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
+            <Link to={"/CaseStudy/Query-Management"} target="_top">
+              <MdArrowForwardIos fontSize={"40px"} cursor={"pointer"} />
+            </Link>
           </Box>
         </Box>
         {/* Footer */}

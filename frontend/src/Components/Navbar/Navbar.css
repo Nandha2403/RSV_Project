@@ -1,19 +1,20 @@
 .nav-parent {
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
-  padding-top: 10px;
+  padding: 0 20px;
   align-items: center;
   /* border: 1px solid darkorange; */
   /* height: 7vh; */
 }
 
 .logoContainer {
-  margin-left: 20px;
-  /* margin-top: 10px; */
+  width: 100%;
+  /* border: 1px solid white; */
 }
 .logoContainer img {
-  width: 35%;
+  width: 220px;
+  /* height: 30%; */
 }
 .nav-content {
   display: flex;
@@ -30,9 +31,9 @@
 .MenubarIcon {
   display: none;
 }
-.nav-demo-container {
+/* .nav-demo-container {
   margin-right: 10px;
-}
+} */
 .nav-ref-container {
   margin-right: 10px;
 }
@@ -41,22 +42,115 @@
   display: none;
 }
 
+.hamburger {
+  display: none;
+  margin-right: 10px;
+
+  /* border: 1px solid red; */
+}
+
+#nav-icon {
+  width: 30px;
+  height: 26px;
+  position: relative;
+  /* margin: 50px auto; */
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon span:nth-child(2) {
+  top: 9px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon span:nth-child(3) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -2px;
+  left: 4px;
+}
+
+#nav-icon.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 20px;
+  left: 4px;
+}
+
 @media only screen and (max-width: 767px) {
   .nav-parent {
-    height: 10vh;
+    height: 8vh;
     width: 100%;
-    overflow: hidden;
     position: fixed;
     top: 0;
-    background-color: rgb(42, 123, 215);
-    z-index: 20;
-  }
-  .logoContainer img {
-    width: 35%;
+    padding: 0 20px 0 10px;
+    margin: 0;
+    background-color: rgb(12, 68, 127);
+    z-index: 200;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    /* border: 2px solid navajowhite; */
+
   }
   .logoContainer {
-    margin-left: 2px;
-    /* margin-top: 10px; */
+    width: 100%;
+    /* border: 1px solid green; */
+  }
+  .logoContainer img {
+    width: 150px;
   }
 
   .nav-input,
@@ -64,51 +158,21 @@
     display: none;
   }
 
-  .nav-demo-container {
-    margin-right: 30px;
+  .nav-content {
+    width: 20%;
   }
 
-  .MenubarIcon {
-    display: block;
-    /* margin-left: 5px; */
-    margin-top: -5px;
-    /* margin-top: -5px; */
-  }
-  .MenubarIcon .hamburger-react {
-    background-color: transparent;
-  }
-  .smallDrawer {
-    position: fixed;
-    /* left: -100%; */
-    top: 90px;
-    width: 100%;
-    /* flex-direction: column; */
-    /* text-align: start; */
-    display: block;
-    /* height: 70vh; */
-    /* border: 2px solid red; */
-    background-color: #131049;
-    z-index: 200;
-    transition: 0.3s;
-    padding-bottom: 30px;
-  }
 
   .leftLinks > a {
-    /* border: 1px solid greenyellow; */
+    border: 1px solid greenyellow;
     font-size: 20px;
-  }
-  .logoContainer img {
-    width: 50%;
   }
 
   .linksContainer {
-    margin-top: 20px;
-    margin-left: 20px;
-    /* border: 1px solid chocolate; */
-    /* padding-bottom: 20px; */
+    margin-top: 4rem;
   }
   .mainLinks {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .dropdown > div {
@@ -119,5 +183,8 @@
   }
   .dropdown > div:hover {
     color: #e0a72f;
+  }
+  .hamburger {
+    display: block;
   }
 }

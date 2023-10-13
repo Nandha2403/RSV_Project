@@ -16,10 +16,15 @@ const ElectronicDataCapture = () => {
         <Box className="BannerContainerEDC">
           <Navbar />
           <Box ml={"2rem"} pt={"14rem"} color={"white"}>
-            <Text fontSize={"5xl"} fontWeight={1000}>
+            <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
               ELECTRONIC DATA CAPTURE(EDC)
             </Text>
-            <Text fontWeight={"bold"}>Digital Data, Efficient Trials</Text>
+            <Text
+              fontSize={{ base: "sm", sm: "sm", md: "lg" }}
+              fontWeight={"bold"}
+            >
+              Digital Data, Efficient Trials
+            </Text>
           </Box>
           <Box ml={"1.5rem"} mt={"4rem"} pb={"3rem"}>
             <Button
@@ -88,7 +93,7 @@ const ElectronicDataCapture = () => {
         <Box className="smallBannerEDC">{/* <img src="" alt="" /> */}</Box>
         {/* AI for Quality */}
         <Box className="BenefitsEDC">
-          <Box ml={"3rem"}>
+          <Box className="BenefitsEDCHeadingCont">
             <Text className="headings">
               The benefits of using EDC extension :
             </Text>
@@ -158,9 +163,9 @@ const ElectronicDataCapture = () => {
         </Box>
         <Box className="smallBannerEDCBottom">
           <Box className="smallBannerEDCBtmContent">
-            <Box>
+            <Link to={"/CaseStudy/Query-Management"} target="_top">
               <MdArrowBackIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
+            </Link>
             <Link to={"/CaseStudy/Query-Management"} target="_top">
               Query Management
             </Link>
@@ -168,11 +173,11 @@ const ElectronicDataCapture = () => {
           <Box className="SmallBannerEDCCenterLine"></Box>
           <Box className="smallBannerEDCBtmContent">
             <Link to={"/CaseStudy/Hand-Scintigraphy"} target="_top">
-              HAND SCINTIGRAPHY
+              Hand Scintigraphy
             </Link>
-            <Box>
+            <Link to={"/CaseStudy/Hand-Scintigraphy"} target="_top">
               <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
+            </Link>
           </Box>
         </Box>
         {/* Footer */}

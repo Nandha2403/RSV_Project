@@ -139,13 +139,22 @@
 .LinksRightContainer > div ul {
   list-style-position: inside;
   list-style-type: none;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 25px;
   /* border: 1px solid rebeccapurple; */
   margin-top: 10px;
 }
 .productsLinks{
   width: 250px;
+  border: 1px solid black;
+
+}
+.productsLinksCorelabInBox{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  border: 1px solid black;
 }
 .LinksRightContainer > div ul li:hover {
   color: #e0a72f;

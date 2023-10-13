@@ -16,10 +16,15 @@ const QueryManagement = () => {
         <Box className="BannerContainerQM">
           <Navbar />
           <Box ml={"2rem"} pt={"14rem"} color={"white"}>
-            <Text fontSize={"5xl"} fontWeight={1000}>
+            <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
               QUERY MANAGEMENT
             </Text>
-            <Text fontWeight={"bold"}>Optimizing Imaging Data Integrity</Text>
+            <Text
+              fontSize={{ base: "sm", sm: "sm", md: "lg" }}
+              fontWeight={"bold"}
+            >
+              Optimizing Imaging Data Integrity
+            </Text>
           </Box>
           <Box ml={"1.5rem"} mt={"4rem"} pb={"3rem"}>
             <Button
@@ -47,7 +52,7 @@ const QueryManagement = () => {
         <Box className="EDQMCont">
           <Box className="EDQMHeading">
             <Text className="headings">
-              Effective Data Query Management in Clinical Trials :
+              Effective Data Query Management in Clinical Trials (CT) :
             </Text>
           </Box>
           <Box className="EDQMSubTxt">
@@ -74,7 +79,7 @@ const QueryManagement = () => {
         <Box className="smallBannerQM">{/* <img src="" alt="" /> */}</Box>
         {/* Sub cont Txt */}
         <Box className="UnderBannerTxtQM">
-          <Text className="headings">
+          <Text className="headings" lineHeight={"30px"}>
             The query management process typically involves several steps,
             including :
           </Text>
@@ -116,7 +121,7 @@ const QueryManagement = () => {
         {/* AI for Quality */}
         <Box className="UnderBannerTxtQM">
           <Box>
-            <Text className="headings">
+            <Text className="headings" lineHeight={"30px"}>
               The benefits of using query management :
             </Text>
           </Box>
@@ -174,23 +179,23 @@ const QueryManagement = () => {
             cancer patients.
           </Text>
         </Box>
-        <Box className="smallBannerCTBottom">
-          <Box className="smallBannerCTBtmContent">
-            <Box>
+        <Box className="smallBannerQMBottom">
+          <Box className="smallBannerQMBtmContent">
+            <Link to={"/CaseStudy/Oncology-Workflow"} target="_top">
               <MdArrowBackIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
+            </Link>
             <Link to={"/CaseStudy/Oncology-Workflow"} target="_top">
               Oncology Workflow
             </Link>
           </Box>
-          <Box className="SmallBannerCTCenterLine"></Box>
-          <Box className="smallBannerCTBtmContent">
+          <Box className="SmallBannerQMCenterLine"></Box>
+          <Box className="smallBannerQMBtmContent">
             <Link to={"/CaseStudy/Electronic-Data-Capture"} target="_top">
-              Electronic Data Capture
+              EDC
             </Link>
-            <Box>
+            <Link to={"/CaseStudy/Electronic-Data-Capture"} target="_top">
               <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
+            </Link>
           </Box>
         </Box>
         {/* Footer */}

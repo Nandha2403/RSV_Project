@@ -62,7 +62,7 @@
 }
 .SmallBannerDermaCenterLine {
   height: 10vh;
-  /* border: 1px solid white; */
+  border: 1px solid white;
   border-radius: 10px;
   text-align: center;
 }
@@ -123,10 +123,20 @@
     height: 20vh;
   }
   .smallBannerDermaBottom {
-    display: none;
+    height: 30vh;
+    flex-direction: column;
+    background-size: 100% 100%;
+  }
+  .smallBannerDermaBtmContent {
+    /* margin-top: 1rem; */
+    margin: auto;
+  }
+  .SmallBannerDermaCenterLine {
+    width: 50%;
+    height: 2px;
   }
   .NextGenHeadingDerma {
-    margin-left: 0;
+    margin-left: .4rem;
   }
   .NextGenSubTxtDerma {
     margin-left: 0;
@@ -141,9 +151,9 @@
     margin-top: 1rem;
   }
   .AIAdvanceHeadingCont{
-    margin-left: 0;
+    margin-left: .4rem;
   }
   .AIAdvanceDermaTextCont{
-    width: 98%;
+    width: 95%;
   }
 }

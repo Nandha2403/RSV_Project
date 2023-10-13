@@ -10,7 +10,7 @@
 }
 .RevolutionizingEDCCont {
   margin-top: 4rem;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .RevolutionizingEDCHeading {
   margin-left: 3rem;
@@ -20,7 +20,7 @@
   /* margin: auto; */
   margin-left: 3rem;
   margin-top: 2rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: left;
   line-height: 25px;
 }
@@ -39,13 +39,13 @@
   background-image: url("../../../Images/SecondBanner-AI-In-CT.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
 }
 
 .smallBannerEDCBottom {
   margin-top: 4rem;
   height: 45vh;
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
   background-image: url("../../../Images/CSfooterRedirect.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -60,7 +60,7 @@
   align-items: center;
   font-size: 25px;
   margin: 0px 40px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .SmallBannerEDCCenterLine {
@@ -77,7 +77,7 @@
 
 .BenefitsEDCTextCont {
   margin-top: 3rem;
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   width: 90%;
   margin: auto;
 }
@@ -97,11 +97,8 @@
   margin-top: 2rem;
 }
 
-@media only screen and (max-width: 900px) {
-  .smallBannerEDC {
-    height: 30vh;
-    /* background-size: contain; */
-  }
+.BenefitsEDCHeadingCont {
+  margin-left: 3rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -114,5 +111,43 @@
     height: 20vh;
 
     /* background-size: contain; */
+  }
+  .smallBannerEDCBottom {
+    height: 30vh;
+    flex-direction: column;
+    background-size: 100% 100%;
+  }
+  .smallBannerEDCBtmContent {
+    /* margin-top: 1rem; */
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .smallBannerEDC {
+    height: 30vh;
+    /* background-size: contain; */
+  }
+
+  .SmallBannerEDCCenterLine {
+    width: 50%;
+    height: 2px;
+  }
+  .RevolutionizingEDCHeading {
+    margin-left: 0.4rem;
+  }
+  .RevolutionizingEDCSubTxt {
+    width: 95%;
+    margin-left: 0;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .BenefitsEDCHeadingCont {
+    margin-left: 0.4rem;
+  }
+  .BenefitsEDCTextCont {
+    width: 95%;
+  }
+  .overallBtmContEDC {
+    width: 95%;
   }
 }

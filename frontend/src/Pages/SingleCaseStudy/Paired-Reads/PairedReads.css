@@ -73,6 +73,7 @@
 
 .BenefitsofPR {
   margin-top: 4rem;
+  /* border: 1px solid greenyellow; */
 }
 
 .BenefitsofPRTextCont {
@@ -96,6 +97,10 @@
   width: 90%;
   margin: auto;
   margin-top: 2rem;
+  /* border: 1px solid black; */
+}
+.BenefitsofPRHeadingCont {
+  margin-left: 3rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -117,10 +122,13 @@
     /* background-size: contain; */
   }
   .smallBannerPRBottom {
-    height: 35vh;
-
+    height: 30vh;
     flex-direction: column;
     background-size: 100% 100%;
+  }
+  .smallBannerPRBtmContent{
+    /* margin-top: 1rem; */
+    margin: auto;
   }
   .SmallBannerPRCenterLine {
     width: 50%;
@@ -129,4 +137,22 @@
   /* .smallBannerPRBtmContent{
     flex-direction: column;
   } */
+  .PRInCTIHeading {
+    margin-left: 0.4rem;
+  }
+  .PRInCTISubTxt {
+    margin-left: 0;
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .BenefitsofPRHeadingCont {
+    margin-left: 0.4rem;
+  }
+  .BenefitsofPRTextCont {
+    width: 95%;
+  }
+  .overallBtmContPR {
+    width: 95%;
+  }
 }

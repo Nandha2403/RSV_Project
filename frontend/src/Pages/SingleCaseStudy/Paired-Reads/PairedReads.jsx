@@ -16,10 +16,13 @@ const PairedReads = () => {
         <Box className="BannerContainerPR">
           <Navbar />
           <Box ml={"2rem"} pt={"14rem"} color={"white"}>
-            <Text fontSize={"5xl"} fontWeight={1000}>
+            <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
               PAIRED READS
             </Text>
-            <Text fontWeight={"bold"}>
+            <Text
+              fontSize={{ base: "sm", sm: "sm", md: "lg" }}
+              fontWeight={"bold"}
+            >
               Double the Data, Double the Discovery
             </Text>
           </Box>
@@ -89,7 +92,7 @@ const PairedReads = () => {
         <Box className="smallBannerPR">{/* <img src="" alt="" /> */}</Box>
         {/* AI for Quality */}
         <Box className="BenefitsofPR">
-          <Box ml={"3rem"}>
+          <Box className="BenefitsofPRHeadingCont">
             <Text className="headings">
               The benefits of using paired-end sequencing :
             </Text>
@@ -149,9 +152,9 @@ const PairedReads = () => {
         </Box>
         <Box className="smallBannerPRBottom">
           <Box className="smallBannerPRBtmContent">
-            <Box>
+            <Link to={"/CaseStudy/Hand-Scintigraphy"} target="_top">
               <MdArrowBackIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
+            </Link>
             <Link to={"/CaseStudy/Hand-Scintigraphy"} target="_top">
               HAND SCINTIGRAPHY
             </Link>
@@ -161,9 +164,9 @@ const PairedReads = () => {
             <Link to={"/CaseStudy/AI-In-ClinicalTrial"} target="_top">
               AI IN CLINICAL TRIAL (CT)
             </Link>
-            <Box>
+            <Link to={"/CaseStudy/AI-In-ClinicalTrial"} target="_top">
               <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
+            </Link>
           </Box>
         </Box>
         {/* Footer */}

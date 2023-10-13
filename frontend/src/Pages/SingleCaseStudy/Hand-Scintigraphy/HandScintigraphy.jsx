@@ -12,14 +12,17 @@ const HandScintigraphy = () => {
     <Box>
       {/* Menu */}
       <Menu />
-      <Box className="bodyContainerCT">
-        <Box className="BannerContainerCT">
+      <Box className="bodyContainerHS">
+        <Box className="BannerContainerHS">
           <Navbar />
           <Box ml={"2rem"} pt={"14rem"} color={"white"}>
-            <Text fontSize={"5xl"} fontWeight={1000}>
+            <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
               HAND SCINTIGRAPHY
             </Text>
-            <Text fontWeight={"bold"}>
+            <Text
+              fontSize={{ base: "sm", sm: "sm", md: "lg" }}
+              fontWeight={"bold"}
+            >
               Radiographic Insights into Hand Health
             </Text>
           </Box>
@@ -45,14 +48,14 @@ const HandScintigraphy = () => {
             </Button>
           </Box>
         </Box>
-        {/* Next Gen Cont */}
-        <Box className="NextGenCont">
-          <Box className="NextGenHeading">
+        {/* VisualHandCont */}
+        <Box className="VisualHandCont">
+          <Box className="VisualHandHeading">
             <Text className="headings">
               Visualizing Hand Function with Scintigraphy Technique :
             </Text>
           </Box>
-          <Box className="NextGenSubTxt">
+          <Box className="VisualHandSubTxt">
             <Text>
               Hand scintigraphy is a medical imaging technique that is used to
               evaluate the function of the bones and joints in the hand. It
@@ -88,23 +91,23 @@ const HandScintigraphy = () => {
           </Box>
         </Box>
         {/* Banner */}
-        <Box className="smallBanner">{/* <img src="" alt="" /> */}</Box>
-        {/* AI for Quality */}
-        <Box className="AIforQuality">
-          <Box ml={"3rem"}>
+        <Box className="smallBannerHS">{/* <img src="" alt="" /> */}</Box>
+        {/* Benefits of HS */}
+        <Box className="BenefitsHS">
+          <Box className="BenefitsHSHeading">
             <Text className="headings">
               The benefits of using hand scintigraphy :
             </Text>
           </Box>
-          <Box className="AIforQltyTextCont">
-            <Box className="AIforQltyTextTitle1">
+          <Box className="BenefitsHSTextCont">
+            <Box className="BenefitsHSTextTitle1">
               <Text>Early detection of bone and joint diseases :</Text>
               <Text>
                 Hand scintigraphy can help detect early signs of bone and joint
                 diseases, such as arthritis, that may not be visible on X-rays.
               </Text>
             </Box>
-            <Box className="AIforQltyTextTitle1">
+            <Box className="BenefitsHSTextTitle1">
               <Text>Accurate diagnosis of bone and joint diseases :</Text>
               <Text>
                 Hand scintigraphy can provide more detailed information about
@@ -112,7 +115,7 @@ const HandScintigraphy = () => {
                 help with accurate diagnosis and treatment planning.
               </Text>
             </Box>
-            <Box className="AIforQltyTextTitle1">
+            <Box className="BenefitsHSTextTitle1">
               <Text>Non-invasive :</Text>
               <Text>
                 Hand scintigraphy is a non-invasive procedure that does not
@@ -120,14 +123,14 @@ const HandScintigraphy = () => {
                 of complications and discomfort for the patient.
               </Text>
             </Box>
-            <Box className="AIforQltyTextTitle1">
+            <Box className="BenefitsHSTextTitle1">
               <Text>Safe :</Text>
               <Text>
                 The amount of radiation used in hand scintigraphy is very low
                 and is considered safe for most patients.
               </Text>
             </Box>
-            <Box className="AIforQltyTextTitle1">
+            <Box className="BenefitsHSTextTitle1">
               <Text>Objective measurement :</Text>
               <Text>
                 Hand scintigraphy provides an objective measurement of bone and
@@ -137,7 +140,7 @@ const HandScintigraphy = () => {
             </Box>
           </Box>
         </Box>
-        <Box className="overallBtmContEDC">
+        <Box className="overallBtmContHS">
           <Text>
             Overall, hand scintigraphy is a useful imaging technique that can
             provide valuable information about the function and health of bones
@@ -146,23 +149,23 @@ const HandScintigraphy = () => {
             diseases.
           </Text>
         </Box>
-        <Box className="smallBannerCTBottom">
-          <Box className="smallBannerCTBtmContent">
-            <Box>
+        <Box className="smallBannerHSBottom">
+          <Box className="smallBannerHSBtmContent">
+            <Link to={"/CaseStudy/Electronic-Data-Capture"} target="_top">
               <MdArrowBackIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
+            </Link>
             <Link to={"/CaseStudy/Electronic-Data-Capture"} target="_top">
               Electronic Data Capture
             </Link>
           </Box>
-          <Box className="SmallBannerCTCenterLine"></Box>
-          <Box className="smallBannerCTBtmContent">
+          <Box className="SmallBannerHSCenterLine"></Box>
+          <Box className="smallBannerHSBtmContent">
             <Link to={"/CaseStudy/Paired-Reads"} target="_top">
-              PAIRED READS
+              Paired Reads
             </Link>
-            <Box>
+            <Link to={"/CaseStudy/Paired-Reads"} target="_top">
               <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
+            </Link>
           </Box>
         </Box>
         {/* Footer */}

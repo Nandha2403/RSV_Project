@@ -124,9 +124,22 @@
 
   .smallBannerBI {
     height: 20vh;
-
     /* background-size: contain; */
   }
+  .smallBannerBIBottom {
+    height: 30vh;
+    flex-direction: column;
+    background-size: 100% 100%;
+  }
+  .smallBannerBIBtmContent {
+    /* margin-top: 1rem; */
+    margin: auto;
+  }
+  .SmallBannerBICenterLine {
+    width: 50%;
+    height: 2px;
+  }
+
   .PowerBIHeading{
     margin-left: .4rem;
   }
@@ -142,7 +155,5 @@
   .VisualizedImageTextCont{
     width: 95%;
   }
-  .smallBannerBIBottom{
-    display: none;
-  }
+  
 }

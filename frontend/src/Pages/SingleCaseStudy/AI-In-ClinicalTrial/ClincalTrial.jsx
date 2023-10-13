@@ -16,10 +16,15 @@ const ClincalTrial = () => {
         <Box className="BannerContainerCT">
           <Navbar />
           <Box ml={"2rem"} pt={"14rem"} color={"white"}>
-            <Text fontSize={"5xl"} fontWeight={1000}>
+            <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
               AI IN CLINICAL TRIAL (CT)
             </Text>
-            <Text fontWeight={"bold"}>From Data to Discovery</Text>
+            <Text
+              fontSize={{ base: "sm", sm: "sm", md: "lg" }}
+              fontWeight={"bold"}
+            >
+              From Data to Discovery
+            </Text>
           </Box>
           <Box ml={"1.5rem"} mt={"4rem"} pb={"3rem"}>
             <Button
@@ -150,21 +155,21 @@ const ClincalTrial = () => {
         </Box>
         <Box className="smallBannerCTBottom">
           <Box className="smallBannerCTBtmContent">
-            <Box>
-              <MdArrowBackIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
             <Link to={"/CaseStudy/Paired-Reads"} target="_top">
-              PAIRED READS
+              <MdArrowBackIos fontSize={"40px"} cursor={"pointer"} />
+            </Link>
+            <Link to={"/CaseStudy/Paired-Reads"} target="_top">
+              Paired Reads
             </Link>
           </Box>
           <Box className="SmallBannerCTCenterLine"></Box>
           <Box className="smallBannerCTBtmContent">
             <Link to={"/CaseStudy/AI-In-Dermatology"} target="_top">
-              AI IN DERMATOLOGY
+              AI In Dermatology
             </Link>
-            <Box>
-              <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
+            <Link to={"/CaseStudy/AI-In-Dermatology"} target="_top">
+              <MdArrowForwardIos fontSize={"40px"} cursor={"pointer"} />
+            </Link>
           </Box>
         </Box>
         {/* Footer */}

@@ -15,7 +15,6 @@ import Footer from "../../Components/Footer/Footer";
 import Menu from "../../Components/Menu/Menu";
 import Navbar from "../../Components/Navbar/Navbar";
 import Slider from "react-slick";
-import { useRef } from "react";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -25,7 +24,6 @@ import CustomNextArrow from "../../Components/CustomArrows/CustomNextArrow";
 import ProcessFlow from "../../Images/ProcessNewDesign.jpeg";
 
 const Homepage = () => {
-  const firstField = useRef();
   const ClientsImages = [
     { ClientImage: Client1, title: "Data Standardization and Acquisition" },
     { ClientImage: Client2, title: "Blinded Reads" },
@@ -82,7 +80,7 @@ const Homepage = () => {
     AOS.refresh();
   }, []);
   return (
-    <Box>
+    <Box className="Main">
       {/* Menu */}
       <Menu />
       <Box className="bodyContainer">
@@ -101,10 +99,7 @@ const Homepage = () => {
                 IMAGING
               </Text>
             </Box>
-            <Box
-              className="BannerIntroContent"
-              // border={"1px solid green"}
-            >
+            <Box className="BannerIntroContent">
               <Text as={"p"}>
                 Radiant Sages's solutions exemplify, how it can be leveraged in
                 Clinical Imaging Trails to enable the smooth acquistion,
@@ -131,7 +126,12 @@ const Homepage = () => {
           // border={"1px solid green"}
           // w={'100%'}
         >
-          <Box mt={"2rem"} textAlign={"left"} ml={"3rem"} w={"fit-content"}>
+          <Box
+            mt={"2rem"}
+            textAlign={"left"}
+            ml={{ base: "1rem", sm: "2rem", md: "3rem" }}
+            w={"fit-content"}
+          >
             <Text className="headings">Radiant Sage's Solutions Exemplify</Text>
           </Box>
           {/* left and right */}
@@ -157,7 +157,6 @@ const Homepage = () => {
               //   xl: "40%",
               // }}
               mt={"2rem"}
-              // border={"1px solid blue"}
               w={"50%"}
             >
               <Box className="SolutionsLeft">
@@ -203,16 +202,24 @@ const Homepage = () => {
                 </Button>
               </Box>
             </Box>
-            <Box w={{base:'40%',sm:"60%"}}>
+            <Box w={{ base: "40%", sm: "60%" }}>
               <a href="#">
-                <img src={RSVSolution} alt="" />
+                <img src={RSVSolution} alt="Solution" />
               </a>
             </Box>
           </Box>
         </Box>
         {/* Our services */}
-        <Box data-aos="fade-up" data-aos-duration="1000" textAlign={"center"}>
-          <Box mt={"3rem"} ml={"3rem"} textAlign={"left"}>
+        <Box
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          textAlign={"center"}
+        >
+          <Box
+            mt={"3rem"}
+            ml={{ base: "1rem", sm: "2rem", md: "3rem" }}
+            textAlign={"left"}
+          >
             <Text className="headings">Our Services</Text>
           </Box>
           <Box mt={"1rem"}>
@@ -330,7 +337,6 @@ const Homepage = () => {
           // border={"1px solid red"}
         >
           <Box className="beInTouchImg"></Box>
-
           <Box className="beInTouch-heading">
             <Text className="headings">Be In Touch with Us</Text>
           </Box>
@@ -343,7 +349,7 @@ const Homepage = () => {
           </Box>
           <Box className="beInTouchInput-Btn">
             <Input
-              size={"sm"}
+              size={{base:'xs',sm:'xs',md:'sm'}}
               type="text"
               border={"2px solid #131049"}
               outline={"none"}
@@ -353,7 +359,7 @@ const Homepage = () => {
               placeholder="E-mail Address"
             />
             <Button
-              size={"sm"}
+              size={{base:'xs',sm:'xs',md:'sm'}}
               borderRadius={"15px"}
               p={"0px 20px 0px 20px"}
               colorScheme="#131049"

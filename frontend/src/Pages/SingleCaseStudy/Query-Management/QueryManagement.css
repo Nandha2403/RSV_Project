@@ -111,6 +111,7 @@
   width: 90%;
   margin: auto;
   margin-top: 2rem;
+  /* border: 1px solid black; */
 }
 
 @media only screen and (max-width: 900px) {
@@ -128,7 +129,35 @@
 
   .smallBannerQM {
     height: 20vh;
-
     /* background-size: contain; */
+  }
+  .smallBannerQMBottom {
+    height: 30vh;
+    flex-direction: column;
+    background-size: 100% 100%;
+  }
+  .smallBannerQMBtmContent {
+    /* margin-top: 1rem; */
+    margin: auto;
+  }
+  .SmallBannerQMCenterLine {
+    width: 50%;
+    height: 2px;
+  }
+  .EDQMHeading {
+    margin-left: 0.5rem;
+  }
+  .EDQMSubTxt {
+    margin-left: 0;
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .UnderBannerTxtQM {
+    margin-left: 0.4rem;
+    width: 95%;
+  }
+  .overallBtmContQM {
+    width: 95%;
   }
 }

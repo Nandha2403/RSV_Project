@@ -16,13 +16,15 @@ const BusinessIntelligence = () => {
         <Box className="BannerContainerBI">
           <Navbar />
           <Box ml={"2rem"} pt={"14rem"} color={"white"}>
-            <Text
-              fontSize={{ base: "4xl", sm: "5xl", md: "4xl" }}
-              fontWeight={1000}
-            >
+            <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
               BUSINESS INTELLIGENCE (BI)
             </Text>
-            <Text fontWeight={"bold"}>Unlocking Insights, Enhancing Lives</Text>
+            <Text
+              fontSize={{ base: "sm", sm: "sm", md: "lg" }}
+              fontWeight={"bold"}
+            >
+              Unlocking Insights, Enhancing Lives
+            </Text>
           </Box>
           <Box ml={"1.5rem"} mt={"4rem"} pb={"3rem"}>
             <Button
@@ -137,11 +139,11 @@ const BusinessIntelligence = () => {
         </Box>
         <Box className="smallBannerBIBottom">
           <Box className="smallBannerBIBtmContent">
-            <Box>
-              <MdArrowBackIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
             <Link to={"/CaseStudy/AI-In-Dermatology"} target="_top">
-              AI IN DERMATOLOGY
+              <MdArrowBackIos fontSize={"40px"} cursor={"pointer"} />
+            </Link>
+            <Link to={"/CaseStudy/AI-In-Dermatology"} target="_top">
+              AI In Dermatology
             </Link>
           </Box>
           <Box className="SmallBannerBICenterLine"></Box>
@@ -149,9 +151,9 @@ const BusinessIntelligence = () => {
             <Link to={"/CaseStudy/Oncology-Workflow"} target="_top">
               Oncology Workflow
             </Link>
-            <Box>
-              <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
-            </Box>
+            <Link to={"/CaseStudy/Oncology-Workflow"} target="_top">
+              <MdArrowForwardIos fontSize={"40px"} cursor={"pointer"} />
+            </Link>
           </Box>
         </Box>
         {/* Footer */}

@@ -1,0 +1,99 @@
+.bodyContainerProducts {
+    margin-left: 4rem;
+  
+  }
+  
+  .BannerContainerProducts {
+    background-size: cover;
+    background-image: url("../../Images/AboutUs_BannerImg.jpeg");
+    height: 70vh;
+    object-fit: cover;
+
+  }
+  .OurMoto {
+    margin-top: 3rem;
+    /* border: 1px solid black; */
+  }
+  
+  .OurMoto-Cont {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    /* border: 1px solid black; */
+    margin-top: 2rem;
+  }
+  .OurMotoIntroImg {
+    width: 40%;
+    /* border: 1px solid gray; */
+  }
+  .OurMotoText {
+    text-align: left;
+    /* padding: 10px; */
+    width: 70%;
+    /* border: 1px solid black; */
+  }
+  .OurMotoBtnCont {
+    margin-top: 1rem;
+  }
+  .LifeAtRS {
+    margin-top: 3rem;
+    /* border: 1px solid black; */
+  }
+  .LifeAtRS-Sub {
+    margin-top: 1rem;
+    margin-left: 3.1rem;
+  }
+  
+  .CardsParent {
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .CardsParent div {
+    /* border: 1px solid green; */
+    border-radius: 20px;
+    background-color: #E6E6E6;
+  }
+  .CardsParent div h2 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+  }
+  .CardsParent div p {
+      text-align: justify;
+    margin-top: 2rem;
+    padding: 0 25px 20px 25px;
+    /* text-align: justify; */
+  }
+  
+  @media screen and (max-width: 768px){
+    .bodyContainerProducts{
+      margin-left: 0;
+      width: 100%;
+    }
+    .OurMoto-Cont{
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .OurMotoText {
+      width: 95%;
+    }
+    .OurMotoIntroImg{
+      width: 100%;
+    }
+    .CardsParent{
+      grid-template-columns: repeat(1,1fr);
+    }
+    .TopInputCont{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
