@@ -33,7 +33,7 @@ const Menu = () => {
             placement="left"
             initialFocusRef={firstField}
             onClose={onClose}
-            size={{ sm: "sm", md: "md", lg: "lg", xl: "xl", "2xl": "full" }}
+            size={{ sm: "sm", md: "md", lg: "xl", xl: "xl", "2xl": "full" }}
           >
             <DrawerOverlay />
             <DrawerContent bg={"#131049"}>
@@ -180,7 +180,7 @@ const Menu = () => {
                               <a href="">RadEvent</a>
                             </li>
                             <li>
-                              <a href="">RadInAI & Toolkit</a>
+                              <a href="">RadInAI</a>
                             </li>
                             <li>
                               <a href="">RadDCT</a>
@@ -191,7 +191,6 @@ const Menu = () => {
                             <li>
                               <a href="">RadChain</a>
                             </li>
-                            
                           </ul>
                         </Box>
                       </Box>

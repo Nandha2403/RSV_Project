@@ -15,7 +15,11 @@ const PairedReads = () => {
       <Box className="bodyContainerPR">
         <Box className="BannerContainerPR">
           <Navbar />
-          <Box ml={"2rem"} pt={"14rem"} color={"white"}>
+          <Box
+            ml={"2rem"}
+            pt={{ base: "14rem", sm: "14rem", md: "14rem", lg: "16rem" }}
+            color={"white"}
+          >
             <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
               PAIRED READS
             </Text>
@@ -153,19 +157,19 @@ const PairedReads = () => {
         <Box className="smallBannerPRBottom">
           <Box className="smallBannerPRBtmContent">
             <Link to={"/CaseStudy/Hand-Scintigraphy"} target="_top">
-              <MdArrowBackIos fontSize={"50px"} cursor={"pointer"} />
+              <MdArrowBackIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
             <Link to={"/CaseStudy/Hand-Scintigraphy"} target="_top">
-              HAND SCINTIGRAPHY
+              Hand Scintigraphy
             </Link>
           </Box>
           <Box className="SmallBannerPRCenterLine"></Box>
           <Box className="smallBannerPRBtmContent">
             <Link to={"/CaseStudy/AI-In-ClinicalTrial"} target="_top">
-              AI IN CLINICAL TRIAL (CT)
+              AI In CT
             </Link>
             <Link to={"/CaseStudy/AI-In-ClinicalTrial"} target="_top">
-              <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
+              <MdArrowForwardIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
           </Box>
         </Box>

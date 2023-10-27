@@ -83,7 +83,7 @@ const Homepage = () => {
     <Box className="Main">
       {/* Menu */}
       <Menu />
-      <Box className="bodyContainer">
+      <Box className="body_container">
         <Box className="BannerContainer">
           <Navbar />
           {/* Banner area */}
@@ -202,7 +202,7 @@ const Homepage = () => {
                 </Button>
               </Box>
             </Box>
-            <Box w={{ base: "40%", sm: "60%" }}>
+            <Box w={{ base: "60%", sm: "50%" }}>
               <a href="#">
                 <img src={RSVSolution} alt="Solution" />
               </a>
@@ -210,11 +210,7 @@ const Homepage = () => {
           </Box>
         </Box>
         {/* Our services */}
-        <Box
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          textAlign={"center"}
-        >
+        <Box data-aos="fade-up" data-aos-duration="1000" textAlign={"center"}>
           <Box
             mt={"3rem"}
             ml={{ base: "1rem", sm: "2rem", md: "3rem" }}
@@ -307,8 +303,8 @@ const Homepage = () => {
           // data-aos-duration="1000"
           // border={"1px solid red"}
         >
-          <Box className="careersImg"></Box>
-          <Box className="careers-heading">
+          <Box className="careers_img"></Box>
+          <Box className="careers_heading">
             <Text className="headings">Career opportunities</Text>
             <Box mt={"2rem"}>
               <Text>
@@ -316,7 +312,7 @@ const Homepage = () => {
                 fun along the way
               </Text>
             </Box>
-            <Box mt={"2rem"} className="CareerBtnCont">
+            <Box mt={"2rem"} className="career_btn_Cont">
               <Button
                 size={"xs"}
                 borderRadius={"15px"}
@@ -337,19 +333,19 @@ const Homepage = () => {
           // border={"1px solid red"}
         >
           <Box className="beInTouchImg"></Box>
-          <Box className="beInTouch-heading">
+          <Box className="beInTouch_heading">
             <Text className="headings">Be In Touch with Us</Text>
           </Box>
-          <Box className="beInTouch-subText">
+          <Box className="beInTouch_subText">
             <Text>
               Radient Sage's objective is to provide a clinical image management
               technology solution that can get trial up and running within
               weeks, under sponsor.
             </Text>
           </Box>
-          <Box className="beInTouchInput-Btn">
+          <Box className="beInTouchInput_Btn">
             <Input
-              size={{base:'xs',sm:'xs',md:'sm'}}
+              size={{ base: "xs", sm: "xs", md: "sm" }}
               type="text"
               border={"2px solid #131049"}
               outline={"none"}
@@ -359,7 +355,7 @@ const Homepage = () => {
               placeholder="E-mail Address"
             />
             <Button
-              size={{base:'xs',sm:'xs',md:'sm'}}
+              size={{ base: "xs", sm: "xs", md: "sm" }}
               borderRadius={"15px"}
               p={"0px 20px 0px 20px"}
               colorScheme="#131049"

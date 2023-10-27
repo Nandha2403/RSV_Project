@@ -15,7 +15,11 @@ const BusinessIntelligence = () => {
       <Box className="bodyContainerBI">
         <Box className="BannerContainerBI">
           <Navbar />
-          <Box ml={"2rem"} pt={"14rem"} color={"white"}>
+          <Box
+            ml={"2rem"}
+            pt={{ base: "14rem", sm: "14rem", md: "14rem", lg: "16rem" }}
+            color={"white"}
+          >
             <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
               BUSINESS INTELLIGENCE (BI)
             </Text>

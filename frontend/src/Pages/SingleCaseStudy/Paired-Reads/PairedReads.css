@@ -115,10 +115,8 @@
     margin-left: 0;
     width: 100%;
   }
-
   .smallBannerPR {
     height: 20vh;
-
     /* background-size: contain; */
   }
   .smallBannerPRBottom {
@@ -134,11 +132,8 @@
     width: 50%;
     height: 2px;
   }
-  /* .smallBannerPRBtmContent{
-    flex-direction: column;
-  } */
   .PRInCTIHeading {
-    margin-left: 0.4rem;
+    margin-left: 0.5rem;
   }
   .PRInCTISubTxt {
     margin-left: 0;

@@ -15,7 +15,11 @@ const Dermatology = () => {
       <Box className="bodyContainerDerma">
         <Box className="BannerContainerDerma">
           <Navbar />
-          <Box ml={"2rem"} pt={"14rem"} color={"white"}>
+          <Box
+            ml={"2rem"}
+            pt={{ base: "14rem", sm: "14rem", md: "14rem", lg: "16rem" }}
+            color={"white"}
+          >
             <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
               AI IN DERMATOLOGY
             </Text>

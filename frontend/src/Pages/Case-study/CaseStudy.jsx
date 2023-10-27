@@ -43,27 +43,6 @@ const CaseStudy = () => {
     " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis.",
   ];
 
-  // <Route path="CaseStudy/AI-In-ClinicalTrial" element={<ClincalTrial />} />
-  // <Route path="CaseStudy/AI-In-Dermatology" element={<Dermatology />} />
-  // <Route
-  //   path="CaseStudy/Business-Intelligence"
-  //   element={<BusinessIntelligence />}
-  // />
-  // <Route
-  //   path="CaseStudy/Oncology-Workflow"
-  //   element={<OncologyWorkflow />}
-  // />
-  // <Route path="CaseStudy/Query-Management" element={<QueryManagement />} />
-  // <Route
-  //   path="CaseStudy/Electronic-Data-Capture"
-  //   element={<ElectronicDataCapture />}
-  // />
-  // <Route
-  //   path="CaseStudy/Hand-Scintigraphy"
-  //   element={<HandScintigraphy />}
-  // />
-  // <Route path="CaseStudy/Paired-Reads" element={<PairedReads />} />
-
   const linkBtn = [
     "/CaseStudy/AI-In-ClinicalTrial",
     "/CaseStudy/AI-In-Dermatology",

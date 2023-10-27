@@ -1,99 +1,170 @@
 .bodyContainerProducts {
-    margin-left: 4rem;
-  
-  }
-  
-  .BannerContainerProducts {
-    background-size: cover;
-    background-image: url("../../Images/AboutUs_BannerImg.jpeg");
-    height: 70vh;
-    object-fit: cover;
+  margin-left: 4rem;
+}
 
+.BannerContainerProducts {
+  background-size: cover;
+  background-image: url("../../Images/AboutUs_BannerImg.jpeg");
+  object-fit: cover;
+}
+
+.below_herobannercont {
+  /* border: 1px solid green; */
+  margin-top: 2rem;
+}
+.title_container {
+  margin-left: 3rem;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "poppins";
+  /* border: 1px solid green; */
+}
+.subtext {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  line-height: 30px;
+  /* border: 1px solid green; */
+}
+.product_highlights {
+  margin-top: 3rem;
+  color: white;
+  padding-bottom: 3rem;
+  background-color: #000b2b;
+}
+.prod_highlights_heading {
+  color: white;
+  margin-left: 3rem;
+  font-size: 30px;
+  padding-top: 2rem;
+}
+.prod_highlights_subtext {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  line-height: 30px;
+}
+.prod_highlights_box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 30px;
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+  /* border: 1px solid white; */
+}
+
+.product_features_heading {
+  margin-left: 3rem;
+  font-size: 30px;
+  padding-top: 2rem;
+}
+
+.product_features_subtext {
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+  /* border: 1px solid gray; */
+}
+
+.product_features_img_cont {
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+  /* border: 1px solid green; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.img_div img {
+  width: 100%;
+  /* margin: auto; */
+  /* border: 1px solid blue; */
+}
+
+.connect_with_us {
+  color: white;
+  background-color: #000b2b;
+  margin-top: 3rem;
+}
+.connect_with_us_heading_cont {
+  /* width: 25%; */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding-top: 4rem;
+  margin-left: 4rem;
+}
+
+.link_icon_cont {
+  margin-left: 1rem;
+}
+
+.connect_with_us_heading {
+  color: white;
+  font-size: 36px;
+}
+
+.connect_us_inpt_cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4rem 0 0 4rem;
+  padding-bottom: 8rem;
+}
+
+.contact_us_with_message_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: xx-large;
+  border-bottom: 2px solid orange;
+}
+
+@media screen and (max-width: 768px) {
+  .bodyContainerProducts {
+    margin-left: 0;
+    width: 100%;
   }
-  .OurMoto {
-    margin-top: 3rem;
-    /* border: 1px solid black; */
+  .prod_highlights_box {
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  .OurMoto-Cont {
+  .title_container {
+    margin-left: 0.5rem;
+    font-size: 24px;
+  }
+  .subtext {
     width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    /* border: 1px solid black; */
+    font-size: medium;
+    /* margin: auto;
     margin-top: 2rem;
-  }
-  .OurMotoIntroImg {
-    width: 40%;
-    /* border: 1px solid gray; */
-  }
-  .OurMotoText {
-    text-align: left;
-    /* padding: 10px; */
-    width: 70%;
-    /* border: 1px solid black; */
-  }
-  .OurMotoBtnCont {
-    margin-top: 1rem;
-  }
-  .LifeAtRS {
-    margin-top: 3rem;
-    /* border: 1px solid black; */
-  }
-  .LifeAtRS-Sub {
-    margin-top: 1rem;
-    margin-left: 3.1rem;
-  }
-  
-  .CardsParent {
-    width: 90%;
-    margin: auto;
-    margin-top: 4rem;
-    /* border: 1px solid black; */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-  }
-  .CardsParent div {
+    line-height: 30px; */
     /* border: 1px solid green; */
-    border-radius: 20px;
-    background-color: #E6E6E6;
   }
-  .CardsParent div h2 {
-    margin-top: 1rem;
-    text-align: center;
+  .prod_highlights_heading {
+    margin-left: 0.5rem;
+  }
+  .prod_highlights_subtext {
+    width: 95%;
+  }
+  .product_features_heading {
+    margin-left: 0.5rem;
+  }
+  .connect_with_us_heading_cont {
+    margin-left: 0.5rem;
+  }
+  .connect_us_inpt_cont {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem 0 0 0.5rem;
+    padding-bottom: 6rem;
+  }
+  .contact_us_with_message_icon {
     font-size: large;
-    font-weight: 600;
   }
-  .CardsParent div p {
-      text-align: justify;
-    margin-top: 2rem;
-    padding: 0 25px 20px 25px;
-    /* text-align: justify; */
+
+  .product_features_img_cont {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media screen and (max-width: 768px){
-    .bodyContainerProducts{
-      margin-left: 0;
-      width: 100%;
-    }
-    .OurMoto-Cont{
-      flex-direction: column;
-      gap: 2rem;
-    }
-    .OurMotoText {
-      width: 95%;
-    }
-    .OurMotoIntroImg{
-      width: 100%;
-    }
-    .CardsParent{
-      grid-template-columns: repeat(1,1fr);
-    }
-    .TopInputCont{
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  
+}

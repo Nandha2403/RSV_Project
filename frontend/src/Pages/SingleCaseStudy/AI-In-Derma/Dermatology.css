@@ -5,7 +5,7 @@
 .BannerContainerDerma {
   /* background-color: #0c447f; */
   background-image: url("../../../Images/Banner-AI-in-Derma.jpeg");
-  /* background-size: cover; */
+  background-size: cover;
 }
 .NextGenContDerma {
   margin-top: 4rem;
@@ -136,7 +136,7 @@
     height: 2px;
   }
   .NextGenHeadingDerma {
-    margin-left: .4rem;
+    margin-left: .5rem;
   }
   .NextGenSubTxtDerma {
     margin-left: 0;
@@ -151,7 +151,7 @@
     margin-top: 1rem;
   }
   .AIAdvanceHeadingCont{
-    margin-left: .4rem;
+    margin-left: .5rem;
   }
   .AIAdvanceDermaTextCont{
     width: 95%;

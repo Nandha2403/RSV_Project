@@ -141,7 +141,7 @@
   }
 
   .NextGenHeading {
-    margin-left: 0;
+    margin-left: 0.4rem;
   }
   .NextGenSubTxt {
     width: 95%;
@@ -157,7 +157,7 @@
   }
   .AIforQualityHeadingCont {
     /* width: 95%; */
-    margin-left: 0;
+    margin-left: 0.4rem;
     /* padding-left: .2rem; */
   }
   .AIforQltyTextCont {

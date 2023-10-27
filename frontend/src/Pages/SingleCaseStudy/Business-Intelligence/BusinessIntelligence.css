@@ -3,9 +3,9 @@
 }
 
 .BannerContainerBI {
-  background-size: cover;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-image: url("../../../Images/Banner-AI-in-CT.jpeg");
+  background-size: cover;
   /* height: 90vh; */
 }
 .PowerBICont {
@@ -141,7 +141,7 @@
   }
 
   .PowerBIHeading{
-    margin-left: .4rem;
+    margin-left: .5rem;
   }
   .PowerBISubTxt{
     /* width: 90%; */

@@ -130,6 +130,8 @@
   .bodyContainerOnco {
     margin-left: 0;
     width: 100%;
+    font-size: 16px;
+    font-weight: 400;
   }
 
   .smallBannerOnco {
@@ -151,17 +153,17 @@
     height: 2px;
   }
   .InnovationsOncoImgHeading{
-    margin-left: .4rem;
+    margin-left: .5rem;
   }
   .InnovationsOncoImgSubTxt{
     width: 95%;
   }
   .UnderBannerTxtOnco{
     width: 100%;
-    margin-left: .2rem;
+    margin-left: .5rem;
   }
   .BenifitsOfOncoHeadingCont{
-    margin-left: .4rem;
+    margin-left: .5rem;
     
   }
   .OncoWorkTypTextCont{
