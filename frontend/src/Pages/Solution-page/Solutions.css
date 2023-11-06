@@ -1,0 +1,72 @@
+.bodyContainerSolutions {
+  margin-left: 4rem;
+}
+
+.BannerContainerSolutions {
+  background-size: cover;
+  background-image: url("../../Images/AboutUs_BannerImg.jpeg");
+  object-fit: cover;
+}
+
+.SolutionLinkContainer {
+  margin-top: 8rem;
+}
+.LinksContainer {
+  width: 40%;
+  /* border: 1px solid green; */
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.SolutionsContainer {
+  /* border: 1px solid green; */
+  margin-top: 10rem;
+}
+.single_solutions_container {
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid green; */
+  margin-top: 3rem;
+}
+
+.Solutions_content_container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.text_container {
+  font-size: 18px;
+  line-height: 30px;
+  /* border: 1px solid green; */
+  width: 60%;
+}
+.LinksContainer{
+  font-size: large;
+  font-weight: 500;
+  font-family: 'poppins';
+}
+.LinksContainer a{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .bodyContainerSolutions {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .single_solutions_container {
+    width: 85%;
+  }
+  .Solutions_content_container {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .text_container {
+    width: 100%;
+  }
+}

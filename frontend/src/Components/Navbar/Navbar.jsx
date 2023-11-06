@@ -17,6 +17,17 @@ import {
   DrawerContent,
   DrawerBody,
   DrawerCloseButton,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalCloseButton,
+  ModalBody,
+  FormControl,
+  FormLabel,
+  ModalFooter,
+  Text,
+  Textarea,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import Logo from "../../Images/RSV-Logo.png";
@@ -26,7 +37,38 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const DemoBtnModal = useDisclosure();
+  const [demoData, setDemodata] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    company: "",
+    reason: "",
+    specific: "",
+  });
 
+  const { name, phone, email, company, reason, specific } = demoData;
+
+
+  const handelDemoForm = (e) => {
+    // console.log(e);
+    const { name, value } = e.target;
+    // console.log(name, value);
+    setDemodata({ ...demoData, [name]: value });
+  };
+
+  const handleSaveDemoData = () => {
+  console.log(demoData);
+
+    setDemodata({
+      name: "",
+      phone: "",
+      email: "",
+      company: "",
+      reason: "",
+      specific: "",
+    });
+  };
   return (
     <Box className="ManiNavPrnt">
       <Box className="nav-parent">
@@ -85,9 +127,99 @@ const Navbar = () => {
               borderRadius={"15px"}
               colorScheme="#131049"
               bg="#131049"
+              onClick={DemoBtnModal.onOpen}
             >
               DEMO
             </Button>
+
+            <Modal
+              isOpen={DemoBtnModal.isOpen}
+              isCentered
+              onClose={DemoBtnModal.onClose}
+              size={{ base: "xs", sm: "sm", md: "md", lg: "xl", xl: "xl" }}
+            >
+              <ModalOverlay />
+              <ModalContent>
+                <ModalHeader>
+                  <Text fontSize={"24px"} color={"blue"}>
+                    Contact a Solutions Specialist
+                  </Text>
+                  <Text fontSize={"16px"}>
+                    Reach out today and an expert will be in touch to learn more
+                    about your specific needs
+                  </Text>
+                </ModalHeader>
+                <ModalCloseButton />
+                <ModalBody pb={6}>
+                  <FormControl>
+                    <FormLabel>Name</FormLabel>
+                    <Input
+                      value={name}
+                      placeholder="Name"
+                      name="name"
+                      onChange={handelDemoForm}
+                    />
+                  </FormControl>
+
+                  <FormControl mt={4}>
+                    <FormLabel>Phone</FormLabel>
+                    <Input
+                      value={phone}
+                      placeholder="Phone"
+                      name="phone"
+                      onChange={handelDemoForm}
+                    />
+                  </FormControl>
+                  <FormControl mt={4}>
+                    <FormLabel>Email</FormLabel>
+                    <Input
+                      value={email}
+                      placeholder="Email"
+                      name="email"
+                      onChange={handelDemoForm}
+                    />
+                  </FormControl>
+                  <FormControl mt={4}>
+                    <FormLabel>Company</FormLabel>
+                    <Input
+                      value={company}
+                      placeholder="Company"
+                      name="company"
+                      onChange={handelDemoForm}
+                    />
+                  </FormControl>
+                  <FormControl mt={4}>
+                    <FormLabel>Reason for Inquiry</FormLabel>
+                    <Input
+                      value={reason}
+                      placeholder="Reason for Inquiry"
+                      name="reason"
+                      onChange={handelDemoForm}
+                    />
+                  </FormControl>
+                  <FormControl mt={4}>
+                    <FormLabel>Specific Requirements (if any):</FormLabel>
+                    <Textarea
+                      value={specific}
+                      placeholder="Specific Requirements"
+                      name="specific"
+                      onChange={handelDemoForm}
+                    />
+                  </FormControl>
+                </ModalBody>
+
+                <ModalFooter>
+                  <Button
+                    colorScheme="blue"
+                    mr={3}
+                    onClick={handleSaveDemoData}
+                  >
+                    Save
+                  </Button>
+                  <Button onClick={DemoBtnModal.onClose}>Cancel</Button>
+                </ModalFooter>
+              </ModalContent>
+            </Modal>
           </Box>
         </Box>
         {/* SmallScreen drop */}

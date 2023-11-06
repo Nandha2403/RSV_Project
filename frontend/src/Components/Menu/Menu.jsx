@@ -49,7 +49,7 @@ const Menu = () => {
               <DrawerBody mt={"50px"} className="MenuParentContainer">
                 <Stack spacing="45px" className="MenuLinkContainer">
                   <Box className="leftLinks">
-                    <a href="">Solutions</a>
+                    <Link to={"/Solutions"}>Solutions</Link>
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
                         <Box>
