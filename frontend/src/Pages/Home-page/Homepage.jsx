@@ -22,6 +22,7 @@ import "./Homepage.css";
 import CustomPrevArrow from "../../Components/CustomArrows/CustomPrevArrow";
 import CustomNextArrow from "../../Components/CustomArrows/CustomNextArrow";
 import ProcessFlow from "../../Images/ProcessNewDesign.jpeg";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   const ClientsImages = [
@@ -75,6 +76,12 @@ const Homepage = () => {
       },
     ],
   };
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -95,15 +102,17 @@ const Homepage = () => {
                 fontWeight={"bold"}
                 fontFamily={"poppins"}
               >
-                CLINICAL TRIALS <br />
-                IMAGING
+                {/* Pioneering Imaging for
+                Tomorrow's Trials. */}
+                Revolutionizing Clinical Trial Imaging <br /> through the Power of AI
+                {/* AI-Powered Imaging for Tomorrow's Trials. */}
               </Text>
             </Box>
             <Box className="BannerIntroContent">
               <Text as={"p"}>
-                Radiant Sages's solutions exemplify, how it can be leveraged in
-                Clinical Imaging Trails to enable the smooth acquistion,
-                processing, and delivery of information on a timely basis
+                Radiant Sage's solutions exemplify how imaging AI can be leveraged in
+                Clinical Imaging Trials to enable the smooth acquisition,
+                processing, and delivery of insights on a timely basis.
               </Text>
             </Box>
             <Box ml={"1.5rem"} mt={"2rem"} pb={"4rem"}>
@@ -114,7 +123,9 @@ const Homepage = () => {
                 colorScheme="#131049"
                 bg="#131049"
               >
-                Learn More
+                <Link to={"/Solutions"} target="_top">
+                  Learn More
+                </Link>
               </Button>
             </Box>
           </Box>
@@ -181,7 +192,7 @@ const Homepage = () => {
                   </li>
                 </ul>
               </Box>
-              <Box className="Solution-btns">
+              <Box className="Solution_btns">
                 <Button
                   size={"xs"}
                   borderRadius={"15px"}
@@ -189,7 +200,9 @@ const Homepage = () => {
                   colorScheme="#131049"
                   bg="#131049"
                 >
-                  View all
+                  <Link to={"/Solutions"} target="_top">
+                    View all
+                  </Link>
                 </Button>
                 <Button
                   size={"xs"}
@@ -197,6 +210,7 @@ const Homepage = () => {
                   p={"0px 20px 0px 20px"}
                   colorScheme="#131049"
                   bg="#131049"
+                  onClick={scrollTop}
                 >
                   Request Demo
                 </Button>
@@ -308,8 +322,8 @@ const Homepage = () => {
             <Text className="headings">Career opportunities</Text>
             <Box mt={"2rem"}>
               <Text>
-                Innovative technology driven by Talented <br /> People and have
-                fun along the way
+                Innovative technology driven by talented <br /> People and have
+                fun along the way.
               </Text>
             </Box>
             <Box mt={"2rem"} className="career_btn_Cont">
@@ -320,7 +334,9 @@ const Homepage = () => {
                 colorScheme="#131049"
                 bg="#131049"
               >
-                Join Our Team
+                <Link to={"/Career"} target="_top">
+                  Join Our Team
+                </Link>
               </Button>
             </Box>
           </Box>
@@ -338,9 +354,9 @@ const Homepage = () => {
           </Box>
           <Box className="beInTouch_subText">
             <Text>
-              Radient Sage's objective is to provide a clinical image management
-              technology solution that can get trial up and running within
-              weeks, under sponsor.
+              Radiant Sage's objective is to provide a clinical image management
+              technology solution that can get trials up and running within
+              weeks under a sponsor.
             </Text>
           </Box>
           <Box className="beInTouchInput_Btn">

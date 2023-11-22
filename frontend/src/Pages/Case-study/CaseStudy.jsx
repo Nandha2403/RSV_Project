@@ -21,9 +21,18 @@ const CaseStudy = () => {
   const screenWidth = window.screen.width;
   // console.log(`Screen Width: ${screenWidth}px`);
 
-  const images = [CaseImg1, CaseImg2, CaseImg3, CaseImg4, CaseImg5, CaseImg6,CaseImg4,CaseImg5];
+  const images = [
+    CaseImg1,
+    CaseImg2,
+    CaseImg3,
+    CaseImg4,
+    CaseImg5,
+    CaseImg6,
+    CaseImg4,
+    CaseImg5,
+  ];
   const info = [
-    "AI In Clincal Trial",
+    "AI In Clinical Trials",
     "AI In Dermatology",
     "Business Intelligence",
     "Oncology Workflow",
@@ -78,11 +87,15 @@ const CaseStudy = () => {
                 Case Study
               </Text>
             </Box>
-            <Box ml={"1.5rem"} mt={"2rem"} w={"35%"}>
+            <Box
+              ml={"1.5rem"}
+              mt={"2rem"}
+              w={{ base: "85%", sm: "85%", md: "85%", lg: "35%" }}
+            >
               <Text fontSize={"sm"}>
-                Radient Sages's Solutions Exemplify, how it can be Leveraged in
-                Clinical Imaging Trails to enable the smooth Acquistion,
-                Processing, and Delivery of information on a Timely basis
+                Radiant Sage's solutions exemplify how they can be leveraged in
+                Clinical Imaging Trials to enable the smooth acquisition,
+                processing, and delivery of information on a timely basis.
               </Text>
             </Box>
             <Box ml={"1.5rem"} mt={"2rem"} pb={"4rem"}>
@@ -129,20 +142,20 @@ const CaseStudy = () => {
               // data-aos="fade-up"
               // data-aos-duration="1000"
             >
-              <Box className="CaseStudy-SubHeading">
+              <Box className="CaseStudy-IntroHeading">
                 <Text>Introduction :</Text>
               </Box>
               <Box className="CaseStudy-text">
                 <Text data-aos="fade-up" data-aos-duration="1000">
-                  Image data is hard to manage and store for pharmaceutical
-                  companies, especially when they need to share it for
-                  licencing, acquisition, or due diligence.
+                  Image data is challenging to manage and store for
+                  pharmaceutical companies, especially when they need to share
+                  it for licensing, acquisition, or due diligence.
                 </Text>
                 <Text data-aos="fade-up" data-aos-duration="1000" mt={"2rem"}>
-                  Image analysis is often a key endpoint for showing the
-                  efficacy of a drug, but without proper data warehousing, it
-                  can be difficult to reproduce the results and prove the value
-                  of thdrug.
+                  Image analysis is often a key endpoint for demonstrating the
+                  efficacy of a drug. However, without proper data warehousing,
+                  reproducing the results and proving the value of the drug can
+                  be challenging.
                 </Text>
                 <Text data-aos="fade-up" data-aos-duration="1000" mt={"2rem"}>
                   Reproducibility is essential for providing hard evidence to
@@ -172,7 +185,9 @@ const CaseStudy = () => {
               <p className="info-title"> {info[focusElement]} </p>
               <p className="info-content"> {content[focusElement]} </p>
               <button>
-                <Link to={linkBtn[focusElement]} target="_top">Learn More</Link>
+                <Link to={linkBtn[focusElement]} target="_top">
+                  Learn More
+                </Link>
               </button>
             </div>
           </div>
@@ -187,7 +202,7 @@ const CaseStudy = () => {
               // data-aos-duration="1000"
             >
               <Box className="title-text-container">
-                <Text>Adavantage</Text>
+                <Text>Adavantages</Text>
               </Box>
             </Box>
             <Box
@@ -198,13 +213,13 @@ const CaseStudy = () => {
               <ul>
                 <li>Reducing Clinical Trial Cycle Times</li>
                 <li>
-                  Improving cost of Productivity and Outcomes of Clinical
+                  Improving the cost of productivity and outcomes in clinical
                   development
                 </li>
                 <li>Monitoring Participants Adherence</li>
-                <li>Improving Quality of Patient pool & Trail Design</li>
-                <li>Aiding in Clinical Trail Data Gathering & Analysis</li>
-                <li>Improving Patient Experience During Clinical Trails</li>
+                <li>Improving the quality of patient pool and trial design</li>
+                <li>Aiding in clinical trial data gathering and analysis</li>
+                <li>Improving the patient experience during clinical trials</li>
               </ul>
             </Box>
           </Box>
@@ -229,11 +244,11 @@ const CaseStudy = () => {
               // data-aos-duration="1000"
             >
               <ul>
-                <li>Data Privacy & Ethical Concerns</li>
-                <li>Potential Bias</li>
-                <li>Inconsistent Data Managment</li>
-                <li>Difficulty Comparing Different Algorithms</li>
-                <li>Challenges Related to Machine Learning</li>
+                <li>Data privacy & Ethical concerns</li>
+                <li>Potential bias</li>
+                <li>Inconsistent data managment</li>
+                <li>Difficulty comparing different algorithms</li>
+                <li>Challenges related to machine learning</li>
               </ul>
             </Box>
           </Box>

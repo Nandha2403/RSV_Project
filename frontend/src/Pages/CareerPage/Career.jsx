@@ -22,23 +22,23 @@ const Career = () => {
           </Text>
           <Box className="OurMoto-Cont">
             <Box className="OurMotoText">
+              <Text className="headings" mb={'1rem'}>Join the revolution reshaping the landscape of clinical trial imaging.</Text>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                nec nisi a tortor posuere varius. Cras imperdiet varius ipsum
-                vel blandit. Duis sagittis quis purus eget ullamcorper. Donec
-                ornare molestie ligula, eu pretium sem pellentesque ac. Morbi
-                gravida magna felis, non cursus nulla sodales vel. Sed sagittis
-                commodo odio id cursus. Nulla mattis tristique magna ac mattis.
-                Ut accumsan mi at lorem sagittis, non fringilla diam pulvinar.
-                Maecenas sagittis, purus ac dapibus elementum, erat metus
-                finibus diam, in sagittis nunc nulla nec tortor. Vivamus commodo
-                nunc tincidunt lorem semper finibus. Etiam finibus justo vel
-                porttitor ultrices. Donec id facilisis nisl, iaculis convallis
-                odio. Vestibulum ante ipsum primis in faucibus orci luctus et
-                ultrices posuere cubilia curae; Integer orci turpis, accumsan
-                sollicitudin enim id, sollicitudin rhoncus lorem. Aliquam id
-                ultricies orci, ac tincidunt nisi. Sed ac enim luctus, volutpat
-                libero at, dapibus dui.
+                Explore exciting opportunities with RSV - Radiant Sage Ventures,
+                a trailblazer in redefining the landscape of clinical trial
+                imaging. Our motto, 'Pioneering Precision, Transforming Imaging
+                in Trials,' epitomizes our dedication to pushing the frontiers
+                of innovation in the healthcare sector. At RSV - Radiant Sage
+                Ventures, we're on the lookout for driven individuals who share
+                our fervor for propelling medical research forward through
+                state-of-the-art imaging technologies. As a valued member of our
+                team, you'll play a pivotal role in reshaping clinical trials,
+                contributing to the creation of revolutionary therapies, and
+                enhancing patient outcomes. If you're prepared to be part of a
+                dynamic environment that cherishes precision, innovation, and
+                the pursuit of medical breakthroughs, come join us at RSV -
+                Radiant Sage Ventures. Your expertise is the key to making a
+                lasting impact on the future of healthcare.
               </p>
               <Box className="OurMotoBtnCont">
                 <Button
@@ -65,35 +65,43 @@ const Career = () => {
             </Text>
           </Box>
           <Box className="LifeAtRS-Sub">
-            <Text>HINT FOR THE LIFE AT RADIANT SAGE</Text>
           </Box>
           {/* CARDS */}
           <Box className="CardsParent">
             <Box>
-              <h2 className="CardHeading">Our Work-Life Balance</h2>
+              <h2 className="CardHeading headings">Innovation Hub</h2>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-                sapiente mollitia quidem. Obcaecati, officiis veniam. Tempora,
-                quidem expedita harum nisi ex ad ipsa vero veritatis nihil,
-                eligendi nesciunt, amet tenetur
+                Life at RSV is centered around our Innovation Hub, where
+                curiosity and creativity converge to drive groundbreaking
+                advancements in clinical trial imaging. Our dynamic work
+                environment fosters a culture of continuous learning and
+                exploration, empowering our team members to contribute to
+                cutting-edge solutions that redefine the industry.
               </p>
             </Box>
             <Box>
-              <h2 className="CardHeading">Our Work-Life Balance</h2>
+              <h2 className="CardHeading headings">Collaborative Excellence</h2>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-                sapiente mollitia quidem. Obcaecati, officiis veniam. Tempora,
-                quidem expedita harum nisi ex ad ipsa vero veritatis nihil,
-                eligendi nesciunt, amet tenetur
+                At RSV, collaboration is not just a buzzword; it's the
+                cornerstone of our success. Teamwork thrives in every aspect of
+                life here, from cross-functional projects to knowledge sharing.
+                Our collaborative approach extends beyond departmental
+                boundaries, creating a vibrant community where diverse
+                perspectives come together to solve complex challenges and push
+                the limits of what's possible.
               </p>
             </Box>
             <Box>
-              <h2 className="CardHeading">Our Work-Life Balance</h2>
+              <h2 className="CardHeading headings">Career Development Ecosystem</h2>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-                sapiente mollitia quidem. Obcaecati, officiis veniam. Tempora,
-                quidem expedita harum nisi ex ad ipsa vero veritatis nihil,
-                eligendi nesciunt, amet tenetur
+                Life at RSV is a journey of growth and development. We believe
+                in investing in our talent, providing opportunities for skill
+                enhancement, and nurturing professional aspirations. Our career
+                development ecosystem includes mentorship programs, regular
+                training sessions, and avenues for advancement, ensuring that
+                every team member has the tools and support needed to shape
+                their career trajectory within the ever-evolving landscape of
+                healthcare technology.
               </p>
             </Box>
           </Box>

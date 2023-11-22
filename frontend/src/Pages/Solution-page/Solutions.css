@@ -12,46 +12,59 @@
   margin-top: 8rem;
 }
 .LinksContainer {
-  width: 40%;
+  width: 70%;
   /* border: 1px solid green; */
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
   /* justify-content: space-between; */
-  justify-content: space-around;
+  /* justify-content: space-around; */
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  font-size: large;
+  font-weight: 500;
+  font-family: "poppins";
 }
-
+.LinksContainer a {
+  cursor: pointer;
+}
+.LinksContainer a:hover {
+  color: orange;
+  font-weight: bold;
+}
 .SolutionsContainer {
   /* border: 1px solid green; */
   margin-top: 10rem;
 }
 .single_solutions_container {
-  width: 80%;
+  width: 85%;
   margin: auto;
   /* border: 1px solid green; */
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .Solutions_content_container {
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-}
-.text_container {
-  font-size: 18px;
-  line-height: 30px;
   /* border: 1px solid green; */
+  align-items: center;
+}
+.Solutions_content_container .text_container {
+  width: 50%;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  text-align: justify;
+  /* border: 1px solid green; */
+}
+.Solutions_content_container > .image_container {
+  width: 45%;
+  /* border: 1px solid green; */
+}
+/* .big_image_container img{
   width: 60%;
-}
-.LinksContainer{
-  font-size: large;
-  font-weight: 500;
-  font-family: 'poppins';
-}
-.LinksContainer a{
-  cursor: pointer;
-}
+  margin: auto;
+} */
 
 @media screen and (max-width: 767px) {
   .bodyContainerSolutions {
@@ -59,14 +72,33 @@
     width: 100%;
   }
 
+  .LinksContainer {
+    width: 95%;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin: auto;
+    margin-top: 3rem;
+    /* border: 1px solid gray; */
+  }
+  .SolutionsContainer{
+    margin-top: 0rem;
+    /* border: 1px solid rebeccapurple; */
+  }
+
   .single_solutions_container {
-    width: 85%;
+    width: 94%;
+    /* margin-top: 3rem; */
   }
   .Solutions_content_container {
     flex-direction: column-reverse;
     gap: 3rem;
   }
-  .text_container {
+  .Solutions_content_container .text_container {
     width: 100%;
+  }
+
+  .Solutions_content_container .image_container {
+    width: 100%;
+    margin-top: 2rem;
   }
 }

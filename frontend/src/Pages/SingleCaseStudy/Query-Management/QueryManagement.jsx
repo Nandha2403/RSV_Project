@@ -133,16 +133,16 @@ const QueryManagement = () => {
             <Box className="BenifitsOfQMTextTitle1">
               <Text>Improved data quality :</Text>
               <Text>
-                Query management helps ensure that imaging data collected during
-                the trial is complete, accurate, and consistent, which can
-                improve the overall quality of the data.
+                Query management helps ensure that the imaging data collected
+                during the trial is complete, accurate, and consistent, which
+                can improve the overall quality of the data.
               </Text>
             </Box>
             <Box className="BenifitsOfQMTextTitle1">
               <Text>Timely resolution of issues :</Text>
               <Text>
                 Query management allows issues related to imaging data to be
-                identified and resolved quickly, which can help prevent delays
+                identified and resolved quickly, which can help prevent delays,
                 in the trial timeline.
               </Text>
             </Box>
@@ -177,7 +177,7 @@ const QueryManagement = () => {
         <Box className="overallBtmContQM">
           <Text>
             Overall, oncology workflow is a valuable tool for clinical trials
-            imaging that can improve the accuracy and efficiency of tumour
+            imaging that can improve the accuracy and efficiency of tumor
             segmentation and response assessment, which is essential for making
             accurate clinical decisions and developing effective treatments for
             cancer patients.

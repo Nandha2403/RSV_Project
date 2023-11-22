@@ -19,7 +19,14 @@
 .CaseStudy-SubHeading {
   margin-top: 1rem;
   margin-left: 7.5rem;
-  text-align: left;
+  font-size: 25px;
+  /* font-weight: 600; */
+  font-weight: bold;
+  /* border: 1px solid greenyellow; */
+}
+.CaseStudy-IntroHeading {
+  margin-top: 1rem;
+  /* margin-left: 7.5rem; */
   font-size: 25px;
   /* font-weight: 600; */
   font-weight: bold;
@@ -44,7 +51,6 @@
   text-align: left;
 }
 .CaseStudy-text {
-  text-align: justify;
   margin-top: 20px;
 }
 .AdvantangeAndChallenges {
@@ -68,7 +74,7 @@
 }
 .middel-border {
   height: 25vh;
-  border: 2px solid #0f062a;
+  /* border: 2px solid #0f062a; */
   border-radius: 10px;
   margin: auto;
 }
@@ -226,6 +232,7 @@
   .Adavantage {
     margin-left: 1rem;
   }
+
   .Challenges {
     margin-right: 5px;
     margin-left: 0;
@@ -284,10 +291,15 @@
   }
   .wheel {
     padding: 50px;
-    border: 1px solid #0f062a;
+    /* border: 1px solid #0f062a; */
     overflow: hidden;
   }
-
+  .CaseStudyHeading {
+    margin-left: 0.5rem;
+  }
+  .CaseStudyMain-Right{
+    padding: 0 0 0 .6rem;
+  }
   .info-box-wrapper {
     height: 40vh;
     width: 80%;

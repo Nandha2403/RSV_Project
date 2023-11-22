@@ -123,7 +123,7 @@ const HandScintigraphy = () => {
               <Text>Non-invasive :</Text>
               <Text>
                 Hand scintigraphy is a non-invasive procedure that does not
-                require any incisions or anaesthesia, which can reduce the risk
+                require any incisions or anesthesia, which can reduce the risk
                 of complications and discomfort for the patient.
               </Text>
             </Box>

@@ -1,0 +1,62 @@
+.bodyContainerServices {
+  margin-left: 4rem;
+}
+
+.BannerContainerServices {
+  background-size: cover;
+  background-image: url("../../Images/AboutUs_BannerImg.jpeg");
+  object-fit: cover;
+}
+
+.ServicesParent {
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  /* border: 1px solid green; */
+}
+.SingleServices {
+  margin-top: 5rem;
+}
+.SingleServicesImgCont {
+  margin-top: 2rem;
+  width: 80%;
+  /* border: 1px solid black; */
+}
+.SingleServicesImgCont img {
+  border-radius: 8px;
+}
+.SingleServicesTextCont {
+  text-align: justify;
+  margin-top: 4rem;
+  list-style: 29px;
+}
+
+.SingleServiceInclude > p {
+  margin-top: 2rem;
+  font-size: larger;
+  font-weight: bold;
+}
+.SingleServiceInclude ul {
+  margin-top: 1rem;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.SingleServiceInclude ul > li::before {
+  content: "➱";
+  padding-right: 8px;
+  color: #131049;
+}
+
+@media screen and (max-width: 767px) {
+  .bodyContainerServices {
+    margin-left: 0;
+    width: 100%;
+  }
+  .ServicesParent{
+    width: 95%;
+  }
+  .SingleServicesImgCont{
+    width: 100%;
+  }
+}

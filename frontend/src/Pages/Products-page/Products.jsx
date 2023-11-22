@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Products.css";
 import {
   Box,
@@ -12,16 +12,27 @@ import { HiLink, HiOutlineChatBubbleLeftEllipsis } from "react-icons/hi2";
 import Menu from "../../Components/Menu/Menu";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
-import Service1 from "../../Images/service icons RSV-01.png";
-import Service2 from "../../Images/service icons RSV-02.png";
-import Service3 from "../../Images/service icons RSV-03.png";
-import Service4 from "../../Images/service icons RSV-04.png";
-import Service5 from "../../Images/service icons RSV-05.png";
-import Service6 from "../../Images/service icons RSV-06.png";
-import Service7 from "../../Images/service icons RSV-07.png";
-import Service8 from "../../Images/service icons RSV-08.png";
+import Service1 from "../../Images/ServiceImg-01.png";
+import Service2 from "../../Images/ServiceImg-02.png";
+import Service3 from "../../Images/ServiceImg-03.png";
+import Service4 from "../../Images/ServiceImg-04.png";
+import Service5 from "../../Images/ServiceImg-05.png";
+import Service6 from "../../Images/ServiceImg-06.png";
+import Service7 from "../../Images/ServiceImg-07.png";
+import Service8 from "../../Images/ServiceImg-08.png";
+import product1 from "../../Images/Data Standardization and Acquition-01.png";
+import { Link } from "react-router-dom";
 
 const Products = () => {
+  const [SignupEmail, setSignupEmail] = useState("");
+
+  const handleSignup = (e) => {
+    setSignupEmail(e.target.value);
+  };
+
+  const SignupBtn =()=>{
+    console.log(SignupEmail);
+  }
   return (
     <Box>
       {/* Menu */}
@@ -79,129 +90,186 @@ const Products = () => {
             CoreLab-In-A-Box (CLIB) Modules
           </Box>
           <Box className="Products_container">
-            <Text className="headings">RadGate Import/Export :</Text>
-            <ul className="under_text">
-              <li>
-                HTML5 based import using web browsers / Easy for site users
-              </li>
-              <li>
-                Trial specific anonymization/blinding and DICOM header updates
-                logic and edit checks for image QC
-              </li>
-              <li>Automated DTF and Integrated DCT workflow</li>
-            </ul>
+            <Text className="headings" id="RadGate">RadGate Import/Export :</Text>
+            <Box className="products_text_and_img_cont">
+              <ul className="under_text">
+                <li>
+                  HTML5 based import using web browsers / Easy for site users
+                </li>
+                <li>
+                  Trial specific anonymization/blinding and DICOM header updates
+                  logic and edit checks for image QC
+                </li>
+                <li>Automated DTF and Integrated DCT workflow</li>
+              </ul>
+              <Box className="products_img_cont">
+                <img src={product1} alt="RadGate Import/Export" />
+              </Box>
+            </Box>
           </Box>
           <Box className="Products_container">
             <Text className="headings">RadVault Repository and Portal :</Text>
-            <ul className="under_text">
-              <li>Content Based Storage Model - Any file</li>
-              <li>Web-based Access with RESTFUL APIs for integration</li>
-              <li>Role Based Access Controls with Part 11 Compliance</li>
-            </ul>
+            <Box className="products_text_and_img_cont">
+              <ul className="under_text">
+                <li>Content Based Storage Model - Any file</li>
+                <li>Web-based Access with RESTFUL APIs for integration</li>
+                <li>Role Based Access Controls with Part 11 Compliance</li>
+              </ul>
+              <Box className="products_img_cont">
+                <img src={product1} alt="RadGate Import/Export" />
+              </Box>
+            </Box>
           </Box>
           <Box className="Products_container">
             <Text className="headings">RadVista Imaging Workstation :</Text>
-            <ul className="under_text">
-              <li>Multi-Modality Workstation (DICOM/Non-DICOM)</li>
-              <li>Integrated with ICP/CLIB, Customizable per study/read</li>
-              <li>
-                Remote Rendering with “0” footprint HTML5 viewer/workstation
-                without image transfers
-              </li>
-            </ul>
+            <Box className="products_text_and_img_cont">
+              <ul className="under_text">
+                <li>Multi-Modality Workstation (DICOM/Non-DICOM)</li>
+                <li>Integrated with ICP/CLIB, Customizable per study/read</li>
+                <li>
+                  Remote Rendering with “0” footprint HTML5 viewer/workstation
+                  without image transfers
+                </li>
+              </ul>
+              <Box className="products_img_cont">
+                <img src={product1} alt="RadGate Import/Export" />
+              </Box>
+            </Box>
           </Box>
           <Box className="Products_container">
             <Text className="headings">RadFlow Workflow Engine :</Text>
-            <ul className="under_text">
-              <li>Study/Modality based Workflows</li>
-              <li>Blinded-Read paradigms</li>
-              <li>
-                Comprehensive EDC module with Single Sign On RadFlow Workflow
-                Engine
-              </li>
-              <li>Multi-Trial Corelab Operations (CTMS)</li>
-              <li>
-                Trial Administration / Site Management / Training / User Manage
-              </li>
-            </ul>
+            <Box className="products_text_and_img_cont">
+              <ul className="under_text">
+                <li>Study/Modality based Workflows</li>
+                <li>Blinded-Read paradigms</li>
+                <li>
+                  Comprehensive EDC module with Single Sign On RadFlow Workflow
+                  Engine
+                </li>
+                <li>Multi-Trial Corelab Operations (CTMS)</li>
+                <li>
+                  Trial Administration / Site Management / Training / User
+                  Manage
+                </li>
+              </ul>
+              <Box className="products_img_cont">
+                <img src={product1} alt="RadGate Import/Export" />
+              </Box>
+            </Box>
           </Box>
           <Box className="Products_container">
             <Text className="headings">RadClinica CTMS :</Text>
-            <ul className="under_text">
-              <li>Multi-Trial Corelab Operations (CTMS)</li>
-              <li>
-                Trial Administration / Site Management / Training / User
-                Management RadClinica
-              </li>
-              <li>Finance/Documents/Supplies etc.</li>
-            </ul>
+            <Box className="products_text_and_img_cont">
+              <ul className="under_text">
+                <li>Multi-Trial Corelab Operations (CTMS)</li>
+                <li>
+                  Trial Administration / Site Management / Training / User
+                  Management RadClinica
+                </li>
+                <li>Finance/Documents/Supplies etc.</li>
+              </ul>
+              <Box className="products_img_cont">
+                <img src={product1} alt="RadGate Import/Export" />
+              </Box>
+            </Box>
           </Box>
           <Box className="Products_container">
             <Text className="headings">
               RadInSight Reporting and Analytics :
             </Text>
-            <ul className="under_text">
-              <li>Analytics and Reporting (Trial/Cross Trial)</li>
-              <li>Adhoc Data Exploration / Predictive modeling</li>
-              <li>Dashboards / Performance Metrics</li>
-            </ul>
+            <Box className="products_text_and_img_cont">
+              <ul className="under_text">
+                <li>Analytics and Reporting (Trial/Cross Trial)</li>
+                <li>Adhoc Data Exploration / Predictive modeling</li>
+                <li>Dashboards / Performance Metrics</li>
+              </ul>
+              <Box className="products_img_cont">
+                <img src={product1} alt="RadGate Import/Export" />
+              </Box>
+            </Box>
           </Box>
           <Box className="Products_container">
             <Text className="headings">
               RadEvent Event Adjudication Module :
             </Text>
-            <ul className="under_text">
-              <li>
-                Customized Event Workflows (Images, Documents) with EDC
-                integration
-              </li>
-              <li>Dossier Management (Redaction, Translation)</li>
-              <li>
-                Customizable Read Paradigms (Events Types, Consensus, Site etc)
-              </li>
-            </ul>
+            <Box className="products_text_and_img_cont">
+              <ul className="under_text">
+                <li>
+                  Customized Event Workflows (Images, Documents) with EDC
+                  integration
+                </li>
+                <li>Dossier Management (Redaction, Translation)</li>
+                <li>
+                  Customizable Read Paradigms (Events Types, Consensus, Site
+                  etc)
+                </li>
+              </ul>
+              <Box className="products_img_cont">
+                <img src={product1} alt="RadGate Import/Export" />
+              </Box>
+            </Box>
           </Box>
           <Box className="Products_container">
             <Text className="headings">RadAI & Toolkit AI/ML Framework :</Text>
-            <ul className="under_text">
-              <li> Models to support image processing in Trial workflows</li>
-              <li>
-                Workflow to support development and deployment of Medical
-                Imaging AI/ML
-              </li>
-              <li>Annotation and Labeling tools</li>
-              <li>Manual and semi-automated boundary detection</li>
-            </ul>
+            <Box className="products_text_and_img_cont">
+              <ul className="under_text">
+                <li> Models to support image processing in Trial workflows</li>
+                <li>
+                  Workflow to support development and deployment of Medical
+                  Imaging AI/ML
+                </li>
+                <li>Annotation and Labeling tools</li>
+                <li>Manual and semi-automated boundary detection</li>
+              </ul>
+              <Box className="products_img_cont">
+                <img src={product1} alt="RadGate Import/Export" />
+              </Box>
+            </Box>
           </Box>
           <Box className="Products_container">
             <Text className="headings">
               RadDCT Decentralized Clinical Trials :
             </Text>
-            <ul className="under_text">
-              <li>Upload Image data from local scan centers</li>
-              <li>
-                Patient Centric logistics/negotiation for local scan centers
-              </li>
-              <li>Patient/Scan Center payments</li>
-            </ul>
+            <Box className="products_text_and_img_cont">
+              <ul className="under_text">
+                <li>Upload Image data from local scan centers</li>
+                <li>
+                  Patient Centric logistics/negotiation for local scan centers
+                </li>
+                <li>Patient/Scan Center payments</li>
+              </ul>
+              <Box className="products_img_cont">
+                <img src={product1} alt="RadGate Import/Export" />
+              </Box>
+            </Box>
           </Box>
           <Box className="Products_container">
             <Text className="headings">RadApp Patient Driven Apps :</Text>
-            <ul className="under_text">
-              <li> Patient based image capture via Apps</li>
-              <li>Linked with RadVault, RadFlow</li>
-              <li>Patient Data capture (ePRO)</li>
-            </ul>
+            <Box className="products_text_and_img_cont">
+              <ul className="under_text">
+                <li> Patient based image capture via Apps</li>
+                <li>Linked with RadVault, RadFlow</li>
+                <li>Patient Data capture (ePRO)</li>
+              </ul>
+              <Box className="products_img_cont">
+                <img src={product1} alt="RadGate Import/Export" />
+              </Box>
+            </Box>
           </Box>
           <Box className="Products_container">
             <Text className="headings">RadChain Proof of Concept :</Text>
-            <ul className="under_text">
-              <li>Integration of a BlockChain into CLIB RadChain</li>
-              <li>
-                Access to BlockChain records to authorized users via standard
-                tools
-              </li>
-            </ul>
+            <Box className="products_text_and_img_cont">
+              <ul className="under_text">
+                <li>Integration of a BlockChain into CLIB RadChain</li>
+                <li>
+                  Access to BlockChain records to authorized users via standard
+                  tools
+                </li>
+              </ul>
+              <Box className="products_img_cont">
+                <img src={product1} alt="RadGate Import/Export" />
+              </Box>
+            </Box>
           </Box>
         </Box>
         <Box className="product_highlights">
@@ -344,15 +412,18 @@ const Products = () => {
                 color={"white"}
                 fontSize={"20px"}
                 p={"30px 0 30px 20px"}
+                onChange={handleSignup}
               />
               <InputRightElement w={"5rem"} mt={".7rem"} mr={"10px"}>
-                <Button colorScheme="none">Sign Up</Button>
+                <Button colorScheme="none" onClick={SignupBtn}>Sign Up</Button>
               </InputRightElement>
             </InputGroup>
 
             <Box className="contact_us_with_message_icon">
               <Text>
-                Contact Us <span style={{ color: "orange" }}>Today</span>
+                <Link to={"/ContactUs"} target="_top">
+                  Contact Us <span style={{ color: "orange" }}>Today</span>
+                </Link>
               </Text>
               <Box>
                 <HiOutlineChatBubbleLeftEllipsis fontSize={"40px"} />

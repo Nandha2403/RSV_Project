@@ -61,11 +61,11 @@ const PairedReads = () => {
           </Box>
           <Box className="PRInCTISubTxt">
             <Text>
-              Paired reads, also known as paired-end sequencing, is a type of
+              Paired reads, also known as paired-end sequencing, are a type of
               DNA sequencing method that involves sequencing both ends of a DNA
               fragment. This allows for the detection of structural variants
               such as insertions, deletions, and inversions, which are important
-              in clinical trials imaging for understanding the genetic basis of
+              in clinical trial imaging for understanding the genetic basis of
               diseases and developing personalized therapies.
             </Text>
             <Text>
@@ -140,7 +140,7 @@ const PairedReads = () => {
               <Text>
                 Paired-end sequencing can be used with a variety of sample
                 types, including tissue, blood, and saliva, which makes it a
-                versatile tool for clinical trials imaging.
+                versatile tool for clinical trial imaging.
               </Text>
             </Box>
           </Box>
@@ -148,7 +148,7 @@ const PairedReads = () => {
         <Box className="overallBtmContPR">
           <Text>
             Overall, paired-end sequencing is a powerful tool for clinical
-            trials imaging, as it allows for the detection of structural
+            trial imaging, as it allows for the detection of structural
             variants and provides high-quality sequencing data that can be used
             to develop personalized therapies and improve clinical
             decision-making.

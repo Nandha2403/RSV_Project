@@ -15,6 +15,7 @@ import HandScintigraphy from "../Pages/SingleCaseStudy/Hand-Scintigraphy/HandSci
 import ElectronicDataCapture from "../Pages/SingleCaseStudy/Electronic-Data-Capture/ElectronicDataCapture";
 import Products from "../Pages/Products-page/Products";
 import Solutions from "../Pages/Solution-page/Solutions";
+import Servicepage from "../Pages/Service-page/Servicepage";
 
 const AllRoutes = () => {
   return (
@@ -26,6 +27,7 @@ const AllRoutes = () => {
       <Route path="Career" element={<Career />} />
       <Route path="/Products" element={<Products />} />
       <Route path="/Solutions" element={<Solutions />} />
+      <Route path="/Services" element={<Servicepage />} />
       <Route path="CaseStudy/AI-In-ClinicalTrial" element={<ClincalTrial />} />
       <Route path="CaseStudy/AI-In-Dermatology" element={<Dermatology />} />
       <Route

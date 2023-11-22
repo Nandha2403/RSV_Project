@@ -8,6 +8,7 @@ import Instagram from "../../Images/instagram.png";
 import Twitter from "../../Images/twitter.png";
 import PhoneCall from "../../Images/phone-call.png";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
       <Box className="footer-top">
         <Box className="footer-logo">
           <a href="#">
-            <img  src={Logo} alt="Logo" />
+            <img src={Logo} alt="Logo" />
           </a>
         </Box>
 
@@ -71,7 +72,9 @@ const Footer = () => {
       <Box className="footer-links">
         <Box>
           <h2>
-            <a href="#">Solutions</a>
+            <Link to={"/Solutions"} target="_top">
+              Solutions
+            </Link>
           </h2>
           <ul>
             <li>
@@ -115,7 +118,9 @@ const Footer = () => {
         </Box>
         <Box>
           <h2>
-            <a href="#">Our Services</a>
+            <Link to={"/Services"} target="_top">
+              Our Services
+            </Link>
           </h2>
           <ul>
             <li>
@@ -131,11 +136,15 @@ const Footer = () => {
         </Box>
         <Box>
           <h2>
-            <a href="#">About Us</a>
+            <Link to={"/AboutUs"} target="_top">
+              About Us
+            </Link>
           </h2>
           <ul>
             <li>
-              <a href="#">Careers</a>
+              <Link to={"/Career"} target="_top">
+                Careers
+              </Link>
             </li>
           </ul>
         </Box>

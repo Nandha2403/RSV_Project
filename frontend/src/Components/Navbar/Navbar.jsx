@@ -1,4 +1,6 @@
-import { Search2Icon } from "@chakra-ui/icons";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import Logo from "../../Images/RSV-Logo.png";
 import {
   Box,
   Button,
@@ -23,62 +25,57 @@ import {
   ModalHeader,
   ModalCloseButton,
   ModalBody,
-  FormControl,
   FormLabel,
-  ModalFooter,
   Text,
   Textarea,
+  useToast,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
-import Logo from "../../Images/RSV-Logo.png";
+import { Search2Icon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
-// import { Spin as Hamburger } from "hamburger-react";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const form = useRef();
+  const toast = useToast();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const DemoBtnModal = useDisclosure();
-  const [demoData, setDemodata] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    company: "",
-    reason: "",
-    specific: "",
-  });
+  const RFPBtnModal = useDisclosure();
 
-  const { name, phone, email, company, reason, specific } = demoData;
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-
-  const handelDemoForm = (e) => {
-    // console.log(e);
-    const { name, value } = e.target;
-    // console.log(name, value);
-    setDemodata({ ...demoData, [name]: value });
+    emailjs
+      .sendForm(
+        "service_e6xdugp",
+        "template_ma4xe3y",
+        form.current,
+        "lWSh-NSL2P04TzOwk"
+      )
+      .then(
+        (res) => {
+          console.log(res.text);
+          console.log("message sent");
+          e.target.reset();
+          toast({
+            title: "Submited Successfully",
+            position: "top-right",
+            isClosable: true,
+            status: "success",
+            duration: "2000",
+          });
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
-  const handleSaveDemoData = () => {
-  console.log(demoData);
-
-    setDemodata({
-      name: "",
-      phone: "",
-      email: "",
-      company: "",
-      reason: "",
-      specific: "",
-    });
-  };
   return (
     <Box className="ManiNavPrnt">
       <Box className="nav-parent">
         {/* Hamburger */}
         <div className="hamburger">
-          <div
-            id="nav-icon"
-            // className={isOpenHam ? "open" : ""}
-            onClick={onOpen}
-          >
+          <div id="nav-icon" onClick={onOpen}>
             <span></span>
             <span></span>
             <span></span>
@@ -109,6 +106,7 @@ const Navbar = () => {
               />
             </InputGroup>
           </Box>
+
           <Box className="nav-ref-container">
             <Button
               size={{ base: "xs", sm: "sm" }}
@@ -116,10 +114,68 @@ const Navbar = () => {
               borderRadius={"15px"}
               colorScheme="#131049"
               bg="#131049"
+              onClick={RFPBtnModal.onOpen}
             >
               RFP
             </Button>
+            <Modal
+              isOpen={RFPBtnModal.isOpen}
+              isCentered
+              onClose={RFPBtnModal.onClose}
+              size={{ base: "xs", sm: "sm", md: "md", lg: "xl", xl: "xl" }}
+            >
+              <ModalOverlay />
+              <ModalContent>
+                <ModalHeader>
+                  <Text fontSize={"24px"} color={"blue"}>
+                    Request for proposal
+                  </Text>
+                </ModalHeader>
+                <ModalCloseButton />
+                <ModalBody pb={6}>
+                  {/* Form */}
+
+                  <form ref={form} onSubmit={sendEmail}>
+                    <FormLabel>Name</FormLabel>
+                    <Input placeholder="Name" name="user_name" />
+
+                    <FormLabel mt={2}>Phone</FormLabel>
+                    <Input
+                      type="number"
+                      placeholder="Phone"
+                      name="user_phone"
+                    />
+                    <FormLabel mt={2}>Email</FormLabel>
+                    <Input type="email" placeholder="Email" name="user_email" />
+                    <FormLabel mt={2}>Company</FormLabel>
+                    <Input placeholder="Company" name="user_company" />
+                    <FormLabel mt={2}>Reason for Inquiry</FormLabel>
+                    <Input
+                      placeholder="Reason for Inquiry"
+                      name="user_reason"
+                    />
+                    <FormLabel mt={2}>
+                      Specific Requirements (if any):
+                    </FormLabel>
+                    <Textarea
+                      placeholder="Specific Requirements"
+                      name="user_specific_reason"
+                    />
+                    <Input
+                      type="submit"
+                      mt={3}
+                      value={"Send"}
+                      cursor={"pointer"}
+                      backgroundColor={"#131049"}
+                      color={"white"}
+                    />
+                  </form>
+                </ModalBody>
+              </ModalContent>
+            </Modal>
           </Box>
+
+          {/* Demo Button  */}
           <Box className="nav-demo-container">
             <Button
               size={{ base: "xs", sm: "sm" }}
@@ -151,73 +207,44 @@ const Navbar = () => {
                 </ModalHeader>
                 <ModalCloseButton />
                 <ModalBody pb={6}>
-                  <FormControl>
+                  {/* Form */}
+
+                  <form ref={form} onSubmit={sendEmail}>
                     <FormLabel>Name</FormLabel>
-                    <Input
-                      value={name}
-                      placeholder="Name"
-                      name="name"
-                      onChange={handelDemoForm}
-                    />
-                  </FormControl>
+                    <Input placeholder="Name" name="user_name" />
 
-                  <FormControl mt={4}>
-                    <FormLabel>Phone</FormLabel>
+                    <FormLabel mt={2}>Phone</FormLabel>
                     <Input
-                      value={phone}
+                      type="number"
                       placeholder="Phone"
-                      name="phone"
-                      onChange={handelDemoForm}
+                      name="user_phone"
                     />
-                  </FormControl>
-                  <FormControl mt={4}>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel mt={2}>Email</FormLabel>
+                    <Input type="email" placeholder="Email" name="user_email" />
+                    <FormLabel mt={2}>Company</FormLabel>
+                    <Input placeholder="Company" name="user_company" />
+                    <FormLabel mt={2}>Reason for Inquiry</FormLabel>
                     <Input
-                      value={email}
-                      placeholder="Email"
-                      name="email"
-                      onChange={handelDemoForm}
-                    />
-                  </FormControl>
-                  <FormControl mt={4}>
-                    <FormLabel>Company</FormLabel>
-                    <Input
-                      value={company}
-                      placeholder="Company"
-                      name="company"
-                      onChange={handelDemoForm}
-                    />
-                  </FormControl>
-                  <FormControl mt={4}>
-                    <FormLabel>Reason for Inquiry</FormLabel>
-                    <Input
-                      value={reason}
                       placeholder="Reason for Inquiry"
-                      name="reason"
-                      onChange={handelDemoForm}
+                      name="user_reason"
                     />
-                  </FormControl>
-                  <FormControl mt={4}>
-                    <FormLabel>Specific Requirements (if any):</FormLabel>
+                    <FormLabel mt={2}>
+                      Specific Requirements (if any):
+                    </FormLabel>
                     <Textarea
-                      value={specific}
                       placeholder="Specific Requirements"
-                      name="specific"
-                      onChange={handelDemoForm}
+                      name="user_specific_reason"
                     />
-                  </FormControl>
+                    <Input
+                      type="submit"
+                      mt={3}
+                      value={"Send"}
+                      cursor={"pointer"}
+                      backgroundColor={"#131049"}
+                      color={"white"}
+                    />
+                  </form>
                 </ModalBody>
-
-                <ModalFooter>
-                  <Button
-                    colorScheme="blue"
-                    mr={3}
-                    onClick={handleSaveDemoData}
-                  >
-                    Save
-                  </Button>
-                  <Button onClick={DemoBtnModal.onClose}>Cancel</Button>
-                </ModalFooter>
               </ModalContent>
             </Modal>
           </Box>
@@ -236,8 +263,9 @@ const Navbar = () => {
                   <Box>
                     <AccordionButton>
                       <Box color={"white"} className={"mainLinks"}>
-                        Solutions
-                        {/* <a href=""></a> */}
+                        <Link to={"/Solutions"} target="_top">
+                          Solutions
+                        </Link>
                       </Box>
                       <AccordionIcon
                         color={"white"}
@@ -247,13 +275,14 @@ const Navbar = () => {
                     </AccordionButton>
                     <AccordionPanel pb={4} className="dropdown">
                       <Box>
-                        <p>Services</p>
+                        <Link to={"/Services"} target="_top">
+                          Services
+                        </Link>
                       </Box>
                       <Box>
-                        <p>Case Studies</p>
-                      </Box>
-                      <Box>
-                        <p>Use Cases</p>
+                        <Link to={"/CaseStudy"} target="_top">
+                          Case Studies
+                        </Link>
                       </Box>
                     </AccordionPanel>
                   </Box>
@@ -262,23 +291,68 @@ const Navbar = () => {
                 <AccordionItem border={"none"}>
                   <AccordionButton>
                     <Box color={"white"} className={"mainLinks"}>
-                      Products
+                      <Link to={"/Products"} target="_top">
+                        Products
+                      </Link>
                     </Box>
                     {/* <a href=""></a> */}
                     <AccordionIcon color={"white"} fontSize={25} ml={"20px"} />
                   </AccordionButton>
                   <AccordionPanel pb={4} className="dropdown">
                     <Box>
-                      <p>RadClinicaTM</p>
+                      <Link to={"/Products"} target="_top">
+                        RadGate
+                      </Link>
                     </Box>
                     <Box>
-                      <p>RadVista Viewer</p>
+                      <Link to={"/Products"} target="_top">
+                        RadVault
+                      </Link>
                     </Box>
                     <Box>
-                      <p>Product Development Goals</p>
+                      <Link to={"/Products"} target="_top">
+                        RadVista
+                      </Link>
                     </Box>
                     <Box>
-                      <p>Technology & Process Innovation</p>
+                      <Link to={"/Products"} target="_top">
+                        RadFlow
+                      </Link>
+                    </Box>
+                    <Box>
+                      <Link to={"/Products"} target="_top">
+                        RadClinica
+                      </Link>
+                    </Box>
+                    <Box>
+                      <Link to={"/Products"} target="_top">
+                        RadInsight
+                      </Link>
+                    </Box>
+                    <Box>
+                      <Link to={"/Products"} target="_top">
+                        RadEvent
+                      </Link>
+                    </Box>
+                    <Box>
+                      <Link to={"/Products"} target="_top">
+                        RadAI
+                      </Link>
+                    </Box>
+                    <Box>
+                      <Link to={"/Products"} target="_top">
+                        RadDCT
+                      </Link>
+                    </Box>
+                    <Box>
+                      <Link to={"/Products"} target="_top">
+                        RadApp
+                      </Link>
+                    </Box>
+                    <Box>
+                      <Link to={"/Products"} target="_top">
+                        RadChain
+                      </Link>
                     </Box>
                   </AccordionPanel>
                 </AccordionItem>
@@ -288,7 +362,6 @@ const Navbar = () => {
                     <Box color={"white"} className={"mainLinks"}>
                       Resources
                     </Box>
-                    {/* <a href=""></a> */}
                     <AccordionIcon color={"white"} fontSize={25} ml={"10px"} />
                   </AccordionButton>
                   <AccordionPanel pb={4} className="dropdown">
@@ -310,7 +383,9 @@ const Navbar = () => {
                 <AccordionItem border={"none"}>
                   <AccordionButton>
                     <Box color={"white"} className={"mainLinks"}>
-                      <Link to={"/AboutUs"}>About us</Link>
+                      <Link to={"/AboutUs"} target="_top">
+                        About us
+                      </Link>
                     </Box>
                     {/* <a href=""></a> */}
                     <AccordionIcon color={"white"} fontSize={25} ml={"20px"} />
@@ -319,15 +394,15 @@ const Navbar = () => {
                     <Box>
                       <p>Our Story</p>
                     </Box>
-                    <Box>
+                    {/* <Box>
                       <p>Industry</p>
                     </Box>
                     <Box>
                       <p>Team</p>
-                    </Box>
+                    </Box> */}
                     <Box>
-                      <Link to={"/ContactUs"}>
-                        <p>Contact Us</p>
+                      <Link to={"/ContactUs"} target="_top">
+                        Contact Us
                       </Link>
                     </Box>
                   </AccordionPanel>
@@ -336,7 +411,9 @@ const Navbar = () => {
                 <AccordionItem border={"none"}>
                   <AccordionButton>
                     <Box color={"white"} className={"mainLinks"}>
-                      <Link to={"/Career"}>Career</Link>
+                      <Link to={"/Career"} target="_top">
+                        Career
+                      </Link>
                     </Box>
                     {/* <a href=""></a> */}
                     {/* <AccordionIcon color={"white"} /> */}

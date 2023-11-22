@@ -23,9 +23,9 @@ const ContactUs = () => {
         </Box>
         <Box className="SubContent">
           <Text>
-            Radiant Sage's objective is to Provide Clinical Image Management
-            Technology Solution that can get a Trial Up and Running within weeks
-            under Sponsor
+            Radiant Sage's objective is to provide a clinical image management
+            technology solution that can get a trial up and running within weeks
+            under a sponsor.
           </Text>
         </Box>
         {/*Address */}
@@ -52,8 +52,8 @@ const ContactUs = () => {
               href="https://www.google.com/maps/place/464+Common+St+%23133,+Belmont,+MA+02478,+USA/@42.381092,-71.1752208,19z/data=!3m1!4b1!4m5!3m4!1s0x89e377f1f60b2781:0xbfda4dae7f7f0b3d!8m2!3d42.381091!4d-71.1745771?entry=ttu"
               target="_blanck"
             >
-            {/* <img src={RSVLocation} alt="Location" /> */}
-            <img src={MapFullImg} alt="Map" />
+              {/* <img src={RSVLocation} alt="Location" /> */}
+              <img src={MapFullImg} alt="Map" />
             </a>
           </div>
           {/* <div className="ImgArrowLocation"></div> */}

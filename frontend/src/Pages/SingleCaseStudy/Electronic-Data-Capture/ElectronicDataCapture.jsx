@@ -63,10 +63,10 @@ const ElectronicDataCapture = () => {
             <Text>
               EDC (Electronic Data Capture) extension is an application or
               software that is used in clinical trials to capture, manage, and
-              analyse clinical data in electronic form instead of using paper
+              analyze clinical data in electronic form instead of using paper
               forms. It simplifies the clinical trial process by eliminating the
-              need for manual entry of data, reduces the risk of errors, and
-              increases the speed of data processing and management.
+              need for manual entry of data, reducing the risk of errors, and
+              increasing the speed of data processing and management.
             </Text>
             <Text>
               The EDC extension works by allowing researchers to record and
@@ -106,8 +106,8 @@ const ElectronicDataCapture = () => {
             <Box className="BenefitsEDCTextTitle1">
               <Text>1. Increased efficiency :</Text>
               <Text>
-                EDC extension streamlines the trial process by eliminating the
-                need for manual data entry, reducing data transfer time, and
+                The EDC extension streamlines the trial process by eliminating
+                the need for manual data entry, reducing data transfer time, and
                 increasing the speed of analysis.
               </Text>
             </Box>
@@ -122,27 +122,27 @@ const ElectronicDataCapture = () => {
             <Box className="BenefitsEDCTextTitle1">
               <Text>3. Enhanced data security :</Text>
               <Text>
-                EDC extension provides a secure platform for storing and sharing
-                clinical data, ensuring data privacy and adherence to regulatory
-                compliance and data protection laws. It can provide enhanced
-                security features such as user authentication and access
-                controls, data encryption, and audit trails, which can help
-                protect sensitive patient information.
+                The EDC extension provides a secure platform for storing and
+                sharing clinical data, ensuring data privacy and adherence to
+                regulatory compliance and data protection laws. It can provide
+                enhanced security features such as user authentication and
+                access controls, data encryption, and audit trails, which can
+                help protect sensitive patient information.
               </Text>
             </Box>
             <Box className="BenefitsEDCTextTitle1">
               <Text>4. Easy data management :</Text>
               <Text>
-                EDC extension allows researchers to manage data from multiple
-                sources, including imaging studies, using a single platform,
-                reducing the need for multiple software applications.
+                The EDC extension allows researchers to manage data from
+                multiple sources, including imaging studies, using a single
+                platform, reducing the need for multiple software applications.
               </Text>
             </Box>
             <Box className="BenefitsEDCTextTitle1">
               <Text>5. Improved collaboration :</Text>
               <Text>
-                EDC extension facilitates collaboration between clinical trial
-                teams, including researchers, site coordinators, and data
+                The EDC extension facilitates collaboration between clinical
+                trial teams, including researchers, site coordinators, and data
                 managers, making it easier to share study data and monitor
                 patients' progress.
               </Text>
@@ -150,8 +150,8 @@ const ElectronicDataCapture = () => {
             <Box className="BenefitsEDCTextTitle1">
               <Text>6. Centralized data management :</Text>
               <Text>
-                EDC extensions can help centralize imaging data management,
-                making it easier to track and analyse data from multiple
+                The EDC extensions can help centralize imaging data management.
+                making it easier to track and analyze data from multiple
                 sources, and improving overall data quality and consistency.
               </Text>
             </Box>
@@ -159,9 +159,9 @@ const ElectronicDataCapture = () => {
         </Box>
         <Box className="overallBtmContEDC">
           <Text>
-            Overall, using EDC extensions in clinical trials imaging can help
+            Overall, using EDC extensions in clinical trials of imaging can help
             improve data accuracy, streamline data collection, reduce costs,
-            enhance data security, and improve overall data management and
+            enhance data security, improve overall data management, and
             analysis.
           </Text>
         </Box>

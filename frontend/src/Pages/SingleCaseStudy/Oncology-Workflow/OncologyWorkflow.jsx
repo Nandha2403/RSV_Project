@@ -147,14 +147,14 @@ const OncologyWorkflow = () => {
               <Text>Improved accuracy :</Text>
               <Text>
                 The oncology workflow uses advanced algorithms and automated
-                analysis tools to improve the accuracy of tumour segmentation
-                and response assessment.
+                analysis tools to improve the accuracy of tumor segmentation and
+                response assessment.
               </Text>
             </Box>
             <Box className="OncoWorkTypTextTitle1">
               <Text>Standardization :</Text>
               <Text>
-                The oncology workflow provides a standardized approach to tumour
+                The oncology workflow provides a standardized approach to tumor
                 segmentation and response assessment, reducing variability
                 between different radiologists and clinicians.
               </Text>
@@ -162,25 +162,25 @@ const OncologyWorkflow = () => {
             <Box className="OncoWorkTypTextTitle1">
               <Text>Early detection :</Text>
               <Text>
-                The oncology workflow can detect tumours at an early stage,
-                which is crucial for improving patient outcomes.
+                The oncology workflow can detect tumors at an early stage, which
+                is crucial for improving patient outcomes.
               </Text>
             </Box>
             <Box className="OncoWorkTypTextTitle1">
               <Text>Regulatory compliance :</Text>
               <Text>
                 The oncology workflow can help clinical trials comply with
-                regulatory requirements related to the accuracy and consistency
-                of imaging data.
+                regulatory requirements related to accuracy and consistency of
+                imaging data.
               </Text>
             </Box>
           </Box>
         </Box>
         <Box className="overallBtmContOnco">
           <Text>
-            Overall, oncology workflow is a valuable tool for clinical trials
-            imaging that can improve the accuracy and efficiency of tumour
-            segmentation and response assessment, which is essential for making
+            Overall, oncology workflow is a valuable tool for clinical trials.
+            Imaging that can improve the accuracy and efficiency of tumor
+            segmentation and response assessment, which are essential for making
             accurate clinical decisions and developing effective treatments for
             cancer patients.
           </Text>

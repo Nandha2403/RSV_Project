@@ -21,7 +21,7 @@ const ClincalTrial = () => {
             color={"white"}
           >
             <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
-              AI IN CLINICAL TRIAL (CT)
+              AI IN CLINICAL TRIALS (CT)
             </Text>
             <Text
               fontSize={{ base: "sm", sm: "sm", md: "lg" }}
@@ -69,8 +69,8 @@ const ClincalTrial = () => {
             </Text>
             <Text>
               Clinical trials are the most recent area of drug development to
-              acknowledge AI's potential and to allow it to positively disrupt
-              it. Medical imaging is one of the most promising fields for the
+              acknowledge AI's potential and allow it to positively disrupt it.
+              Medical imaging is one of the most promising fields for the
               clinical application of AI.
             </Text>
             <Text>
@@ -107,7 +107,7 @@ const ClincalTrial = () => {
             trial's parameters and study-relevant areas. The quality assessment
             process in the imaging workflow is carried out by imaging
             technologists with training in medical imaging or associates with
-            training in the pertinent modality and/or trial protocol Several
+            training in the pertinent modality and/or trial protocol. Several
             factors are assessed during the image quality check, including the
             coverage, image characteristics, motion, artifacts, contrast, and
             noise.
@@ -129,7 +129,7 @@ const ClincalTrial = () => {
               <Text>QC Process :</Text>
               <Text>
                 AI models to automate the QC process is that it will result in
-                unmatched objectivity, scalability, and cost savings
+                unmatched objectivity, scalability, and cost savings.
               </Text>
             </Box>
             <Box className="AIforQltyTextTitle1">

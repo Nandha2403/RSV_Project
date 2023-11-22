@@ -1,8 +1,9 @@
 .footer-Container {
-  background-image: url("../../Images/FooterBgImg.png");
-  background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  /* background-image: url("../../Images/FooterBgImg.png"); */
+  /* background-size: cover; */
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  background-color: #1b1446;
   /* border: 1px solid blueviolet; */
 }
 
@@ -112,16 +113,12 @@
 .emailAndPhoneNum > div a:hover {
   color: #e0a72f;
 }
-@media only screen and (max-width: 912px) {
-  .footerContainer {
-    padding-bottom: 50px;
-  }
-}
+
 
 @media only screen and (max-width: 767px) {
-  .footerContainer {
+  /* .footerContainer {
     padding-bottom: 100px;
-  }
+  } */
   .footer-top {
     flex-direction: column;
     gap: 20px;
@@ -146,15 +143,9 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .footerContainer {
-    padding-bottom: 10px;
-  }
   .footer-links {
-    width: 95%;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    /* background-color: #1b1446; */
     margin: 30px 0 0 30px;
-    padding-bottom: 20px;
   }
 }

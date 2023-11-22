@@ -53,7 +53,7 @@ const Menu = () => {
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
                         <Box>
-                          <p>Services</p>
+                          <p><Link to={"/Services"} target="_top">Services</Link></p>
                           <ul>
                             <li>
                               <a href="">Core Lab Services</a>
@@ -156,40 +156,40 @@ const Menu = () => {
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
                         <Box>
-                          <p>Corelab-in-a-Box</p>
+                          <p><Link to={'/Products'} target="_top">Corelab-in-a-Box</Link></p>
                           <ul className="productsLinksCorelabInBox">
                             <li>
-                              <a href="">RadGate</a>
+                              <a href='/ProductsRadGate' target="_top">RadGate</a>
                             </li>
                             <li>
-                              <a href="">RadVault</a>
+                              <Link to={'/Products'} target="_top">RadVault</Link>
                             </li>
                             <li>
-                              <a href="">RadVista</a>
+                              <Link to={'/Products'} target="_top">RadVista</Link>
                             </li>
                             <li>
-                              <a href="">RadFlow</a>
+                              <Link to={'/Products'} target="_top">RadFlow</Link>
                             </li>
                             <li>
-                              <a href="">RadClinica</a>
+                              <Link to={'/Products'} target="_top">RadClinica</Link>
                             </li>
                             <li>
-                              <a href="">RadInSight</a>
+                              <Link to={'/Products'} target="_top">RadInSight</Link>
                             </li>
                             <li>
-                              <a href="">RadEvent</a>
+                              <Link to={'/Products'} target="_top">RadEvent</Link>
                             </li>
                             <li>
-                              <a href="">RadInAI</a>
+                              <Link to={'/Products'} target="_top">RadAI</Link>
                             </li>
                             <li>
-                              <a href="">RadDCT</a>
+                              <Link to={'/Products'} target="_top">RadDCT</Link>
                             </li>
                             <li>
-                              <a href="">RadApp</a>
+                              <Link to={'/Products'} target="_top">RadApp</Link>
                             </li>
                             <li>
-                              <a href="">RadChain</a>
+                              <Link to={'/Products'} target="_top">RadChain</Link>
                             </li>
                           </ul>
                         </Box>
@@ -197,7 +197,7 @@ const Menu = () => {
                     </Box>
                   </Box>
                   {/* Resources */}
-                  <Box className="leftLinks">
+                  {/* <Box className="leftLinks">
                     <a href="#">Resources</a>
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
@@ -215,7 +215,7 @@ const Menu = () => {
                         </Box>
                       </Box>
                     </Box>
-                  </Box>
+                  </Box> */}
                   {/* About us */}
                   <Box className="leftLinks">
                     <Link to={"/AboutUs"} target="_top">
@@ -225,31 +225,6 @@ const Menu = () => {
                       <Box className="LinksRightContainer">
                         <Box>
                           <p>Our Story</p>
-                        </Box>
-                        <Box>
-                          <p>Industry</p>
-                          <ul>
-                            <li>
-                              <a href="">Dermatology</a>
-                            </li>
-                            <li>
-                              <a href="">Onocology</a>
-                            </li>
-                            <li>
-                              <a href="">CT</a>
-                            </li>
-                            <li>
-                              <a href="">BI</a>
-                            </li>
-                          </ul>
-                        </Box>
-                        <Box>
-                          <p>Team</p>
-                          <ul>
-                            <li>
-                              <a href="">Join Us</a>
-                            </li>
-                          </ul>
                         </Box>
                         <Box>
                           <p>
