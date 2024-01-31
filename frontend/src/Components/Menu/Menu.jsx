@@ -197,9 +197,7 @@ const Menu = () => {
                     <Link to={"/AboutUs"}>About us</Link>
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
-                        {/* <Box>
-                          <p>Our Story</p>
-                        </Box> */}
+                     
                         <Box>
                           <p>
                             <Link to={"/ContactUs"}>Contact Us</Link>
