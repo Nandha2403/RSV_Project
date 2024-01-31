@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Homepage from "../Pages/Home-page/Homepage";
 import CaseStudy from "../Pages/Case-study/CaseStudy";
 import ContactUs from "../Pages/Contact-us/ContactUs";
@@ -18,37 +18,55 @@ import Solutions from "../Pages/Solution-page/Solutions";
 import Servicepage from "../Pages/Service-page/Servicepage";
 
 const AllRoutes = () => {
+  const ScrollToTop = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location.pathname]);
+
+    return null;
+  };
   return (
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="CaseStudy" element={<CaseStudy />} />
-      <Route path="ContactUs" element={<ContactUs />} />
-      <Route path="AboutUs" element={<AboutUs />} />
-      <Route path="Career" element={<Career />} />
-      <Route path="/Products" element={<Products />} />
-      <Route path="/Solutions" element={<Solutions />} />
-      <Route path="/Services" element={<Servicepage />} />
-      <Route path="CaseStudy/AI-In-ClinicalTrial" element={<ClincalTrial />} />
-      <Route path="CaseStudy/AI-In-Dermatology" element={<Dermatology />} />
-      <Route
-        path="CaseStudy/Business-Intelligence"
-        element={<BusinessIntelligence />}
-      />
-      <Route
-        path="CaseStudy/Oncology-Workflow"
-        element={<OncologyWorkflow />}
-      />
-      <Route path="CaseStudy/Query-Management" element={<QueryManagement />} />
-      <Route
-        path="CaseStudy/Electronic-Data-Capture"
-        element={<ElectronicDataCapture />}
-      />
-      <Route
-        path="CaseStudy/Hand-Scintigraphy"
-        element={<HandScintigraphy />}
-      />
-      <Route path="CaseStudy/Paired-Reads" element={<PairedReads />} />
-    </Routes>
+    <div>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="CaseStudy" element={<CaseStudy />} />
+        <Route path="ContactUs" element={<ContactUs />} />
+        <Route path="AboutUs" element={<AboutUs />} />
+        <Route path="Career" element={<Career />} />
+        <Route path="/Products" element={<Products />} />
+        <Route path="/Solutions" element={<Solutions />} />
+        <Route path="/Services" element={<Servicepage />} />
+        <Route
+          path="CaseStudy/AI-In-ClinicalTrial"
+          element={<ClincalTrial />}
+        />
+        <Route path="CaseStudy/AI-In-Dermatology" element={<Dermatology />} />
+        <Route
+          path="CaseStudy/Business-Intelligence"
+          element={<BusinessIntelligence />}
+        />
+        <Route
+          path="CaseStudy/Oncology-Workflow"
+          element={<OncologyWorkflow />}
+        />
+        <Route
+          path="CaseStudy/Query-Management"
+          element={<QueryManagement />}
+        />
+        <Route
+          path="CaseStudy/Electronic-Data-Capture"
+          element={<ElectronicDataCapture />}
+        />
+        <Route
+          path="CaseStudy/Hand-Scintigraphy"
+          element={<HandScintigraphy />}
+        />
+        <Route path="CaseStudy/Paired-Reads" element={<PairedReads />} />
+      </Routes>
+    </div>
   );
 };
 

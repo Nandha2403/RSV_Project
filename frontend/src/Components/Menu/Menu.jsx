@@ -40,7 +40,7 @@ const Menu = () => {
               <DrawerCloseButton fontSize={"20px"} color={"white"} />
               <DrawerHeader>
                 <Box className="MenuBarLogo">
-                  <Link to={"/"} target="_top">
+                  <Link to={"/"}>
                     <img src={Logo} alt="Logo" />
                   </Link>
                 </Box>
@@ -53,7 +53,9 @@ const Menu = () => {
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
                         <Box>
-                          <p><Link to={"/Services"} target="_top">Services</Link></p>
+                          <p>
+                            <Link to={"/Services"}>Services</Link>
+                          </p>
                           <ul>
                             <li>
                               <a href="">Core Lab Services</a>
@@ -68,75 +70,49 @@ const Menu = () => {
                         </Box>
                         <Box>
                           <p>
-                            <Link to={"/CaseStudy"} target="_top">
-                              Case Studies
-                            </Link>
+                            <Link to={"/CaseStudy"}>Case Studies</Link>
                           </p>
 
                           <ul>
                             <li>
                               {/* <a href="">DW Mining</a> */}
-                              <Link
-                                to={"/CaseStudy/AI-In-ClinicalTrial"}
-                                target="_top"
-                              >
+                              <Link to={"/CaseStudy/AI-In-ClinicalTrial"}>
                                 AI In Clinical Trial
                               </Link>
                             </li>
                             <li>
-                              <Link
-                                to={"/CaseStudy/AI-In-Dermatology"}
-                                target="_top"
-                              >
+                              <Link to={"/CaseStudy/AI-In-Dermatology"}>
                                 AI In Dermatology
                               </Link>
                             </li>
                             <li>
-                              <Link
-                                to={"/CaseStudy/Business-Intelligence"}
-                                target="_top"
-                              >
+                              <Link to={"/CaseStudy/Business-Intelligence"}>
                                 Business Intelligence
                               </Link>
                             </li>
                             <li>
-                              <Link
-                                to={"/CaseStudy/Oncology-Workflow"}
-                                target="_top"
-                              >
+                              <Link to={"/CaseStudy/Oncology-Workflow"}>
                                 Oncology Workflow
                               </Link>
                             </li>
                             <li>
-                              <Link
-                                to={"/CaseStudy/Query-Management"}
-                                target="_top"
-                              >
+                              <Link to={"/CaseStudy/Query-Management"}>
                                 Query Management
                               </Link>
                             </li>
 
                             <li>
-                              <Link
-                                to={"/CaseStudy/Electronic-Data-Capture"}
-                                target="_top"
-                              >
+                              <Link to={"/CaseStudy/Electronic-Data-Capture"}>
                                 Electronic Data Capture
                               </Link>
                             </li>
                             <li>
-                              <Link
-                                to={"/CaseStudy/Hand-Scintigraphy"}
-                                target="_top"
-                              >
+                              <Link to={"/CaseStudy/Hand-Scintigraphy"}>
                                 Hand Scintigraphy
                               </Link>
                             </li>
                             <li>
-                              <Link
-                                to={"/CaseStudy/Paired-Reads"}
-                                target="_top"
-                              >
+                              <Link to={"/CaseStudy/Paired-Reads"}>
                                 Paired Reads
                               </Link>
                             </li>
@@ -150,46 +126,46 @@ const Menu = () => {
                   </Box>
                   {/* Products */}
                   <Box className="leftLinks">
-                    <Link to={"/Products"} target="_top">
-                      Products
-                    </Link>
+                    <Link to={"/Products"}>Products</Link>
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
                         <Box>
-                          <p><Link to={'/Products'} target="_top">Corelab-in-a-Box</Link></p>
+                          <p>
+                            <Link to={"/Products"}>Corelab-in-a-Box</Link>
+                          </p>
                           <ul className="productsLinksCorelabInBox">
                             <li>
-                              <a href='/ProductsRadGate' target="_top">RadGate</a>
+                              <a href="/ProductsRadGate">RadGate</a>
                             </li>
                             <li>
-                              <Link to={'/Products'} target="_top">RadVault</Link>
+                              <Link to={"/Products"}>RadVault</Link>
                             </li>
                             <li>
-                              <Link to={'/Products'} target="_top">RadVista</Link>
+                              <Link to={"/Products"}>RadVista</Link>
                             </li>
                             <li>
-                              <Link to={'/Products'} target="_top">RadFlow</Link>
+                              <Link to={"/Products"}>RadFlow</Link>
                             </li>
                             <li>
-                              <Link to={'/Products'} target="_top">RadClinica</Link>
+                              <Link to={"/Products"}>RadClinica</Link>
                             </li>
                             <li>
-                              <Link to={'/Products'} target="_top">RadInSight</Link>
+                              <Link to={"/Products"}>RadInSight</Link>
                             </li>
                             <li>
-                              <Link to={'/Products'} target="_top">RadEvent</Link>
+                              <Link to={"/Products"}>RadEvent</Link>
                             </li>
                             <li>
-                              <Link to={'/Products'} target="_top">RadAI</Link>
+                              <Link to={"/Products"}>RadAI</Link>
                             </li>
                             <li>
-                              <Link to={'/Products'} target="_top">RadDCT</Link>
+                              <Link to={"/Products"}>RadDCT</Link>
                             </li>
                             <li>
-                              <Link to={'/Products'} target="_top">RadApp</Link>
+                              <Link to={"/Products"}>RadApp</Link>
                             </li>
                             <li>
-                              <Link to={'/Products'} target="_top">RadChain</Link>
+                              <Link to={"/Products"}>RadChain</Link>
                             </li>
                           </ul>
                         </Box>
@@ -218,19 +194,15 @@ const Menu = () => {
                   </Box> */}
                   {/* About us */}
                   <Box className="leftLinks">
-                    <Link to={"/AboutUs"} target="_top">
-                      About us
-                    </Link>
+                    <Link to={"/AboutUs"}>About us</Link>
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
-                        <Box>
+                        {/* <Box>
                           <p>Our Story</p>
-                        </Box>
+                        </Box> */}
                         <Box>
                           <p>
-                            <Link to={"/ContactUs"} target="_top">
-                              Contact Us
-                            </Link>
+                            <Link to={"/ContactUs"}>Contact Us</Link>
                           </p>
                         </Box>
                       </Box>
@@ -238,9 +210,7 @@ const Menu = () => {
                   </Box>
                   {/* Career */}
                   <Box className="leftLinks">
-                    <Link to={"/Career"} target="_top">
-                      Career
-                    </Link>
+                    <Link to={"/Career"}>Career</Link>
                   </Box>
                 </Stack>
               </DrawerBody>

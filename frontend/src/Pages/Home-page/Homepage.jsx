@@ -104,15 +104,17 @@ const Homepage = () => {
               >
                 {/* Pioneering Imaging for
                 Tomorrow's Trials. */}
-                Revolutionizing Clinical Trial Imaging <br /> through the Power of AI
+                Revolutionizing Clinical Trial Imaging <br /> through the Power
+                of AI
                 {/* AI-Powered Imaging for Tomorrow's Trials. */}
               </Text>
             </Box>
             <Box className="BannerIntroContent">
               <Text as={"p"}>
-                Radiant Sage's solutions exemplify how imaging AI can be leveraged in
-                Clinical Imaging Trials to enable the smooth acquisition,
-                processing, and delivery of insights on a timely basis.
+                Radiant Sage's solutions exemplify how imaging AI can be
+                leveraged in Clinical Imaging Trials to enable the smooth
+                acquisition, processing, and delivery of insights on a timely
+                basis.
               </Text>
             </Box>
             <Box ml={"1.5rem"} mt={"2rem"} pb={"4rem"}>
@@ -123,9 +125,7 @@ const Homepage = () => {
                 colorScheme="#131049"
                 bg="#131049"
               >
-                <Link to={"/Solutions"} target="_top">
-                  Learn More
-                </Link>
+                <Link to={"/Solutions"}>Learn More</Link>
               </Button>
             </Box>
           </Box>
@@ -200,9 +200,7 @@ const Homepage = () => {
                   colorScheme="#131049"
                   bg="#131049"
                 >
-                  <Link to={"/Solutions"} target="_top">
-                    View all
-                  </Link>
+                  <Link to={"/Solutions"}>View all</Link>
                 </Button>
                 <Button
                   size={"xs"}
@@ -334,9 +332,7 @@ const Homepage = () => {
                 colorScheme="#131049"
                 bg="#131049"
               >
-                <Link to={"/Career"} target="_top">
-                  Join Our Team
-                </Link>
+                <Link to={"/Career"}>Join Our Team</Link>
               </Button>
             </Box>
           </Box>
@@ -357,6 +353,10 @@ const Homepage = () => {
               Radiant Sage's objective is to provide a clinical image management
               technology solution that can get trials up and running within
               weeks under a sponsor.
+            </Text>
+            <Text mt={".4rem"}>
+              To stay updated on clinical trial imaging blogs and news,
+              subscribe to us.
             </Text>
           </Box>
           <Box className="beInTouchInput_Btn">

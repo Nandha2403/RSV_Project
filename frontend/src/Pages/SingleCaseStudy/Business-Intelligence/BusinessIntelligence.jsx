@@ -143,19 +143,15 @@ const BusinessIntelligence = () => {
         </Box>
         <Box className="smallBannerBIBottom">
           <Box className="smallBannerBIBtmContent">
-            <Link to={"/CaseStudy/AI-In-Dermatology"} target="_top">
+            <Link to={"/CaseStudy/AI-In-Dermatology"}>
               <MdArrowBackIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
-            <Link to={"/CaseStudy/AI-In-Dermatology"} target="_top">
-              AI In Dermatology
-            </Link>
+            <Link to={"/CaseStudy/AI-In-Dermatology"}>AI In Dermatology</Link>
           </Box>
           <Box className="SmallBannerBICenterLine"></Box>
           <Box className="smallBannerBIBtmContent">
-            <Link to={"/CaseStudy/Oncology-Workflow"} target="_top">
-              Oncology Workflow
-            </Link>
-            <Link to={"/CaseStudy/Oncology-Workflow"} target="_top">
+            <Link to={"/CaseStudy/Oncology-Workflow"}>Oncology Workflow</Link>
+            <Link to={"/CaseStudy/Oncology-Workflow"}>
               <MdArrowForwardIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
           </Box>

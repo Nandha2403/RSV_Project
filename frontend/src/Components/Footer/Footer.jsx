@@ -72,9 +72,7 @@ const Footer = () => {
       <Box className="footer-links">
         <Box>
           <h2>
-            <Link to={"/Solutions"} target="_top">
-              Solutions
-            </Link>
+            <Link to={"/Solutions"}>Solutions</Link>
           </h2>
           <ul>
             <li>
@@ -118,9 +116,7 @@ const Footer = () => {
         </Box>
         <Box>
           <h2>
-            <Link to={"/Services"} target="_top">
-              Our Services
-            </Link>
+            <Link to={"/Services"}>Our Services</Link>
           </h2>
           <ul>
             <li>
@@ -136,15 +132,11 @@ const Footer = () => {
         </Box>
         <Box>
           <h2>
-            <Link to={"/AboutUs"} target="_top">
-              About Us
-            </Link>
+            <Link to={"/AboutUs"}>About Us</Link>
           </h2>
           <ul>
             <li>
-              <Link to={"/Career"} target="_top">
-                Careers
-              </Link>
+              <Link to={"/Career"}>Careers</Link>
             </li>
           </ul>
         </Box>

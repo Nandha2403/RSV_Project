@@ -155,19 +155,17 @@ const HandScintigraphy = () => {
         </Box>
         <Box className="smallBannerHSBottom">
           <Box className="smallBannerHSBtmContent">
-            <Link to={"/CaseStudy/Electronic-Data-Capture"} target="_top">
+            <Link to={"/CaseStudy/Electronic-Data-Capture"}>
               <MdArrowBackIos fontSize={"50px"} cursor={"pointer"} />
             </Link>
-            <Link to={"/CaseStudy/Electronic-Data-Capture"} target="_top">
+            <Link to={"/CaseStudy/Electronic-Data-Capture"}>
               Electronic Data Capture
             </Link>
           </Box>
           <Box className="SmallBannerHSCenterLine"></Box>
           <Box className="smallBannerHSBtmContent">
-            <Link to={"/CaseStudy/Paired-Reads"} target="_top">
-              Paired Reads
-            </Link>
-            <Link to={"/CaseStudy/Paired-Reads"} target="_top">
+            <Link to={"/CaseStudy/Paired-Reads"}>Paired Reads</Link>
+            <Link to={"/CaseStudy/Paired-Reads"}>
               <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
             </Link>
           </Box>

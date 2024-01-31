@@ -30,9 +30,9 @@ const Products = () => {
     setSignupEmail(e.target.value);
   };
 
-  const SignupBtn =()=>{
+  const SignupBtn = () => {
     console.log(SignupEmail);
-  }
+  };
   return (
     <Box>
       {/* Menu */}
@@ -90,7 +90,9 @@ const Products = () => {
             CoreLab-In-A-Box (CLIB) Modules
           </Box>
           <Box className="Products_container">
-            <Text className="headings" id="RadGate">RadGate Import/Export :</Text>
+            <Text className="headings" id="RadGate">
+              RadGate Import/Export :
+            </Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>
@@ -415,13 +417,15 @@ const Products = () => {
                 onChange={handleSignup}
               />
               <InputRightElement w={"5rem"} mt={".7rem"} mr={"10px"}>
-                <Button colorScheme="none" onClick={SignupBtn}>Sign Up</Button>
+                <Button colorScheme="none" onClick={SignupBtn}>
+                  Sign Up
+                </Button>
               </InputRightElement>
             </InputGroup>
 
             <Box className="contact_us_with_message_icon">
               <Text>
-                <Link to={"/ContactUs"} target="_top">
+                <Link to={"/ContactUs"}>
                   Contact Us <span style={{ color: "orange" }}>Today</span>
                 </Link>
               </Text>

@@ -187,19 +187,17 @@ const OncologyWorkflow = () => {
         </Box>
         <Box className="smallBannerOncoBottom">
           <Box className="smallBannerOncoBtmContent">
-            <Link to={"/CaseStudy/Business-Intelligence"} target="_top">
+            <Link to={"/CaseStudy/Business-Intelligence"}>
               <MdArrowBackIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
-            <Link to={"/CaseStudy/Business-Intelligence"} target="_top">
+            <Link to={"/CaseStudy/Business-Intelligence"}>
               BI In Clinical Trials
             </Link>
           </Box>
           <Box className="SmallBannerOncoCenterLine"></Box>
           <Box className="smallBannerOncoBtmContent">
-            <Link to={"/CaseStudy/Query-Management"} target="_top">
-              Query Management
-            </Link>
-            <Link to={"/CaseStudy/Query-Management"} target="_top">
+            <Link to={"/CaseStudy/Query-Management"}>Query Management</Link>
+            <Link to={"/CaseStudy/Query-Management"}>
               <MdArrowForwardIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
           </Box>

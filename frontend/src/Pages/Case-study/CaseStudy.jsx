@@ -92,7 +92,7 @@ const CaseStudy = () => {
               mt={"2rem"}
               w={{ base: "85%", sm: "85%", md: "85%", lg: "35%" }}
             >
-              <Text fontSize={"sm"}>
+              <Text >
                 Radiant Sage's solutions exemplify how they can be leveraged in
                 Clinical Imaging Trials to enable the smooth acquisition,
                 processing, and delivery of information on a timely basis.
@@ -185,9 +185,7 @@ const CaseStudy = () => {
               <p className="info-title"> {info[focusElement]} </p>
               <p className="info-content"> {content[focusElement]} </p>
               <button>
-                <Link to={linkBtn[focusElement]} target="_top">
-                  Learn More
-                </Link>
+                <Link to={linkBtn[focusElement]}>Learn More</Link>
               </button>
             </div>
           </div>

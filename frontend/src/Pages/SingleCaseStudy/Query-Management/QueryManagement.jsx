@@ -185,19 +185,15 @@ const QueryManagement = () => {
         </Box>
         <Box className="smallBannerQMBottom">
           <Box className="smallBannerQMBtmContent">
-            <Link to={"/CaseStudy/Oncology-Workflow"} target="_top">
+            <Link to={"/CaseStudy/Oncology-Workflow"}>
               <MdArrowBackIos fontSize={"50px"} cursor={"pointer"} />
             </Link>
-            <Link to={"/CaseStudy/Oncology-Workflow"} target="_top">
-              Oncology Workflow
-            </Link>
+            <Link to={"/CaseStudy/Oncology-Workflow"}>Oncology Workflow</Link>
           </Box>
           <Box className="SmallBannerQMCenterLine"></Box>
           <Box className="smallBannerQMBtmContent">
-            <Link to={"/CaseStudy/Electronic-Data-Capture"} target="_top">
-              EDC
-            </Link>
-            <Link to={"/CaseStudy/Electronic-Data-Capture"} target="_top">
+            <Link to={"/CaseStudy/Electronic-Data-Capture"}>EDC</Link>
+            <Link to={"/CaseStudy/Electronic-Data-Capture"}>
               <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
             </Link>
           </Box>

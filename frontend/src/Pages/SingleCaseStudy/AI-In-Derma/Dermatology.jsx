@@ -149,19 +149,19 @@ const Dermatology = () => {
         </Box>
         <Box className="smallBannerDermaBottom">
           <Box className="smallBannerDermaBtmContent">
-            <Link to={"/CaseStudy/AI-In-ClinicalTrial"} target="_top">
+            <Link to={"/CaseStudy/AI-In-ClinicalTrial"}>
               <MdArrowBackIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
-            <Link to={"/CaseStudy/AI-In-ClinicalTrial"} target="_top">
+            <Link to={"/CaseStudy/AI-In-ClinicalTrial"}>
               AI In Clinical Trials
             </Link>
           </Box>
           <Box className="SmallBannerDermaCenterLine"></Box>
           <Box className="smallBannerDermaBtmContent">
-            <Link to={"/CaseStudy/Business-Intelligence"} target="_top">
+            <Link to={"/CaseStudy/Business-Intelligence"}>
               BI In Clinical Trials
             </Link>
-            <Link to={"/CaseStudy/Business-Intelligence"} target="_top">
+            <Link to={"/CaseStudy/Business-Intelligence"}>
               <MdArrowForwardIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
           </Box>

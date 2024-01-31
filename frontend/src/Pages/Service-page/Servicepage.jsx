@@ -26,11 +26,23 @@ const Servicepage = () => {
               fontWeight={"bold"}
               pb={"5rem"}
             >
-              And all this without compromising on any of the key <br />
-              functionality of an Imaging Corelab!
+              {/* And all this without compromising on any of the key <br />
+              functionality of an Imaging Corelab! */}
+              Comprehensive Partner for Streamlined Imaging Trials
             </Text>
           </Box>
         </Box>
+
+        <div className="intro_txt_cont_service">
+          <p>
+            At Radiant Sage, we are devoted to revolutionizing the field of
+            Clinical Trial Imaging. Our Core Lab Services take the lead,
+            providing a comprehensive suite of cutting-edge technology solutions
+            and allied services. This positions us as your ultimate partner,
+            offering a seamless and integrated approach to technology solutions
+            for imaging clinical trials.
+          </p>
+        </div>
 
         {/* Subcontent */}
         <Box className="ServicesParent">

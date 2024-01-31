@@ -93,14 +93,11 @@ const Solutions = () => {
         */}
         <Box className="SolutionLinkContainer">
           <Text textAlign={"center"} className="headings">
-            Radient Sage Solutions
+            Radiant Sage Solutions
           </Text>
           <Box className="LinksContainer">
             <Link to="DSA" spy={true} offset={-50} smooth={true} duration={500}>
               DSA
-            </Link>
-            <Link to="CH" spy={true} offset={-50} smooth={true} duration={500}>
-              CH
             </Link>
             <Link to="BR" spy={true} offset={-50} smooth={true} duration={500}>
               BR

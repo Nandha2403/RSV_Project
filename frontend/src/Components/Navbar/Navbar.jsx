@@ -160,6 +160,7 @@ const Navbar = () => {
                     <Textarea
                       placeholder="Specific Requirements"
                       name="user_specific_reason"
+                      maxLength={500}
                     />
                     <Input
                       type="submit"
@@ -234,6 +235,7 @@ const Navbar = () => {
                     <Textarea
                       placeholder="Specific Requirements"
                       name="user_specific_reason"
+                      maxLength={500}
                     />
                     <Input
                       type="submit"
@@ -263,9 +265,7 @@ const Navbar = () => {
                   <Box>
                     <AccordionButton>
                       <Box color={"white"} className={"mainLinks"}>
-                        <Link to={"/Solutions"} target="_top">
-                          Solutions
-                        </Link>
+                        <Link to={"/Solutions"}>Solutions</Link>
                       </Box>
                       <AccordionIcon
                         color={"white"}
@@ -275,14 +275,10 @@ const Navbar = () => {
                     </AccordionButton>
                     <AccordionPanel pb={4} className="dropdown">
                       <Box>
-                        <Link to={"/Services"} target="_top">
-                          Services
-                        </Link>
+                        <Link to={"/Services"}>Services</Link>
                       </Box>
                       <Box>
-                        <Link to={"/CaseStudy"} target="_top">
-                          Case Studies
-                        </Link>
+                        <Link to={"/CaseStudy"}>Case Studies</Link>
                       </Box>
                     </AccordionPanel>
                   </Box>
@@ -291,68 +287,44 @@ const Navbar = () => {
                 <AccordionItem border={"none"}>
                   <AccordionButton>
                     <Box color={"white"} className={"mainLinks"}>
-                      <Link to={"/Products"} target="_top">
-                        Products
-                      </Link>
+                      <Link to={"/Products"}>Products</Link>
                     </Box>
                     {/* <a href=""></a> */}
                     <AccordionIcon color={"white"} fontSize={25} ml={"20px"} />
                   </AccordionButton>
                   <AccordionPanel pb={4} className="dropdown">
                     <Box>
-                      <Link to={"/Products"} target="_top">
-                        RadGate
-                      </Link>
+                      <Link to={"/Products"}>RadGate</Link>
                     </Box>
                     <Box>
-                      <Link to={"/Products"} target="_top">
-                        RadVault
-                      </Link>
+                      <Link to={"/Products"}>RadVault</Link>
                     </Box>
                     <Box>
-                      <Link to={"/Products"} target="_top">
-                        RadVista
-                      </Link>
+                      <Link to={"/Products"}>RadVista</Link>
                     </Box>
                     <Box>
-                      <Link to={"/Products"} target="_top">
-                        RadFlow
-                      </Link>
+                      <Link to={"/Products"}>RadFlow</Link>
                     </Box>
                     <Box>
-                      <Link to={"/Products"} target="_top">
-                        RadClinica
-                      </Link>
+                      <Link to={"/Products"}>RadClinica</Link>
                     </Box>
                     <Box>
-                      <Link to={"/Products"} target="_top">
-                        RadInsight
-                      </Link>
+                      <Link to={"/Products"}>RadInsight</Link>
                     </Box>
                     <Box>
-                      <Link to={"/Products"} target="_top">
-                        RadEvent
-                      </Link>
+                      <Link to={"/Products"}>RadEvent</Link>
                     </Box>
                     <Box>
-                      <Link to={"/Products"} target="_top">
-                        RadAI
-                      </Link>
+                      <Link to={"/Products"}>RadAI</Link>
                     </Box>
                     <Box>
-                      <Link to={"/Products"} target="_top">
-                        RadDCT
-                      </Link>
+                      <Link to={"/Products"}>RadDCT</Link>
                     </Box>
                     <Box>
-                      <Link to={"/Products"} target="_top">
-                        RadApp
-                      </Link>
+                      <Link to={"/Products"}>RadApp</Link>
                     </Box>
                     <Box>
-                      <Link to={"/Products"} target="_top">
-                        RadChain
-                      </Link>
+                      <Link to={"/Products"}>RadChain</Link>
                     </Box>
                   </AccordionPanel>
                 </AccordionItem>
@@ -383,17 +355,15 @@ const Navbar = () => {
                 <AccordionItem border={"none"}>
                   <AccordionButton>
                     <Box color={"white"} className={"mainLinks"}>
-                      <Link to={"/AboutUs"} target="_top">
-                        About us
-                      </Link>
+                      <Link to={"/AboutUs"}>About us</Link>
                     </Box>
                     {/* <a href=""></a> */}
                     <AccordionIcon color={"white"} fontSize={25} ml={"20px"} />
                   </AccordionButton>
                   <AccordionPanel pb={4} className="dropdown">
-                    <Box>
+                    {/* <Box>
                       <p>Our Story</p>
-                    </Box>
+                    </Box> */}
                     {/* <Box>
                       <p>Industry</p>
                     </Box>
@@ -401,9 +371,7 @@ const Navbar = () => {
                       <p>Team</p>
                     </Box> */}
                     <Box>
-                      <Link to={"/ContactUs"} target="_top">
-                        Contact Us
-                      </Link>
+                      <Link to={"/ContactUs"}>Contact Us</Link>
                     </Box>
                   </AccordionPanel>
                 </AccordionItem>
@@ -411,9 +379,7 @@ const Navbar = () => {
                 <AccordionItem border={"none"}>
                   <AccordionButton>
                     <Box color={"white"} className={"mainLinks"}>
-                      <Link to={"/Career"} target="_top">
-                        Career
-                      </Link>
+                      <Link to={"/Career"}>Career</Link>
                     </Box>
                     {/* <a href=""></a> */}
                     {/* <AccordionIcon color={"white"} /> */}

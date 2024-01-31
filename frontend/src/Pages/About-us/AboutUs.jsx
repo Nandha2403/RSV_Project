@@ -13,7 +13,7 @@ import Client4 from "../../Images/Clients-4.png";
 import Client5 from "../../Images/Clients-5.png";
 import Client6 from "../../Images/Clients-6.png";
 import Client7 from "../../Images/Clients-7.png";
-import OurTeam from "../../Images/OurTeamImg.jpeg";
+// import OurTeam from "../../Images/OurTeamImg.jpeg";
 import CoreImg from "../../Images/CoreImg.png";
 import FocusImg from "../../Images/FocusImg.png";
 import CustomPrevArrow from "../../Components/CustomArrows/CustomPrevArrow";
@@ -271,7 +271,7 @@ const AboutUs = () => {
           {/* Our Team */}
           <Box className="OurTeamContainer">
             <Box className="TeamMembers">
-              <img src={OurTeam} alt="OurTeam" />
+              {/* <img src={OurTeam} alt="OurTeam" /> */}
             </Box>
             <Box className="OurTeamText">
               <Text className="headings OurTeamHeading">Our Team</Text>

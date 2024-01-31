@@ -48,15 +48,22 @@
   color: #131049;
 }
 
+.intro_txt_cont_service {
+  width: 95%;
+  margin: auto;
+  margin-top: 3rem;
+  /* border: 1px solid black; */
+}
+
 @media screen and (max-width: 767px) {
   .bodyContainerServices {
     margin-left: 0;
     width: 100%;
   }
-  .ServicesParent{
+  .ServicesParent {
     width: 95%;
   }
-  .SingleServicesImgCont{
+  .SingleServicesImgCont {
     width: 100%;
   }
 }

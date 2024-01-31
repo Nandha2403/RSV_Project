@@ -167,19 +167,15 @@ const ElectronicDataCapture = () => {
         </Box>
         <Box className="smallBannerEDCBottom">
           <Box className="smallBannerEDCBtmContent">
-            <Link to={"/CaseStudy/Query-Management"} target="_top">
+            <Link to={"/CaseStudy/Query-Management"}>
               <MdArrowBackIos fontSize={"50px"} cursor={"pointer"} />
             </Link>
-            <Link to={"/CaseStudy/Query-Management"} target="_top">
-              Query Management
-            </Link>
+            <Link to={"/CaseStudy/Query-Management"}>Query Management</Link>
           </Box>
           <Box className="SmallBannerEDCCenterLine"></Box>
           <Box className="smallBannerEDCBtmContent">
-            <Link to={"/CaseStudy/Hand-Scintigraphy"} target="_top">
-              Hand Scintigraphy
-            </Link>
-            <Link to={"/CaseStudy/Hand-Scintigraphy"} target="_top">
+            <Link to={"/CaseStudy/Hand-Scintigraphy"}>Hand Scintigraphy</Link>
+            <Link to={"/CaseStudy/Hand-Scintigraphy"}>
               <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
             </Link>
           </Box>

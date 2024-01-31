@@ -147,28 +147,23 @@ const PairedReads = () => {
         </Box>
         <Box className="overallBtmContPR">
           <Text>
-            Overall, paired-end sequencing is a powerful tool for clinical
-            trial imaging, as it allows for the detection of structural
-            variants and provides high-quality sequencing data that can be used
-            to develop personalized therapies and improve clinical
-            decision-making.
+            Overall, paired-end sequencing is a powerful tool for clinical trial
+            imaging, as it allows for the detection of structural variants and
+            provides high-quality sequencing data that can be used to develop
+            personalized therapies and improve clinical decision-making.
           </Text>
         </Box>
         <Box className="smallBannerPRBottom">
           <Box className="smallBannerPRBtmContent">
-            <Link to={"/CaseStudy/Hand-Scintigraphy"} target="_top">
+            <Link to={"/CaseStudy/Hand-Scintigraphy"}>
               <MdArrowBackIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
-            <Link to={"/CaseStudy/Hand-Scintigraphy"} target="_top">
-              Hand Scintigraphy
-            </Link>
+            <Link to={"/CaseStudy/Hand-Scintigraphy"}>Hand Scintigraphy</Link>
           </Box>
           <Box className="SmallBannerPRCenterLine"></Box>
           <Box className="smallBannerPRBtmContent">
-            <Link to={"/CaseStudy/AI-In-ClinicalTrial"} target="_top">
-              AI In CT
-            </Link>
-            <Link to={"/CaseStudy/AI-In-ClinicalTrial"} target="_top">
+            <Link to={"/CaseStudy/AI-In-ClinicalTrial"}>AI In CT</Link>
+            <Link to={"/CaseStudy/AI-In-ClinicalTrial"}>
               <MdArrowForwardIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
           </Box>

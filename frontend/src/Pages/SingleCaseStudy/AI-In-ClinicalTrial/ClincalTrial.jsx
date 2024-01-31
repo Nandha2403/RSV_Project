@@ -159,19 +159,15 @@ const ClincalTrial = () => {
         </Box>
         <Box className="smallBannerCTBottom">
           <Box className="smallBannerCTBtmContent">
-            <Link to={"/CaseStudy/Paired-Reads"} target="_top">
+            <Link to={"/CaseStudy/Paired-Reads"}>
               <MdArrowBackIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
-            <Link to={"/CaseStudy/Paired-Reads"} target="_top">
-              Paired Reads
-            </Link>
+            <Link to={"/CaseStudy/Paired-Reads"}>Paired Reads</Link>
           </Box>
           <Box className="SmallBannerCTCenterLine"></Box>
           <Box className="smallBannerCTBtmContent">
-            <Link to={"/CaseStudy/AI-In-Dermatology"} target="_top">
-              AI In Dermatology
-            </Link>
-            <Link to={"/CaseStudy/AI-In-Dermatology"} target="_top">
+            <Link to={"/CaseStudy/AI-In-Dermatology"}>AI In Dermatology</Link>
+            <Link to={"/CaseStudy/AI-In-Dermatology"}>
               <MdArrowForwardIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
           </Box>
