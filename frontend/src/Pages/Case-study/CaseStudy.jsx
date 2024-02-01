@@ -77,7 +77,7 @@ const CaseStudy = () => {
           <Navbar />
           {/* Banner area */}
           <Box textAlign={"left"} color={"white"}>
-            <Box pt={"6rem"}>
+            <Box pt={"8rem"}>
               <Text
                 fontSize={"4xl"}
                 ml={"1.5rem"}
@@ -90,7 +90,7 @@ const CaseStudy = () => {
             <Box
               ml={"1.5rem"}
               mt={"2rem"}
-              w={{ base: "85%", sm: "85%", md: "85%", lg: "35%" }}
+              w={{ base: "85%", sm: "85%", md: "85%", lg: "40%" }}
             >
               <Text >
                 Radiant Sage's solutions exemplify how they can be leveraged in

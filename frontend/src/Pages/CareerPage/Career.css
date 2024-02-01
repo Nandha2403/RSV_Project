@@ -1,6 +1,5 @@
 .bodyContainerCarrer {
   margin-left: 4rem;
-
 }
 
 .BannerContainerCarrer {
@@ -20,7 +19,7 @@
   justify-content: space-between;
   margin: auto;
   /* border: 1px solid black; */
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 .OurMotoIntroImg {
   width: 40%;
@@ -56,7 +55,7 @@
 .CardsParent div {
   /* border: 1px solid green; */
   border-radius: 20px;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 .CardsParent div h2 {
   margin-top: 1rem;
@@ -65,31 +64,32 @@
   font-weight: 600;
 }
 .CardsParent div p {
-    text-align: justify;
+
+  /* font-size: 18px; */
   margin-top: 2rem;
   line-height: normal;
   padding: 0 20px 20px 20px;
 }
 
-@media screen and (max-width: 767px){
-  .bodyContainerCarrer{
+@media screen and (max-width: 767px) {
+  .bodyContainerCarrer {
     margin-left: 0;
     width: 100%;
   }
-  .OurMoto-Cont{
+  .OurMoto-Cont {
     flex-direction: column;
     gap: 2rem;
   }
   .OurMotoText {
     width: 95%;
   }
-  .OurMotoIntroImg{
+  .OurMotoIntroImg {
     width: 100%;
   }
-  .CardsParent{
-    grid-template-columns: repeat(1,1fr);
+  .CardsParent {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .TopInputCont{
+  .TopInputCont {
     display: flex;
     flex-direction: column;
   }

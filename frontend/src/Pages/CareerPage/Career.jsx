@@ -5,6 +5,7 @@ import Menu from "../../Components/Menu/Menu";
 import Navbar from "../../Components/Navbar/Navbar";
 import IntroImg from "../../Images/ContactUsIntro.png";
 import Footer from "../../Components/Footer/Footer";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Career = () => {
   return (
@@ -22,7 +23,10 @@ const Career = () => {
           </Text>
           <Box className="OurMoto-Cont">
             <Box className="OurMotoText">
-              <Text className="headings" mb={'1rem'}>Join the revolution reshaping the landscape of clinical trial imaging.</Text>
+              <Text className="headings" mb={"1rem"}>
+                Join the revolution reshaping the landscape of clinical trial
+                imaging.
+              </Text>
               <p>
                 Explore exciting opportunities with RSV - Radiant Sage Ventures,
                 a trailblazer in redefining the landscape of clinical trial
@@ -48,7 +52,15 @@ const Career = () => {
                   colorScheme="#131049"
                   bg="#131049"
                 >
-                  Join Us
+                  <Link
+                    to="ContactUsForm"
+                    spy={true}
+                    offset={-50}
+                    smooth={true}
+                    duration={500}
+                  >
+                    Join Us
+                  </Link>
                 </Button>
               </Box>
             </Box>
@@ -64,8 +76,7 @@ const Career = () => {
               Life At Radiant Sage
             </Text>
           </Box>
-          <Box className="LifeAtRS-Sub">
-          </Box>
+          <Box className="LifeAtRS-Sub"></Box>
           {/* CARDS */}
           <Box className="CardsParent">
             <Box>
@@ -92,7 +103,9 @@ const Career = () => {
               </p>
             </Box>
             <Box>
-              <h2 className="CardHeading headings">Career Development Ecosystem</h2>
+              <h2 className="CardHeading headings">
+                Career Development Ecosystem
+              </h2>
               <p>
                 Life at RSV is a journey of growth and development. We believe
                 in investing in our talent, providing opportunities for skill
@@ -106,7 +119,7 @@ const Career = () => {
             </Box>
           </Box>
           {/* Contact us from */}
-          <Box className="ContactUsForm">
+          <Box className="ContactUsForm" id="ContactUsForm">
             <Box className="form">
               <p className="formHeading">Join Us</p>
               <Box className="TopInputCont">

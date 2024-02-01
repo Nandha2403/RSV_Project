@@ -5,7 +5,7 @@ import styled from "styled-components";
 const SliderComp = ({ ClientImage, title }) => {
   return (
     <Container className="project">
-      <Link to={"/CaseStudy"}>
+      <Link to={"/Solutions"}>
         <img src={ClientImage} alt="ClientImage" />
         <h3>{title}</h3>
       </Link>

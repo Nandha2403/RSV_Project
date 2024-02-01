@@ -28,30 +28,35 @@ const Solutions = () => {
       <Box className="bodyContainerSolutions">
         <Box className="BannerContainerSolutions">
           <Navbar />
-          <Box ml={"1rem"} pt={"14rem"} color={"white"}>
-            <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
-              SOLUTIONS
-            </Text>
-            <Text
-              fontSize={{ base: "sm", sm: "sm", md: "lg" }}
-              fontWeight={"bold"}
-            >
-              Radiant Sage's solutions offer numerous benefits to <br />
-              stakeholders in clinical trials.
-            </Text>
-          </Box>
-          <Box ml={"1rem"} mt={"2rem"} pb={"4rem"}>
-            <Button
-              size={"xs"}
-              borderRadius={"15px"}
-              p={"0px 20px 0px 20px"}
-              colorScheme="#131049"
-              bg="#131049"
-            >
-              <a style={{ transition: "0.35s" }} href="#btm">
-                Learn More
-              </a>
-            </Button>
+          <Box textAlign={"left"} color={"white"}>
+            <Box pt={"12rem"}>
+              <Text
+                fontSize={"4xl"}
+                ml={"1.5rem"}
+                fontWeight={"bold"}
+                fontFamily={"poppins"}
+              >
+                SOLUTIONS
+              </Text>
+            </Box>
+            {/*  */}
+            <Box className="BannerIntroContent">
+              <Text as={"p"}>
+                Radiant Sage's solutions offer numerous benefits to <br />
+                stakeholders in clinical trials.
+              </Text>
+            </Box>
+            <Box ml={"1.5rem"} mt={"2rem"} pb={"4rem"}>
+              <Button
+                size={"xs"}
+                borderRadius={"15px"}
+                p={"0px 20px 0px 20px"}
+                colorScheme="#131049"
+                bg="#131049"
+              >
+                <Link to={"/Solutions"}>Learn More</Link>
+              </Button>
+            </Box>
           </Box>
         </Box>
         {/* <nav>

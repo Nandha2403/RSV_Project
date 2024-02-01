@@ -17,19 +17,34 @@ const Servicepage = () => {
       <Box className="bodyContainerServices">
         <Box className="BannerContainerServices">
           <Navbar />
-          <Box ml={"1rem"} pt={"14rem"} color={"white"}>
-            <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
-              SERVICES
-            </Text>
-            <Text
-              fontSize={{ base: "sm", sm: "sm", md: "lg" }}
-              fontWeight={"bold"}
-              pb={"5rem"}
-            >
-              {/* And all this without compromising on any of the key <br />
-              functionality of an Imaging Corelab! */}
-              Comprehensive Partner for Streamlined Imaging Trials
-            </Text>
+          <Box textAlign={"left"} color={"white"}>
+            <Box pt={"12rem"}>
+              <Text
+                fontSize={"4xl"}
+                ml={"1.5rem"}
+                fontWeight={"bold"}
+                fontFamily={"poppins"}
+              >
+                SERVICES
+              </Text>
+            </Box>
+            {/*  */}
+            <Box className="BannerIntroContent">
+              <Text as={"p"}>
+                Comprehensive Partner for Streamlined Imaging Trials.
+              </Text>
+            </Box>
+            <Box ml={"1.5rem"} mt={"2rem"} pb={"4rem"}>
+              <Button
+                size={"xs"}
+                borderRadius={"15px"}
+                p={"0px 20px 0px 20px"}
+                colorScheme="#131049"
+                bg="#131049"
+              >
+                Learn More
+              </Button>
+            </Box>
           </Box>
         </Box>
 

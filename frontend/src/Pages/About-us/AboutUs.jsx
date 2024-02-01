@@ -13,7 +13,7 @@ import Client4 from "../../Images/Clients-4.png";
 import Client5 from "../../Images/Clients-5.png";
 import Client6 from "../../Images/Clients-6.png";
 import Client7 from "../../Images/Clients-7.png";
-// import OurTeam from "../../Images/OurTeamImg.jpeg";
+import OurTeam from "../../Images/Our_team.jpeg";
 import CoreImg from "../../Images/CoreImg.png";
 import FocusImg from "../../Images/FocusImg.png";
 import CustomPrevArrow from "../../Components/CustomArrows/CustomPrevArrow";
@@ -84,15 +84,16 @@ const AboutUs = () => {
             <Navbar />
             {/* Banner area */}
             {/* The solutions available today for sponsors to manage their imaging clinical trials are expensive, error prone, inefficient, and non transparent. */}
+
             <Box textAlign={"left"} color={"white"}>
-              <Box pt={"6rem"}>
+              <Box pt={"12rem"}>
                 <Text
                   fontSize={"4xl"}
                   ml={"1.5rem"}
                   fontWeight={"bold"}
                   fontFamily={"poppins"}
                 >
-                  Where Clinical Trials Find <br /> a New Dimension.
+                  Where Clinical Trials Find a <br /> New Dimension.
                 </Text>
               </Box>
               <Box className="BannerIntroContent">
@@ -271,7 +272,7 @@ const AboutUs = () => {
           {/* Our Team */}
           <Box className="OurTeamContainer">
             <Box className="TeamMembers">
-              {/* <img src={OurTeam} alt="OurTeam" /> */}
+              <img src={OurTeam} alt="OurTeam" />
             </Box>
             <Box className="OurTeamText">
               <Text className="headings OurTeamHeading">Our Team</Text>

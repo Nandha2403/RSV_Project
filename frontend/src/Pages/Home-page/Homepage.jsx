@@ -245,11 +245,11 @@ const Homepage = () => {
               justifyContent={"space-evenly"}
             >
               <Box>
-                <a href="">
+                <Link to={"/Solutions"}>
                   <img width={"250px"} src={Service1} alt="CORELAB SERVICES" />
-                </a>
+                </Link>
                 <Text fontSize={"md"} fontWeight={500} mt={"1rem"}>
-                  <a href="#">CORELAB SERVICES</a>
+                  <Link to={"/Solutions"}>CORELAB SERVICES</Link>
                 </Text>
               </Box>
               <Box>

@@ -40,28 +40,36 @@ const Products = () => {
       <Box className="bodyContainerProducts">
         <Box className="BannerContainerProducts">
           <Navbar />
-          <Box ml={"1rem"} pt={"14rem"} color={"white"}>
-            <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
-              CORELAB-IN-A-BOX <sup>TM</sup>
-            </Text>
-            <Text
-              fontSize={{ base: "sm", sm: "sm", md: "lg" }}
-              fontWeight={"bold"}
-            >
-              Corelab-in-a-Box<sup>TM</sup> is a unique purpose built clinical
-              trial <br /> imaging management software package.
-            </Text>
-          </Box>
-          <Box ml={"1rem"} mt={"2rem"} pb={"4rem"}>
-            <Button
-              size={"xs"}
-              borderRadius={"15px"}
-              p={"0px 20px 0px 20px"}
-              colorScheme="#131049"
-              bg="#131049"
-            >
-              Learn More
-            </Button>
+
+          {/* Banner area */}
+          <Box textAlign={"left"} color={"white"}>
+            <Box pt={"12rem"}>
+              <Text
+                fontSize={"4xl"}
+                ml={"1.5rem"}
+                fontWeight={"bold"}
+                fontFamily={"poppins"}
+              >
+                CORELAB-IN-A-BOX <sup>TM</sup>
+              </Text>
+            </Box>
+            <Box className="BannerIntroContent">
+              <Text as={"p"}>
+                Corelab-in-a-Box<sup>TM</sup> is a unique purpose built clinical
+                trial <br /> imaging management software package.
+              </Text>
+            </Box>
+            <Box ml={"1.5rem"} mt={"2rem"} pb={"4rem"}>
+              <Button
+                size={"xs"}
+                borderRadius={"15px"}
+                p={"0px 20px 0px 20px"}
+                colorScheme="#131049"
+                bg="#131049"
+              >
+                Learn More
+              </Button>
+            </Box>
           </Box>
         </Box>
         <Box className="below_herobannercont">
