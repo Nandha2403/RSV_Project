@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Logo from "../../Images/RSV-Logo.png";
 import {
@@ -33,6 +33,8 @@ import {
 import { Search2Icon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import SearchInput from "../SearchComp/SearchInput";
+import SearchResultsList from "../SearchComp/SearchResultsList";
 
 const Navbar = () => {
   const form = useRef();
@@ -40,6 +42,8 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const DemoBtnModal = useDisclosure();
   const RFPBtnModal = useDisclosure();
+
+  const [results, setResults] = useState([]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -90,21 +94,8 @@ const Navbar = () => {
 
         <Box className="nav-content">
           <Box className="nav-input">
-            <InputGroup>
-              <InputLeftElement pointerEvents="none" color={"white"}>
-                <Search2Icon fontSize={"sm"} color="white" mb={"6px"} />
-              </InputLeftElement>
-              <Input
-                size={"sm"}
-                type="text"
-                border={"2px solid white"}
-                outline={"none"}
-                _focus={{ boxShadow: "none !important" }}
-                _focusVisible={"none"}
-                borderRadius={"15px"}
-                color={"white"}
-              />
-            </InputGroup>
+            <SearchInput setResults={setResults} />
+            <SearchResultsList results={results} />
           </Box>
 
           <Box className="nav-ref-container">

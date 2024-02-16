@@ -5,7 +5,7 @@
 .BannerContainerCarrer {
   background-size: cover;
   background-image: url("../../Images/AboutUs_BannerImg.jpeg");
-  height: 70vh;
+  height: 60vh;
 }
 .OurMoto {
   margin-top: 3rem;
@@ -60,7 +60,7 @@
 .CardsParent div h2 {
   margin-top: 1rem;
   text-align: center;
-  font-size: large;
+  font-size: larger;
   font-weight: 600;
 }
 .CardsParent div p {

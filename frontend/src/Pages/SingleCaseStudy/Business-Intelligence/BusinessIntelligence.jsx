@@ -17,7 +17,7 @@ const BusinessIntelligence = () => {
           <Navbar />
           <Box
             ml={"2rem"}
-            pt={{ base: "14rem", sm: "14rem", md: "14rem", lg: "16rem" }}
+            pt={{ base: "14rem", sm: "14rem", md: "14rem", lg: "15rem" }}
             color={"white"}
           >
             <Text fontSize={{ base: "4xl", sm: "5xl" }} fontWeight={1000}>
@@ -31,7 +31,7 @@ const BusinessIntelligence = () => {
             </Text>
           </Box>
           <Box ml={"1.5rem"} mt={"4rem"} pb={"3rem"}>
-            <Button
+            {/* <Button
               size={"xs"}
               borderRadius={"15px"}
               p={"0px 20px 0px 20px"}
@@ -49,7 +49,7 @@ const BusinessIntelligence = () => {
               ml={"2rem"}
             >
               Learn More
-            </Button>
+            </Button> */}
           </Box>
         </Box>
         {/* Next Gen Cont */}

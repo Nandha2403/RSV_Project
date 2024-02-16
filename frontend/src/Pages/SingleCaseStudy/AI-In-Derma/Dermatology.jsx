@@ -31,7 +31,7 @@ const Dermatology = () => {
             </Text>
           </Box>
           <Box ml={"1.5rem"} pt={"6rem"} pb={"3rem"}>
-            <Button
+            {/* <Button
               size={"xs"}
               borderRadius={"15px"}
               p={"0px 20px 0px 20px"}
@@ -49,7 +49,7 @@ const Dermatology = () => {
               ml={"2rem"}
             >
               Learn More
-            </Button>
+            </Button> */}
           </Box>
         </Box>
         {/* Next Gen Cont */}

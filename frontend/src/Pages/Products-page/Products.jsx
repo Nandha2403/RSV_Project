@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Products.css";
 import {
   Box,
   Button,
@@ -21,7 +20,9 @@ import Service6 from "../../Images/ServiceImg-06.png";
 import Service7 from "../../Images/ServiceImg-07.png";
 import Service8 from "../../Images/ServiceImg-08.png";
 import product1 from "../../Images/Data Standardization and Acquition-01.png";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+// import { Link as ScrollLink } from "react-scroll";
+import "./Products.css";
 
 const Products = () => {
   const [SignupEmail, setSignupEmail] = useState("");
@@ -56,11 +57,11 @@ const Products = () => {
             <Box className="BannerIntroContent">
               <Text as={"p"}>
                 Corelab-in-a-Box<sup>TM</sup> is a unique purpose built clinical
-                trial <br /> imaging management software package.
+                trial <br /> imaging management platforms.
               </Text>
             </Box>
             <Box ml={"1.5rem"} mt={"2rem"} pb={"4rem"}>
-              <Button
+              {/* <Button
                 size={"xs"}
                 borderRadius={"15px"}
                 p={"0px 20px 0px 20px"}
@@ -68,14 +69,14 @@ const Products = () => {
                 bg="#131049"
               >
                 Learn More
-              </Button>
+              </Button> */}
             </Box>
           </Box>
         </Box>
         <Box className="below_herobannercont">
           <Text className="title_container">
-            CORELAB-IN-A-BOX<sup>TM</sup> will facilitate study execution,
-            regulatory compliance and exploratory research.
+            CORELAB-IN-A-BOX<sup>TM</sup> will facilitate study execution, to
+            streamline reserach on regulatory compliance.
           </Text>
           <div className="subtext">
             <Text>
@@ -118,7 +119,7 @@ const Products = () => {
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings">RadVault Repository and Portal :</Text>
+            <Text className="headings" id="RadVault">RadVault Repository and Portal :</Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>Content Based Storage Model - Any file</li>
@@ -131,7 +132,7 @@ const Products = () => {
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings">RadVista Imaging Workstation :</Text>
+            <Text className="headings" id="RadVista">RadVista Imaging Workstation :</Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>Multi-Modality Workstation (DICOM/Non-DICOM)</li>
@@ -147,7 +148,7 @@ const Products = () => {
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings">RadFlow Workflow Engine :</Text>
+            <Text className="headings" id="RadFlow">RadFlow Workflow Engine :</Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>Study/Modality based Workflows</li>
@@ -168,7 +169,7 @@ const Products = () => {
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings">RadClinica CTMS :</Text>
+            <Text className="headings" id="RadClinica">RadClinica CTMS :</Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>Multi-Trial Corelab Operations (CTMS)</li>
@@ -184,7 +185,7 @@ const Products = () => {
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings">
+            <Text className="headings" id="RadInSight">
               RadInSight Reporting and Analytics :
             </Text>
             <Box className="products_text_and_img_cont">
@@ -199,7 +200,7 @@ const Products = () => {
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings">
+            <Text className="headings" id="RadEvent">
               RadEvent Event Adjudication Module :
             </Text>
             <Box className="products_text_and_img_cont">
@@ -220,7 +221,7 @@ const Products = () => {
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings">RadAI & Toolkit AI/ML Framework :</Text>
+            <Text className="headings" id="RadAI">RadAI & Toolkit AI/ML Framework :</Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li> Models to support image processing in Trial workflows</li>
@@ -237,7 +238,7 @@ const Products = () => {
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings">
+            <Text className="headings" id="RadDCT">
               RadDCT Decentralized Clinical Trials :
             </Text>
             <Box className="products_text_and_img_cont">
@@ -254,7 +255,7 @@ const Products = () => {
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings">RadApp Patient Driven Apps :</Text>
+            <Text className="headings" id="RadApp">RadApp Patient Driven Apps :</Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li> Patient based image capture via Apps</li>
@@ -267,7 +268,7 @@ const Products = () => {
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings">RadChain Proof of Concept :</Text>
+            <Text className="headings" id="RadChain">RadChain Proof of Concept :</Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>Integration of a BlockChain into CLIB RadChain</li>
@@ -433,9 +434,9 @@ const Products = () => {
 
             <Box className="contact_us_with_message_icon">
               <Text>
-                <Link to={"/ContactUs"}>
+                <RouterLink to={"/ContactUs"}>
                   Contact Us <span style={{ color: "orange" }}>Today</span>
-                </Link>
+                </RouterLink>
               </Text>
               <Box>
                 <HiOutlineChatBubbleLeftEllipsis fontSize={"40px"} />

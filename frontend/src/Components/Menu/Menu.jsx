@@ -13,7 +13,8 @@ import Logo from "../../Images/RSV-Logo.png";
 import React from "react";
 import { useRef } from "react";
 import "./Menu.css";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+// import { Link as ScrollLink } from "react-scroll";
 
 const Menu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -40,21 +41,21 @@ const Menu = () => {
               <DrawerCloseButton fontSize={"20px"} color={"white"} />
               <DrawerHeader>
                 <Box className="MenuBarLogo">
-                  <Link to={"/"}>
+                  <RouterLink to={"/"}>
                     <img src={Logo} alt="Logo" />
-                  </Link>
+                  </RouterLink>
                 </Box>
               </DrawerHeader>
 
               <DrawerBody mt={"50px"} className="MenuParentContainer">
                 <Stack spacing="45px" className="MenuLinkContainer">
                   <Box className="leftLinks">
-                    <Link to={"/Solutions"}>Solutions</Link>
+                    <RouterLink to={"/Solutions"}>Solutions</RouterLink>
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
                         <Box>
                           <p>
-                            <Link to={"/Services"}>Services</Link>
+                            <RouterLink to={"/Services"}>Services</RouterLink>
                           </p>
                           <ul>
                             <li>
@@ -70,51 +71,57 @@ const Menu = () => {
                         </Box>
                         <Box>
                           <p>
-                            <Link to={"/CaseStudy"}>Case Studies</Link>
+                            <RouterLink to={"/CaseStudy"}>
+                              Case Studies
+                            </RouterLink>
                           </p>
 
                           <ul>
                             <li>
                               {/* <a href="">DW Mining</a> */}
-                              <Link to={"/CaseStudy/AI-In-ClinicalTrial"}>
+                              <RouterLink to={"/CaseStudy/AI-In-ClinicalTrial"}>
                                 AI In Clinical Trial
-                              </Link>
+                              </RouterLink>
                             </li>
                             <li>
-                              <Link to={"/CaseStudy/AI-In-Dermatology"}>
+                              <RouterLink to={"/CaseStudy/AI-In-Dermatology"}>
                                 AI In Dermatology
-                              </Link>
+                              </RouterLink>
                             </li>
                             <li>
-                              <Link to={"/CaseStudy/Business-Intelligence"}>
+                              <RouterLink
+                                to={"/CaseStudy/Business-Intelligence"}
+                              >
                                 Business Intelligence
-                              </Link>
+                              </RouterLink>
                             </li>
                             <li>
-                              <Link to={"/CaseStudy/Oncology-Workflow"}>
+                              <RouterLink to={"/CaseStudy/Oncology-Workflow"}>
                                 Oncology Workflow
-                              </Link>
+                              </RouterLink>
                             </li>
                             <li>
-                              <Link to={"/CaseStudy/Query-Management"}>
+                              <RouterLink to={"/CaseStudy/Query-Management"}>
                                 Query Management
-                              </Link>
+                              </RouterLink>
                             </li>
 
                             <li>
-                              <Link to={"/CaseStudy/Electronic-Data-Capture"}>
+                              <RouterLink
+                                to={"/CaseStudy/Electronic-Data-Capture"}
+                              >
                                 Electronic Data Capture
-                              </Link>
+                              </RouterLink>
                             </li>
                             <li>
-                              <Link to={"/CaseStudy/Hand-Scintigraphy"}>
+                              <RouterLink to={"/CaseStudy/Hand-Scintigraphy"}>
                                 Hand Scintigraphy
-                              </Link>
+                              </RouterLink>
                             </li>
                             <li>
-                              <Link to={"/CaseStudy/Paired-Reads"}>
+                              <RouterLink to={"/CaseStudy/Paired-Reads"}>
                                 Paired Reads
-                              </Link>
+                              </RouterLink>
                             </li>
                           </ul>
                         </Box>
@@ -126,46 +133,48 @@ const Menu = () => {
                   </Box>
                   {/* Products */}
                   <Box className="leftLinks">
-                    <Link to={"/Products"}>Products</Link>
+                    <RouterLink to={"/Products"}>Products</RouterLink>
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
                         <Box>
                           <p>
-                            <Link to={"/Products"}>Corelab-in-a-Box</Link>
+                            <RouterLink to={"/Products"}>
+                              Corelab-in-a-Box
+                            </RouterLink>
                           </p>
                           <ul className="productsLinksCorelabInBox">
                             <li>
-                              <a href="/ProductsRadGate">RadGate</a>
+                              <a href="#RadGate">RadGate</a>
                             </li>
                             <li>
-                              <Link to={"/Products"}>RadVault</Link>
+                              <a href="#RadVault">RadVault</a>
                             </li>
                             <li>
-                              <Link to={"/Products"}>RadVista</Link>
+                              <a href="#RadVista">RadVista</a>
                             </li>
                             <li>
-                              <Link to={"/Products"}>RadFlow</Link>
+                              <a href="#RadFlow">RadFlow</a>
                             </li>
                             <li>
-                              <Link to={"/Products"}>RadClinica</Link>
+                              <a href="#RadClinica">RadClinica</a>
                             </li>
                             <li>
-                              <Link to={"/Products"}>RadInSight</Link>
+                              <a href="#RadInSight">RadInSight</a>
                             </li>
                             <li>
-                              <Link to={"/Products"}>RadEvent</Link>
+                              <a href="#RadEvent">RadEvent</a>
                             </li>
                             <li>
-                              <Link to={"/Products"}>RadAI</Link>
+                              <a href="#RadAI">RadAI</a>
                             </li>
                             <li>
-                              <Link to={"/Products"}>RadDCT</Link>
+                              <a href="#RadDCT">RadDCT</a>
                             </li>
                             <li>
-                              <Link to={"/Products"}>RadApp</Link>
+                              <a href="#RadApp">RadApp</a>
                             </li>
                             <li>
-                              <Link to={"/Products"}>RadChain</Link>
+                              <a href="#RadChain">RadChain</a>
                             </li>
                           </ul>
                         </Box>
@@ -194,13 +203,14 @@ const Menu = () => {
                   </Box> */}
                   {/* About us */}
                   <Box className="leftLinks">
-                    <Link to={"/AboutUs"}>About us</Link>
+                    <RouterLink to={"/AboutUs"}>About us</RouterLink>
                     <Box className="SubCategory">
                       <Box className="LinksRightContainer">
-                     
                         <Box>
                           <p>
-                            <Link to={"/ContactUs"}>Contact Us</Link>
+                            <RouterLink to={"/ContactUs"}>
+                              Contact Us
+                            </RouterLink>
                           </p>
                         </Box>
                       </Box>
@@ -208,7 +218,7 @@ const Menu = () => {
                   </Box>
                   {/* Career */}
                   <Box className="leftLinks">
-                    <Link to={"/Career"}>Career</Link>
+                    <RouterLink to={"/Career"}>Career</RouterLink>
                   </Box>
                 </Stack>
               </DrawerBody>

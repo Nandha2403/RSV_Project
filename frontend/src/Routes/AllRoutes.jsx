@@ -32,10 +32,10 @@ const AllRoutes = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="CaseStudy" element={<CaseStudy />} />
-        <Route path="ContactUs" element={<ContactUs />} />
+        <Route path="/CaseStudy" element={<CaseStudy />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="AboutUs" element={<AboutUs />} />
-        <Route path="Career" element={<Career />} />
+        <Route path="/Career" element={<Career />} />
         <Route path="/Products" element={<Products />} />
         <Route path="/Solutions" element={<Solutions />} />
         <Route path="/Services" element={<Servicepage />} />

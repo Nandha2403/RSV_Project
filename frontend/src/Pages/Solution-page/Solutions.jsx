@@ -1,10 +1,10 @@
 import React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
-import { Box, Button, Text } from "@chakra-ui/react";
+import { Link } from "react-scroll";
+import { Box,Text } from "@chakra-ui/react";
 import Menu from "../../Components/Menu/Menu";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
-import DataStandardizationAndAcquition from "../../Images/Data Standardization and Acquition-01.png";
+// import DataStandardizationAndAcquition from "../../Images/Data Standardization and Acquition-01.png";
 import CollectAndHold from "../../Images/Collect and Hold data-01.png";
 import BlindedReads from "../../Images/Blinded Reads-01.png";
 import ImageRetrievalUsingMetaData from "../../Images/Image Retrieval using Meta Data-01.png";
@@ -18,9 +18,6 @@ import EventAdjudication from "../../Images/Event Adjudication-01.png";
 import "./Solutions.css";
 
 const Solutions = () => {
-  // const scrollToTop = () => {
-  //   scroll.scrollToTop({ duration: 800 });
-  // };
   return (
     <Box>
       {/* Menu */}
@@ -42,12 +39,12 @@ const Solutions = () => {
             {/*  */}
             <Box className="BannerIntroContent">
               <Text as={"p"}>
-                Radiant Sage's solutions offer numerous benefits to <br />
-                stakeholders in clinical trials.
+                Radiant Sage Imaging Solutions offers Stakeholders <br />
+                Enhanced Insight and Efficiency
               </Text>
             </Box>
             <Box ml={"1.5rem"} mt={"2rem"} pb={"4rem"}>
-              <Button
+              {/* <Button
                 size={"xs"}
                 borderRadius={"15px"}
                 p={"0px 20px 0px 20px"}
@@ -55,7 +52,7 @@ const Solutions = () => {
                 bg="#131049"
               >
                 <Link to={"/Solutions"}>Learn More</Link>
-              </Button>
+              </Button> */}
             </Box>
           </Box>
         </Box>

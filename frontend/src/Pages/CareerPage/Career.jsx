@@ -5,7 +5,7 @@ import Menu from "../../Components/Menu/Menu";
 import Navbar from "../../Components/Navbar/Navbar";
 import IntroImg from "../../Images/ContactUsIntro.png";
 import Footer from "../../Components/Footer/Footer";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Career = () => {
   return (

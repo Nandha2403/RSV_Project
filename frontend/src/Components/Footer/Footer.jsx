@@ -63,7 +63,7 @@ const Footer = () => {
                 <a href="">info@radiantsage.com</a>
               </p>
               <p>
-                <a href="">+91 4069900040</a>
+                <a href="">040 6900 0440</a>
               </p>
             </Box>
           </Box>

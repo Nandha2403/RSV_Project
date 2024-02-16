@@ -160,36 +160,35 @@ const Homepage = () => {
             // border={"1px solid teal"}
           >
             <Box
-              // w={{
-              //   base: "100%",
-              //   sm: "100%",
-              //   md: "50%",
-              //   lg: "40%",
-              //   xl: "40%",
-              // }}
+              w={{
+                base: "98%",
+                sm: "98%",
+                md: "50%",
+                lg: "50%",
+                xl: "50%",
+              }}
               mt={"2rem"}
-              w={"50%"}
+              // w={"50%"}
             >
               <Box className="SolutionsLeft">
                 <ul>
-                  <li>
-                    <a href="#">CT</a>
-                  </li>
-                  <li>
-                    <a href="#">Oncology</a>
-                  </li>
-                  <li>
-                    <a href="#">Derma</a>
-                  </li>
-                  <li>
-                    <a href="#">BI</a>
-                  </li>
-                  <li>
-                    <a href="#">MRI</a>
-                  </li>
-                  <li>
-                    <a href="#">Paired Reads</a>
-                  </li>
+                  <h1>Theraphuatics</h1>
+                  <li>Oncology</li>
+                  <li>Dermatology</li>
+                  <li>CNS</li>
+                  <li>Cardiology</li>
+                  <li>Contrast Media</li>
+                  <li>AI/Device</li>
+                </ul>
+
+                <ul>
+                  <h1>Features</h1>
+                  <li>CTIM</li>
+                  <li>CTMS</li>
+                  <li>Analytics</li>
+                  <li>AI</li>
+                  <li>Apps</li>
+                  <li>Event Adjucation</li>
                 </ul>
               </Box>
               <Box className="Solution_btns">
@@ -214,7 +213,10 @@ const Homepage = () => {
                 </Button>
               </Box>
             </Box>
-            <Box w={{ base: "60%", sm: "50%" }}>
+            <Box
+              w={{ base: "70%", sm: "50%" }}
+              //  border={"1px solid teal"}
+            >
               <a href="#">
                 <img src={RSVSolution} alt="Solution" />
               </a>
@@ -253,27 +255,27 @@ const Homepage = () => {
                 </Text>
               </Box>
               <Box>
-                <a href="">
+                <Link to={"/Solutions"}>
                   <img
                     width={"250px"}
                     src={Service2}
                     alt="TECHNICAL SERVICES"
                   />
-                </a>
+                </Link>
                 <Text fontSize={"md"} fontWeight={500} mt={"1rem"}>
-                  <a href="#">TECHNICAL SERVICES</a>
+                  <Link to={"/Solutions"}>TECHNICAL SERVICES</Link>
                 </Text>
               </Box>
               <Box>
-                <a href="">
+                <Link to={"/Solutions"}>
                   <img
                     width={"250px"}
                     src={Service3}
                     alt="DEPLOYMENT SERVICES"
                   />
-                </a>
+                </Link>
                 <Text fontSize={"md"} fontWeight={500} mt={"1rem"}>
-                  <a href="#">DEPLOYMENT SERVICES</a>
+                  <Link to={"/Solutions"}>DEPLOYMENT SERVICES</Link>
                 </Text>
               </Box>
             </Box>

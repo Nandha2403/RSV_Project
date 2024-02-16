@@ -18,7 +18,7 @@ const Servicepage = () => {
         <Box className="BannerContainerServices">
           <Navbar />
           <Box textAlign={"left"} color={"white"}>
-            <Box pt={"12rem"}>
+            <Box pt={"12rem"} >
               <Text
                 fontSize={"4xl"}
                 ml={"1.5rem"}
@@ -35,7 +35,7 @@ const Servicepage = () => {
               </Text>
             </Box>
             <Box ml={"1.5rem"} mt={"2rem"} pb={"4rem"}>
-              <Button
+              {/* <Button
                 size={"xs"}
                 borderRadius={"15px"}
                 p={"0px 20px 0px 20px"}
@@ -43,7 +43,7 @@ const Servicepage = () => {
                 bg="#131049"
               >
                 Learn More
-              </Button>
+              </Button> */}
             </Box>
           </Box>
         </Box>

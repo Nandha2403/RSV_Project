@@ -31,7 +31,7 @@ const QueryManagement = () => {
             </Text>
           </Box>
           <Box ml={"1.5rem"} mt={"4rem"} pb={"3rem"}>
-            <Button
+            {/* <Button
               size={"xs"}
               borderRadius={"15px"}
               p={"0px 20px 0px 20px"}
@@ -49,7 +49,7 @@ const QueryManagement = () => {
               ml={"2rem"}
             >
               Learn More
-            </Button>
+            </Button> */}
           </Box>
         </Box>
         {/* Next Gen Cont */}

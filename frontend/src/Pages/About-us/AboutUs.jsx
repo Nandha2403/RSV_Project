@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./AboutUs.css";
 import { Box, Button, Text } from "@chakra-ui/react";
 import Navbar from "../../Components/Navbar/Navbar";
@@ -6,75 +6,76 @@ import Menu from "../../Components/Menu/Menu";
 import AboutUs1 from "../../Images/AboutUs-1.png";
 import AboutUs2 from "../../Images/AboutUs-2.png";
 import AboutUs3 from "../../Images/AboutUs-3.png";
-import Client1 from "../../Images/Clients-1.png";
-import Client2 from "../../Images/Clients-2.png";
-import Client3 from "../../Images/Clients-3.png";
-import Client4 from "../../Images/Clients-4.png";
-import Client5 from "../../Images/Clients-5.png";
-import Client6 from "../../Images/Clients-6.png";
-import Client7 from "../../Images/Clients-7.png";
+// import Client1 from "../../Images/Clients-1.png";
+// import Client2 from "../../Images/Clients-2.png";
+// import Client3 from "../../Images/Clients-3.png";
+// import Client4 from "../../Images/Clients-4.png";
+// import Client5 from "../../Images/Clients-5.png";
+// import Client6 from "../../Images/Clients-6.png";
+// import Client7 from "../../Images/Clients-7.png";
 import OurTeam from "../../Images/Our_team.jpeg";
 import CoreImg from "../../Images/CoreImg.png";
 import FocusImg from "../../Images/FocusImg.png";
-import CustomPrevArrow from "../../Components/CustomArrows/CustomPrevArrow";
-import CustomNextArrow from "../../Components/CustomArrows/CustomNextArrow";
+// import CustomPrevArrow from "../../Components/CustomArrows/CustomPrevArrow";
+// import CustomNextArrow from "../../Components/CustomArrows/CustomNextArrow";
 import Footer from "../../Components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 // Need to work on responsiveness
 
 const AboutUs = () => {
-  const firstField = useRef();
-  const ClientsImages = [
-    { ClientImage: Client1 },
-    { ClientImage: Client2 },
-    { ClientImage: Client3 },
-    { ClientImage: Client4 },
-    { ClientImage: Client5 },
-    { ClientImage: Client6 },
-    { ClientImage: Client7 },
-  ];
+  // const firstField = useRef();
+  // const ClientsImages = [
+  //   { ClientImage: Client1 },
+  //   { ClientImage: Client2 },
+  //   { ClientImage: Client3 },
+  //   { ClientImage: Client4 },
+  //   { ClientImage: Client5 },
+  //   { ClientImage: Client6 },
+  //   { ClientImage: Client7 },
+  // ];
 
-  var settings = {
-    className: "center",
-    centerMode: true,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    autoplay: true,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />,
-    autoplaySpeed: 2000,
-    arrow: "center",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  // var settings = {
+  //   className: "center",
+  //   centerMode: true,
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   initialSlide: 0,
+  //   autoplay: true,
+  //   prevArrow: <CustomPrevArrow />,
+  //   nextArrow: <CustomNextArrow />,
+  //   autoplaySpeed: 2000,
+  //   arrow: "center",
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 3,
+  //         slidesToScroll: 3,
+  //         infinite: true,
+  //         dots: true,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 767,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 2,
+  //         initialSlide: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // };
   return (
     <div>
       <Box>
@@ -104,7 +105,7 @@ const AboutUs = () => {
                 </Text>
               </Box>
               <Box ml={"1.5rem"} mt={"2rem"} pb={"4rem"}>
-                <Button
+                {/* <Button
                   size={"xs"}
                   borderRadius={"15px"}
                   p={"0px 20px 0px 20px"}
@@ -122,7 +123,7 @@ const AboutUs = () => {
                   ml={"2rem"}
                 >
                   Learn More
-                </Button>
+                </Button> */}
               </Box>
             </Box>
           </Box>
@@ -151,7 +152,7 @@ const AboutUs = () => {
                     colorScheme="#131049"
                     bg="#131049"
                   >
-                    Solution
+                    <Link to={"/Solutions"}>Solution</Link>
                   </Button>
                   <Button
                     size={"xs"}
@@ -161,7 +162,7 @@ const AboutUs = () => {
                     border={"1px solid #131049"}
                     // bg="#131049"
                   >
-                    Career
+                    <Link to={"/Career"}>Career</Link>
                   </Button>
                 </Box>
               </Box>
@@ -295,7 +296,7 @@ const AboutUs = () => {
                 colorScheme="#131049"
                 bg="#131049"
               >
-                Join Us
+                <Link to={"/Career"}>Join Us</Link>
               </Button>
             </Box>
           </Box>

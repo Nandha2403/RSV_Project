@@ -99,7 +99,7 @@ const CaseStudy = () => {
               </Text>
             </Box>
             <Box ml={"1.5rem"} mt={"2rem"} pb={"4rem"}>
-              <Button
+              {/* <Button
                 size={"xs"}
                 borderRadius={"15px"}
                 p={"0px 20px 0px 20px"}
@@ -107,7 +107,7 @@ const CaseStudy = () => {
                 bg="#131049"
               >
                 Learn More
-              </Button>
+              </Button> */}
             </Box>
           </Box>
         </Box>

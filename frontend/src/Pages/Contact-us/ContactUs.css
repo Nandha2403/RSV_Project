@@ -5,7 +5,7 @@
 .BannerContainerContactUs {
   /* background-color: #0c447f; */
   background-image: url("https://cdn.pixabay.com/photo/2016/08/03/09/04/universe-1566161_1280.jpg");
-  height: 70vh;
+  height: 60vh;
   background-size: cover;
   /* background-repeat: no-repeat; */
   /* border: 1px solid red; */
@@ -52,7 +52,7 @@
 }
 
 .Location {
-  margin-top: 3rem;
+  margin-top: 1rem;
   /* display: inline-block; */
   /* position: relative; */
   /* border: 1px solid greenyellow; */
@@ -80,7 +80,7 @@
 }
 
 .ImgCont {
-  width: 70%;
+  width: 30%;
   margin: auto;
   /* border: 1px solid rebeccapurple; */
 }
@@ -172,7 +172,7 @@
     font-size: medium;
   }
   .ImgCont {
-    width: 95%;
+    width: 60%;
   }
   .TopInputCont {
     flex-direction: column;
