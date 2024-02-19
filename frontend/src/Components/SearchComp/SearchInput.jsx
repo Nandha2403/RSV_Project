@@ -4,17 +4,56 @@ import React, { useState } from "react";
 
 const SearchInput = ({ setResults }) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
 
   // Sample data
 
   const dataFetching = (value) => {
     const data = [
-      { id: 1, name: "Apple" },
-      { id: 2, name: "Banana" },
-      { id: 3, name: "Orange" },
-      { id: 4, name: "Grapes" },
-      { id: 5, name: "Mango" },
+      { id: 1, name: "Solutions", path: "/Solutions" },
+      { id: 2, name: "Services", path: "/Services" },
+      { id: 3, name: "Products", path: "/Products" },
+      { id: 4, name: "Career", path: "/Career" },
+      { id: 5, name: "Case Study", path: "/CaseStudy" },
+      {
+        id: 6,
+        name: "AI In ClinicalTrial",
+        path: "/CaseStudy/AI-In-ClinicalTrial",
+      },
+      {
+        id: 7,
+        name: "AI In Dermatology",
+        path: "CaseStudy/AI-In-Dermatology",
+      },
+      {
+        id: 8,
+        name: "Business Intelligence",
+        path: "/CaseStudy/Business-Intelligence",
+      },
+      {
+        id: 9,
+        name: "Oncology Workflow",
+        path: "/CaseStudy/Oncology-Workflow",
+      },
+      {
+        id: 10,
+        name: "Query Management",
+        path: "/CaseStudy/Query-Management",
+      },
+      {
+        id: 11,
+        name: "Electronic Data Capture",
+        path: "/CaseStudy/Electronic-Data-Capture",
+      },
+      {
+        id: 12,
+        name: "Hand Scintigraphy",
+        path: "/CaseStudy/Hand-Scintigraphy",
+      },
+      {
+        id: 13,
+        name: "Paired Reads",
+        path: "/CaseStudy/Paired-Reads",
+      },
     ];
     const results = data.filter(
       (el) => value && el && el.name && el.name.toLowerCase().includes(value)

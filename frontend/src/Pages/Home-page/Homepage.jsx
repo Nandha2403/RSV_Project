@@ -354,10 +354,7 @@ const Homepage = () => {
             <Text>
               Radiant Sage's objective is to provide a clinical image management
               technology solution that can get trials up and running within
-              weeks under a sponsor.
-            </Text>
-            <Text mt={".4rem"}>
-              To stay updated on clinical trial imaging blogs and news,
+              weeks under a sponsor. To stay updated on clinical trial imaging blogs and news,
               subscribe to us.
             </Text>
           </Box>

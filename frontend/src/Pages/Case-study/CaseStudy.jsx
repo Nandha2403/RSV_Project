@@ -42,14 +42,14 @@ const CaseStudy = () => {
     "Paired Reads",
   ];
   const content = [
-    " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis voluptates facere sunt dolorum aperiam, beatae exercitationem animi nostrum? Eaque.",
-    " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis voluptates facere.",
-    " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis voluptates.",
-    " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis.",
-    " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis.",
-    " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis.",
-    " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis.",
-    " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore temporibus labore quos ipsam similique eum praesentium quibusdam id ratione facilis.",
+    "The ability of Artificial Intelligence (AI) to perform tasks that humans do, albeit more effectively, quickly, and affordably, is becoming increasingly sophisticated.Robotics and artificial intelligence are already commonplace in our daily lives, but the field of healthcare is where they have the most potential.",
+    "Owing to its extensive clinical, dermatoscopical, and dermatopathological image library, dermatology has assumed the lead position for the implementation of AI in the medical industry. AI medical image identification and analysis is extremely helpful for high-speed, high-precision diagnosis along with professional review in those fields of medicine that rely on imaging data, particularly in the dermatological field.",
+    "Business intelligence (BI) is a technological process that uses data mining, data visualisation, and business analytics to extract useful information from substantial amounts of data. In the clinical trial industry, BI is a topic that is getting increased attention.",
+    "Oncology workflow is a specialized process used in clinical trials imaging to evaluate and track the progress of cancer patients.The workflow involves acquiring, processing, analysing, and interpreting imaging data from a variety of imaging modalities, including CT, MRI, and PET scans.",
+    "Query management is a process used in clinical trials to manage and resolve data queries related to imaging data. It involves identifying, tracking, and resolving issues related to the quality or completeness of the data collected during the trial.",
+    "EDC (Electronic Data Capture) extension is an application or software that is used in clinical trials to capture, manage, and analyze clinical data in electronic form instead of using paper forms. It simplifies the clinical trial process by eliminating the need for manual entry of data, reducing the risk of errors, and increasing the speed of data processing and management.",
+    "Hand scintigraphy is a medical imaging technique that is used to evaluate the function of the bones and joints in the hand. It involves injecting a small amount of radioactive material into the bloodstream and then taking images of the hand using a special camera that can detect the radiation emitted by the material.",
+    "Paired reads, also known as paired-end sequencing, are a type of DNA sequencing method that involves sequencing both ends of a DNA fragment. This allows for the detection of structural variants such as insertions, deletions, and inversions, which are important in clinical trial imaging for understanding the genetic basis of diseases and developing personalized therapies.",
   ];
 
   const linkBtn = [
@@ -92,7 +92,7 @@ const CaseStudy = () => {
               mt={"2rem"}
               w={{ base: "85%", sm: "85%", md: "85%", lg: "40%" }}
             >
-              <Text >
+              <Text>
                 Radiant Sage's solutions exemplify how they can be leveraged in
                 Clinical Imaging Trials to enable the smooth acquisition,
                 processing, and delivery of information on a timely basis.
@@ -151,14 +151,11 @@ const CaseStudy = () => {
                   pharmaceutical companies, especially when they need to share
                   it for licensing, acquisition, or due diligence.
                 </Text>
-                <Text data-aos="fade-up" data-aos-duration="1000" mt={"2rem"}>
+                <Text data-aos="fade-up" data-aos-duration="1000" mt={"1rem"}>
                   Image analysis is often a key endpoint for demonstrating the
                   efficacy of a drug. However, without proper data warehousing,
                   reproducing the results and proving the value of the drug can
-                  be challenging.
-                </Text>
-                <Text data-aos="fade-up" data-aos-duration="1000" mt={"2rem"}>
-                  Reproducibility is essential for providing hard evidence to
+                  be challenging. Reproducibility is essential for providing hard evidence to
                   regulators and investors.
                 </Text>
               </Box>

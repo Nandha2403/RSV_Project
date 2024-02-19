@@ -35,7 +35,7 @@ const Career = () => {
                 of innovation in the healthcare sector. At RSV - Radiant Sage
                 Ventures, we're on the lookout for driven individuals who share
                 our fervor for propelling medical research forward through
-                state-of-the-art imaging technologies. As a valued member of our
+                Clincal trial imaging. As a valued member of our
                 team, you'll play a pivotal role in reshaping clinical trials,
                 contributing to the creation of revolutionary therapies, and
                 enhancing patient outcomes. If you're prepared to be part of a
@@ -114,7 +114,7 @@ const Career = () => {
                 training sessions, and avenues for advancement, ensuring that
                 every team member has the tools and support needed to shape
                 their career trajectory within the ever-evolving landscape of
-                healthcare technology.
+                life science technology.
               </p>
             </Box>
           </Box>

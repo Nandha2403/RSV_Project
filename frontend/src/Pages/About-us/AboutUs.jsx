@@ -257,12 +257,11 @@ const AboutUs = () => {
                 </Text>
                 <Text mt={"1rem"}>
                   Our solutions are unique in the market as they are
-                  purpose-built, with a foundation in Web 2.0 and a SaaS
-                  delivery approach, encompassing all the features of a core
-                  lab. Specifically designed, these solutions empower sponsors
-                  to retain trial control without resorting to the expensive,
-                  time-consuming, error-prone, and inefficient options available
-                  today.
+                  purpose-built, with a foundation in SaaS delivery approach,
+                  encompassing all the features of a core lab. Specifically
+                  designed, these solutions empower sponsors to retain trial
+                  control without resorting to the expensive, time-consuming,
+                  error-prone, and inefficient options available today.
                 </Text>
               </Box>
               <Box className="AboutUsSectionImgCont">
