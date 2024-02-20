@@ -123,6 +123,13 @@ const Menu = () => {
                                 Paired Reads
                               </RouterLink>
                             </li>
+                            <li>
+                              <RouterLink
+                                to={"/CaseStudy/Adverse-Event-Module"}
+                              >
+                                Adverse Event Module
+                              </RouterLink>
+                            </li>
                           </ul>
                         </Box>
                         {/* <Box>

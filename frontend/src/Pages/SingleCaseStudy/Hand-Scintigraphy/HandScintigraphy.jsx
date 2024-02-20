@@ -31,25 +31,6 @@ const HandScintigraphy = () => {
             </Text>
           </Box>
           <Box ml={"1.5rem"} mt={"4rem"} pb={"3rem"}>
-            {/* <Button
-              size={"xs"}
-              borderRadius={"15px"}
-              p={"0px 20px 0px 20px"}
-              colorScheme="#131049"
-              bg="#131049"
-            >
-              Get Started
-            </Button>
-            <Button
-              size={"xs"}
-              borderRadius={"15px"}
-              p={"0px 20px 0px 20px"}
-              //   colorScheme="black"
-              //   bg="white"
-              ml={"2rem"}
-            >
-              Learn More
-            </Button> */}
           </Box>
         </Box>
         {/* VisualHandCont */}

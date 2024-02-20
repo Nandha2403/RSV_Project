@@ -162,8 +162,10 @@ const PairedReads = () => {
           </Box>
           <Box className="SmallBannerPRCenterLine"></Box>
           <Box className="smallBannerPRBtmContent">
-            <Link to={"/CaseStudy/AI-In-ClinicalTrial"}>AI In CT</Link>
-            <Link to={"/CaseStudy/AI-In-ClinicalTrial"}>
+            <Link to={"/CaseStudy/Adverse-Event-Module"}>
+              Adverse Event Module
+            </Link>
+            <Link to={"/CaseStudy/Adverse-Event-Module"}>
               <MdArrowForwardIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
           </Box>

@@ -16,6 +16,7 @@ import ElectronicDataCapture from "../Pages/SingleCaseStudy/Electronic-Data-Capt
 import Products from "../Pages/Products-page/Products";
 import Solutions from "../Pages/Solution-page/Solutions";
 import Servicepage from "../Pages/Service-page/Servicepage";
+import AdverseEventModule from "../Pages/SingleCaseStudy/AdverseEventModulePage/AdverseEventModule";
 
 const AllRoutes = () => {
   const ScrollToTop = () => {
@@ -65,6 +66,7 @@ const AllRoutes = () => {
           element={<HandScintigraphy />}
         />
         <Route path="CaseStudy/Paired-Reads" element={<PairedReads />} />
+        <Route path="CaseStudy/Adverse-Event-Module" element={<AdverseEventModule />} />
       </Routes>
     </div>
   );

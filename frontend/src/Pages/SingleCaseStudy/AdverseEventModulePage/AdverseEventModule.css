@@ -1,0 +1,146 @@
+.bodyContainerAEM {
+  margin-left: 4rem;
+}
+
+.BannerContainerAEM {
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-image: url("../../../Images/Banner-AI-in-CT.jpeg");
+  /* height: 90vh; */
+  /* border: 1px solid red; */
+}
+.StreamliningCont {
+  margin-top: 4rem;
+  /* border: 1px solid green; */
+}
+.StreamliningHeading {
+  margin-left: 3rem;
+}
+.StreamliningSubTxt {
+  width: 90%;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  /* border: 1px solid red; */
+  line-height: 25px;
+}
+.StreamliningSubTxt > p:nth-child(2) {
+  margin-top: 2rem;
+}
+.StreamliningSubTxt > p:nth-child(3) {
+  margin-top: 2rem;
+}
+
+.smallBanner {
+  margin-top: 4rem;
+  width: 100%;
+  height: 50vh;
+  /* background-color: #0c447f; */
+  background-image: url("../../../Images/SecondBanner-AI-In-CT.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* border: 1px solid teal; */
+}
+
+.smallBannerCTBottom {
+  margin-top: 4rem;
+  height: 45vh;
+  /* border: 1px solid teal; */
+  background-image: url("../../../Images/CSfooterRedirect.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smallBannerCTBtmContent {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin: 0px 40px;
+  /* border: 1px solid white; */
+}
+
+.SmallBannerCTCenterLine {
+  height: 10vh;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.KeyFeatures {
+  margin-top: 4rem;
+}
+.KeyFeaturesHeadingCont {
+  margin-left: 3rem;
+}
+
+.KeyFeaturesTextCont {
+  margin-top: 3rem;
+  /* border: 1px solid greenyellow; */
+  width: 90%;
+  margin: auto;
+}
+.KeyFeaturesTextTitle1 > p:nth-child(1) {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.KeyFeaturesTextTitle1 > p:nth-child(2) {
+  margin-top: 10px;
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .smallBanner {
+    height: 30vh;
+    /* background-size: contain; */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bodyContainerAEM {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .smallBannerAEM {
+    height: 20vh;
+  }
+
+  .smallBannerAEMBottom {
+    height: 30vh;
+    flex-direction: column;
+    background-size: 100% 100%;
+  }
+  .smallBannerAEMBtmContent {
+    /* margin-top: 1rem; */
+    margin: auto;
+  }
+  .SmallBannerAEMCenterLine {
+    width: 50%;
+    height: 2px;
+  }
+
+  .StreamliningHeading {
+    margin-left: 0.4rem;
+  }
+  .StreamliningSubTxt {
+    width: 95%;
+    margin-left: 0;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .KeyFeaturesHeadingCont {
+    /* width: 95%; */
+    margin-left: 0.4rem;
+    /* padding-left: .2rem; */
+  }
+  .KeyFeaturesTextCont {
+    width: 95%;
+  }
+}
