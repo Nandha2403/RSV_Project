@@ -300,7 +300,7 @@ const AboutUs = () => {
             </Box>
           </Box>
           {/* EmailAndName */}
-          <Box className="EmailAndName">
+          {/* <Box className="EmailAndName">
             <Box className="EmailAndNameInptCont">
               <input type="text" placeholder="Email Address" />
               <input type="text" placeholder="Full Name" />
@@ -316,7 +316,7 @@ const AboutUs = () => {
                 Sign up
               </Button>
             </Box>
-          </Box>
+          </Box> */}
           {/* Footer */}
           <Box mt={"3rem"}>
             <Footer />

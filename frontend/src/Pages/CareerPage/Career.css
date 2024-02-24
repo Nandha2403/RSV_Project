@@ -64,8 +64,8 @@
   font-weight: 600;
 }
 .CardsParent div p {
-
   /* font-size: 18px; */
+  text-align: justify;
   margin-top: 2rem;
   line-height: normal;
   padding: 0 20px 20px 20px;

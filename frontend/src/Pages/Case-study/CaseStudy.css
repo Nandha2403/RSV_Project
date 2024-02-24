@@ -65,12 +65,12 @@
 .Adavantage {
   position: relative;
   /* border: 1px solid blue; */
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 .Challenges {
   position: relative;
   /* border: 1px solid red; */
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 .middel-border {
   height: 25vh;
@@ -80,13 +80,13 @@
 }
 .title-box1 {
   width: 300px;
-  height: 60vh;
+  height: 50vh;
   background-color: #7069a9;
   border-radius: 20px;
 }
 .title-box2 {
   width: 300px;
-  height: 60vh;
+  height: 50vh;
   background-color: #7069a9;
   border-radius: 20px;
 }
@@ -98,21 +98,23 @@
 .Content-box {
   position: absolute;
   width: 550px;
-  height: 50vh;
+  height: 40vh;
   background-color: #0f062a;
   border: 2px solid white;
   border-radius: 20px;
   top: 3rem;
   left: 5px;
+  /* border: 1px solid yellow; */
 }
 .Content-box2 {
   position: absolute;
   width: 550px;
-  height: 50vh;
+  height: 40vh;
   background-color: #0f062a;
   border: 2px solid white;
   border-radius: 20px;
   top: 3rem;
+  /* border: 1px solid yellow; */
   /* left: 5px; */
   right: 5px;
 }
@@ -123,7 +125,7 @@
 .Content-box ul li {
   /* font-size: 12px; */
   text-align: left;
-  line-height: 40px;
+  line-height: 1.4;
   color: white;
   /* list-style-position: inside; */
   list-style-type: circle;
@@ -135,7 +137,7 @@
 .Content-box2 ul li {
   /* font-size: 12px; */
   text-align: left;
-  line-height: 40px;
+  line-height: 1.4;
   color: white;
   list-style-position: inside;
   list-style-type: circle;
@@ -212,11 +214,11 @@
   font-weight: bold;
 }
 .info-content {
-  font-size: 14px;
-  margin: 10px;
+  font-size: 16px;
+  margin: 15px;
 }
 .info-box-wrapper button {
-  border: 1px solid;
+  /* border: 1px solid; */
   display: block;
   margin: auto;
   padding: 0 10px 0 10px;
@@ -297,8 +299,8 @@
   .CaseStudyHeading {
     margin-left: 0.5rem;
   }
-  .CaseStudyMain-Right{
-    padding: 0 0 0 .6rem;
+  .CaseStudyMain-Right {
+    padding: 0 0 0 0.6rem;
   }
   .info-box-wrapper {
     height: 40vh;
@@ -343,20 +345,22 @@
     margin: auto; */
   }
   .Content-box {
-    width: 100%;
+    width: 90%;
     height: fit-content;
     position: static;
     border-radius: 0px 30px;
     border: 1px solid black;
+    padding-bottom: 1rem;
     /* left: 0px; */
   }
   .Content-box2 {
-    width: 100%;
+    width: 90%;
     height: fit-content;
     position: static;
     border-radius: 0px 30px;
     border: 1px solid black;
     padding-right: 20px;
+    padding-bottom: 1rem;
     /* right: 0px; */
   }
 }

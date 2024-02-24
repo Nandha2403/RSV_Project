@@ -127,7 +127,7 @@ const CaseStudy = () => {
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
-            <Text>Revolutionizing Clinical Trial with AI</Text>
+            {/* <Text>Revolutionizing Clinical Trial with AI</Text> */}
           </Box>
           <Box className="CaseStudyConatiner">
             <Box
@@ -155,8 +155,8 @@ const CaseStudy = () => {
                   Image analysis is often a key endpoint for demonstrating the
                   efficacy of a drug. However, without proper data warehousing,
                   reproducing the results and proving the value of the drug can
-                  be challenging. Reproducibility is essential for providing hard evidence to
-                  regulators and investors.
+                  be challenging. Reproducibility is essential for providing
+                  hard evidence to regulators and investors.
                 </Text>
               </Box>
             </Box>
@@ -181,9 +181,15 @@ const CaseStudy = () => {
             <div className="info-box-wrapper">
               <p className="info-title"> {info[focusElement]} </p>
               <p className="info-content"> {content[focusElement]} </p>
-              <button>
+              <Button
+                size={"xs"}
+                borderRadius={"15px"}
+                p={"0px 20px 0px 20px"}
+                colorScheme="#131049"
+                bg="#131049"
+              >
                 <Link to={linkBtn[focusElement]}>Learn More</Link>
-              </button>
+              </Button>
             </div>
           </div>
         </div>

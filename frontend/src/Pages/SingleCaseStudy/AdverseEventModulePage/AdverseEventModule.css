@@ -20,8 +20,9 @@
   width: 90%;
   margin-left: 3rem;
   margin-top: 2rem;
-  /* border: 1px solid red; */
   line-height: 25px;
+  text-align: justify;
+  /* border: 1px solid red; */
 }
 .StreamliningSubTxt > p:nth-child(2) {
   margin-top: 2rem;
@@ -79,9 +80,10 @@
 
 .KeyFeaturesTextCont {
   margin-top: 3rem;
-  /* border: 1px solid greenyellow; */
   width: 90%;
   margin: auto;
+  text-align: justify;
+  /* border: 1px solid greenyellow; */
 }
 .KeyFeaturesTextTitle1 > p:nth-child(1) {
   color: var(--blue);
@@ -92,6 +94,14 @@
 .KeyFeaturesTextTitle1 > p:nth-child(2) {
   margin-top: 10px;
   margin-left: 1rem;
+}
+
+.overallBtmContAEM {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: justify;
+  /* border: 1px solid black; */
 }
 
 @media only screen and (max-width: 900px) {
@@ -141,6 +151,9 @@
     /* padding-left: .2rem; */
   }
   .KeyFeaturesTextCont {
+    width: 95%;
+  }
+  .overallBtmContAEM {
     width: 95%;
   }
 }

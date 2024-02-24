@@ -198,15 +198,6 @@ const Homepage = () => {
                   p={"0px 20px 0px 20px"}
                   colorScheme="#131049"
                   bg="#131049"
-                >
-                  <Link to={"/Solutions"}>View all</Link>
-                </Button>
-                <Button
-                  size={"xs"}
-                  borderRadius={"15px"}
-                  p={"0px 20px 0px 20px"}
-                  colorScheme="#131049"
-                  bg="#131049"
                   onClick={scrollTop}
                 >
                   Request Demo

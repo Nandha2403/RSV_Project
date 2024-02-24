@@ -19,9 +19,9 @@
   /* margin: auto; */
   margin-left: 3rem;
   margin-top: 2rem;
-  /* border: 1px solid red; */
-  text-align: left;
+  text-align: justify;
   line-height: 25px;
+  /* border: 1px solid red; */
 }
 .NextGenSubTxtDerma > p:nth-child(2) {
   margin-top: 2rem;
@@ -73,6 +73,7 @@
   margin-top: 2rem;
   /* border: 1px solid red; */
   line-height: 25px;
+  text-align: justify;
 }
 
 .UnderBannerTxtDerma > p:nth-child(2) {
@@ -86,7 +87,7 @@
   margin-top: 4rem;
 }
 
-.AIAdvanceHeadingCont{
+.AIAdvanceHeadingCont {
   margin-left: 3rem;
 }
 
@@ -95,6 +96,7 @@
   /* border: 1px solid greenyellow; */
   width: 90%;
   margin: auto;
+  text-align: justify;
 }
 .AIAdvanceDermaTextTitle1 > p:nth-child(1) {
   color: var(--blue);
@@ -136,7 +138,7 @@
     height: 2px;
   }
   .NextGenHeadingDerma {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
   .NextGenSubTxtDerma {
     margin-left: 0;
@@ -150,10 +152,10 @@
     margin: auto;
     margin-top: 1rem;
   }
-  .AIAdvanceHeadingCont{
-    margin-left: .5rem;
+  .AIAdvanceHeadingCont {
+    margin-left: 0.5rem;
   }
-  .AIAdvanceDermaTextCont{
+  .AIAdvanceDermaTextCont {
     width: 95%;
   }
 }

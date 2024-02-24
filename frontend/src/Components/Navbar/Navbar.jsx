@@ -329,12 +329,6 @@ const Navbar = () => {
                   </AccordionButton>
                   <AccordionPanel pb={4} className="dropdown">
                     <Box>
-                      <p>Blogs</p>
-                    </Box>
-                    <Box>
-                      <p>Podcast</p>
-                    </Box>
-                    <Box>
                       <p>Videos</p>
                     </Box>
                     <Box>

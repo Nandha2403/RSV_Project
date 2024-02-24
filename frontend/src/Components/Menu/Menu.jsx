@@ -88,41 +88,41 @@ const Menu = () => {
                                 AI In Dermatology
                               </RouterLink>
                             </li>
-                            <li>
+                            {/* <li>
                               <RouterLink
                                 to={"/CaseStudy/Business-Intelligence"}
                               >
                                 Business Intelligence
                               </RouterLink>
-                            </li>
-                            <li>
+                            </li> */}
+                            {/* <li>
                               <RouterLink to={"/CaseStudy/Oncology-Workflow"}>
                                 Oncology Workflow
                               </RouterLink>
-                            </li>
+                            </li> */}
                             <li>
                               <RouterLink to={"/CaseStudy/Query-Management"}>
                                 Query Management
                               </RouterLink>
                             </li>
 
-                            <li>
+                            {/* <li>
                               <RouterLink
                                 to={"/CaseStudy/Electronic-Data-Capture"}
                               >
                                 Electronic Data Capture
                               </RouterLink>
-                            </li>
-                            <li>
+                            </li> */}
+                            {/* <li>
                               <RouterLink to={"/CaseStudy/Hand-Scintigraphy"}>
                                 Hand Scintigraphy
                               </RouterLink>
-                            </li>
-                            <li>
+                            </li> */}
+                            {/* <li>
                               <RouterLink to={"/CaseStudy/Paired-Reads"}>
                                 Paired Reads
                               </RouterLink>
-                            </li>
+                            </li> */}
                             <li>
                               <RouterLink
                                 to={"/CaseStudy/Adverse-Event-Module"}
@@ -151,7 +151,9 @@ const Menu = () => {
                           </p>
                           <ul className="productsLinksCorelabInBox">
                             <li>
-                              <a href="#RadGate">RadGate</a>
+                              <RouterLink to={"/Products/#RadGate"}>
+                                RadGate
+                              </RouterLink>
                             </li>
                             <li>
                               <a href="#RadVault">RadVault</a>

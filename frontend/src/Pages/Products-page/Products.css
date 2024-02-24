@@ -24,6 +24,7 @@
   margin: auto;
   margin-top: 2rem;
   line-height: 30px;
+  text-align: justify;
   /* border: 1px solid green; */
 }
 .product_highlights {
@@ -51,6 +52,7 @@
   width: 90%;
   margin: auto;
   margin-top: 3rem;
+  text-align: justify;
   /* border: 1px solid white; */
 }
 
@@ -64,6 +66,7 @@
   width: 90%;
   margin: auto;
   margin-top: 3rem;
+  text-align: justify;
   /* border: 1px solid gray; */
 }
 
@@ -133,15 +136,16 @@
   font-size: 28px;
 }
 .Products_container {
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
+  width: 95%;
+  margin: auto;
   margin-top: 3rem;
   /* border: 1px solid green; */
 }
 .products_text_and_img_cont {
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   /* border: 1px solid green; */
 }
 
@@ -157,8 +161,9 @@
   width: 50%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 20px;
-  padding: 20px 5px 20px 30px;
+  padding: 20px 10px 20px 30px;
   text-transform: capitalize;
+  /* text-align: justify; */
 }
 
 .under_text li::marker {

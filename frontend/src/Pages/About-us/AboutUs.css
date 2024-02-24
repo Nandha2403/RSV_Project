@@ -38,10 +38,10 @@
 }
 .AboutUsSectionText {
   width: 60%;
-  /* border: 1px solid black; */
   margin-left: 2rem;
-  /* text-align: left; */
+  text-align: justify;
   line-height: 30px;
+  /* border: 1px solid black; */
 }
 .AboutUsSectionBtnCont {
   margin-top: 1rem;
@@ -74,9 +74,9 @@
 .AboutUsSectionIIText {
   width: 60%;
   margin-right: 3rem;
-  /* border: 1px solid black; */
-  /* text-align: justify; */
+  text-align: justify;
   line-height: 30px;
+  /* border: 1px solid black; */
 }
 .AboutUsSectionIImgCont {
   width: 40%;
@@ -110,7 +110,7 @@
 }
 .OurTeamText {
   width: 60%;
-  text-align: left;
+  text-align: justify;
   /* border: 1px solid greenyellow; */
   padding: 0 30px 30px 30px;
   line-height: 30px;

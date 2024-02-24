@@ -7,6 +7,7 @@ import ContactUsIntro from "../../Images/ContactUsIntro.png";
 import RSVLocation from "../../Images/RSVLocation.png";
 // import MapFullImg from "../../Images/MapFullImg.png";
 import Footer from "../../Components/Footer/Footer";
+import { FaLocationDot } from "react-icons/fa6";
 
 const ContactUs = () => {
   return (
@@ -28,7 +29,8 @@ const ContactUs = () => {
           </Text>
         </Box>
         {/*Address */}
-        <Box className="ContactAddress">
+
+        {/* <Box className="ContactAddress">
           <Box className="Contact">
             <Box>
               <Text fontWeight={"bold"}>United States</Text>
@@ -39,10 +41,56 @@ const ContactUs = () => {
               <Text>info@radiantsage.com</Text>
             </Box>
           </Box>
-          <Box className="ContactImg">
+           <Box className="ContactImg">
             <img src={ContactUsIntro} alt="ContactUs" />
-          </Box>
-        </Box>
+          </Box> 
+        </Box> */}
+
+        <div className="parent_continer_contact_address">
+          <div className="address_cont">
+            <h1>Get in Touch with us</h1>
+
+            <div className="address_details_cont">
+              <h1>US Office</h1>
+              <div className="address_details_icon_txt_cont">
+                <FaLocationDot color="black" b />
+                <p>464 Common St 133 Belmont, MA, 02478-2704 United States</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="form_cont">
+            <Box className="ContactUsForm">
+              <Box className="form">
+                <p className="formHeading">Contact Us</p>
+                <Box className="TopInputCont">
+                  <input className="leftInput" placeholder="Name" />
+                  <input className="rightInput" placeholder="Phone" />
+                </Box>
+                <Box className="TopInputCont">
+                  <input className="leftInput" placeholder="Email" />
+                  <input className="rightInput" placeholder="Company" />
+                </Box>
+                <Box className="TopInputCont">
+                  <input
+                    className="FullInput"
+                    placeholder="Reason for Inquiry"
+                  />
+                </Box>
+                <Box className="TopInputCont">
+                  <textarea
+                    className="FullInputBottom"
+                    placeholder="Specific Requirements (if any) :"
+                  />
+                </Box>
+              </Box>
+              <Box className="SubmitBtn">
+                <button>Submit Here !</button>
+              </Box>
+            </Box>
+          </div>
+        </div>
+
         {/* Location */}
         <Box className="Location">
           {/* <Box className="MapImgContainer"> */}
@@ -59,32 +107,9 @@ const ContactUs = () => {
           {/* </Box> */}
         </Box>
         {/* Contact us from */}
-        <Box className="ContactUsForm">
-          <Box className="form">
-            <p className="formHeading">Contact Us</p>
-            <Box className="TopInputCont">
-              <input className="leftInput" placeholder="Name" />
-              <input className="rightInput" placeholder="Phone" />
-            </Box>
-            <Box className="TopInputCont">
-              <input className="leftInput" placeholder="Email" />
-              <input className="rightInput" placeholder="Company" />
-            </Box>
-            <Box className="TopInputCont">
-              <input className="FullInput" placeholder="Reason for Inquiry" />
-            </Box>
-            <Box className="TopInputCont">
-              <textarea
-                className="FullInputBottom"
-                placeholder="Specific Requirements (if any) :"
-              />
-            </Box>
-          </Box>
-        </Box>
+
         {/* SubmitBtn */}
-        <Box className="SubmitBtn">
-          <button>Submit Here !</button>
-        </Box>
+
         <Box mt={"3rem"}>
           <Footer />
         </Box>

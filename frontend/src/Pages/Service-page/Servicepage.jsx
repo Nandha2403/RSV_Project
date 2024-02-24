@@ -18,7 +18,7 @@ const Servicepage = () => {
         <Box className="BannerContainerServices">
           <Navbar />
           <Box textAlign={"left"} color={"white"}>
-            <Box pt={"12rem"} >
+            <Box pt={"12rem"}>
               <Text
                 fontSize={"4xl"}
                 ml={"1.5rem"}
@@ -66,7 +66,7 @@ const Servicepage = () => {
               <Text className="headings">1. CORE LAB SERVICES</Text>
             </Box>
             <Box className="SingleServicesImgCont">
-              <img src={CoreLabImg} alt="CORE LAB SERVICES" />
+              <img width={"650px"} src={CoreLabImg} alt="CORE LAB SERVICES" />
 
               <Box className="SingleServicesTextCont">
                 <Text>
@@ -86,7 +86,11 @@ const Servicepage = () => {
               <Text className="headings">2. TECHNICAL SERVICES</Text>
             </Box>
             <Box className="SingleServicesImgCont">
-              <img src={TechnicalImg} alt="TECHNICAL SERVICES" />
+              <img
+                width={"650px"}
+                src={TechnicalImg}
+                alt="TECHNICAL SERVICES"
+              />
 
               <Box className="SingleServicesTextCont">
                 <Text>
@@ -115,7 +119,11 @@ const Servicepage = () => {
               <Text className="headings">3. DEPLOYMENT SERVICES</Text>
             </Box>
             <Box className="SingleServicesImgCont">
-              <img src={DeploymentImg} alt="DEPLOYMENT SERVICES" />
+              <img
+                width={"650px"}
+                src={DeploymentImg}
+                alt="DEPLOYMENT SERVICES"
+              />
 
               <Box className="SingleServicesTextCont">
                 <Text>

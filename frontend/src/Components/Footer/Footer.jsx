@@ -31,24 +31,14 @@ const Footer = () => {
                 <img src={Linkedin} alt="Linkedin" />
               </a>
             </Box>
-            <Box>
+            {/* <Box>
               <a href="#">
                 <img src={Facebook} alt="Facebook" />
               </a>
-            </Box>
+            </Box> */}
             <Box>
               <a href="#">
                 <img src={Email} alt="Email" />
-              </a>
-            </Box>
-            <Box>
-              <a href="#">
-                <img src={Instagram} alt="Instagram" />
-              </a>
-            </Box>
-            <Box>
-              <a href="#">
-                <img src={Twitter} alt="Twitter" />
               </a>
             </Box>
             <Box>
@@ -100,12 +90,6 @@ const Footer = () => {
             <a href="#">Resources</a>
           </h2>
           <ul>
-            <li>
-              <a href="#">Blogs</a>
-            </li>
-            <li>
-              <a href="#">Podcast</a>
-            </li>
             <li>
               <a href="#">Videos</a>
             </li>

@@ -20,9 +20,9 @@
   /* margin: auto; */
   margin-left: 3rem;
   margin-top: 2rem;
-  /* border: 1px solid red; */
-  text-align: left;
+  text-align: justify;
   line-height: 25px;
+  /* border: 1px solid red; */
 }
 .EDQMSubTxt > p:nth-child(2) {
   margin-top: 2rem;
@@ -88,6 +88,7 @@
 
 .BenifitsOfQM {
   margin-top: 4rem;
+  text-align: justify;
 }
 
 .BenifitsOfQMTextCont {
@@ -111,6 +112,7 @@
   width: 90%;
   margin: auto;
   margin-top: 2rem;
+  text-align: justify;
   /* border: 1px solid black; */
 }
 

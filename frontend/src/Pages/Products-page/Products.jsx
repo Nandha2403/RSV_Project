@@ -19,7 +19,18 @@ import Service5 from "../../Images/ServiceImg-05.png";
 import Service6 from "../../Images/ServiceImg-06.png";
 import Service7 from "../../Images/ServiceImg-07.png";
 import Service8 from "../../Images/ServiceImg-08.png";
-import product1 from "../../Images/Data Standardization and Acquition-01.png";
+import product1 from "../../Images/RadGate.jpeg";
+import product2 from "../../Images/RadVault.jpeg";
+import product3 from "../../Images/RadVista.jpeg";
+import product4 from "../../Images/RadFlow.jpeg";
+import product5 from "../../Images/RadClinica.jpeg";
+import product6 from "../../Images/RadInsight.jpeg";
+import product7 from "../../Images/RadEvent.jpeg";
+import product8 from "../../Images/RadAI.jpeg";
+import product9 from "../../Images/RadDCT.jpeg";
+import product10 from "../../Images/RadApp.jpeg";
+import product11 from "../../Images/RadChain.jpeg";
+
 import { Link as RouterLink } from "react-router-dom";
 // import { Link as ScrollLink } from "react-scroll";
 import "./Products.css";
@@ -119,7 +130,9 @@ const Products = () => {
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings" id="RadVault">RadVault Repository and Portal :</Text>
+            <Text className="headings" id="RadVault">
+              RadVault Repository and Portal :
+            </Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>Content Based Storage Model - Any file</li>
@@ -127,12 +140,14 @@ const Products = () => {
                 <li>Role Based Access Controls with Part 11 Compliance</li>
               </ul>
               <Box className="products_img_cont">
-                <img src={product1} alt="RadGate Import/Export" />
+                <img src={product2} alt="RadGate Import/Export" />
               </Box>
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings" id="RadVista">RadVista Imaging Workstation :</Text>
+            <Text className="headings" id="RadVista">
+              RadVista Imaging Workstation :
+            </Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>Multi-Modality Workstation (DICOM/Non-DICOM)</li>
@@ -143,12 +158,14 @@ const Products = () => {
                 </li>
               </ul>
               <Box className="products_img_cont">
-                <img src={product1} alt="RadGate Import/Export" />
+                <img src={product3} alt="RadGate Import/Export" />
               </Box>
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings" id="RadFlow">RadFlow Workflow Engine :</Text>
+            <Text className="headings" id="RadFlow">
+              RadFlow Workflow Engine :
+            </Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>Study/Modality based Workflows</li>
@@ -164,12 +181,14 @@ const Products = () => {
                 </li>
               </ul>
               <Box className="products_img_cont">
-                <img src={product1} alt="RadGate Import/Export" />
+                <img src={product4} alt="RadGate Import/Export" />
               </Box>
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings" id="RadClinica">RadClinica CTMS :</Text>
+            <Text className="headings" id="RadClinica">
+              RadClinica CTMS :
+            </Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>Multi-Trial Corelab Operations (CTMS)</li>
@@ -180,7 +199,7 @@ const Products = () => {
                 <li>Finance/Documents/Supplies etc.</li>
               </ul>
               <Box className="products_img_cont">
-                <img src={product1} alt="RadGate Import/Export" />
+                <img src={product5} alt="RadGate Import/Export" />
               </Box>
             </Box>
           </Box>
@@ -195,7 +214,7 @@ const Products = () => {
                 <li>Dashboards / Performance Metrics</li>
               </ul>
               <Box className="products_img_cont">
-                <img src={product1} alt="RadGate Import/Export" />
+                <img src={product6} alt="RadGate Import/Export" />
               </Box>
             </Box>
           </Box>
@@ -216,12 +235,14 @@ const Products = () => {
                 </li>
               </ul>
               <Box className="products_img_cont">
-                <img src={product1} alt="RadGate Import/Export" />
+                <img src={product7} alt="RadGate Import/Export" />
               </Box>
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings" id="RadAI">RadAI & Toolkit AI/ML Framework :</Text>
+            <Text className="headings" id="RadAI">
+              RadAI & Toolkit AI/ML Framework :
+            </Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li> Models to support image processing in Trial workflows</li>
@@ -233,7 +254,7 @@ const Products = () => {
                 <li>Manual and semi-automated boundary detection</li>
               </ul>
               <Box className="products_img_cont">
-                <img src={product1} alt="RadGate Import/Export" />
+                <img src={product8} alt="RadGate Import/Export" />
               </Box>
             </Box>
           </Box>
@@ -250,12 +271,14 @@ const Products = () => {
                 <li>Patient/Scan Center payments</li>
               </ul>
               <Box className="products_img_cont">
-                <img src={product1} alt="RadGate Import/Export" />
+                <img src={product9} alt="RadGate Import/Export" />
               </Box>
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings" id="RadApp">RadApp Patient Driven Apps :</Text>
+            <Text className="headings" id="RadApp">
+              RadApp Patient Driven Apps :
+            </Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li> Patient based image capture via Apps</li>
@@ -263,12 +286,14 @@ const Products = () => {
                 <li>Patient Data capture (ePRO)</li>
               </ul>
               <Box className="products_img_cont">
-                <img src={product1} alt="RadGate Import/Export" />
+                <img src={product10} alt="RadGate Import/Export" />
               </Box>
             </Box>
           </Box>
           <Box className="Products_container">
-            <Text className="headings" id="RadChain">RadChain Proof of Concept :</Text>
+            <Text className="headings" id="RadChain">
+              RadChain Proof of Concept :
+            </Text>
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>Integration of a BlockChain into CLIB RadChain</li>
@@ -278,7 +303,7 @@ const Products = () => {
                 </li>
               </ul>
               <Box className="products_img_cont">
-                <img src={product1} alt="RadGate Import/Export" />
+                <img src={product11} alt="RadGate Import/Export" />
               </Box>
             </Box>
           </Box>

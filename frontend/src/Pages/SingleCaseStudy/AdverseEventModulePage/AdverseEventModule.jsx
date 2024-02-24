@@ -150,7 +150,7 @@ const AdverseEventModule = () => {
             </Box>
           </Box>
         </Box>
-        <Box className="overallBtmContOnco">
+        <Box className="overallBtmContAEM">
           <Text>
             Overall, the Adverse Event Module is a valuable tool for managing AE
             data in clinical trials imaging and can help ensure that the trial
