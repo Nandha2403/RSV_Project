@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const SliderComp = ({ ClientImage, title }) => {
+const SliderComp = ({ ClientImage, title, link }) => {
   return (
     <Container className="project">
-      <Link to={"/Solutions"}>
+      <Link to={link}>
         <img src={ClientImage} alt="ClientImage" />
         <h3>{title}</h3>
       </Link>

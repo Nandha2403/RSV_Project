@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { Box,Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import Menu from "../../Components/Menu/Menu";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
@@ -139,6 +139,9 @@ const Solutions = () => {
               Data Standardization and Acquisition
             </Text>
             <Box className="Solutions_content_container">
+              <Box className="image_container">
+                <img src={CollectAndHold} alt="CollectAndHold" />
+              </Box>
               <Box className="text_container">
                 <Text>
                   RSV has an HTML5/Web-based import module referred to as
@@ -169,14 +172,14 @@ const Solutions = () => {
                   data and hardcopy film, along with a myriad of other features.
                 </Text>
               </Box>
-              <Box className="image_container">
-                <img src={CollectAndHold} alt="CollectAndHold" />
-              </Box>
             </Box>
           </Box>
           <Box className="single_solutions_container" id="BR">
             <Text className="headings">Blinded Reads</Text>
             <Box className="Solutions_content_container">
+              <Box className="image_container">
+                <img src={BlindedReads} alt="BlindedReads" />
+              </Box>
               <Box className="text_container">
                 <Text>
                   Blinded Reads Post-QC, RadFlow provides an unsupervised
@@ -204,14 +207,17 @@ const Solutions = () => {
                   requirements for blinded reads.
                 </Text>
               </Box>
-              <Box className="image_container">
-                <img src={BlindedReads} alt="BlindedReads" />
-              </Box>
             </Box>
           </Box>
           <Box className="single_solutions_container" id="IRM">
             <Text className="headings">Image Retrieval using Meta Data</Text>
             <Box className="Solutions_content_container">
+              <Box className="image_container">
+                <img
+                  src={ImageRetrievalUsingMetaData}
+                  alt="ImageRetrievalUsingMetaData"
+                />
+              </Box>
               <Box className="text_container">
                 <Text>
                   RadVault stores metadata about each and every file in the
@@ -228,17 +234,19 @@ const Solutions = () => {
                   back to RadVault for future use.
                 </Text>
               </Box>
-              <Box className="image_container">
-                <img
-                  src={ImageRetrievalUsingMetaData}
-                  alt="ImageRetrievalUsingMetaData"
-                />
-              </Box>
             </Box>
           </Box>
           <Box className="single_solutions_container" id="RAR">
             <Text className="headings">Regulatory Access for Review</Text>
             <Box className="Solutions_content_container">
+              <Box className="image_container">
+                <img
+                  width={"45%"}
+                  style={{ margin: "auto" }}
+                  src={RegulatoryAccessForReview}
+                  alt="RegulatoryAccessForReview"
+                />
+              </Box>
               <Box className="text_container">
                 <Text>
                   Regulatory authorities may request to view images, and the
@@ -249,19 +257,19 @@ const Solutions = () => {
                   ready access to both the original and processed data.
                 </Text>
               </Box>
-              <Box className="image_container">
-                <img
-                  width={"45%"}
-                  style={{ margin: "auto" }}
-                  src={RegulatoryAccessForReview}
-                  alt="RegulatoryAccessForReview"
-                />
-              </Box>
             </Box>
           </Box>
           <Box className="single_solutions_container" id="DA">
             <Text className="headings">Data Access</Text>
             <Box className="Solutions_content_container">
+              <Box className="image_container">
+                <img
+                  src={DataAccess}
+                  alt="DataAccess"
+                  width={"60%"}
+                  style={{ margin: "auto" }}
+                />
+              </Box>
               <Box className="text_container">
                 <Text>
                   The project team needs quick access to image data to monitor
@@ -272,19 +280,19 @@ const Solutions = () => {
                   measurements, eCRF, or reports, based on permissions.
                 </Text>
               </Box>
-              <Box className="image_container">
-                <img
-                  src={DataAccess}
-                  alt="DataAccess"
-                  width={"60%"}
-                  style={{ margin: "auto" }}
-                />
-              </Box>
             </Box>
           </Box>
           <Box className="single_solutions_container" id="CR">
             <Text className="headings">Oncology/Criteria Reads</Text>
             <Box className="Solutions_content_container">
+              <Box className="image_container">
+                <img
+                  width={"70%"}
+                  style={{ margin: "auto" }}
+                  src={OncologyAndCriteriaReads}
+                  alt="OncologyAndCriteriaReads"
+                />
+              </Box>
               <Box className="text_container">
                 <Text>
                   RadVista's support for Oncological Assessments is unique in
@@ -297,19 +305,19 @@ const Solutions = () => {
                   as needed.
                 </Text>
               </Box>
-              <Box className="image_container">
-                <img
-                  width={"70%"}
-                  style={{ margin: "auto" }}
-                  src={OncologyAndCriteriaReads}
-                  alt="OncologyAndCriteriaReads"
-                />
-              </Box>
             </Box>
           </Box>
           <Box className="single_solutions_container" id="BVR">
             <Text className="headings">Brain Volume Reads</Text>
             <Box className="Solutions_content_container">
+              <Box className="image_container">
+                <img
+                  width={"40%"}
+                  style={{ margin: "auto" }}
+                  src={BrainVolumeReads}
+                  alt="BrainVolumeReads"
+                />
+              </Box>
               <Box className="text_container">
                 <Text>
                   RSV's AI model for anatomical brain assessment processes T1
@@ -319,19 +327,14 @@ const Solutions = () => {
                   timepoints.
                 </Text>
               </Box>
-              <Box className="image_container">
-                <img
-                  width={"40%"}
-                  style={{ margin: "auto" }}
-                  src={BrainVolumeReads}
-                  alt="BrainVolumeReads"
-                />
-              </Box>
             </Box>
           </Box>
           <Box className="single_solutions_container" id="DERMA">
             <Text className="headings">Dermatology</Text>
             <Box className="Solutions_content_container">
+              <Box className="image_container">
+                <img src={Dermatology} alt="Dermatology" />
+              </Box>
               <Box className="text_container">
                 <Text>
                   CLIB supports the upload of image files (JPG, PNG) from
@@ -350,14 +353,14 @@ const Solutions = () => {
                   exploring the use of AI to enhance the patient experience.
                 </Text>
               </Box>
-              <Box className="image_container">
-                <img src={Dermatology} alt="Dermatology" />
-              </Box>
             </Box>
           </Box>
           <Box className="single_solutions_container" id="EA">
             <Text className="headings">Event Adjudication</Text>
             <Box className="Solutions_content_container">
+              <Box className="image_container">
+                <img src={EventAdjudication} alt="EventAdjudication" />
+              </Box>
               <Box className="text_container">
                 <Text>
                   RSV offers an Event Adjudication platform that combines
@@ -374,9 +377,6 @@ const Solutions = () => {
                   be performed. RadEvent also supports real-time consensus reads
                   with multiple signatures.
                 </Text>
-              </Box>
-              <Box className="image_container">
-                <img src={EventAdjudication} alt="EventAdjudication" />
               </Box>
             </Box>
           </Box>

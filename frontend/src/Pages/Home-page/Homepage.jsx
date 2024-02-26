@@ -21,18 +21,34 @@ import "aos/dist/aos.css";
 import "./Homepage.css";
 import CustomPrevArrow from "../../Components/CustomArrows/CustomPrevArrow";
 import CustomNextArrow from "../../Components/CustomArrows/CustomNextArrow";
-import ProcessFlow from "../../Images/ProcessNewDesign.jpeg";
+import ProcessFlow from "../../Images/ProcessNewDesign.png";
 import { Link } from "react-router-dom";
 
 const Homepage = () => {
   const ClientsImages = [
-    { ClientImage: Client1, title: "Data Standardization and Acquisition" },
-    { ClientImage: Client2, title: "Blinded Reads" },
-    { ClientImage: Client3, title: "Data Storage and Migration" },
-    { ClientImage: Client4, title: "Image Retrieval using Meta Data" },
-    { ClientImage: Client5, title: "External Collaboration" },
-    { ClientImage: Client6, title: "FDA Access for Review" },
-    { ClientImage: Client7, title: "External Collaboration" },
+    {
+      ClientImage: Client1,
+      title: "AI In Clinical Trial",
+      link: "CaseStudy/AI-In-ClinicalTrial",
+    },
+    {
+      ClientImage: Client2,
+      title: "AI In Dermatology",
+      link: "CaseStudy/AI-In-Dermatology",
+    },
+    {
+      ClientImage: Client3,
+      title: "Query Management",
+      link: "CaseStudy/Query-Management",
+    },
+    {
+      ClientImage: Client4,
+      title: "Adverse Event Module",
+      link: "CaseStudy/Adverse-Event-Module",
+    },
+    // { ClientImage: Client5, title: "External Collaboration" },
+    // { ClientImage: Client6, title: "FDA Access for Review" },
+    // { ClientImage: Client7, title: "External Collaboration" },
   ];
 
   var settings = {
@@ -345,8 +361,8 @@ const Homepage = () => {
             <Text>
               Radiant Sage's objective is to provide a clinical image management
               technology solution that can get trials up and running within
-              weeks under a sponsor. To stay updated on clinical trial imaging blogs and news,
-              subscribe to us.
+              weeks under a sponsor. To stay updated on clinical trial imaging
+              blogs and news, subscribe to us.
             </Text>
           </Box>
           <Box className="beInTouchInput_Btn">

@@ -54,27 +54,27 @@
   margin-top: 20px;
 }
 .AdvantangeAndChallenges {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  width: 98%;
   display: flex;
   justify-content: space-between;
   text-align: center;
   align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   /* border: 1px solid blueviolet; */
 }
 .Adavantage {
   position: relative;
   /* border: 1px solid blue; */
-  margin-left: 1rem;
 }
 .Challenges {
   position: relative;
   /* border: 1px solid red; */
-  margin-right: 1rem;
 }
 .middel-border {
   height: 25vh;
-  /* border: 2px solid #0f062a; */
+  border: 2px solid #0f062a;
   border-radius: 10px;
   margin: auto;
 }
@@ -97,7 +97,9 @@
 }
 .Content-box {
   position: absolute;
-  width: 550px;
+  /* width: 450px; */
+  width: 150%;
+
   height: 40vh;
   background-color: #0f062a;
   border: 2px solid white;
@@ -108,7 +110,7 @@
 }
 .Content-box2 {
   position: absolute;
-  width: 550px;
+  width: 150%;
   height: 40vh;
   background-color: #0f062a;
   border: 2px solid white;
@@ -224,63 +226,21 @@
   padding: 0 10px 0 10px;
   justify-content: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1136px) {
+@media screen and (max-width: 1029px) {
   .AdvantangeAndChallenges {
-    /* flex-direction: column; */
-    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
     align-items: center;
   }
-  .Adavantage {
-    margin-left: 1rem;
-  }
-
-  .Challenges {
-    margin-right: 5px;
-    margin-left: 0;
-  }
   .middel-border {
-    height: 15vh;
-    border: 2px solid #0f062a;
-    border-radius: 10px;
-    margin: auto;
-  }
-  .title-box1 {
-    /* height: 0vh; */
-    height: fit-content;
-    border-radius: 0%;
-    border-radius: 20px 20px 0 0;
-    /* margin: auto; */
-  }
-  .title-box2 {
-    height: fit-content;
-    margin-left: 0;
-    border-radius: 20px 20px 0 0;
-    /* margin: auto; */
-  }
-  .Content-box {
-    width: 100%;
-    height: fit-content;
-    position: static;
-    border-radius: 0 20px 20px 20px;
-    border: 1px solid black;
-    /* margin: auto; */
-    /* height: 60vh; */
-  }
-  .Content-box2 {
-    width: 100%;
-    height: fit-content;
-    position: static;
-    border-radius: 0 20px 20px 20px;
-    border: 1px solid black;
-    /* margin: auto; */
-    /* height: 60vh; */
+    width: 20%;
+    height: 2px;
   }
 }
 @media only screen and (max-width: 767px) {
   .bodyContainerCS {
     margin-left: 0;
-    /* width: 100%; */
   }
   .CaseStudyConatinerCS {
     flex-direction: column;
@@ -288,12 +248,9 @@
   .carousel {
     flex-direction: column;
     gap: 4rem;
-    /* margin-left: 50px; */
-    /* width: 100%; */
   }
   .wheel {
     padding: 50px;
-    /* border: 1px solid #0f062a; */
     overflow: hidden;
   }
   .CaseStudyHeading {
@@ -311,47 +268,63 @@
   }
   .CaseStudy-SubHeading {
     margin-left: 10px;
-    /* text-align: center; */
   }
   .AdvantangeAndChallenges {
+    width: 90%;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
+    /* border: 1px solid green; */
   }
-  .Adavantage {
+
+  .title-box1 {
+    margin: auto;
+    height: fit-content;
+    border-radius: 0%;
+    /* border-radius: 20px 20px 0 0; */
+  }
+  .title-box2 {
+    margin: auto;
+    height: fit-content;
+    border-radius: 0%;
+
+    /* border-radius: 20px 20px 0 0; */
+  }
+  .Content-box {
+    width: 100%;
+    height: fit-content;
+    position: static;
+    margin: auto;
+    border: 1px solid black;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+  }
+
+  .Content-box2 {
+    width: 100%;
+    height: fit-content;
+    position: static;
+    margin: auto;
+    border: 1px solid black;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+
+  }
+}
+/* .Adavantage {
     margin-left: 1rem;
   }
   .Challenges {
-    /* margin-right: 1rem; */
     margin-right: 0;
     margin-left: 1rem;
   }
-  .title-box1 {
-    /* height: 0vh; */
-    height: fit-content;
-    border-radius: 0%;
-    border-radius: 20px 20px 0 0;
-  }
-  .title-box2 {
-    height: fit-content;
-    margin-left: 0;
-    border-radius: 20px 20px 0 0;
-  }
-  .middel-border {
+ 
+  /* .middel-border {
     height: 3px;
     width: 80%;
-    /* border: 2px solid #0f062a;
-    border-radius: 10px;
-    margin: auto; */
-  }
-  .Content-box {
-    width: 90%;
-    height: fit-content;
-    position: static;
-    border-radius: 0px 30px;
-    border: 1px solid black;
-    padding-bottom: 1rem;
-    /* left: 0px; */
+   
+  } */
+/* .Content-box {
+   
   }
   .Content-box2 {
     width: 90%;
@@ -361,6 +334,4 @@
     border: 1px solid black;
     padding-right: 20px;
     padding-bottom: 1rem;
-    /* right: 0px; */
-  }
-}
+  } */

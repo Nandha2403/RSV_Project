@@ -88,7 +88,7 @@ const ClincalTrial = () => {
             trial's parameters and study-relevant areas. The quality assessment
             process in the imaging workflow is carried out by imaging
             technologists with training in medical imaging or associates with
-            training in the pertinent modality and/or trial protocol. Several
+            training in the pertinent modality and trial protocol. Several
             factors are assessed during the image quality check, including the
             coverage, image characteristics, motion, artifacts, contrast, and
             noise.

@@ -130,28 +130,20 @@ const CaseStudy = () => {
             {/* <Text>Revolutionizing Clinical Trial with AI</Text> */}
           </Box>
           <Box className="CaseStudyConatiner">
-            <Box
-              className="CaseStudyMain-Left"
-              // data-aos="fade-up"
-              // data-aos-duration="1000"
-            >
+            <Box className="CaseStudyMain-Left">
               <img src={CaseStudyIntroImg} alt="CaseStudyIntroImg" />
             </Box>
-            <Box
-              className="CaseStudyMain-Right"
-              // data-aos="fade-up"
-              // data-aos-duration="1000"
-            >
+            <Box className="CaseStudyMain-Right">
               <Box className="CaseStudy-IntroHeading">
                 <Text>Introduction :</Text>
               </Box>
               <Box className="CaseStudy-text">
-                <Text data-aos="fade-up" data-aos-duration="1000">
+                <Text>
                   Image data is challenging to manage and store for
                   pharmaceutical companies, especially when they need to share
                   it for licensing, acquisition, or due diligence.
                 </Text>
-                <Text data-aos="fade-up" data-aos-duration="1000" mt={"1rem"}>
+                <Text mt={"1rem"}>
                   Image analysis is often a key endpoint for demonstrating the
                   efficacy of a drug. However, without proper data warehousing,
                   reproducing the results and proving the value of the drug can

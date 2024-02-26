@@ -191,6 +191,115 @@
   padding: 10px;
 }
 
+/* New */
+
+.contactUsContainer {
+  width: 90%;
+  margin: 50px auto;
+  /* border: 1px solid green; */
+  /*  */
+}
+.contactBox {
+  background: #fff;
+  display: flex;
+  margin-top: 2rem;
+  /* border: 1px solid green; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+.contactLeft {
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+.contactRight {
+  flex-basis: 40%;
+  padding: 30px;
+  background: #1b1446;
+  color: #fff;
+}
+
+.contactUsContainer h1 {
+  margin-bottom: 10px;
+}
+.contactUsContainer p {
+  margin-bottom: 10px;
+}
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.inputRow .inputGroup {
+  flex-basis: 45%;
+}
+
+.contactUsContainer input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+.contactUsContainer textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.contactUsContainer label {
+  margin-bottom: 6px;
+  display: block;
+  color: #1b1446;
+}
+
+.contactUsContainer button {
+  background: #1b1446;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+.contactLeft h1 {
+  color: #1b1446;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+}
+
+.contactRight h1 {
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+}
+
+.contactUsContainer tr td:first-child {
+  padding-right: 20px;
+}
+
+.contactUsContainer tr td {
+  padding-top: 20px;
+}
+
+.mapCont {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1050px) {
+  .contactBox {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .bodyContainerContactUs {
     margin-left: 0;
@@ -229,5 +338,24 @@
   }
   .SubmitBtn button {
     padding: 5px 60px 5px 60px;
+  }
+
+  /*  */
+  .contactUsContainer {
+    width: 95%;
+  }
+  .contactBox {
+    flex-direction: column;
+  }
+  .inputRow {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contactLeft {
+    padding: 20px 30px;
+  }
+  .contactRight {
+    padding: 20px;
   }
 }
