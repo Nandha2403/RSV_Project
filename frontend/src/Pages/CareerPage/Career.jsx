@@ -35,14 +35,14 @@ const Career = () => {
                 of innovation in the healthcare sector. At RSV - Radiant Sage
                 Ventures, we're on the lookout for driven individuals who share
                 our fervor for propelling medical research forward through
-                Clincal trial imaging. As a valued member of our
-                team, you'll play a pivotal role in reshaping clinical trials,
-                contributing to the creation of revolutionary therapies, and
-                enhancing patient outcomes. If you're prepared to be part of a
-                dynamic environment that cherishes precision, innovation, and
-                the pursuit of medical breakthroughs, come join us at RSV -
-                Radiant Sage Ventures. Your expertise is the key to making a
-                lasting impact on the future of healthcare.
+                Clincal trial imaging. As a valued member of our team, you'll
+                play a pivotal role in reshaping clinical trials, contributing
+                to the creation of revolutionary therapies, and enhancing
+                patient outcomes. If you're prepared to be part of a dynamic
+                environment that cherishes precision, innovation, and the
+                pursuit of medical breakthroughs, come join us at RSV - Radiant
+                Sage Ventures. Your expertise is the key to making a lasting
+                impact on the future of healthcare.
               </p>
               <Box className="OurMotoBtnCont">
                 <Button
@@ -119,28 +119,34 @@ const Career = () => {
             </Box>
           </Box>
           {/* Contact us from */}
-          <Box className="ContactUsForm" id="ContactUsForm">
-            <Box className="form">
-              <p className="formHeading">Join Us</p>
-              <Box className="TopInputCont">
-                <input className="leftInput" placeholder="Name" />
-                <input className="rightInput" placeholder="Phone" />
-              </Box>
-              <Box className="TopInputCont">
-                <input className="leftInput" placeholder="Email" />
-                <input className="rightInput" placeholder="Company" />
-              </Box>
-              <Box className="TopInputCont">
-                <input className="FullInput" placeholder="Reason for Inquiry" />
-              </Box>
-              <Box className="TopInputCont">
-                <textarea
-                  className="FullInputBottom"
-                  placeholder="Specific Requirements (if any) :"
-                />
+          <div className="career_form">
+            <Box className="ContactUsForm" id="ContactUsForm">
+              <Box className="form">
+                <p className="formHeading">Join Us</p>
+                <Box className="TopInputCont">
+                  <input className="leftInput" placeholder="Name" />
+                  <input className="rightInput" placeholder="Phone" />
+                </Box>
+                <Box className="TopInputCont">
+                  <input className="leftInput" placeholder="Email" />
+                  <input className="rightInput" placeholder="Company" />
+                </Box>
+                <Box className="TopInputCont">
+                  <input
+                    className="FullInput"
+                    placeholder="Reason for Inquiry"
+                  />
+                </Box>
+                <Box className="TopInputCont">
+                  <textarea
+                    className="FullInputBottom"
+                    placeholder="Specific Requirements (if any) :"
+                  />
+                </Box>
               </Box>
             </Box>
-          </Box>
+          </div>
+
           {/* SubmitBtn */}
           <Box className="SubmitBtn">
             <button>Submit Here !</button>

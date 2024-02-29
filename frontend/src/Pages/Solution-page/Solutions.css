@@ -19,7 +19,7 @@
   /* justify-content: space-between; */
   /* justify-content: space-around; */
   margin: auto;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   font-size: large;
   font-weight: 500;
   font-family: "poppins";
@@ -32,10 +32,10 @@
   font-weight: bold;
 }
 .SolutionsContainer {
-  width: 90%;
+  width: 95%;
   margin: auto;
   /* border: 1px solid green; */
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
 }
 .single_solutions_container {
   /* width: 95%; */
@@ -45,25 +45,27 @@
 }
 
 .Solutions_content_container {
-  margin-top: 1rem;
+  width: 100%;
   /* display: flex; */
-  /* justify-content: space-between; */
-  /* border: 1px solid green; */
+  justify-content: space-between;
   align-items: center;
+  /* margin-top: 2rem; */
+  /* border: 1px solid green; */
 }
 .Solutions_content_container .text_container {
-  /* width: 50%; */
+  width: 100%;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 1.6;
   font-weight: 400;
   text-align: justify;
   margin-top: 2rem;
   /* border: 1px solid green; */
 }
 .Solutions_content_container > .image_container {
-  width: 450px;
+  width: 100%;
   /* border: 1px solid green; */
   margin: auto;
+  margin-top: 1rem;
 }
 /* .big_image_container img{
   width: 60%;

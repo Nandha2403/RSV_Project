@@ -65,84 +65,98 @@ const Servicepage = () => {
             <Box className="SingleServicesHeading">
               <Text className="headings">1. CORE LAB SERVICES</Text>
             </Box>
-            <Box className="SingleServicesImgCont">
-              <img width={"650px"} src={CoreLabImg} alt="CORE LAB SERVICES" />
 
-              <Box className="SingleServicesTextCont">
-                <Text>
-                  Radiant Sage is focused on providing you with state-of-the-art
-                  technology solutions and related services to make us your
-                  One-Stop Technology Solutions Partner for imaging clinical
-                  trials. In addition to these services we have partnered with
-                  various specialists who can provide additional non-technology
-                  services such as Protocol Development, Trial Planning, Reader
-                  Services etc. required for clinical imaging trials.
-                </Text>
+            <div className="SingleServicesAndTxtImgCont">
+              <Box className="SingleServicesImgCont">
+                <img width={"650px"} src={CoreLabImg} alt="CORE LAB SERVICES" />
               </Box>
-            </Box>
+              <div className="SingleServicesTextContbox">
+                <Box className="SingleServicesTextCont">
+                  <Text>
+                    Radiant Sage is focused on providing you with
+                    state-of-the-art technology solutions and related services
+                    to make us your One-Stop Technology Solutions Partner for
+                    imaging clinical trials. In addition to these services we
+                    have partnered with various specialists who can provide
+                    additional non-technology services such as Protocol
+                    Development, Trial Planning, Reader Services etc. required
+                    for clinical imaging trials.
+                  </Text>
+                </Box>
+              </div>
+            </div>
           </Box>
           <Box className="SingleServices">
             <Box className="SingleServicesHeading">
               <Text className="headings">2. TECHNICAL SERVICES</Text>
             </Box>
-            <Box className="SingleServicesImgCont">
-              <img
-                width={"650px"}
-                src={TechnicalImg}
-                alt="TECHNICAL SERVICES"
-              />
 
-              <Box className="SingleServicesTextCont">
-                <Text>
-                  Our Technical Services have been designed to provide you with
-                  the support you need to have the system in place and the trial
-                  up and running within weeks. Our team typically partners with
-                  your IT department to ensure that the clinical trial manager's
-                  objectives are met.
-                </Text>
+            <div className="SingleServicesAndTxtImgCont">
+              <Box className="SingleServicesImgCont">
+                <img
+                  width={"650px"}
+                  src={TechnicalImg}
+                  alt="TECHNICAL SERVICES"
+                />
               </Box>
-              <Box className="SingleServiceInclude">
-                <Text>The services include:</Text>
-                <ul>
-                  <li>System Setup</li>
-                  <li>System Integration</li>
-                  <li>User Training</li>
-                  <li>Application Customization</li>
-                  <li>Technical Support</li>
-                  <li>Custom Development</li>
-                </ul>
-              </Box>
-            </Box>
+
+              <div className="SingleServicesTextContbox">
+                <Box className="SingleServicesTextCont">
+                  <Text>
+                    Our Technical Services have been designed to provide you
+                    with the support you need to have the system in place and
+                    the trial up and running within weeks. Our team typically
+                    partners with your IT department to ensure that the clinical
+                    trial manager's objectives are met.
+                  </Text>
+                </Box>
+                <Box className="SingleServiceInclude">
+                  <Text>The services include:</Text>
+                  <ul>
+                    <li>System Setup</li>
+                    <li>System Integration</li>
+                    <li>User Training</li>
+                    <li>Application Customization</li>
+                    <li>Technical Support</li>
+                    <li>Custom Development</li>
+                  </ul>
+                </Box>
+              </div>
+            </div>
           </Box>
           <Box className="SingleServices">
             <Box className="SingleServicesHeading">
               <Text className="headings">3. DEPLOYMENT SERVICES</Text>
             </Box>
-            <Box className="SingleServicesImgCont">
-              <img
-                width={"650px"}
-                src={DeploymentImg}
-                alt="DEPLOYMENT SERVICES"
-              />
+            <Box className="SingleServicesAndTxtImgCont">
+              <Box className="SingleServicesImgCont">
+                <img
+                  width={"650px"}
+                  src={DeploymentImg}
+                  alt="DEPLOYMENT SERVICES"
+                />
+              </Box>
 
-              <Box className="SingleServicesTextCont">
-                <Text>
-                  Our Deployment team will partner with your clinical team to
-                  ensure that the trial is implemented as per the protocol and
-                  any specific requirements of the organization.
-                </Text>
-              </Box>
-              <Box className="SingleServiceInclude">
-                <Text>The services include:</Text>
-                <ul>
-                  <li>Clinical workflow development and implementation</li>
-                  <li>Trial Setup</li>
-                  <li>User Training</li>
-                  <li>Site Training</li>
-                  <li>Testing</li>
-                  <li>User Support</li>
-                </ul>
-              </Box>
+              <div className="SingleServicesTextContbox">
+                <Box className="SingleServicesTextCont">
+                  <Text>
+                    Our Deployment team will partner with your clinical team to
+                    ensure that the trial is implemented as per the protocol and
+                    any specific requirements of the organization.
+                  </Text>
+                </Box>
+                <Box className="SingleServiceInclude">
+                  <Text>The services include:</Text>
+                  <ul>
+                    <li>Clinical workflow development and implementation</li>
+                    <li>Trial Setup</li>
+                    <li>User Training</li>
+                    <li>Site Training</li>
+                    <li>Testing</li>
+                    <li>User Support</li>
+                  </ul>
+                </Box>
+              </div>
             </Box>
           </Box>
         </Box>
