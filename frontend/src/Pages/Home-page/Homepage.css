@@ -146,13 +146,20 @@
   margin-right: 0;
 }
 
-.beInTouchInput_Btn {
+/* .beInTouchInput_Btn {
   display: flex;
   width: 30%;
-  /* border: 1px solid; */
+  border: 1px solid;
   justify-content: space-between;
   margin: auto;
   margin-top: 0.6rem;
+} */
+
+.beInTouchInput_Btn {
+  width: max-content;
+  margin: auto;
+  margin-top: 1rem;
+  /* border: 1px solid navy; */
 }
 .beInTouch_subText {
   margin: auto;
@@ -167,6 +174,7 @@
 .beInTouchInput_Btn > input {
   width: 70%;
   margin-right: 10px;
+  border: 1px solid;
 }
 .beInTouch_heading {
   margin-left: 3rem;
@@ -199,6 +207,11 @@
 }
 .smallScreenNav {
   display: none;
+}
+
+.threedots {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 /* xs=576px, sm=768px, md=992px, lg=1200px and xl=>1200px */
 
@@ -264,15 +277,14 @@
   .beInTouch {
     min-height: 250px;
   }
-  .beInTouchInput_Btn {
+  /* .beInTouchInput_Btn {
     width: 30%;
-    /* border: 1px solid red; */
-  }
-  .beInTouchInput_Btn > input {
+  } */
+  /* .beInTouchInput_Btn > input {
     margin-right: 10px;
     width: 80%;
     margin-bottom: 10px;
-  }
+  } */
   .OurClients {
     width: 85%;
   }
@@ -291,19 +303,18 @@
     width: 100%;
     /* border: 2px solid red; */
   }
-  .beInTouchInput_Btn {
+  /* .beInTouchInput_Btn {
     width: 30%;
     flex-direction: column;
-    /* border: 1px solid red; */
-  }
+  } */
   .BannerIntroContent {
     width: 85%;
   }
-  .beInTouchInput_Btn > input {
+  /* .beInTouchInput_Btn > input {
     margin-right: 10px;
     width: 100%;
     margin-bottom: 10px;
-  }
+  } */
 }
 
 /*  */

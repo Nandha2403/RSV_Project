@@ -59,13 +59,13 @@ const Menu = () => {
                           </p>
                           <ul>
                             <li>
-                              <a href="">Core Lab Services</a>
+                            <RouterLink to={"/Services"}>Core Lab Services</RouterLink>
                             </li>
                             <li>
-                              <a href="">Technical Services</a>
+                            <RouterLink to={"/Services"}>Technical Services</RouterLink>
                             </li>
                             <li>
-                              <a href="">Deployment Services</a>
+                            <RouterLink to={"/Services"}>Deployment Services</RouterLink>
                             </li>
                           </ul>
                         </Box>
@@ -149,7 +149,7 @@ const Menu = () => {
                               Corelab-in-a-Box
                             </RouterLink>
                           </p>
-                          <ul className="productsLinksCorelabInBox">
+                          {/* <ul className="productsLinksCorelabInBox">
                             <li>
                               <RouterLink to={"/Products/#RadGate"}>
                                 RadGate
@@ -185,7 +185,7 @@ const Menu = () => {
                             <li>
                               <a href="#RadChain">RadChain</a>
                             </li>
-                          </ul>
+                          </ul> */}
                         </Box>
                       </Box>
                     </Box>

@@ -188,13 +188,13 @@ const Homepage = () => {
             >
               <Box className="SolutionsLeft">
                 <ul>
-                  <h1>Theraphuatics</h1>
+                  <h1>Therapeutics</h1>
                   <li>Oncology</li>
                   <li>Dermatology</li>
                   <li>CNS</li>
                   <li>Cardiology</li>
                   <li>Contrast Media</li>
-                  <li>AI/Device</li>
+                  <li>AI/Device  <span className="threedots"> . . .</span></li>
                 </ul>
 
                 <ul>
@@ -204,7 +204,7 @@ const Homepage = () => {
                   <li>Analytics</li>
                   <li>AI</li>
                   <li>Apps</li>
-                  <li>Event Adjucation</li>
+                  <li>Event Adjucation <span className="threedots"> . . .</span></li>
                 </ul>
               </Box>
               <Box className="Solution_btns">
@@ -353,7 +353,6 @@ const Homepage = () => {
           // data-aos-duration="1000"
           // border={"1px solid red"}
         >
-          <Box className="beInTouchImg"></Box>
           <Box className="beInTouch_heading">
             <Text className="headings">Be In Touch with Us</Text>
           </Box>
@@ -366,7 +365,7 @@ const Homepage = () => {
             </Text>
           </Box>
           <Box className="beInTouchInput_Btn">
-            <Input
+            {/* <Input
               size={{ base: "xs", sm: "xs", md: "sm" }}
               type="text"
               border={"2px solid #131049"}
@@ -375,15 +374,18 @@ const Homepage = () => {
               _focusVisible={"none"}
               borderRadius={"15px"}
               placeholder="E-mail Address"
-            />
+            /> */}
             <Button
-              size={{ base: "xs", sm: "xs", md: "sm" }}
+              // size={{ base: "xs", sm: "xs", md: "sm" }}
+              size={"xs"}
               borderRadius={"15px"}
               p={"0px 20px 0px 20px"}
               colorScheme="#131049"
               bg="#131049"
             >
-              Submit
+              <Link to={'/ContactUs'}>
+              Get In Touch
+              </Link>
             </Button>
           </Box>
         </Box>

@@ -87,20 +87,20 @@ const Products = () => {
         <Box className="below_herobannercont">
           <Text className="title_container">
             CORELAB-IN-A-BOX<sup>TM</sup> will facilitate study execution, to
-            streamline reserach on regulatory compliance.
+            streamline research on regulatory compliance.
           </Text>
           <div className="subtext">
             <Text>
-              And all this via a SaaS Delivery Model in a Secure, Regulatory
-              Compliant Environment, Enabling You to Have a Trial up and Running
+              And all this via a SaaS delivery model in a secure, regulatory
+              Compliant Environment, Enabling You to Have a Trial Up and Running
               Within Weeks!
             </Text>
             <Text mt={"2rem"}>
-              With Corelab-in-a-Box<sup>TM</sup> You are able to Collaborate
-              with Readers and Anywhere in the World without having to move
-              Physical Images. The Data can be Hosted and shared in a Private
-              Cloud or at Radiant Sage's Hosting Center without Compromising
-              your QA/ QC Requirements.
+              With Corelab-in-a-Box<sup>TM</sup> You are able to collaborate.
+              with readers and anywhere in the world without having to move
+              Digital Images. The data can be hosted and shared in a private
+              Cloud or at Radiant Sage's hosting center without compromising
+              your QA/QC requirements.
             </Text>
           </div>
         </Box>
@@ -116,13 +116,13 @@ const Products = () => {
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>
-                  HTML5 based import using web browsers / Easy for site users
+                  HTML5-based import using web browsers is easy for site users.
                 </li>
                 <li>
                   Trial specific anonymization/blinding and DICOM header updates
                   logic and edit checks for image QC
                 </li>
-                <li>Automated DTF and Integrated DCT workflow</li>
+                <li>Automated DTF and Integrated DCT Workflow</li>
               </ul>
               <Box className="products_img_cont">
                 <img src={product1} alt="RadGate Import/Export" />
@@ -151,10 +151,12 @@ const Products = () => {
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>Multi-Modality Workstation (DICOM/Non-DICOM)</li>
-                <li>Integrated with ICP/CLIB, Customizable per study/read</li>
                 <li>
-                  Remote Rendering with “0” footprint HTML5 viewer/workstation
-                  without image transfers
+                  Integrated with ICP/CLIB, customizable per study or read
+                </li>
+                <li>
+                  Remote Rendering with a “0” footprint HTML5 viewer/workstation
+                  without image transfers.
                 </li>
               </ul>
               <Box className="products_img_cont">
@@ -176,8 +178,8 @@ const Products = () => {
                 </li>
                 <li>Multi-Trial Corelab Operations (CTMS)</li>
                 <li>
-                  Trial Administration / Site Management / Training / User
-                  Manage
+                  Trial Administration, Site Management, Training, and User
+                  Manage.
                 </li>
               </ul>
               <Box className="products_img_cont">

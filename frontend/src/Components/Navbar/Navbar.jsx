@@ -285,6 +285,9 @@ const Navbar = () => {
                   </AccordionButton>
                   <AccordionPanel pb={4} className="dropdown">
                     <Box>
+                      <Link to={"/Products"}>Corelab-in-a-Box</Link>
+                    </Box>
+                    {/* <Box>
                       <Link to={"/Products"}>RadGate</Link>
                     </Box>
                     <Box>
@@ -316,7 +319,7 @@ const Navbar = () => {
                     </Box>
                     <Box>
                       <Link to={"/Products"}>RadChain</Link>
-                    </Box>
+                    </Box> */}
                   </AccordionPanel>
                 </AccordionItem>
                 {/*  */}

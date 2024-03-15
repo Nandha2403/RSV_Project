@@ -158,21 +158,24 @@ const CaseStudy = () => {
         <div className="CircularImg">
           <div className="carousel">
             <div className="wheel">
-              <FancyCarousel
-                carouselRadius={screenWidth <= 767 ? 110 : 150}
-                peripheralImageRadius={screenWidth <= 767 ? 30 : 40}
-                centralImageRadius={screenWidth <= 767 ? 40 : 60}
-                focusElementStyling={{ border: "1px solid black" }}
-                autoRotateTime={3}
-                borderWidth={4}
-                borderHexColor={"1c364f"}
-                images={images}
-                setFocusElement={setFocusElement}
-              />
+              <div>
+                <FancyCarousel
+                  carouselRadius={screenWidth <= 767 ? 120 : 150}
+                  peripheralImageRadius={screenWidth <= 767 ? 30 : 40}
+                  centralImageRadius={screenWidth <= 767 ? 40 : 60}
+                  focusElementStyling={{ border: "1px solid black" }}
+                  // autoRotateTime={3}
+                  borderWidth={4}
+                  borderHexColor={"1c364f"}
+                  images={images}
+                  setFocusElement={setFocusElement}
+                  navigationButtonBgColor={"0c447f"}
+                />
+              </div>
             </div>
-            <div className="info-box-wrapper">
-              <p className="info-title"> {info[focusElement]} </p>
-              <p className="info-content"> {content[focusElement]} </p>
+            <div className="info_box_wrapper">
+              <p className="info_title"> {info[focusElement]} </p>
+              <p className="info_content"> {content[focusElement]} </p>
               <Button
                 size={"xs"}
                 borderRadius={"15px"}
@@ -185,68 +188,6 @@ const CaseStudy = () => {
             </div>
           </div>
         </div>
-
-        {/* Advantage and Challenges */}
-        <Box className="AdvantangeAndChallenges">
-          <Box className="Adavantage">
-            <Box
-              className="title-box1"
-              // data-aos="fade-up"
-              // data-aos-duration="1000"
-            >
-              <Box className="title-text-container">
-                <Text>Adavantages</Text>
-              </Box>
-            </Box>
-            <Box
-              className="Content-box"
-              // data-aos="fade-down"
-              // data-aos-duration="2000"
-            >
-              <ul>
-                <li>Reducing Clinical Trial Cycle Times</li>
-                <li>
-                  Improving the cost of productivity and outcomes in clinical
-                  development
-                </li>
-                <li>Monitoring Participants Adherence</li>
-                <li>Improving the quality of patient pool and trial design</li>
-                <li>Aiding in clinical trial data gathering and analysis</li>
-                <li>Improving the patient experience during clinical trials</li>
-              </ul>
-            </Box>
-          </Box>
-          <Box
-            className="middel-border"
-            // data-aos="fade-up"
-            // data-aos-duration="1000"
-          ></Box>
-          <Box className="Challenges">
-            <Box
-              className="title-box2"
-              // data-aos="fade-up"
-              // data-aos-duration="1000"
-            >
-              <Box className="title-text-container">
-                <Text>Challenges</Text>
-              </Box>
-            </Box>
-            <Box
-              className="Content-box2"
-              // data-aos="fade-down"
-              // data-aos-duration="1000"
-            >
-              <ul>
-                <li>Data privacy & Ethical concerns</li>
-                <li>Potential bias</li>
-                <li>Inconsistent data managment</li>
-                <li>Difficulty comparing different algorithms</li>
-                <li>Challenges related to machine learning</li>
-              </ul>
-            </Box>
-          </Box>
-        </Box>
-        {/* Process */}
 
         <Footer />
       </Box>

@@ -122,6 +122,9 @@ const Footer = () => {
             <li>
               <Link to={"/Career"}>Careers</Link>
             </li>
+            <li>
+              <Link to={"/Contactus"}>Contact us</Link>
+            </li>
           </ul>
         </Box>
       </Box>

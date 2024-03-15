@@ -1,10 +1,8 @@
 import React from "react";
-import { Link } from "react-scroll";
 import { Box, Text } from "@chakra-ui/react";
 import Menu from "../../Components/Menu/Menu";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
-import CollectAndHold from "../../Images/Collect and Hold data-01.png";
 import DSA from "../../Images/DataStandardizationandAcquisition.png";
 import BR from "../../Images/BlindedReads.png";
 import IRM from "../../Images/ImageRetrievalUsingMetaData.png";
@@ -14,15 +12,6 @@ import ONCO from "../../Images/Oncology&CriteriaReads.png";
 import BVR from "../../Images/BrainVolumeReads.png";
 import DERMA from "../../Images/Dermatology.png";
 import EA from "../../Images/EventAdjudication.png";
-
-import BlindedReads from "../../Images/Blinded Reads-01.png";
-import ImageRetrievalUsingMetaData from "../../Images/Image Retrieval using Meta Data-01.png";
-import RegulatoryAccessForReview from "../../Images/Regulatory Access for Review-01.png";
-import DataAccess from "../../Images/Data Access-01.png";
-import OncologyAndCriteriaReads from "../../Images/Oncology Criteria Reads-01.png";
-import BrainVolumeReads from "../../Images/Brain Volume Reads-01.png";
-import Dermatology from "../../Images/Dermatology-01.png";
-import EventAdjudication from "../../Images/Event Adjudication-01.png";
 
 import "./Solutions.css";
 
@@ -102,10 +91,10 @@ const Solutions = () => {
 
         <button onClick={scrollToTop}>Scroll to Top</button>
         */}
-        <Box className="SolutionLinkContainer">
-          <Text textAlign={"center"} className="headings">
+        {/* <Box className="SolutionLinkContainer"> */}
+          {/* <Text textAlign={"center"} className="headings">
             Radiant Sage Solutions
-          </Text>
+          </Text> */}
           {/* <Box className="LinksContainer">
             <Link to="DSA" spy={true} offset={-50} smooth={true} duration={500}>
               DSA
@@ -141,7 +130,7 @@ const Solutions = () => {
               EA
             </Link>
           </Box> */}
-        </Box>
+        {/* </Box> */}
         <Box className="SolutionsContainer">
           <Box className="single_solutions_container" id="DSA">
             <Text className="headings">
@@ -195,7 +184,7 @@ const Solutions = () => {
                 <Text>
                   Blinded Reads Post-QC, RadFlow provides an unsupervised
                   workflow engine to assign image datasets to be assessed by
-                  various trained radiologists on this trial. When a task is
+                  various trained radiologists in this trial. When a task is
                   started, RadVista loads the appropriate datasets and analyses
                   modules that are configured and potentially customized to the
                   needs of the reading paradigm. RadVista offers a
@@ -229,7 +218,7 @@ const Solutions = () => {
             </Box>
           </Box>
           <Box className="single_solutions_container" id="IRM">
-            <Text className="headings">Image Retrieval using Meta Data</Text>
+            <Text className="headings">Image Retrieval using MetaData</Text>
             <Box className="Solutions_content_container">
               <Box className="text_container">
                 <Text>

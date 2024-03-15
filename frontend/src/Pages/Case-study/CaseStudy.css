@@ -200,7 +200,7 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-.info-box-wrapper {
+.info_box_wrapper {
   width: 50%;
   background-color: #0c447f;
   /* margin: auto; */
@@ -209,35 +209,23 @@
   padding-bottom: 10px;
   border-radius: 20px;
 }
-.info-title {
+.info_title {
   text-align: center;
   margin-top: 2rem;
   font-size: large;
   font-weight: bold;
 }
-.info-content {
+.info_content {
   font-size: 16px;
   margin: 15px;
 }
-.info-box-wrapper button {
-  /* border: 1px solid; */
+.info_box_wrapper button {
   display: block;
   margin: auto;
   padding: 0 10px 0 10px;
   justify-content: center;
 }
-@media screen and (max-width: 1029px) {
-  .AdvantangeAndChallenges {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    align-items: center;
-  }
-  .middel-border {
-    width: 20%;
-    height: 2px;
-  }
-}
+
 @media only screen and (max-width: 767px) {
   .bodyContainerCS {
     margin-left: 0;
@@ -250,18 +238,21 @@
     gap: 4rem;
   }
   .wheel {
+    width: 100%;
     padding: 50px;
     overflow: hidden;
+    /* border: 1px solid black; */
   }
+
   .CaseStudyHeading {
     margin-left: 0.5rem;
   }
   .CaseStudyMain-Right {
     padding: 0 0 0 0.6rem;
   }
-  .info-box-wrapper {
-    height: 40vh;
-    width: 80%;
+  .info_box_wrapper {
+    /* height: 40vh; */
+    width: 90%;
   }
   .CaseStudyConatiner {
     flex-direction: column;
@@ -269,68 +260,4 @@
   .CaseStudy-SubHeading {
     margin-left: 10px;
   }
-  .AdvantangeAndChallenges {
-    width: 90%;
-    flex-direction: column;
-    gap: 20px;
-    /* border: 1px solid green; */
-  }
-
-  .title-box1 {
-    margin: auto;
-    height: fit-content;
-    border-radius: 0%;
-    /* border-radius: 20px 20px 0 0; */
-  }
-  .title-box2 {
-    margin: auto;
-    height: fit-content;
-    border-radius: 0%;
-
-    /* border-radius: 20px 20px 0 0; */
-  }
-  .Content-box {
-    width: 100%;
-    height: fit-content;
-    position: static;
-    margin: auto;
-    border: 1px solid black;
-    padding-bottom: 1rem;
-    border-radius: 10px;
-  }
-
-  .Content-box2 {
-    width: 100%;
-    height: fit-content;
-    position: static;
-    margin: auto;
-    border: 1px solid black;
-    padding-bottom: 1rem;
-    border-radius: 10px;
-  }
 }
-/* .Adavantage {
-    margin-left: 1rem;
-  }
-  .Challenges {
-    margin-right: 0;
-    margin-left: 1rem;
-  }
- 
-  /* .middel-border {
-    height: 3px;
-    width: 80%;
-   
-  } */
-/* .Content-box {
-   
-  }
-  .Content-box2 {
-    width: 90%;
-    height: fit-content;
-    position: static;
-    border-radius: 0px 30px;
-    border: 1px solid black;
-    padding-right: 20px;
-    padding-bottom: 1rem;
-  } */
