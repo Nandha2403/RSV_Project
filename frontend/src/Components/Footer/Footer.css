@@ -80,6 +80,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-right: 20px;
+  margin-top: 5px;
+  /* align-items: center; */
   /* border: 1px solid green; */
 }
 /* .icons-container > div > a img {
@@ -98,16 +100,16 @@
   /* border: 1px solid red; */
 }
 
-.emailAndPhoneNum div {
-  /* margin: 2px 0 0 0px; */
-  font-size: 15px;
-  /* border: 1px solid; */
+.emailAndPhoneNum  {
+
+  /* border: 1px solid black; */
   color: antiquewhite;
-  height: 100%;
+  /* height: 100%; */
   text-align: center;
+  font-size: 15px;
 }
-.emailAndPhoneNum > div > p:last-child {
-  margin-top: 20px;
+.emailAndPhoneNum > div > p {
+  margin-top: 5px;
   margin-left: 0;
 }
 .emailAndPhoneNum > div a:hover {

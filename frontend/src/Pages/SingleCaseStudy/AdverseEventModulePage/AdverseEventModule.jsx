@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Button, Text } from "@chakra-ui/react";
 import Menu from "../../../Components/Menu/Menu";
 import Navbar from "../../../Components/Navbar/Navbar";
@@ -6,8 +6,18 @@ import Footer from "../../../Components/Footer/Footer";
 import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "./AdverseEventModule.css";
+import ModalComponent from "../../../Components/ModalComp/ModalButton";
 
 const AdverseEventModule = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <Box>
       {/* Menu */}
@@ -50,15 +60,17 @@ const AdverseEventModule = () => {
             </Text>
           </Box>
           <Box ml={"5rem"} mt={"3rem"}>
-            <Button
+          <Button
               size={"xs"}
               borderRadius={"15px"}
               p={"0px 20px 0px 20px"}
               colorScheme="#131049"
               bg="#131049"
+              onClick={openModal}
             >
               Request A Demo
             </Button>
+            <ModalComponent isOpen={isModalOpen} onClose={closeModal} />
           </Box>
         </Box>
         {/* Banner */}
@@ -158,12 +170,12 @@ const AdverseEventModule = () => {
             regulatory requirements related to the reporting of AEs.
           </Text>
         </Box>
-        <Box className="smallBannerCTBottom">
-          <Box className="smallBannerCTBtmContent">
-            <Link to={"/CaseStudy/Paired-Reads"}>
+        <Box className="smallBannerAEMBottom">
+          <Box className="smallBannerAEMBtmContent">
+            <Link to={"/CaseStudy/Query-Management"}>
               <MdArrowBackIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
-            <Link to={"/CaseStudy/Paired-Reads"}>Paired Reads</Link>
+            <Link to={"/CaseStudy/Query-Management"}>Query Management</Link>
           </Box>
           <Box className="SmallBannerCTCenterLine"></Box>
           <Box className="smallBannerCTBtmContent">

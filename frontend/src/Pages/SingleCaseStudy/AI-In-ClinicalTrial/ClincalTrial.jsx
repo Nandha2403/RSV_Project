@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ClincalTrial.css";
 import { Box, Button, Text } from "@chakra-ui/react";
 import Menu from "../../../Components/Menu/Menu";
@@ -6,8 +6,18 @@ import Navbar from "../../../Components/Navbar/Navbar";
 import Footer from "../../../Components/Footer/Footer";
 import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import { Link } from "react-router-dom";
+import ModalComponent from "../../../Components/ModalComp/ModalButton";
 
 const ClincalTrial = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <Box>
       {/* Menu */}
@@ -30,8 +40,7 @@ const ClincalTrial = () => {
               From Data to Discovery
             </Text>
           </Box>
-          <Box ml={"1.5rem"} mt={"4rem"} pb={"3rem"}>
-          </Box>
+          <Box ml={"1.5rem"} mt={"4rem"} pb={"3rem"}></Box>
         </Box>
         {/* Next Gen Cont */}
         <Box className="NextGenCont">
@@ -67,9 +76,11 @@ const ClincalTrial = () => {
               p={"0px 20px 0px 20px"}
               colorScheme="#131049"
               bg="#131049"
+              onClick={openModal}
             >
               Request A Demo
             </Button>
+            <ModalComponent isOpen={isModalOpen} onClose={closeModal} />
           </Box>
         </Box>
         {/* Banner */}
@@ -140,10 +151,10 @@ const ClincalTrial = () => {
         </Box>
         <Box className="smallBannerCTBottom">
           <Box className="smallBannerCTBtmContent">
-            <Link to={"/CaseStudy/Paired-Reads"}>
+            <Link to={"/CaseStudy/Adverse-Event-Module"}>
               <MdArrowBackIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
-            <Link to={"/CaseStudy/Paired-Reads"}>Paired Reads</Link>
+            <Link to={"/CaseStudy/Adverse-Event-Module"}>ADE</Link>
           </Box>
           <Box className="SmallBannerCTCenterLine"></Box>
           <Box className="smallBannerCTBtmContent">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./QueryManagement.css";
 import { Box, Button, Text } from "@chakra-ui/react";
 import Menu from "../../../Components/Menu/Menu";
@@ -6,8 +6,18 @@ import Navbar from "../../../Components/Navbar/Navbar";
 import Footer from "../../../Components/Footer/Footer";
 import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import { Link } from "react-router-dom";
+import ModalComponent from "../../../Components/ModalComp/ModalButton";
 
 const QueryManagement = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <Box>
       {/* Menu */}
@@ -74,9 +84,11 @@ const QueryManagement = () => {
               p={"0px 20px 0px 20px"}
               colorScheme="#131049"
               bg="#131049"
+              onClick={openModal}
             >
               Request A Demo
             </Button>
+            <ModalComponent isOpen={isModalOpen} onClose={closeModal} />
           </Box>
         </Box>
         {/* Banner */}
@@ -185,15 +197,16 @@ const QueryManagement = () => {
         </Box>
         <Box className="smallBannerQMBottom">
           <Box className="smallBannerQMBtmContent">
-            <Link to={"/CaseStudy/Oncology-Workflow"}>
+            <Link to={"/CaseStudy/AI-In-Dermatology"}>
               <MdArrowBackIos fontSize={"50px"} cursor={"pointer"} />
             </Link>
-            <Link to={"/CaseStudy/Oncology-Workflow"}>Oncology Workflow</Link>
+            <Link to={"/CaseStudy/AI-In-Dermatology"}>AI In Dermatology</Link>
           </Box>
           <Box className="SmallBannerQMCenterLine"></Box>
           <Box className="smallBannerQMBtmContent">
-            <Link to={"/CaseStudy/Electronic-Data-Capture"}>EDC</Link>
-            <Link to={"/CaseStudy/Electronic-Data-Capture"}>
+            <Link to={"/CaseStudy/Adverse-Event-Module"}>ADE</Link>
+
+            <Link to={"/CaseStudy/Adverse-Event-Module"}>
               <MdArrowForwardIos fontSize={"50px"} cursor={"pointer"} />
             </Link>
           </Box>

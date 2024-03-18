@@ -15,7 +15,7 @@ import Footer from "../../Components/Footer/Footer";
 import Menu from "../../Components/Menu/Menu";
 import Navbar from "../../Components/Navbar/Navbar";
 import Slider from "react-slick";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Homepage.css";
@@ -23,8 +23,19 @@ import CustomPrevArrow from "../../Components/CustomArrows/CustomPrevArrow";
 import CustomNextArrow from "../../Components/CustomArrows/CustomNextArrow";
 import ProcessFlow from "../../Images/ProcessNewDesign.png";
 import { Link } from "react-router-dom";
+import ModalComponent from "../../Components/ModalComp/ModalButton";
 
 const Homepage = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   const ClientsImages = [
     {
       ClientImage: Client1,
@@ -46,9 +57,6 @@ const Homepage = () => {
       title: "Adverse Event Module",
       link: "CaseStudy/Adverse-Event-Module",
     },
-    // { ClientImage: Client5, title: "External Collaboration" },
-    // { ClientImage: Client6, title: "FDA Access for Review" },
-    // { ClientImage: Client7, title: "External Collaboration" },
   ];
 
   var settings = {
@@ -194,7 +202,9 @@ const Homepage = () => {
                   <li>CNS</li>
                   <li>Cardiology</li>
                   <li>Contrast Media</li>
-                  <li>AI/Device  <span className="threedots"> . . .</span></li>
+                  <li>
+                    AI/Device <span className="threedots"> . . .</span>
+                  </li>
                 </ul>
 
                 <ul>
@@ -204,7 +214,9 @@ const Homepage = () => {
                   <li>Analytics</li>
                   <li>AI</li>
                   <li>Apps</li>
-                  <li>Event Adjucation <span className="threedots"> . . .</span></li>
+                  <li>
+                    Event Adjucation <span className="threedots"> . . .</span>
+                  </li>
                 </ul>
               </Box>
               <Box className="Solution_btns">
@@ -214,10 +226,11 @@ const Homepage = () => {
                   p={"0px 20px 0px 20px"}
                   colorScheme="#131049"
                   bg="#131049"
-                  onClick={scrollTop}
+                  onClick={openModal}
                 >
                   Request Demo
                 </Button>
+                <ModalComponent isOpen={isModalOpen} onClose={closeModal} />
               </Box>
             </Box>
             <Box
@@ -383,9 +396,7 @@ const Homepage = () => {
               colorScheme="#131049"
               bg="#131049"
             >
-              <Link to={'/ContactUs'}>
-              Get In Touch
-              </Link>
+              <Link to={"/ContactUs"}>Get In Touch</Link>
             </Button>
           </Box>
         </Box>

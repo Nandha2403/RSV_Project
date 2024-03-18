@@ -42,7 +42,7 @@
   /* border: 1px solid teal; */
 }
 
-.smallBannerCTBottom {
+.smallBannerAEMBottom {
   margin-top: 4rem;
   height: 45vh;
   /* border: 1px solid teal; */
@@ -55,7 +55,7 @@
   justify-content: space-between;
 }
 
-.smallBannerCTBtmContent {
+.smallBannerAEMBtmContent {
   display: flex;
   align-items: center;
   font-size: 25px;
@@ -63,12 +63,11 @@
   /* border: 1px solid white; */
 }
 
-.SmallBannerCTCenterLine {
+.SmallBannerAEMCenterLine {
   height: 10vh;
   border: 1px solid white;
   border-radius: 10px;
   text-align: center;
-  line-height: 25px;
 }
 
 .KeyFeatures {

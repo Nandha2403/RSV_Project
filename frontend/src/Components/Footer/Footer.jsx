@@ -55,6 +55,9 @@ const Footer = () => {
               <p>
                 <a href="">+1 855-723-7243</a>
               </p>
+              <p>
+                <a href="">+1 855 RAD-SAGE</a>
+              </p>
             </Box>
           </Box>
         </Box>
@@ -66,22 +69,7 @@ const Footer = () => {
           </h2>
           <ul>
             <li>
-              <a href="#">CT</a>
-            </li>
-            <li>
-              <a href="#">Oncology </a>
-            </li>
-            <li>
-              <a href="#">Derma</a>
-            </li>
-            <li>
-              <a href="#">BI</a>
-            </li>
-            <li>
-              <a href="#">MRI</a>
-            </li>
-            <li>
-              <a href="#">Paired Reads</a>
+              <Link to={"/Services"}>Case Studies</Link>
             </li>
           </ul>
         </Box>
@@ -104,13 +92,13 @@ const Footer = () => {
           </h2>
           <ul>
             <li>
-              <a href="#">Core Lab Services</a>
+              <Link to={"/Services"}>Core Lab Services</Link>
             </li>
             <li>
-              <a href="#">Technical Services</a>
+              <Link to={"/Services"}>Technical Services</Link>
             </li>
             <li>
-              <a href="#">Deployment Services</a>
+              <Link to={"/Services"}>Deployment Services</Link>
             </li>
           </ul>
         </Box>

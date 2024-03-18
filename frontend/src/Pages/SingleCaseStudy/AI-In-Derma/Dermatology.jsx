@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Dermatology.css";
 import { Box, Button, Text } from "@chakra-ui/react";
 import Menu from "../../../Components/Menu/Menu";
@@ -6,8 +6,18 @@ import Navbar from "../../../Components/Navbar/Navbar";
 import Footer from "../../../Components/Footer/Footer";
 import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import { Link } from "react-router-dom";
+import ModalComponent from "../../../Components/ModalComp/ModalButton";
 
 const Dermatology = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <Box>
       {/* Menu */}
@@ -31,25 +41,6 @@ const Dermatology = () => {
             </Text>
           </Box>
           <Box ml={"1.5rem"} pt={"6rem"} pb={"3rem"}>
-            {/* <Button
-              size={"xs"}
-              borderRadius={"15px"}
-              p={"0px 20px 0px 20px"}
-              colorScheme="#131049"
-              bg="#131049"
-            >
-              Get Started
-            </Button>
-            <Button
-              size={"xs"}
-              borderRadius={"15px"}
-              p={"0px 20px 0px 20px"}
-              //   colorScheme="black"
-              //   bg="white"
-              ml={"2rem"}
-            >
-              Learn More
-            </Button> */}
           </Box>
         </Box>
         {/* Next Gen Cont */}
@@ -87,9 +78,11 @@ const Dermatology = () => {
               p={"0px 20px 0px 20px"}
               colorScheme="#131049"
               bg="#131049"
+              onClick={openModal}
             >
               Request A Demo
             </Button>
+            <ModalComponent isOpen={isModalOpen} onClose={closeModal}/>
           </Box>
         </Box>
         {/* Banner */}
@@ -158,10 +151,9 @@ const Dermatology = () => {
           </Box>
           <Box className="SmallBannerDermaCenterLine"></Box>
           <Box className="smallBannerDermaBtmContent">
-            <Link to={"/CaseStudy/Business-Intelligence"}>
-              BI In Clinical Trials
-            </Link>
-            <Link to={"/CaseStudy/Business-Intelligence"}>
+            <Link to={"/CaseStudy/Query-Management"}>Query Management</Link>
+
+            <Link to={"/CaseStudy/Query-Management"}>
               <MdArrowForwardIos fontSize={"40px"} cursor={"pointer"} />
             </Link>
           </Box>

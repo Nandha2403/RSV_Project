@@ -35,6 +35,9 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import SearchInput from "../SearchComp/SearchInput";
 import SearchResultsList from "../SearchComp/SearchResultsList";
+import ModalComponent from "../ModalComp/ModalButton";
+
+// import ModalButton from "../ModalComp/ModalButton";
 
 const Navbar = () => {
   const form = useRef();
@@ -42,8 +45,17 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const DemoBtnModal = useDisclosure();
   const RFPBtnModal = useDisclosure();
-
   const [results, setResults] = useState([]);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -175,71 +187,11 @@ const Navbar = () => {
               borderRadius={"15px"}
               colorScheme="#131049"
               bg="#131049"
-              onClick={DemoBtnModal.onOpen}
+              onClick={openModal}
             >
               DEMO
             </Button>
-
-            <Modal
-              isOpen={DemoBtnModal.isOpen}
-              isCentered
-              onClose={DemoBtnModal.onClose}
-              size={{ base: "xs", sm: "sm", md: "md", lg: "xl", xl: "xl" }}
-            >
-              <ModalOverlay />
-              <ModalContent>
-                <ModalHeader>
-                  <Text fontSize={"24px"} color={"blue"}>
-                    Contact a Solutions Specialist
-                  </Text>
-                  <Text fontSize={"16px"}>
-                    Reach out today and an expert will be in touch to learn more
-                    about your specific needs
-                  </Text>
-                </ModalHeader>
-                <ModalCloseButton />
-                <ModalBody pb={6}>
-                  {/* Form */}
-
-                  <form ref={form} onSubmit={sendEmail}>
-                    <FormLabel>Name</FormLabel>
-                    <Input placeholder="Name" name="user_name" />
-
-                    <FormLabel mt={2}>Phone</FormLabel>
-                    <Input
-                      type="number"
-                      placeholder="Phone"
-                      name="user_phone"
-                    />
-                    <FormLabel mt={2}>Email</FormLabel>
-                    <Input type="email" placeholder="Email" name="user_email" />
-                    <FormLabel mt={2}>Company</FormLabel>
-                    <Input placeholder="Company" name="user_company" />
-                    <FormLabel mt={2}>Reason for Inquiry</FormLabel>
-                    <Input
-                      placeholder="Reason for Inquiry"
-                      name="user_reason"
-                    />
-                    <FormLabel mt={2}>
-                      Specific Requirements (if any):
-                    </FormLabel>
-                    <Textarea
-                      placeholder="Specific Requirements"
-                      name="user_specific_reason"
-                      maxLength={500}
-                    />
-                    <Input
-                      type="submit"
-                      mt={3}
-                      value={"Send"}
-                      cursor={"pointer"}
-                      backgroundColor={"#131049"}
-                      color={"white"}
-                    />
-                  </form>
-                </ModalBody>
-              </ModalContent>
-            </Modal>
+            <ModalComponent isOpen={isModalOpen} onClose={closeModal} />
           </Box>
         </Box>
         {/* SmallScreen drop */}
@@ -287,39 +239,6 @@ const Navbar = () => {
                     <Box>
                       <Link to={"/Products"}>Corelab-in-a-Box</Link>
                     </Box>
-                    {/* <Box>
-                      <Link to={"/Products"}>RadGate</Link>
-                    </Box>
-                    <Box>
-                      <Link to={"/Products"}>RadVault</Link>
-                    </Box>
-                    <Box>
-                      <Link to={"/Products"}>RadVista</Link>
-                    </Box>
-                    <Box>
-                      <Link to={"/Products"}>RadFlow</Link>
-                    </Box>
-                    <Box>
-                      <Link to={"/Products"}>RadClinica</Link>
-                    </Box>
-                    <Box>
-                      <Link to={"/Products"}>RadInsight</Link>
-                    </Box>
-                    <Box>
-                      <Link to={"/Products"}>RadEvent</Link>
-                    </Box>
-                    <Box>
-                      <Link to={"/Products"}>RadAI</Link>
-                    </Box>
-                    <Box>
-                      <Link to={"/Products"}>RadDCT</Link>
-                    </Box>
-                    <Box>
-                      <Link to={"/Products"}>RadApp</Link>
-                    </Box>
-                    <Box>
-                      <Link to={"/Products"}>RadChain</Link>
-                    </Box> */}
                   </AccordionPanel>
                 </AccordionItem>
                 {/*  */}
