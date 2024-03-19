@@ -430,7 +430,7 @@ const Products = () => {
             </div>
           </Box>
         </Box>
-        <Box className="connect_with_us">
+        {/* <Box className="connect_with_us">
           <Box className="connect_with_us_heading_cont">
             <Text className="headings connect_with_us_heading">
               Connect with Us
@@ -470,7 +470,7 @@ const Products = () => {
               </Box>
             </Box>
           </Box>
-        </Box>
+        </Box> */}
         <Box mt={"3rem"}>
           <Footer />
         </Box>

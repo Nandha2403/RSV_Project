@@ -139,7 +139,7 @@ const Solutions = () => {
             <Box className="Solutions_content_container">
               <Box className="text_container">
                 <Text>
-                  RSV has an HTML5/Web-based import module referred to as
+                RSV has web-based zero foot print import module referred to as
                   RadGate that sites use to upload data into the system. Site
                   users (or anyone with site-specific upload access) log in and
                   select a patient or timepoint to upload. The user selects a

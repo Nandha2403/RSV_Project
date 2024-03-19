@@ -69,7 +69,7 @@ const Footer = () => {
           </h2>
           <ul>
             <li>
-              <Link to={"/Services"}>Case Studies</Link>
+              <Link to={"/CaseStudy"}>Case Studies</Link>
             </li>
           </ul>
         </Box>
