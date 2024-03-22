@@ -154,7 +154,7 @@ const QueryManagement = () => {
               <Text>Timely resolution of issues :</Text>
               <Text>
                 Query management allows issues related to imaging data to be
-                identified and resolved quickly, which can help prevent delays,
+                identified and resolved quickly, which can help prevent delays
                 in the trial timeline.
               </Text>
             </Box>

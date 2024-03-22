@@ -92,10 +92,10 @@ const Solutions = () => {
         <button onClick={scrollToTop}>Scroll to Top</button>
         */}
         {/* <Box className="SolutionLinkContainer"> */}
-          {/* <Text textAlign={"center"} className="headings">
+        {/* <Text textAlign={"center"} className="headings">
             Radiant Sage Solutions
           </Text> */}
-          {/* <Box className="LinksContainer">
+        {/* <Box className="LinksContainer">
             <Link to="DSA" spy={true} offset={-50} smooth={true} duration={500}>
               DSA
             </Link>
@@ -139,7 +139,7 @@ const Solutions = () => {
             <Box className="Solutions_content_container">
               <Box className="text_container">
                 <Text>
-                RSV has web-based zero foot print import module referred to as
+                  RSV has web-based zero foot print import module referred to as
                   RadGate that sites use to upload data into the system. Site
                   users (or anyone with site-specific upload access) log in and
                   select a patient or timepoint to upload. The user selects a
@@ -185,7 +185,7 @@ const Solutions = () => {
                   Blinded Reads Post-QC, RadFlow provides an unsupervised
                   workflow engine to assign image datasets to be assessed by
                   various trained radiologists in this trial. When a task is
-                  started, RadVista loads the appropriate datasets and analyses
+                  started, RadVista loads the appropriate datasets and analyzes
                   modules that are configured and potentially customized to the
                   needs of the reading paradigm. RadVista offers a
                   semi-automated tool to segment a region of interest on the
@@ -198,12 +198,12 @@ const Solutions = () => {
               </Box>
               <Box className="text_container">
                 <Text>
-                  RadVista covers Most of the oncological assessment criteria
+                  RadVista covers most of the oncological assessment criteria
                   (e.g., RECIST, mRECIST, etc.). RadVista also has many analysis
                   tools to address analysis needs for MKS, CNS, cardiovascular,
                   and other therapeutic areas. The results are stored in an
                   electronic Case Report Form (eCRF) that is customizable as
-                  needed. The Measurements are also stored back on the server
+                  needed. The measurements are also stored back on the server
                   with the audit. trails. Image data can be completely blinded
                   and randomized. for reading, if necessary. Multiple
                   radiologists are recruited to perform assessments, which
@@ -211,8 +211,8 @@ const Solutions = () => {
                   discrepancies between multiple readers. All results are stored
                   back into Corelab-in-a-BoxTM, and final reports are generated.
                   RadFlow and RadVista have been developed in many
-                  configurations. options to support the diverse range of
-                  requirements for blinded reads.
+                  configurations and options to support the diverse range of
+                  requirements for blinded reads
                 </Text>
               </Box>
             </Box>

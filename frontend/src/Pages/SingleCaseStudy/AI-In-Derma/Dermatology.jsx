@@ -90,7 +90,7 @@ const Dermatology = () => {
         {/* Sub cont Txt */}
         <Box className="UnderBannerTxtDerma">
           <Text>
-            For instance, smartphone applications can recognize and analyse skin
+            For instance, smartphone applications can recognize and analyze skin
             conditions. They can also upload images to a central server for
             analysis, where qualified dermatologists can accurately assess the
             progression and remission of diseases. Many of the participants in
@@ -115,8 +115,8 @@ const Dermatology = () => {
                 Images are scanned, converted to a proprietary format, and then
                 the segmented images are subjected to quality assurance and
                 control. Due to the low contrast surrounding the skin, the fuzzy
-                borders, the presence of artefacts, and the uneven structures
-                that characterise lesion images, precise boundary identification
+                borders, the presence of artifacts, and the uneven structures
+                that characterize lesion images, precise boundary identification
                 (segmentation) is one of the most crucial and relevant topics in
                 image analysis.
               </Text>
@@ -134,7 +134,7 @@ const Dermatology = () => {
               <Text>
                 Throughout the course of your dermatology trial, our image
                 management software provides simple access to and total
-                visibility into data. Additionally, images can be retrieved
+                visibility into the data. Additionally, images can be retrieved
                 using meta data when the regulating body requests it.
               </Text>
             </Box>

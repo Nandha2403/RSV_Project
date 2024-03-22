@@ -99,7 +99,7 @@ const AdverseEventModule = () => {
               <Text>
                 The module provides a standardized format for reporting AEs,
                 which can help ensure that the information collected is
-                consistent and can be easily analysed.
+                consistent and can be easily analyzed.
               </Text>
             </Box>
             <Box className="KeyFeaturesTextTitle1">
@@ -107,7 +107,7 @@ const AdverseEventModule = () => {
               <Text>
                 The module allows trial staff to manage AE data in a centralized
                 database, which can help ensure that the data is easily
-                accessible and can be analysed in real-time.
+                accessible and can be analyzed in real-time.
               </Text>
             </Box>
             <Box className="KeyFeaturesTextTitle1">
@@ -115,7 +115,7 @@ const AdverseEventModule = () => {
               <Text>
                 The module includes tools for monitoring the safety of trial
                 participants, including alerts for potential safety concerns and
-                tools for analysing trends in AE data.
+                tools for analyzing trends in AE data.
               </Text>
             </Box>
             <Box className="KeyFeaturesTextTitle1">

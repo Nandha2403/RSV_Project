@@ -237,9 +237,7 @@ const Homepage = () => {
               w={{ base: "70%", sm: "50%" }}
               //  border={"1px solid teal"}
             >
-              <a href="#">
                 <img src={RSVSolution} alt="Solution" />
-              </a>
             </Box>
           </Box>
         </Box>
@@ -267,15 +265,15 @@ const Homepage = () => {
               justifyContent={"space-evenly"}
             >
               <Box>
-                <Link to={"/Solutions"}>
+                <Link to={"/Services"}>
                   <img width={"250px"} src={Service1} alt="CORELAB SERVICES" />
                 </Link>
                 <Text fontSize={"md"} fontWeight={500} mt={"1rem"}>
-                  <Link to={"/Solutions"}>CORELAB SERVICES</Link>
+                  <Link to={"/Services"}>CORELAB SERVICES</Link>
                 </Text>
               </Box>
               <Box>
-                <Link to={"/Solutions"}>
+                <Link to={"/Services"}>
                   <img
                     width={"250px"}
                     src={Service2}
@@ -283,11 +281,11 @@ const Homepage = () => {
                   />
                 </Link>
                 <Text fontSize={"md"} fontWeight={500} mt={"1rem"}>
-                  <Link to={"/Solutions"}>TECHNICAL SERVICES</Link>
+                  <Link to={"/Services"}>TECHNICAL SERVICES</Link>
                 </Text>
               </Box>
               <Box>
-                <Link to={"/Solutions"}>
+                <Link to={"/Services"}>
                   <img
                     width={"250px"}
                     src={Service3}
@@ -295,7 +293,7 @@ const Homepage = () => {
                   />
                 </Link>
                 <Text fontSize={"md"} fontWeight={500} mt={"1rem"}>
-                  <Link to={"/Solutions"}>DEPLOYMENT SERVICES</Link>
+                  <Link to={"/Services"}>DEPLOYMENT SERVICES</Link>
                 </Text>
               </Box>
             </Box>

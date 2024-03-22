@@ -131,18 +131,6 @@ const Career = () => {
                   <input className="leftInput" placeholder="Email" />
                   <input className="rightInput" placeholder="Company" />
                 </Box>
-                {/* <Box className="TopInputCont">
-                  <input
-                    className="FullInput"
-                    placeholder="Reason for Inquiry"
-                  />
-                </Box>
-                <Box className="TopInputCont">
-                  <textarea
-                    className="FullInputBottom"
-                    placeholder="Specific Requirements (if any) :"
-                  />
-                </Box> */}
               </Box>
             </Box>
           </div>
