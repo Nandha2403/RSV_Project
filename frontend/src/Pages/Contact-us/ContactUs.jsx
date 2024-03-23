@@ -70,23 +70,23 @@ const ContactUs = () => {
                 <tbody>
                   <tr>
                     <td>Email</td>
-                    <td>info@radiantsage.com</td>
+                    <td className="contactRight_txt_color">info@radiantsage.com</td>
                   </tr>
                   <tr>
                     <td>Phone</td>
-                    <td>+1 855 723 7243</td>
+                    <td className="contactRight_txt_color">+1 855 723 7243, <br />+1 855 RAD-SAGE</td>
                   </tr>
-                  <tr>
+                  {/* <tr>
                     <td>Address</td>
                     <td>
                       <a href="https://maps.app.goo.gl/dgcidGJBot6c2A398" target="_blank">
                         464 Common St 133 Belmont, MA, 02478-2704 United States.
                       </a>
                     </td>
-                  </tr>
+                  </tr> */}
                 </tbody>
               </table>
-              <div className="mapCont">
+              {/* <div className="mapCont">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.034321711553!2d-71.17931258925849!3d42.38441532743084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e377f1f8092697%3A0x1ad2eb95e078e9aa!2s464%20Common%20St%20suite%20133%2C%20Belmont%2C%20MA%2002478%2C%20USA!5e0!3m2!1sen!2sin!4v1708941305888!5m2!1sen!2sin"
                   width="100%"
@@ -96,7 +96,7 @@ const ContactUs = () => {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -210,12 +210,15 @@
 .contactLeft {
   flex-basis: 60%;
   padding: 40px 60px;
+  /* border: 1px solid yellow; */
+
 }
 .contactRight {
   flex-basis: 40%;
-  padding: 30px;
-  background: #1b1446;
-  color: #fff;
+  padding: 40px 60px;
+  /* background: #1b1446; */
+  /* color: #fff; */
+  /* border: 1px solid yellow; */
 }
 
 .contactUsContainer h1 {
@@ -223,6 +226,10 @@
 }
 .contactUsContainer p {
   margin-bottom: 10px;
+}
+.contactRight_txt_color{
+  color: #1b1446;
+  font-weight: bold;
 }
 .inputRow {
   display: flex;
@@ -280,6 +287,7 @@
   margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
   font-size: larger;
+  /* border: 1px solid green; */
 }
 
 .contactUsContainer tr td:first-child {
