@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-import {
-  Box,
-  Button,
-  Input,
-  InputGroup,
-  InputRightElement,
-  Text,
-} from "@chakra-ui/react";
-import { HiLink, HiOutlineChatBubbleLeftEllipsis } from "react-icons/hi2";
+import { Box, Text } from "@chakra-ui/react";
 import Menu from "../../Components/Menu/Menu";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
@@ -20,19 +12,20 @@ import Service6 from "../../Images/ServiceImg-06.png";
 import Service7 from "../../Images/ServiceImg-07.png";
 import Service8 from "../../Images/ServiceImg-08.png";
 import product1 from "../../Images/RadGate.jpeg";
-import product2 from "../../Images/RadVault.jpeg";
-import product3 from "../../Images/RadVista.jpeg";
-import product4 from "../../Images/RadFlow.jpeg";
-import product5 from "../../Images/RadClinica.jpeg";
+import product2 from "../../Images/RadValut.png";
+import product3 from "../../Images/RadVista.png";
+import product4 from "../../Images/RadFlow.png";
+import product5 from "../../Images/RadClinica.png";
 import product6 from "../../Images/RadInsight.jpeg";
-import product7 from "../../Images/RadEvent.jpeg";
+import product7 from "../../Images/RadEvent.png";
 import product8 from "../../Images/RadAI.jpeg";
-import product9 from "../../Images/RadDCT.jpeg";
 import product10 from "../../Images/RadApp.jpeg";
+/*
+import product9 from "../../Images/RadDCT.jpeg";
 import product11 from "../../Images/RadChain.jpeg";
-
 import { Link as RouterLink } from "react-router-dom";
-// import { Link as ScrollLink } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+*/
 import "./Products.css";
 
 const Products = () => {
@@ -86,21 +79,22 @@ const Products = () => {
         </Box>
         <Box className="below_herobannercont">
           <Text className="title_container">
-            CORELAB-IN-A-BOX<sup>TM</sup> will facilitate study execution, to
-            streamline research on regulatory compliance.
+            Experience seamless study execution with CORELAB-IN-A-BOX
+            simplifying research and regulatory compliance.
           </Text>
           <div className="subtext">
             <Text>
-              And all this via a SaaS delivery model in a secure, regulatory
-              Compliant Environment, Enabling You to Have a Trial Up and Running
-              Within Weeks!
+              CORELAB-IN-A-BOX simplifies study execution, streamlining research
+              processes and ensuring regulatory compliance. Utilizing a secure,
+              regulatory compliant SaaS delivery model, it enables you to have
+              your trial operational within weeks.
             </Text>
             <Text mt={"2rem"}>
-              With Corelab-in-a-Box<sup>TM</sup> You are able to collaborate.
-              with readers and anywhere in the world without having to move
-              Digital Images. The data can be hosted and shared in a private
-              Cloud or at Radiant Sage's hosting center without compromising
-              your QA/QC requirements.
+              With Corelab-in-a-Box, collaboration knows no bounds you can
+              engage with stakeholders worldwide without the hassle of
+              relocating digital images. Your data remains secure, hosted and
+              shared either in a private cloud or at Radiant Sage's hosting
+              center, all while meeting your QA/QC requirements.
             </Text>
           </div>
         </Box>
@@ -116,13 +110,14 @@ const Products = () => {
             <Box className="products_text_and_img_cont">
               <ul className="under_text">
                 <li>
-                  HTML5-based import using web browsers is easy for site users.
+                  Facilitating HTML5-Based Import via Web Browsers for User
+                  Convenience.
                 </li>
                 <li>
-                  Trial specific anonymization/blinding and DICOM header updates
-                  logic and edit checks for image QC
+                  Trial Speciic Anonymization/Blinding and Updates to DICOM
+                  Headers with Tailored Edit Checks for Auto QC during upload.
                 </li>
-                <li>Automated DTF and Integrated DCT Workflow</li>
+                <li>Automated DTF and Integrated DCT Workfow.</li>
               </ul>
               <Box className="products_img_cont">
                 <img src={product1} alt="RadGate Import/Export" />
@@ -175,11 +170,6 @@ const Products = () => {
                 <li>
                   Comprehensive EDC module with Single Sign On RadFlow Workflow
                   Engine
-                </li>
-                <li>Multi-Trial Corelab Operations (CTMS)</li>
-                <li>
-                  Trial Administration, Site Management, Training, and User
-                  Manage.
                 </li>
               </ul>
               <Box className="products_img_cont">
@@ -264,7 +254,7 @@ const Products = () => {
             <Text className="headings" id="RadDCT">
               RadDCT Decentralized Clinical Trials :
             </Text>
-            <Box className="products_text_and_img_cont">
+            <Box className="products_text_and_img_cont without_image">
               <ul className="under_text">
                 <li>Upload Image data from local scan centers</li>
                 <li>
@@ -273,7 +263,7 @@ const Products = () => {
                 <li>Patient/Scan Center payments</li>
               </ul>
               <Box className="products_img_cont">
-                <img src={product9} alt="RadGate Import/Export" />
+                {/* <img src={product9} alt="RadGate Import/Export" /> */}
               </Box>
             </Box>
           </Box>
@@ -296,7 +286,7 @@ const Products = () => {
             <Text className="headings" id="RadChain">
               RadChain Proof of Concept :
             </Text>
-            <Box className="products_text_and_img_cont">
+            <Box className="products_text_and_img_cont without_image">
               <ul className="under_text">
                 <li>Integration of a BlockChain into CLIB RadChain</li>
                 <li>
@@ -305,7 +295,7 @@ const Products = () => {
                 </li>
               </ul>
               <Box className="products_img_cont">
-                <img src={product11} alt="RadGate Import/Export" />
+                {/* <img src={product11} alt="RadGate Import/Export" /> */}
               </Box>
             </Box>
           </Box>

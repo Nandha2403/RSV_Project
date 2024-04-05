@@ -30,7 +30,7 @@
 .footer-links ul li {
   margin-top: 10px;
   color: white;
-  font-size: 15px;
+  font-size: 1rem;
   text-decoration: none;
 }
 .footer-links ul li:hover {
@@ -106,7 +106,7 @@
   color: antiquewhite;
   /* height: 100%; */
   text-align: center;
-  font-size: 15px;
+  font-size: 1rem;
 }
 .emailAndPhoneNum > div > p {
   margin-top: 5px;

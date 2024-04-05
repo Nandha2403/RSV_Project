@@ -173,6 +173,10 @@
   border: 1px solid green;
 } */
 
+.without_image{
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 767px) {
   .bodyContainerProducts {
     margin-left: 0;
